@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dns_kayit_tipleri",
+  "info": {
+    "singularName": "dns-kayit-tipi",
+    "pluralName": "dns-kayit-tipleri",
+    "displayName": "DNS Kayıt Tipi",
+    "description": "DNS sorgulama sayfalarındaki kayıt tipi açıklamaları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "tip": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "kisa": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "ozet": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "ornek": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 1500,
+      "required": true
+    },
+    "ipucu": {
+      "type": "text",
+      "maxLength": 600
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

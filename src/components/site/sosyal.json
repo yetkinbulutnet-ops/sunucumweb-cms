@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_site_sosyal",
+  "info": {
+    "displayName": "Sosyal Medya",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "x",
+        "instagram",
+        "linkedin",
+        "youtube",
+        "tiktok"
+      ],
+      "required": true,
+      "default": "facebook"
+    },
+    "adres": {
+      "type": "string",
+      "maxLength": 300,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "kind": "singleType",
+  "collectionName": "anasayfa_sayfalari",
+  "info": {
+    "singularName": "anasayfa",
+    "pluralName": "anasayfa-sayfalari",
+    "displayName": "Ana Sayfa",
+    "description": "Ana sayfadaki rakamlar, özellikler, öne çıkan paketler ve SSS"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "default": "Ana Sayfa",
+      "maxLength": 40
+    },
+    "rakamlar": {
+      "type": "component",
+      "component": "ortak.istatistik",
+      "repeatable": true
+    },
+    "ozellikler": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    },
+    "paketler": {
+      "type": "component",
+      "component": "anasayfa.paket-ozeti",
+      "repeatable": true
+    },
+    "sss": {
+      "type": "component",
+      "component": "ortak.sss",
+      "repeatable": true
+    },
+    "cozumlerBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "nedenBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "altyapiBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "paketlerBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "yazilimBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "referansBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "sssBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "durumBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "guvenBolumu": {
+      "type": "component",
+      "component": "ortak.bolum-basligi",
+      "repeatable": false
+    },
+    "kategoriler": {
+      "type": "component",
+      "component": "anasayfa.kategori",
+      "repeatable": true
+    },
+    "altyapiMaddeleri": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    }
+  }
+}

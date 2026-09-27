@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yazilim_kategorileri",
+  "info": {
+    "singularName": "yazilim-kategorisi",
+    "pluralName": "yazilim-kategorileri",
+    "displayName": "Yazılım Kategorisi",
+    "description": "Hazır yazılım kategorileri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ad",
+      "required": true
+    },
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent"
+      ],
+      "default": "layers",
+      "required": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "yazilimlar": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hazir-yazilim.hazir-yazilim",
+      "mappedBy": "kategori"
+    }
+  }
+}

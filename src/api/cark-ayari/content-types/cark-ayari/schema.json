@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "cark_ayarlari",
+  "info": {
+    "singularName": "cark-ayari",
+    "pluralName": "cark-ayarlari",
+    "displayName": "Çark Ayarları",
+    "description": "Çark sistemi genel ayarları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aktif": {
+      "type": "boolean",
+      "default": false
+    },
+    "donem": {
+      "type": "string",
+      "required": true,
+      "default": "2026-1",
+      "maxLength": 30
+    },
+    "baslik": {
+      "type": "string",
+      "required": true,
+      "default": "Çarkı çevir, indirimini kap!",
+      "maxLength": 80
+    },
+    "aciklama": {
+      "type": "text",
+      "default": "E-posta adresinle çarkı bir kez çevirebilirsin. Kazandığın kupon ekranda gösterilir ve e-postana da gönderilir.",
+      "maxLength": 300
+    },
+    "rozetMetni": {
+      "type": "string",
+      "default": "Çarkı çevir",
+      "maxLength": 24
+    },
+    "ipGunlukLimit": {
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 100
+    },
+    "pasTekrarHakki": {
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 10
+    },
+    "sansOzeti": {
+      "type": "text"
+    }
+  }
+}

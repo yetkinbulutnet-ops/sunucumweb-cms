@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cark_kuponlari",
+  "info": {
+    "singularName": "cark-kuponu",
+    "pluralName": "cark-kuponlari",
+    "displayName": "Çark Kuponu",
+    "description": "Ödüllerin kupon havuzu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kod": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 60
+    },
+    "odul": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cark-odulu.cark-odulu",
+      "inversedBy": "kuponlar"
+    },
+    "kullanildi": {
+      "type": "boolean",
+      "default": false
+    },
+    "verilenEposta": {
+      "type": "email"
+    },
+    "verilmeTarihi": {
+      "type": "datetime"
+    }
+  }
+}

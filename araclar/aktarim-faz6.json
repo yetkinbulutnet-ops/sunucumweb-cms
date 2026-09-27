@@ -1,0 +1,169 @@
+{
+ "slaytlar": [
+  {
+   "dosya": "hosting-veri-merkezi.webp",
+   "alt": "Modern veri merkezinde sunucu kabinleri sıraları",
+   "ustBaslik": "NVMe hosting · cPanel · İstanbul lokasyonu",
+   "onMetin": "Siteniz için",
+   "vurgu": "hızlı NVMe hosting",
+   "sonMetin": null,
+   "aciklama": "LiteSpeed önbelleği, cPanel, ücretsiz SSL ve günlük yedekle sitenizi dakikalar içinde yayına alın. Ücretsiz taşıma ve gerçek 7/24 destek dahil.",
+   "buton1Metni": "Hosting paketleri",
+   "buton1Baglanti": "/web-hosting",
+   "buton2Metni": "Ücretsiz taşıma",
+   "buton2Baglanti": "/iletisim",
+   "rozetMetni": "Ücretsiz site taşıma",
+   "rozetIkon": "refresh",
+   "istatistikDeger": "%99.9",
+   "istatistikEtiket": "Uptime",
+   "sira": 10
+  },
+  {
+   "dosya": "fiziksel-sunucu.webp",
+   "alt": "Kurumsal fiziksel dedicated sunucu rafı",
+   "ustBaslik": "Fiziksel sunucu · Intel Xeon · Tam donanım",
+   "onMetin": "Gücün tamamı sizin:",
+   "vurgu": "fiziksel sunucular",
+   "sonMetin": null,
+   "aciklama": "Intel Xeon işlemciler, NVMe diskler ve IPMI yönetimiyle tüm donanım yalnızca size ait. Komşusuz performans, tam root ve DDoS korumalı premium ağ.",
+   "buton1Metni": "Dedicated sunucular",
+   "buton1Baglanti": "/dedicated-sunucu",
+   "buton2Metni": "Teklif al",
+   "buton2Baglanti": "/iletisim",
+   "rozetMetni": "Tek kiracı, komşusuz",
+   "rozetIkon": "server",
+   "istatistikDeger": "1 Gbps",
+   "istatistikEtiket": "Premium ağ",
+   "sira": 20
+  },
+  {
+   "dosya": "gpu-kart.webp",
+   "alt": "Yüksek performanslı GPU ekran kartı",
+   "ustBaslik": "GPU sunucu · NVIDIA · AI & render",
+   "onMetin": "Yapay zeka ve render için",
+   "vurgu": "GPU hızlandırma",
+   "sonMetin": null,
+   "aciklama": "NVIDIA GPU sunucularla model eğitimi, çıkarım ve 3B render iş yüklerinizi katlayın. CUDA hazır ortam, NVMe disk ve tam root erişimi dahil.",
+   "buton1Metni": "GPU sunucular",
+   "buton1Baglanti": "/gpu-sunucu",
+   "buton2Metni": "Bize ulaşın",
+   "buton2Baglanti": "/iletisim",
+   "rozetMetni": "CUDA hazır ortam",
+   "rozetIkon": "cpu",
+   "istatistikDeger": "NVIDIA",
+   "istatistikEtiket": "GPU",
+   "sira": 30
+  },
+  {
+   "dosya": "alan-adi-network.webp",
+   "alt": "Küresel ağ ve alan adı bağlantısı",
+   "ustBaslik": "Belgesiz .com.tr · AI destekli bulucu",
+   "onMetin": "Belgesiz",
+   "vurgu": ".com.tr alan adı",
+   "sonMetin": null,
+   "aciklama": "Artık evrak yok: .com.tr alan adınızı belgesiz, dakikalar içinde tescil edin. Kararsızsanız yapay zeka destekli bulucumuz size en uygun ismi önersin.",
+   "buton1Metni": "Alan adı sorgula",
+   "buton1Baglanti": "/alan-adi",
+   "buton2Metni": "AI ile bul",
+   "buton2Baglanti": "/alan-adi",
+   "rozetMetni": "Ücretsiz WHOIS gizliliği",
+   "rozetIkon": "lock",
+   "istatistikDeger": "Belgesiz",
+   "istatistikEtiket": ".com.tr",
+   "sira": 40
+  }
+ ],
+ "anasayfa": {
+  "rakamlar": [
+   {
+    "deger": "%99.9",
+    "etiket": "Uptime Garantisi"
+   },
+   {
+    "deger": "10.000+",
+    "etiket": "Mutlu Müşteri"
+   },
+   {
+    "deger": "7/24",
+    "etiket": "Uzman Destek"
+   },
+   {
+    "deger": "<5dk",
+    "etiket": "Ortalama Yanıt"
+   }
+  ],
+  "ozellikler": [
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Altyapı",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile sitenizi rakiplerinizden kat kat hızlı sunun."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "Yedekli Ağ & Güç",
+    "aciklama": "Çift hatlı ağ, kesintisiz güç kaynağı ve 7/24 izleme ile siteniz her zaman erişilebilir kalır."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   },
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz SSL & Yedek",
+    "aciklama": "Tüm paketlerde ücretsiz SSL sertifikası ve otomatik günlük yedekleme dahildir."
+   }
+  ],
+  "paketler": [
+   {
+    "urun": "Web Hosting",
+    "paket": "Profesyonel",
+    "fiyat": "99",
+    "ozet": "Kişisel ve KOBİ siteleri için hızlı NVMe hosting.",
+    "ozellikler": "50 GB NVMe SSD\n10 Web Sitesi\nÜcretsiz SSL\nGünlük Yedek",
+    "ikon": "globe",
+    "vurgu": false
+   },
+   {
+    "urun": "Sanal Sunucu",
+    "paket": "VDS 4",
+    "fiyat": "299",
+    "ozet": "Root erişimli, saniyeler içinde ölçeklenen sanal sunucu.",
+    "ozellikler": "4 vCPU · 8 GB RAM\n160 GB NVMe SSD\nTam Root Erişimi\nDDoS Koruması",
+    "ikon": "vds",
+    "vurgu": true
+   },
+   {
+    "urun": "Kurumsal Hosting",
+    "paket": "Kurumsal M",
+    "fiyat": "699",
+    "ozet": "Yüksek trafikli kurumsal siteler için izole kaynak.",
+    "ozellikler": "8 GB Garantili RAM\nİzole Kaynak\nDDoS Koruması\nKurumsal SLA",
+    "ikon": "kurumsal",
+    "vurgu": false
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Sunucularınız nerede barındırılıyor?",
+    "cevap": "Isparta merkezliyiz; hizmetlerimiz yedekli güç ve soğutmaya sahip Türkiye lokasyonlu veri merkezi altyapısında çalışır. Düşük gecikme ve KVKK uyumu için verileriniz yurt içinde kalır."
+   },
+   {
+    "soru": "Hizmetim ne kadar sürede aktif olur?",
+    "cevap": "Ödeme onaylandıktan sonra hosting ve sanal sunucular çoğunlukla birkaç dakika içinde otomatik olarak kurulur. Dedicated sunucularda teslim süresi yapılandırmaya göre değişir."
+   },
+   {
+    "soru": "Memnun kalmazsam iade alabilir miyim?",
+    "cevap": "Evet. Uygun hizmetlerde 30 gün içinde koşulsuz iade garantisi sunuyoruz; detaylar iade politikamızda yer alır."
+   },
+   {
+    "soru": "Teknik desteğe nasıl ulaşırım?",
+    "cevap": "7/24 canlı destek, ticket ve telefonla ulaşabilirsiniz. Ortalama ilk yanıt süremiz 5 dakikanın altındadır."
+   },
+   {
+    "soru": "Ödeme nasıl yapılıyor?",
+    "cevap": "Kredi kartı ve banka havalesi ile müşteri panelinden güvenle ödeyebilirsiniz. Tüm işlemler SSL ile şifrelenir."
+   }
+  ]
+ }
+}

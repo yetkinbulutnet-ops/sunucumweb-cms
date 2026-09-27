@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ortak_sss",
+  "info": {
+    "displayName": "Soru - Cevap",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "soru": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "cevap": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

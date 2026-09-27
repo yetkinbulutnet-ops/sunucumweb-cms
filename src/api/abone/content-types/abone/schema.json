@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bulten_aboneleri",
+  "info": {
+    "singularName": "abone",
+    "pluralName": "aboneler",
+    "displayName": "Bülten Abonesi",
+    "description": "Sitedeki tüm bülten ve kampanya formlarından gelen aboneler"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eposta": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "durum": {
+      "type": "enumeration",
+      "enum": ["beklemede", "aktif", "iptal"],
+      "default": "beklemede",
+      "required": true
+    },
+    "kaynak": {
+      "type": "enumeration",
+      "enum": ["footer", "anasayfa", "kampanyalar", "blog", "cark", "iletisim", "panel", "diger"],
+      "default": "panel",
+      "required": true
+    },
+    "sonKaynak": {
+      "type": "enumeration",
+      "enum": ["footer", "anasayfa", "kampanyalar", "blog", "cark", "iletisim", "panel", "diger"]
+    },
+    "izinMetni": {
+      "type": "text",
+      "maxLength": 1000
+    },
+    "izinTarihi": {
+      "type": "datetime"
+    },
+    "izinIp": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "tarayici": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "onayYontemi": {
+      "type": "enumeration",
+      "enum": ["cift-onay", "tek-adim", "panel"]
+    },
+    "onayTarihi": {
+      "type": "datetime"
+    },
+    "onayIp": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "iptalTarihi": {
+      "type": "datetime"
+    },
+    "iptalYontemi": {
+      "type": "enumeration",
+      "enum": ["baglanti", "tek-tik", "panel"]
+    },
+    "onayGonderimi": {
+      "type": "integer",
+      "default": 0
+    },
+    "sonOnayGonderimi": {
+      "type": "datetime"
+    },
+    "notlar": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "token": {
+      "type": "string",
+      "maxLength": 80,
+      "private": true
+    }
+  }
+}

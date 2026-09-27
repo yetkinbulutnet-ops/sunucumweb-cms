@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_ticari_kayit",
+  "info": {
+    "displayName": "Resmî Kayıt / Belge",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "aciklama": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "baglanti": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "belge": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "logoAdresi": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "logoGenislik": {
+      "type": "integer",
+      "min": 1,
+      "max": 2000
+    },
+    "logoYukseklik": {
+      "type": "integer",
+      "min": 1,
+      "max": 2000
+    }
+  }
+}

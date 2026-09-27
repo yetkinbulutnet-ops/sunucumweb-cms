@@ -1,0 +1,1166 @@
+[
+  {
+    "anahtar": "blog.baslik",
+    "grup": "Blog",
+    "konum": "Blog başlığı, üst etiket ve kırıntı",
+    "metin": "Blog"
+  },
+  {
+    "anahtar": "blog.aciklama",
+    "grup": "Blog",
+    "konum": "Blog varsayılan açıklaması (sayfa ve meta)",
+    "metin": "Web hosting, sunucu yönetimi, WordPress, alan adı ve web güvenliği üzerine uygulamalı rehberler ve SunucumWEB duyuruları."
+  },
+  {
+    "anahtar": "blog.kirinti_ana_sayfa",
+    "grup": "Blog",
+    "konum": "Blog kırıntısı: ana sayfa",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "blog.sayfa_ayrac",
+    "grup": "Blog",
+    "konum": "Başlık sonuna eklenen sayfa numarası",
+    "metin": "— Sayfa {sayfa}"
+  },
+  {
+    "anahtar": "blog.sayfa_n",
+    "grup": "Blog",
+    "konum": "Kırıntıda sayfa numarası",
+    "metin": "Sayfa {sayfa}"
+  },
+  {
+    "anahtar": "blog.meta_baslik",
+    "grup": "Blog",
+    "konum": "Blog ana liste meta başlığı",
+    "metin": "Blog — Hosting ve Sunucu Rehberleri"
+  },
+  {
+    "anahtar": "blog.kategori_meta_baslik",
+    "grup": "Blog",
+    "konum": "Kategori meta başlığı (SEO başlığı yoksa)",
+    "metin": "{ad} Yazıları"
+  },
+  {
+    "anahtar": "blog.rss_baslik",
+    "grup": "Blog",
+    "konum": "RSS bağlantı başlığı",
+    "metin": "SunucumWEB Blog"
+  },
+  {
+    "anahtar": "blog.kirinti_aria",
+    "grup": "Blog",
+    "konum": "Kırıntı gezinmesi ekran okuyucu etiketi",
+    "metin": "Konum"
+  },
+  {
+    "anahtar": "blog.kategoriler_aria",
+    "grup": "Blog",
+    "konum": "Kategori menüsü ekran okuyucu etiketi",
+    "metin": "Blog kategorileri"
+  },
+  {
+    "anahtar": "blog.tum_yazilar",
+    "grup": "Blog",
+    "konum": "Tüm yazılar bağlantısı",
+    "metin": "Tüm yazılar"
+  },
+  {
+    "anahtar": "blog.one_cikan",
+    "grup": "Blog",
+    "konum": "Öne çıkan yazı rozeti",
+    "metin": "Öne çıkan"
+  },
+  {
+    "anahtar": "blog.yaziyi_oku",
+    "grup": "Blog",
+    "konum": "Öne çıkan kartta okuma bağlantısı",
+    "metin": "Yazıyı oku"
+  },
+  {
+    "anahtar": "blog.sayfalar_aria",
+    "grup": "Blog",
+    "konum": "Sayfalama ekran okuyucu etiketi",
+    "metin": "Sayfalar"
+  },
+  {
+    "anahtar": "blog.onceki",
+    "grup": "Blog",
+    "konum": "Sayfalama: önceki",
+    "metin": "Önceki"
+  },
+  {
+    "anahtar": "blog.sonraki",
+    "grup": "Blog",
+    "konum": "Sayfalama: sonraki",
+    "metin": "Sonraki"
+  },
+  {
+    "anahtar": "blog.bos_baslik",
+    "grup": "Blog",
+    "konum": "Yazı yokken başlık",
+    "metin": "Yazılarımız çok yakında burada"
+  },
+  {
+    "anahtar": "blog.bos_metin",
+    "grup": "Blog",
+    "konum": "Yazı yokken açıklama",
+    "metin": "Hosting, sunucu yönetimi, WordPress ve web güvenliği üzerine uygulamalı rehberler hazırlıyoruz."
+  },
+  {
+    "anahtar": "blog.bos_hosting",
+    "grup": "Blog",
+    "konum": "Yazı yokken hosting butonu",
+    "metin": "Hosting paketleri"
+  },
+  {
+    "anahtar": "blog.bos_iletisim",
+    "grup": "Blog",
+    "konum": "Yazı yokken iletişim butonu",
+    "metin": "Bize ulaşın"
+  },
+  {
+    "anahtar": "blog.cta_baslik",
+    "grup": "Blog",
+    "konum": "Liste alt CTA başlığı",
+    "metin": "Projeniz için doğru altyapıyı birlikte seçelim"
+  },
+  {
+    "anahtar": "blog.cta_metin",
+    "grup": "Blog",
+    "konum": "Liste alt CTA metni",
+    "metin": "Hosting, sunucu veya barındırma; ihtiyacınızı anlatın, uzman ekibimiz en uygun çözümü önersin."
+  },
+  {
+    "anahtar": "blog.icindekiler",
+    "grup": "Blog",
+    "konum": "İçindekiler başlığı",
+    "metin": "İçindekiler"
+  },
+  {
+    "anahtar": "blog.paylas",
+    "grup": "Blog",
+    "konum": "Paylaş etiketi",
+    "metin": "Paylaş:"
+  },
+  {
+    "anahtar": "blog.varsayilan_yazar",
+    "grup": "Blog",
+    "konum": "Yazar yoksa gösterilen ad",
+    "metin": "SunucumWEB Ekibi"
+  },
+  {
+    "anahtar": "blog.varsayilan_unvan",
+    "grup": "Blog",
+    "konum": "Yazar yoksa gösterilen unvan",
+    "metin": "Teknik Ekip"
+  },
+  {
+    "anahtar": "blog.yazar",
+    "grup": "Blog",
+    "konum": "Yazar kutusu etiketi",
+    "metin": "Yazar"
+  },
+  {
+    "anahtar": "blog.guncellendi",
+    "grup": "Blog",
+    "konum": "Güncelleme tarihi etiketi",
+    "metin": "Güncellendi:"
+  },
+  {
+    "anahtar": "blog.okuma_suresi",
+    "grup": "Blog",
+    "konum": "Okuma süresi",
+    "metin": "{dk} dk okuma"
+  },
+  {
+    "anahtar": "blog.etiketler_aria",
+    "grup": "Blog",
+    "konum": "Etiket listesi ekran okuyucu etiketi",
+    "metin": "Etiketler"
+  },
+  {
+    "anahtar": "blog.sss_baslik",
+    "grup": "Blog",
+    "konum": "Yazı SSS başlığı",
+    "metin": "Sıkça sorulan sorular"
+  },
+  {
+    "anahtar": "blog.ilgili_baslik",
+    "grup": "Blog",
+    "konum": "İlgili yazılar başlığı",
+    "metin": "İlginizi çekebilir"
+  },
+  {
+    "anahtar": "yazilim.sirala_onerilen",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama seçeneği",
+    "metin": "Önerilen"
+  },
+  {
+    "anahtar": "yazilim.sirala_fiyat_artan",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama seçeneği",
+    "metin": "Fiyat: Artan"
+  },
+  {
+    "anahtar": "yazilim.sirala_fiyat_azalan",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama seçeneği",
+    "metin": "Fiyat: Azalan"
+  },
+  {
+    "anahtar": "yazilim.sirala_isim",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama seçeneği",
+    "metin": "İsme göre (A-Z)"
+  },
+  {
+    "anahtar": "yazilim.indirim",
+    "grup": "Hazır yazılımlar",
+    "konum": "İndirim rozeti",
+    "metin": "%{oran} indirim"
+  },
+  {
+    "anahtar": "yazilim.populer",
+    "grup": "Hazır yazılımlar",
+    "konum": "Popüler rozeti",
+    "metin": "Popüler"
+  },
+  {
+    "anahtar": "yazilim.varsayilan_kategori",
+    "grup": "Hazır yazılımlar",
+    "konum": "Kategori bulunamazsa gösterilen ad",
+    "metin": "Yazılım"
+  },
+  {
+    "anahtar": "yazilim.incele",
+    "grup": "Hazır yazılımlar",
+    "konum": "İncele butonu",
+    "metin": "İncele"
+  },
+  {
+    "anahtar": "yazilim.demo",
+    "grup": "Hazır yazılımlar",
+    "konum": "Kartta demo butonu",
+    "metin": "Demo"
+  },
+  {
+    "anahtar": "yazilim.kirinti_ana_sayfa",
+    "grup": "Hazır yazılımlar",
+    "konum": "Kırıntı: ana sayfa",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "yazilim.kirinti_hazir_yazilimlar",
+    "grup": "Hazır yazılımlar",
+    "konum": "Kırıntı: hazır yazılımlar",
+    "metin": "Hazır Yazılımlar"
+  },
+  {
+    "anahtar": "yazilim.kategoriler",
+    "grup": "Hazır yazılımlar",
+    "konum": "Kenar çubuğu başlığı",
+    "metin": "Kategoriler"
+  },
+  {
+    "anahtar": "yazilim.tumu",
+    "grup": "Hazır yazılımlar",
+    "konum": "Tüm kategoriler butonu",
+    "metin": "Tümü"
+  },
+  {
+    "anahtar": "yazilim.ozel_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Özel yazılım kutusu başlığı",
+    "metin": "Özel yazılım mı lazım?"
+  },
+  {
+    "anahtar": "yazilim.ozel_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Özel yazılım kutusu metni",
+    "metin": "İhtiyacınıza özel geliştirme için ekibimizle görüşün."
+  },
+  {
+    "anahtar": "yazilim.teklif_alin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Özel yazılım kutusu bağlantısı",
+    "metin": "Teklif alın"
+  },
+  {
+    "anahtar": "yazilim.arama_placeholder",
+    "grup": "Hazır yazılımlar",
+    "konum": "Arama kutusu yer tutucu",
+    "metin": "Yazılım ara (ör. e-ticaret, randevu, blog)"
+  },
+  {
+    "anahtar": "yazilim.arama_aria",
+    "grup": "Hazır yazılımlar",
+    "konum": "Arama kutusu ekran okuyucu etiketi",
+    "metin": "Yazılım ara"
+  },
+  {
+    "anahtar": "yazilim.sirala",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama etiketi",
+    "metin": "Sırala"
+  },
+  {
+    "anahtar": "yazilim.siralama_aria",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sıralama seçici ekran okuyucu etiketi",
+    "metin": "Sıralama"
+  },
+  {
+    "anahtar": "yazilim.sonuc_sayisi",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sonuç sayısından sonraki metin",
+    "metin": "yazılım bulundu"
+  },
+  {
+    "anahtar": "yazilim.filtre_temizle",
+    "grup": "Hazır yazılımlar",
+    "konum": "Filtre temizleme bağlantısı",
+    "metin": "filtreyi temizle"
+  },
+  {
+    "anahtar": "yazilim.sonuc_yok_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sonuç yokken başlık",
+    "metin": "Sonuç bulunamadı"
+  },
+  {
+    "anahtar": "yazilim.sonuc_yok_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sonuç yokken açıklama",
+    "metin": "Aramanızı değiştirin veya farklı bir kategori seçin."
+  },
+  {
+    "anahtar": "yazilim.filtre_sifirla",
+    "grup": "Hazır yazılımlar",
+    "konum": "Filtreleri sıfırla butonu",
+    "metin": "Filtreleri sıfırla"
+  },
+  {
+    "anahtar": "yazilim.sayfalama_aria",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sayfalama ekran okuyucu etiketi",
+    "metin": "Sayfalama"
+  },
+  {
+    "anahtar": "yazilim.onceki_sayfa",
+    "grup": "Hazır yazılımlar",
+    "konum": "Önceki sayfa butonu etiketi",
+    "metin": "Önceki sayfa"
+  },
+  {
+    "anahtar": "yazilim.sonraki_sayfa",
+    "grup": "Hazır yazılımlar",
+    "konum": "Sonraki sayfa butonu etiketi",
+    "metin": "Sonraki sayfa"
+  },
+  {
+    "anahtar": "yazilim.cta_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Liste alt CTA başlığı",
+    "metin": "Aradığınız yazılımı bulamadınız mı?"
+  },
+  {
+    "anahtar": "yazilim.cta_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Liste alt CTA metni",
+    "metin": "İhtiyacınıza özel çözüm için ekibimizle konuşun; projenizi birlikte planlayalım."
+  },
+  {
+    "anahtar": "yazilim.ozellik_mobil_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "Mobil Uyumlu"
+  },
+  {
+    "anahtar": "yazilim.ozellik_mobil_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "Telefon, tablet ve masaüstünde kusursuz, responsive görünüm."
+  },
+  {
+    "anahtar": "yazilim.ozellik_kaynak_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "Açık Kaynak Kod"
+  },
+  {
+    "anahtar": "yazilim.ozellik_kaynak_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "Kaynak kodu size ait; dilediğiniz gibi düzenleyip geliştirin."
+  },
+  {
+    "anahtar": "yazilim.ozellik_panel_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "Yönetim Paneli"
+  },
+  {
+    "anahtar": "yazilim.ozellik_panel_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "İçerik, ürün ve ayarları kolayca yönettiğiniz sezgisel panel."
+  },
+  {
+    "anahtar": "yazilim.ozellik_seo_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "SEO Uyumlu"
+  },
+  {
+    "anahtar": "yazilim.ozellik_seo_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "Arama motorlarında görünür, hızlı ve düzenli kod yapısı."
+  },
+  {
+    "anahtar": "yazilim.ozellik_guvenli_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "Güvenli Altyapı"
+  },
+  {
+    "anahtar": "yazilim.ozellik_guvenli_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "Güncel, güvenli ve kararlı kod tabanı."
+  },
+  {
+    "anahtar": "yazilim.ozellik_destek_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik başlığı",
+    "metin": "Kurulum & Destek"
+  },
+  {
+    "anahtar": "yazilim.ozellik_destek_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay özellik metni",
+    "metin": "Kurulumu biz yapıyoruz; sonrasında da yanınızdayız."
+  },
+  {
+    "anahtar": "yazilim.ekran_goruntusu_alt",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay görseli alternatif metni",
+    "metin": "{ad} ekran görüntüsü"
+  },
+  {
+    "anahtar": "yazilim.acik_kaynak",
+    "grup": "Hazır yazılımlar",
+    "konum": "Açık kaynak rozeti",
+    "metin": "Açık Kaynak"
+  },
+  {
+    "anahtar": "yazilim.detay_teslim",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay açıklama paragrafı",
+    "metin": "Paket, SunucumWEB altyapısında kuruluma hazır teslim edilir. Alan adı ve hosting ile birleştirip kısa sürede yayına alabilir, yönetim panelinden içeriğinizi kolayca güncelleyebilirsiniz."
+  },
+  {
+    "anahtar": "yazilim.demoyu_gor",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay demo butonu",
+    "metin": "Demoyu Gör"
+  },
+  {
+    "anahtar": "yazilim.detay_destek_on",
+    "grup": "Hazır yazılımlar",
+    "konum": "Destek notu: bağlantı öncesi",
+    "metin": "Kurulum ve teknik destek dahildir. Bilgi ve teklif için"
+  },
+  {
+    "anahtar": "yazilim.detay_destek_link",
+    "grup": "Hazır yazılımlar",
+    "konum": "Destek notu: bağlantı metni",
+    "metin": "bize ulaşın"
+  },
+  {
+    "anahtar": "yazilim.detay_destek_son",
+    "grup": "Hazır yazılımlar",
+    "konum": "Destek notu: bağlantı sonrası",
+    "metin": "."
+  },
+  {
+    "anahtar": "yazilim.paket_eyebrow",
+    "grup": "Hazır yazılımlar",
+    "konum": "Paket özellikleri üst etiketi",
+    "metin": "Pakette neler var?"
+  },
+  {
+    "anahtar": "yazilim.paket_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Paket özellikleri başlığı",
+    "metin": "Her paket bu standartlarla gelir"
+  },
+  {
+    "anahtar": "yazilim.benzer_eyebrow",
+    "grup": "Hazır yazılımlar",
+    "konum": "Benzer yazılımlar üst etiketi",
+    "metin": "Benzer Yazılımlar"
+  },
+  {
+    "anahtar": "yazilim.benzer_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Benzer yazılımlar başlığı",
+    "metin": "Bunları da inceleyin"
+  },
+  {
+    "anahtar": "yazilim.tum_yazilimlar",
+    "grup": "Hazır yazılımlar",
+    "konum": "Tüm yazılımlar butonu",
+    "metin": "Tüm yazılımlar"
+  },
+  {
+    "anahtar": "yazilim.detay_cta_baslik",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay alt CTA başlığı",
+    "metin": "Size en uygun yazılımı birlikte seçelim"
+  },
+  {
+    "anahtar": "yazilim.detay_cta_metin",
+    "grup": "Hazır yazılımlar",
+    "konum": "Detay alt CTA metni",
+    "metin": "Hangi paketin işinize uygun olduğundan emin değil misiniz? Kısa bir görüşmeyle doğru çözümü belirleyelim."
+  },
+  {
+    "anahtar": "cark.cark_aria",
+    "grup": "Çark",
+    "konum": "Çark görseli ekran okuyucu etiketi",
+    "metin": "Ödül çarkı"
+  },
+  {
+    "anahtar": "cark.hata_eposta",
+    "grup": "Çark",
+    "konum": "Hata: geçersiz e-posta",
+    "metin": "Geçerli bir e-posta adresi girin."
+  },
+  {
+    "anahtar": "cark.hata_kvkk",
+    "grup": "Çark",
+    "konum": "Hata: aydınlatma onayı yok",
+    "metin": "Devam etmek için aydınlatma metnini onaylayın."
+  },
+  {
+    "anahtar": "cark.hata_dogrulama",
+    "grup": "Çark",
+    "konum": "Hata: güvenlik doğrulaması bekleniyor",
+    "metin": "Lütfen güvenlik doğrulamasının tamamlanmasını bekleyin."
+  },
+  {
+    "anahtar": "cark.hata_genel",
+    "grup": "Çark",
+    "konum": "Hata: genel",
+    "metin": "Bir sorun oluştu. Lütfen tekrar deneyin."
+  },
+  {
+    "anahtar": "cark.hata_baglanti",
+    "grup": "Çark",
+    "konum": "Hata: bağlantı",
+    "metin": "Bağlantı hatası. Lütfen tekrar deneyin."
+  },
+  {
+    "anahtar": "cark.kapat",
+    "grup": "Çark",
+    "konum": "Kapat butonu etiketi",
+    "metin": "Kapat"
+  },
+  {
+    "anahtar": "cark.eposta_etiket",
+    "grup": "Çark",
+    "konum": "E-posta alanı etiketi",
+    "metin": "E-posta adresin"
+  },
+  {
+    "anahtar": "cark.eposta_placeholder",
+    "grup": "Çark",
+    "konum": "E-posta alanı yer tutucu",
+    "metin": "ornek@alanadi.com"
+  },
+  {
+    "anahtar": "cark.kvkk_link",
+    "grup": "Çark",
+    "konum": "Aydınlatma onayı: bağlantı metni",
+    "metin": "Aydınlatma metnini"
+  },
+  {
+    "anahtar": "cark.kvkk_metin",
+    "grup": "Çark",
+    "konum": "Aydınlatma onayı: bağlantı sonrası",
+    "metin": "okudum; e-posta adresimin çark kampanyası kapsamında işlenmesini onaylıyorum."
+  },
+  {
+    "anahtar": "cark.pazarlama",
+    "grup": "Çark",
+    "konum": "Pazarlama izni onay kutusu",
+    "metin": "Kampanya ve fırsatlardan e-posta ile haberdar olmak istiyorum. (İsteğe bağlı)"
+  },
+  {
+    "anahtar": "cark.cevir",
+    "grup": "Çark",
+    "konum": "Gönder butonu",
+    "metin": "Çarkı çevir"
+  },
+  {
+    "anahtar": "cark.hazirlaniyor",
+    "grup": "Çark",
+    "konum": "Gönder butonu: gönderiliyor",
+    "metin": "Hazırlanıyor…"
+  },
+  {
+    "anahtar": "cark.donuyor",
+    "grup": "Çark",
+    "konum": "Gönder butonu: dönüyor",
+    "metin": "Çark dönüyor…"
+  },
+  {
+    "anahtar": "cark.kural",
+    "grup": "Çark",
+    "konum": "Form altı kural notu",
+    "metin": "E-posta başına bir hak. Kupon tek kullanımlıktır."
+  },
+  {
+    "anahtar": "cark.kaybetti_baslik",
+    "grup": "Çark",
+    "konum": "Ödül çıkmadığında başlık",
+    "metin": "Bu sefer olmadı"
+  },
+  {
+    "anahtar": "cark.kaybetti_metin",
+    "grup": "Çark",
+    "konum": "Ödül çıkmadığında metin",
+    "metin": "Çark bu kez ödül vermedi. Güncel kampanyalarımıza göz atmayı unutma."
+  },
+  {
+    "anahtar": "cark.kampanyalari_gor",
+    "grup": "Çark",
+    "konum": "Kampanyalar butonu",
+    "metin": "Kampanyaları gör"
+  },
+  {
+    "anahtar": "cark.tebrikler",
+    "grup": "Çark",
+    "konum": "Kazanınca üst etiket",
+    "metin": "Tebrikler!"
+  },
+  {
+    "anahtar": "cark.kazandin",
+    "grup": "Çark",
+    "konum": "Kazanınca başlık",
+    "metin": "{ad} kazandın"
+  },
+  {
+    "anahtar": "cark.kopyalandi",
+    "grup": "Çark",
+    "konum": "Kopyala butonu: kopyalandı",
+    "metin": "Kopyalandı"
+  },
+  {
+    "anahtar": "cark.kopyala",
+    "grup": "Çark",
+    "konum": "Kopyala butonu",
+    "metin": "Kopyala"
+  },
+  {
+    "anahtar": "cark.gecerlilik",
+    "grup": "Çark",
+    "konum": "Kupon geçerlilik satırı",
+    "metin": "Geçerlilik: {gecerlilik}"
+  },
+  {
+    "anahtar": "cark.eposta_gonderildi",
+    "grup": "Çark",
+    "konum": "Kupon e-posta notu",
+    "metin": "Kupon kodunu e-posta adresine de gönderdik."
+  },
+  {
+    "anahtar": "cark.hemen_kullan",
+    "grup": "Çark",
+    "konum": "Kuponu kullan butonu",
+    "metin": "Hemen kullan"
+  },
+  {
+    "anahtar": "kampanya.kod_etiket",
+    "grup": "Kampanyalar",
+    "konum": "Kupon kutusu etiketi",
+    "metin": "Kampanya kodu"
+  },
+  {
+    "anahtar": "kampanya.kopyalandi",
+    "grup": "Kampanyalar",
+    "konum": "Kupon kopyalandı",
+    "metin": "Kopyalandı"
+  },
+  {
+    "anahtar": "kampanya.kopyala",
+    "grup": "Kampanyalar",
+    "konum": "Kupon kopyala",
+    "metin": "Kopyala"
+  },
+  {
+    "anahtar": "kampanya.indirim",
+    "grup": "Kampanyalar",
+    "konum": "İndirim rozeti etiketi",
+    "metin": "indirim"
+  },
+  {
+    "anahtar": "kampanya.son_tarih",
+    "grup": "Kampanyalar",
+    "konum": "Kampanya bitiş tarihi",
+    "metin": "Son tarih: {tarih}"
+  },
+  {
+    "anahtar": "kampanya.incele",
+    "grup": "Kampanyalar",
+    "konum": "Kart butonu (CTA yoksa)",
+    "metin": "İncele"
+  },
+  {
+    "anahtar": "kampanya.kirinti",
+    "grup": "Kampanyalar",
+    "konum": "Kırıntı etiketi",
+    "metin": "Kampanyalar"
+  },
+  {
+    "anahtar": "kampanya.bos_baslik",
+    "grup": "Kampanyalar",
+    "konum": "Kampanya yokken başlık",
+    "metin": "Şu an aktif kampanya yok"
+  },
+  {
+    "anahtar": "kampanya.bos_metin",
+    "grup": "Kampanyalar",
+    "konum": "Kampanya yokken metin",
+    "metin": "Yeni fırsatlar için takipte kalın. Dilerseniz güncel paketlerimizi hemen inceleyebilirsiniz."
+  },
+  {
+    "anahtar": "kampanya.paketleri_gor",
+    "grup": "Kampanyalar",
+    "konum": "Kampanya yokken buton",
+    "metin": "Paketleri Gör"
+  },
+  {
+    "anahtar": "kampanya.not_on",
+    "grup": "Kampanyalar",
+    "konum": "Alt not: bağlantı öncesi",
+    "metin": "Kampanya kodunu sipariş sırasında “İndirim Kodu” alanına girmeniz yeterli. Sorularınız için"
+  },
+  {
+    "anahtar": "kampanya.not_link",
+    "grup": "Kampanyalar",
+    "konum": "Alt not: bağlantı metni",
+    "metin": "bize ulaşın"
+  },
+  {
+    "anahtar": "kampanya.not_son",
+    "grup": "Kampanyalar",
+    "konum": "Alt not: bağlantı sonrası",
+    "metin": "."
+  },
+  {
+    "anahtar": "kampanya.cta_baslik",
+    "grup": "Kampanyalar",
+    "konum": "Alt CTA başlığı",
+    "metin": "Fırsatı kaçırmayın"
+  },
+  {
+    "anahtar": "kampanya.cta_metin",
+    "grup": "Kampanyalar",
+    "konum": "Alt CTA metni",
+    "metin": "Kampanyalı paketler sınırlı sürelidir. Doğru çözümü birlikte belirleyelim."
+  },
+  {
+    "anahtar": "legal.kenar_aria",
+    "grup": "Legal",
+    "konum": "Belge menüsü ekran okuyucu etiketi",
+    "metin": "Sözleşmeler"
+  },
+  {
+    "anahtar": "legal.belgeler",
+    "grup": "Legal",
+    "konum": "Belge menüsü başlığı",
+    "metin": "Belgeler"
+  },
+  {
+    "anahtar": "legal.soru_on",
+    "grup": "Legal",
+    "konum": "Soru notu: bağlantı öncesi",
+    "metin": "Sözleşmelerle ilgili sorularınız için"
+  },
+  {
+    "anahtar": "legal.soru_link",
+    "grup": "Legal",
+    "konum": "Soru notu: bağlantı metni",
+    "metin": "iletişim"
+  },
+  {
+    "anahtar": "legal.soru_son",
+    "grup": "Legal",
+    "konum": "Soru notu: bağlantı sonrası",
+    "metin": "sayfamızdan bize yazabilirsiniz."
+  },
+  {
+    "anahtar": "legal.resmi_kayitlar",
+    "grup": "Legal",
+    "konum": "Ticari bilgiler: kayıtlar başlığı",
+    "metin": "Resmî kayıtlar ve belgeler"
+  },
+  {
+    "anahtar": "legal.epostalar",
+    "grup": "Legal",
+    "konum": "Ticari bilgiler: e-posta başlığı",
+    "metin": "E-posta adresleri"
+  },
+  {
+    "anahtar": "legal.hizmet_kapsami",
+    "grup": "Legal",
+    "konum": "Ticari bilgiler: hizmet başlığı",
+    "metin": "Hizmet kapsamı"
+  },
+  {
+    "anahtar": "legal.kirinti_aria",
+    "grup": "Legal",
+    "konum": "Kırıntı ekran okuyucu etiketi",
+    "metin": "Site haritası"
+  },
+  {
+    "anahtar": "legal.kirinti_ana_sayfa",
+    "grup": "Legal",
+    "konum": "Kırıntı: ana sayfa",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "legal.kirinti_legal",
+    "grup": "Legal",
+    "konum": "Kırıntı: legal",
+    "metin": "Legal"
+  },
+  {
+    "anahtar": "yapim.secenek_yazilim_baslik",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı başlığı",
+    "metin": "Hazır Yazılımlar"
+  },
+  {
+    "anahtar": "yapim.secenek_yazilim_metin",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı metni",
+    "metin": "E-ticaret, kurumsal tanıtım ve daha fazlası; kuruluma hazır paketler."
+  },
+  {
+    "anahtar": "yapim.secenek_alan_adi_baslik",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı başlığı",
+    "metin": "Alan Adı"
+  },
+  {
+    "anahtar": "yapim.secenek_alan_adi_metin",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı metni",
+    "metin": "Markanıza uygun uzantıyı sorgulayın, saniyeler içinde sahiplenin."
+  },
+  {
+    "anahtar": "yapim.secenek_iletisim_baslik",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı başlığı",
+    "metin": "İletişim"
+  },
+  {
+    "anahtar": "yapim.secenek_iletisim_metin",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı metni",
+    "metin": "Bu hizmet için fiyat ve bilgi almak isterseniz sizi arayalım."
+  },
+  {
+    "anahtar": "yapim.varsayilan_baslik",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Hizmet adı yoksa kullanılan ad",
+    "metin": "Bu hizmet"
+  },
+  {
+    "anahtar": "yapim.kirinti_ana_sayfa",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Kırıntı: ana sayfa",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "yapim.rozet",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Durum rozeti",
+    "metin": "Yapım aşamasında"
+  },
+  {
+    "anahtar": "yapim.baslik",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Sayfa başlığı",
+    "metin": "{baslik} sayfası yakında sizlerle"
+  },
+  {
+    "anahtar": "yapim.aciklama",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Varsayılan açıklama",
+    "metin": "Bu bölümü sizin için hazırlıyoruz. Detaylar, paketler ve fiyatlar çok yakında burada olacak. O zamana kadar aşağıdaki hizmetlerimize göz atabilir veya bize ulaşabilirsiniz."
+  },
+  {
+    "anahtar": "yapim.musteri_paneli",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Müşteri paneli butonu",
+    "metin": "Müşteri Paneli"
+  },
+  {
+    "anahtar": "yapim.bilgi_alin",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Bilgi al butonu",
+    "metin": "Bilgi Alın"
+  },
+  {
+    "anahtar": "yapim.bu_arada",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneriler üst etiketi",
+    "metin": "Bu arada"
+  },
+  {
+    "anahtar": "yapim.aktif_hizmetler",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneriler başlığı",
+    "metin": "Aktif hizmetlerimize göz atın"
+  },
+  {
+    "anahtar": "yapim.incele",
+    "grup": "Yapım aşaması sayfası",
+    "konum": "Öneri kartı bağlantısı",
+    "metin": "İncele"
+  },
+  {
+    "anahtar": "hakkimizda.kisayol_ilkeler",
+    "grup": "Hakkımızda",
+    "konum": "Kısayol butonu",
+    "metin": "Çalışma ilkelerimiz"
+  },
+  {
+    "anahtar": "hakkimizda.kisayol_veri_merkezi",
+    "grup": "Hakkımızda",
+    "konum": "Kısayol butonu",
+    "metin": "Veri merkezimiz"
+  },
+  {
+    "anahtar": "hakkimizda.konum_sehir",
+    "grup": "Hakkımızda",
+    "konum": "Veri merkezi konumu: şehir",
+    "metin": "İstanbul"
+  },
+  {
+    "anahtar": "hakkimizda.konum_ulke",
+    "grup": "Hakkımızda",
+    "konum": "Veri merkezi konumu: ülke",
+    "metin": "Türkiye"
+  },
+  {
+    "anahtar": "hakkimizda.konum_etiket",
+    "grup": "Hakkımızda",
+    "konum": "Harita etiketi",
+    "metin": "İstanbul"
+  },
+  {
+    "anahtar": "hakkimizda.konum_koordinat",
+    "grup": "Hakkımızda",
+    "konum": "Koordinat gösterimi",
+    "metin": "41.0082° K · 28.9784° D"
+  },
+  {
+    "anahtar": "hakkimizda.tesis_not",
+    "grup": "Hakkımızda",
+    "konum": "Tesis notu",
+    "metin": "Operatör bağımsız veri merkezi"
+  },
+  {
+    "anahtar": "hakkimizda.kart_ust_baslik",
+    "grup": "Hakkımızda",
+    "konum": "Konum kartı üst etiketi",
+    "metin": "Konumdasınız"
+  },
+  {
+    "anahtar": "hakkimizda.kirinti_ana_sayfa",
+    "grup": "Hakkımızda",
+    "konum": "Kırıntı: ana sayfa",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "hakkimizda.kirinti_kurumsal",
+    "grup": "Hakkımızda",
+    "konum": "Kırıntı: kurumsal",
+    "metin": "Kurumsal"
+  },
+  {
+    "anahtar": "guvenlik.baslik",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Güvenlik kontrolü başlığı ve sekme başlığı",
+    "metin": "Güvenlik Kontrolü"
+  },
+  {
+    "anahtar": "guvenlik.ip_tespit_edilemedi",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "IP bulunamazsa",
+    "metin": "Tespit edilemedi"
+  },
+  {
+    "anahtar": "guvenlik.aciklama",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Güvenlik kontrolü açıklaması",
+    "metin": "Bağlantınızın güvenliği doğrulanıyor. Devam etmek için aşağıdaki kutucuğu işaretleyin."
+  },
+  {
+    "anahtar": "guvenlik.hata",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Doğrulama başarısız mesajı",
+    "metin": "Doğrulama tamamlanamadı. Lütfen tekrar deneyin."
+  },
+  {
+    "anahtar": "guvenlik.alt_bilgi",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Alt bilgi satırı",
+    "metin": "© SunucumWEB Bilişim Teknolojileri · Güvenli Erişim Kontrolü"
+  },
+  {
+    "anahtar": "guvenlik.ip_adresi",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "IP adresi etiketi",
+    "metin": "IP Adresi"
+  },
+  {
+    "anahtar": "guvenlik.referans_no",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Referans numarası etiketi",
+    "metin": "Referans No"
+  },
+  {
+    "anahtar": "guvenlik.engel_meta_baslik",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Engellendi sayfası sekme başlığı",
+    "metin": "Erişim Engellendi"
+  },
+  {
+    "anahtar": "guvenlik.engel_baslik",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Engellendi sayfası başlığı",
+    "metin": "Erişiminiz Engellendi"
+  },
+  {
+    "anahtar": "guvenlik.engel_aciklama",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Engellendi sayfası açıklaması",
+    "metin": "Bağlantınız güvenlik politikalarımız gereği engellenmiştir. Bunun bir hata olduğunu düşünüyorsanız aşağıdaki bilgilerle bize ulaşın."
+  },
+  {
+    "anahtar": "guvenlik.yonlendiriliyor",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Buton: gönderiliyor",
+    "metin": "Yönlendiriliyor…"
+  },
+  {
+    "anahtar": "guvenlik.devam_et",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Devam butonu",
+    "metin": "Devam Et"
+  },
+  {
+    "anahtar": "guvenlik.yukleniyor",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Doğrulama yükleniyor notu",
+    "metin": "Güvenlik doğrulaması yükleniyor…"
+  },
+  {
+    "anahtar": "guvenlik.hazir",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Kutucuğu işaretleyin notu",
+    "metin": "Devam etmek için önce yukarıdaki kutucuğu işaretleyin."
+  },
+  {
+    "anahtar": "guvenlik.widget_hata",
+    "grup": "Güvenlik doğrulama sayfası",
+    "konum": "Doğrulama aracı yüklenemedi",
+    "metin": "Bir sorun oluştu — tekrar deneyin"
+  },
+  {
+    "anahtar": "hata.bulunamadi_baslik",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "404 başlığı",
+    "metin": "Sayfa bulunamadı"
+  },
+  {
+    "anahtar": "hata.bulunamadi_metin",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "404 açıklaması",
+    "metin": "Aradığınız sayfa mevcut değil veya taşınmış olabilir. Ana sayfadan devam edebilirsiniz."
+  },
+  {
+    "anahtar": "hata.ana_sayfaya_don",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "404 ana sayfa butonu",
+    "metin": "Ana Sayfaya Dön"
+  },
+  {
+    "anahtar": "hata.eyebrow",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "Hata sayfası üst etiketi",
+    "metin": "Bir şeyler ters gitti"
+  },
+  {
+    "anahtar": "hata.baslik",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "Hata sayfası başlığı",
+    "metin": "Beklenmeyen bir hata oluştu"
+  },
+  {
+    "anahtar": "hata.metin",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "Hata sayfası açıklaması",
+    "metin": "Sorun geçici olabilir. Sayfayı yenilemeyi deneyin ya da ana sayfaya dönün. Sürerse bize ulaşın."
+  },
+  {
+    "anahtar": "hata.tekrar_dene",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "Hata sayfası tekrar dene butonu",
+    "metin": "Tekrar dene"
+  },
+  {
+    "anahtar": "hata.ana_sayfaya_don_kucuk",
+    "grup": "Hata ve 404 sayfaları",
+    "konum": "Hata sayfası ana sayfa butonu",
+    "metin": "Ana sayfaya dön"
+  },
+  {
+    "anahtar": "seo.manifest_ad",
+    "grup": "SEO – varsayılan",
+    "konum": "Web uygulaması (manifest) adı",
+    "metin": "SunucumWEB — Hosting ve Sunucu Çözümleri"
+  },
+  {
+    "anahtar": "seo.manifest_aciklama",
+    "grup": "SEO – varsayılan",
+    "konum": "Web uygulaması (manifest) açıklaması",
+    "metin": "Isparta merkezli veri merkezimizden NVMe hosting, sanal sunucu (VDS), dedicated sunucu ve alan adı hizmetleri."
+  },
+  {
+    "anahtar": "seo.aciklama",
+    "grup": "SEO – varsayılan",
+    "konum": "Varsayılan meta açıklama (OG/Twitter dahil)",
+    "metin": "Isparta merkezli veri merkezimizden NVMe hosting, sanal sunucu (VDS), dedicated sunucu ve alan adı hizmetleri. Ücretsiz SSL, günlük yedek, DDoS koruması ve gerçek 7/24 destek."
+  },
+  {
+    "anahtar": "seo.baslik",
+    "grup": "SEO – varsayılan",
+    "konum": "Varsayılan sayfa başlığı (OG/Twitter dahil)",
+    "metin": "SunucumWEB — Güvenilir Hosting ve Sunucu Çözümleri"
+  },
+  {
+    "anahtar": "seo.og_gorsel_alt",
+    "grup": "SEO – varsayılan",
+    "konum": "Paylaşım görseli alternatif metni",
+    "metin": "SunucumWEB — Hosting ve Sunucu Çözümleri"
+  }
+]

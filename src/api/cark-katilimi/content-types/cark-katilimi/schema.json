@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cark_katilimlari",
+  "info": {
+    "singularName": "cark-katilimi",
+    "pluralName": "cark-katilimlari",
+    "displayName": "Çark Katılımı",
+    "description": "Çarkı çeviren ziyaretçiler"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eposta": {
+      "type": "email",
+      "required": true
+    },
+    "donem": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "odul": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cark-odulu.cark-odulu"
+    },
+    "odulAdi": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "kupon": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "ip": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "kvkkOnay": {
+      "type": "boolean",
+      "default": false
+    },
+    "pazarlamaOnay": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

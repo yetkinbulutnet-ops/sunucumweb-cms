@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_yazarlari",
+  "info": {
+    "singularName": "blog-yazari",
+    "pluralName": "blog-yazarlari",
+    "displayName": "Blog Yazarı",
+    "description": "Blog yazarları"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ad",
+      "required": true
+    },
+    "unvan": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "biyografi": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "fotograf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "yazilar": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-yazisi.blog-yazisi",
+      "mappedBy": "yazar"
+    }
+  }
+}

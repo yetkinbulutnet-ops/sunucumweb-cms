@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iletisim_mesajlari",
+  "info": {
+    "singularName": "iletisim-mesaji",
+    "pluralName": "iletisim-mesajlari",
+    "displayName": "Gelen Mesaj",
+    "description": "İletişim formundan gelen mesajlar"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": { "type": "string", "required": true, "maxLength": 120 },
+    "eposta": { "type": "email", "required": true },
+    "telefon": { "type": "string", "maxLength": 30 },
+    "konu": { "type": "string", "maxLength": 40 },
+    "konuAdi": { "type": "string", "maxLength": 80 },
+    "mesaj": { "type": "text", "required": true },
+    "durum": { "type": "enumeration", "enum": ["yeni", "okundu", "yanitlandi", "arsiv"], "default": "yeni", "required": true },
+    "okunmaTarihi": { "type": "datetime" },
+    "sonYanitTarihi": { "type": "datetime" },
+    "yanitlar": { "type": "json" },
+    "ip": { "type": "string", "maxLength": 64 },
+    "tarayici": { "type": "string", "maxLength": 300 },
+    "notlar": { "type": "text", "maxLength": 1000 }
+  }
+}

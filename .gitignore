@@ -1,0 +1,13 @@
+node_modules
+.env
+.tmp
+.strapi
+dist
+build
+public/uploads/*
+
+.env.*
+*.pem
+araclar/eski-dosyalar.json
+araclar/sonuc.json
+araclar/rapor.txt

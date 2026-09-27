@@ -1,0 +1,99 @@
+{
+  "collectionName": "components_anasayfa_paket_ozeti",
+  "info": {
+    "displayName": "Paket Özeti",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "urun": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "paket": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "fiyat": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "ozet": {
+      "type": "string",
+      "maxLength": 160,
+      "required": true
+    },
+    "ozellikler": {
+      "type": "text",
+      "maxLength": 400,
+      "required": true
+    },
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent"
+      ],
+      "default": "globe",
+      "required": true
+    },
+    "vurgu": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

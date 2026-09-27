@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_yazilari",
+  "info": {
+    "singularName": "blog-yazisi",
+    "pluralName": "blog-yazilari",
+    "displayName": "Blog Yazısı",
+    "description": "sunucumweb.com/blog yazıları"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "required": true,
+      "maxLength": 110
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "baslik",
+      "required": true
+    },
+    "ozet": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "kapak": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "icerik": {
+      "type": "richtext",
+      "required": true
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-kategorisi.blog-kategorisi",
+      "inversedBy": "yazilar"
+    },
+    "yazar": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-yazari.blog-yazari",
+      "inversedBy": "yazilar"
+    },
+    "etiketler": {
+      "type": "text"
+    },
+    "yayinTarihi": {
+      "type": "datetime"
+    },
+    "oneCikan": {
+      "type": "boolean",
+      "default": false
+    },
+    "seoBaslik": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 170
+    },
+    "sss": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ortak.sss"
+    }
+  }
+}

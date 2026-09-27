@@ -1,0 +1,144 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anasayfa_slaytlari",
+  "info": {
+    "singularName": "anasayfa-slayti",
+    "pluralName": "anasayfa-slaytlari",
+    "displayName": "Ana Sayfa Slaytı",
+    "description": "Ana sayfanın en üstündeki kayan tanıtım alanı"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vurgu": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "gorsel": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ustBaslik": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "onMetin": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "sonMetin": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 320,
+      "required": true
+    },
+    "buton1Metni": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "buton1Baglanti": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "buton2Metni": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "buton2Baglanti": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "rozetMetni": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "rozetIkon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent"
+      ],
+      "default": "check",
+      "required": true
+    },
+    "istatistikDeger": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "istatistikEtiket": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

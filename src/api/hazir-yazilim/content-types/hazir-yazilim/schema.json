@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hazir_yazilimlar",
+  "info": {
+    "singularName": "hazir-yazilim",
+    "pluralName": "hazir-yazilimlar",
+    "displayName": "Hazır Yazılım",
+    "description": "Hazır yazılım vitrini"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 90
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ad",
+      "required": true
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yazilim-kategorisi.yazilim-kategorisi",
+      "inversedBy": "yazilimlar"
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "fiyat": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "eskiFiyat": {
+      "type": "decimal",
+      "min": 0
+    },
+    "gorsel": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "demoUrl": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "oneCikan": {
+      "type": "boolean",
+      "default": false
+    },
+    "acikKaynak": {
+      "type": "boolean",
+      "default": true
+    },
+    "aciklama": {
+      "type": "text",
+      "required": true,
+      "maxLength": 600
+    },
+    "etiketler": {
+      "type": "text"
+    }
+  }
+}

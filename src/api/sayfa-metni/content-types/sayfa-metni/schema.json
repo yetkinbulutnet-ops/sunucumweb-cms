@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "sayfa_metinleri",
+  "info": {
+    "singularName": "sayfa-metni",
+    "pluralName": "sayfa-metinleri",
+    "displayName": "Sayfa Metinleri",
+    "description": "Sayfaların üst başlık ve açıklama metinleri"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "default": "Sayfa Metinleri",
+      "maxLength": 40
+    },
+    "kampanyalar": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "hazirYazilim": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "legal": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "markalar": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "araclar": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "kind": "singleType",
+  "collectionName": "hakkimizda_sayfalari",
+  "info": {
+    "singularName": "hakkimizda",
+    "pluralName": "hakkimizda-sayfalari",
+    "displayName": "Hakkımızda",
+    "description": "Şirket profili sayfası"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seoBaslik": {
+      "type": "string",
+      "maxLength": 70,
+      "required": true
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 170,
+      "required": true
+    },
+    "baslik": {
+      "type": "string",
+      "maxLength": 90,
+      "required": true
+    },
+    "giris": {
+      "type": "text",
+      "maxLength": 600,
+      "required": true
+    },
+    "hikaye": {
+      "type": "text",
+      "maxLength": 3000,
+      "required": true
+    },
+    "fotograflar": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rakamlar": {
+      "type": "component",
+      "component": "ortak.istatistik",
+      "repeatable": true
+    },
+    "ilkelerUstBaslik": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "ilkelerBaslik": {
+      "type": "string",
+      "maxLength": 90,
+      "required": true
+    },
+    "ilkeler": {
+      "type": "component",
+      "component": "ortak.baslik-aciklama",
+      "repeatable": true
+    },
+    "veriMerkeziUstBaslik": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "veriMerkeziBaslik": {
+      "type": "string",
+      "maxLength": 90,
+      "required": true
+    },
+    "veriMerkeziMetni": {
+      "type": "text",
+      "maxLength": 1200,
+      "required": true
+    },
+    "veriMerkeziOzellikleri": {
+      "type": "text",
+      "maxLength": 1000
+    },
+    "kartBaslik": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "kartMetni": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "videolar": {
+      "type": "component",
+      "component": "hakkimizda.video",
+      "repeatable": true
+    },
+    "ctaBaslik": {
+      "type": "string",
+      "maxLength": 120,
+      "required": true
+    },
+    "ctaMetni": {
+      "type": "text",
+      "maxLength": 300
+    }
+  }
+}

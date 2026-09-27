@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planlar",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "planlar",
+    "displayName": "Plan",
+    "description": "Ürünlere bağlı fiyat paketleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "urun": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::urun.urun",
+      "inversedBy": "planlar"
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "altBaslik": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "fiyat": {
+      "type": "decimal",
+      "min": 0
+    },
+    "eskiFiyat": {
+      "type": "decimal",
+      "min": 0
+    },
+    "indirim": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "populer": {
+      "type": "boolean",
+      "default": false
+    },
+    "detaylar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "urun.detay"
+    },
+    "ozellikler": {
+      "type": "text",
+      "required": true
+    },
+    "siparisYolu": {
+      "type": "string",
+      "maxLength": 120
+    }
+  }
+}

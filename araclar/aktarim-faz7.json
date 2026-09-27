@@ -1,0 +1,901 @@
+{
+ "site": {
+  "ad": "Site Ayarları",
+  "firmaUnvani": "SunucumWEB Bilişim Teknolojileri",
+  "adres": "Hasanbey Mahallesi, Sokullu Sokak No: 16, Keçiborlu / ISPARTA",
+  "adresSokak": "Hasanbey Mahallesi, Sokullu Sokak No: 16",
+  "adresIlce": "Keçiborlu",
+  "adresIl": "Isparta",
+  "postaKodu": "32700",
+  "telefon": "0(850) 302 5809",
+  "telefonBaglanti": "tel:08503025809",
+  "eposta": "destek@sunucumweb.com",
+  "kep": "mustafa.cakir.13@hs01.kep.tr",
+  "panelAdresi": "https://my.sunucumweb.com",
+  "durumAdresi": "https://status.sunucumweb.com",
+  "sosyalMedya": [
+   {
+    "platform": "facebook",
+    "adres": "https://facebook.com/sunucumweb"
+   },
+   {
+    "platform": "x",
+    "adres": "https://x.com/sunucumweb"
+   },
+   {
+    "platform": "instagram",
+    "adres": "https://instagram.com/sunucumweb"
+   },
+   {
+    "platform": "linkedin",
+    "adres": "https://www.linkedin.com/company/sunucumweb-i%CC%87nternet-hizmetleri/"
+   },
+   {
+    "platform": "youtube",
+    "adres": "https://youtube.com/@sunucumweb"
+   }
+  ],
+  "ustMenu": [
+   {
+    "etiket": "Ana Sayfa",
+    "adres": "/",
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": []
+   },
+   {
+    "etiket": "Domain",
+    "adres": null,
+    "kolon": 3,
+    "aiRozeti": true,
+    "ogeler": [
+     {
+      "baslik": "Domain Tescil",
+      "aciklama": "Yeni domain tescil işlemleri için hemen tıklayın.",
+      "adres": "/alan-adi",
+      "ikon": "globe",
+      "rozet": "%20 İndirim",
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "Domain Transfer",
+      "aciklama": "Mevcut domaininizi güvenle bize transfer edin.",
+      "adres": "/transfer",
+      "ikon": "refresh",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "Domain Sorgulama",
+      "aciklama": "Kayıt firması, tescil ve bitiş tarihi ile isim sunucularını görün.",
+      "adres": "/araclar/whois",
+      "ikon": "search",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     }
+    ]
+   },
+   {
+    "etiket": "Hosting",
+    "adres": null,
+    "kolon": 4,
+    "aiRozeti": false,
+    "ogeler": [
+     {
+      "baslik": "Web Hosting",
+      "aciklama": "Sınırsız hosting paketlerini deneyin, dakikalar içinde yayında olun.",
+      "adres": "/web-hosting",
+      "ikon": "globe",
+      "rozet": "%20 İndirim",
+      "rozetTonu": "yesil",
+      "logo": "/img/altyapi/cpanel.webp",
+      "vurgu": false
+     },
+     {
+      "baslik": "WordPress Hosting",
+      "aciklama": "WordPress için optimize edilmiş, hızlı ve güvenli altyapı.",
+      "adres": "/wordpress-hosting",
+      "ikon": "bolt",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": "/img/marka/wordpress.png",
+      "vurgu": false
+     },
+     {
+      "baslik": "Reseller Hosting",
+      "aciklama": "Linux hosting paketleri ile kendi hosting işinizi başlatın.",
+      "adres": "/reseller-hosting",
+      "ikon": "magaza",
+      "rozet": "Fırsatı Yakala",
+      "rozetTonu": "sari",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "Kurumsal Hosting",
+      "aciklama": "Yüksek trafik ve izole kaynak gerektiren projeler için.",
+      "adres": "/kurumsal-hosting",
+      "ikon": "kurumsal",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     }
+    ]
+   },
+   {
+    "etiket": "Sunucu",
+    "adres": null,
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": [
+     {
+      "baslik": "Sanal Sunucu (VDS)",
+      "aciklama": "E5-2699 v4 sanal sunucularla projelerinizi başlatın.",
+      "adres": "/sanal-sunucu",
+      "ikon": "vds",
+      "rozet": "Kampanya",
+      "rozetTonu": "mavi",
+      "logo": "/img/urun/xeon.webp",
+      "vurgu": false
+     },
+     {
+      "baslik": "Premium Sunucu",
+      "aciklama": "Jet hızında diskler ve Xeon Platinum ile tam güç!",
+      "adres": "/premium-sunucu",
+      "ikon": "rocket",
+      "rozet": "PREMIUM",
+      "rozetTonu": "sari",
+      "logo": "/img/urun/xeon-platinum.webp",
+      "vurgu": true
+     },
+     {
+      "baslik": "Dedicated Sunucu",
+      "aciklama": "Fiziksel sunucular ile maksimum performans elde edin.",
+      "adres": "/dedicated-sunucu",
+      "ikon": "dedicated",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": "/img/urun/dedicated.webp",
+      "vurgu": false
+     },
+     {
+      "baslik": "GPU Sunucu",
+      "aciklama": "Yüksek performanslı GPU ile AI ve grafik iş yükleriniz için ideal.",
+      "adres": "/gpu-sunucu",
+      "ikon": "gpu",
+      "rozet": "Popüler",
+      "rozetTonu": "kirmizi",
+      "logo": "/img/urun/ekran-karti.webp",
+      "vurgu": false
+     }
+    ]
+   },
+   {
+    "etiket": "Veri Merkezi",
+    "adres": null,
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": [
+     {
+      "baslik": "Sunucu Barındırma",
+      "aciklama": "Kendi donanımınız bizim Tier-3 veri merkezimizde güvende.",
+      "adres": "/sunucu-barindirma",
+      "ikon": "colocation",
+      "rozet": "TIER III",
+      "rozetTonu": "yesil",
+      "logo": "/img/urun/sunucu-barindirma.webp",
+      "vurgu": false
+     },
+     {
+      "baslik": "IP Kiralama",
+      "aciklama": "Kolay ve hızlı IP kiralama seçenekleri ile ihtiyacınız olan adresleri hemen edinin.",
+      "adres": "/ip-kiralama",
+      "ikon": "globe",
+      "rozet": "Özel",
+      "rozetTonu": "yesil",
+      "logo": "/img/urun/ip-kiralama.webp",
+      "vurgu": false
+     }
+    ]
+   },
+   {
+    "etiket": "Hazır Yazılım",
+    "adres": "/hazir-yazilim",
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": []
+   },
+   {
+    "etiket": "Blog",
+    "adres": "/blog",
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": []
+   },
+   {
+    "etiket": "Kurumsal",
+    "adres": null,
+    "kolon": 2,
+    "aiRozeti": false,
+    "ogeler": [
+     {
+      "baslik": "Şirket Profili",
+      "aciklama": "SunucumWEB hakkında detaylı bilgi alın.",
+      "adres": "/hakkimizda",
+      "ikon": "binaOfis",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "Kampanyalar",
+      "aciklama": "Güncel indirimler ve sınırlı süreli fırsatlar.",
+      "adres": "/kampanyalar",
+      "ikon": "tag",
+      "rozet": "Fırsat",
+      "rozetTonu": "sari",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "Legal",
+      "aciklama": "Sözleşmeler, yasal metinler ve resmî ticari bilgiler.",
+      "adres": "/legal",
+      "ikon": "doc",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     },
+     {
+      "baslik": "İletişim",
+      "aciklama": "Telefon, e-posta ve destek kanallarımız.",
+      "adres": "/iletisim",
+      "ikon": "chat",
+      "rozet": null,
+      "rozetTonu": "yesil",
+      "logo": null,
+      "vurgu": false
+     }
+    ]
+   }
+  ],
+  "aracMenusu": {
+   "etiket": "Araçlar",
+   "adres": null,
+   "kolon": 3,
+   "aiRozeti": false,
+   "ogeler": [
+    {
+     "baslik": "DNS Kayıt Sorgulama",
+     "aciklama": "Kayıt tipini seçin, dokuz çözümleyiciden canlı sorgulayın.",
+     "adres": "/araclar/dns",
+     "ikon": "server",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "WHOIS Sorgulama",
+     "aciklama": "Kayıt firması, tescil ve bitiş tarihi ile isim sunucuları.",
+     "adres": "/araclar/whois",
+     "ikon": "search",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "SSL Sertifika Kontrolü",
+     "aciklama": "Sertifika geçerli mi, kaç gün kaldı, kim sağlamış?",
+     "adres": "/araclar/ssl",
+     "ikon": "lock",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "E-posta Kayıt Kontrolü",
+     "aciklama": "MX, SPF ve DMARC ayarlarınızı denetleyin.",
+     "adres": "/araclar/eposta",
+     "ikon": "mail",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "Kara Liste Kontrolü",
+     "aciklama": "Sunucu adresiniz 12 spam kara listesinde var mı?",
+     "adres": "/araclar/karaliste",
+     "ikon": "ban",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "HTTP Güvenlik Başlıkları",
+     "aciklama": "HSTS, CSP ve çerçeveleme koruması denetimi.",
+     "adres": "/araclar/basliklar",
+     "ikon": "shield",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "IP Sorgulama",
+     "aciklama": "Kendi IP adresiniz ve ters DNS (PTR) kaydı.",
+     "adres": "/araclar/ip",
+     "ikon": "globe",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    },
+    {
+     "baslik": "Tüm araçlar",
+     "aciklama": "Ücretsiz ağ ve alan adı araçlarının tamamı.",
+     "adres": "/araclar",
+     "ikon": "layers",
+     "rozet": null,
+     "rozetTonu": "yesil",
+     "logo": null,
+     "vurgu": false
+    }
+   ]
+  },
+  "altMenuler": [
+   {
+    "baslik": "Hosting",
+    "baglantilar": [
+     {
+      "metin": "Web Hosting",
+      "adres": "/web-hosting"
+     },
+     {
+      "metin": "WordPress Hosting",
+      "adres": "/wordpress-hosting"
+     },
+     {
+      "metin": "Reseller Hosting",
+      "adres": "/reseller-hosting"
+     },
+     {
+      "metin": "Kurumsal Hosting",
+      "adres": "/kurumsal-hosting"
+     }
+    ]
+   },
+   {
+    "baslik": "Sunucular",
+    "baglantilar": [
+     {
+      "metin": "Sanal Sunucu (VDS)",
+      "adres": "/sanal-sunucu"
+     },
+     {
+      "metin": "Premium Sunucu",
+      "adres": "/premium-sunucu"
+     },
+     {
+      "metin": "Dedicated Sunucu",
+      "adres": "/dedicated-sunucu"
+     },
+     {
+      "metin": "GPU Sunucu",
+      "adres": "/gpu-sunucu"
+     }
+    ]
+   },
+   {
+    "baslik": "Alan Adı",
+    "baglantilar": [
+     {
+      "metin": "Alan Adı Tescil",
+      "adres": "/alan-adi"
+     },
+     {
+      "metin": "Alan Adı Transfer",
+      "adres": "/transfer"
+     },
+     {
+      "metin": "WHOIS Sorgulama",
+      "adres": "/araclar/whois"
+     }
+    ]
+   },
+   {
+    "baslik": "Veri Merkezi",
+    "baglantilar": [
+     {
+      "metin": "Sunucu Barındırma",
+      "adres": "/sunucu-barindirma"
+     },
+     {
+      "metin": "IP Kiralama",
+      "adres": "/ip-kiralama"
+     }
+    ]
+   },
+   {
+    "baslik": "Araçlar",
+    "baglantilar": [
+     {
+      "metin": "DNS Sorgulama",
+      "adres": "/araclar/dns"
+     },
+     {
+      "metin": "WHOIS Sorgulama",
+      "adres": "/araclar/whois"
+     },
+     {
+      "metin": "SSL Kontrolü",
+      "adres": "/araclar/ssl"
+     },
+     {
+      "metin": "E-posta Kayıtları",
+      "adres": "/araclar/eposta"
+     },
+     {
+      "metin": "IP Sorgulama",
+      "adres": "/araclar/ip"
+     }
+    ]
+   },
+   {
+    "baslik": "Kurumsal",
+    "baglantilar": [
+     {
+      "metin": "Şirket Profili",
+      "adres": "/hakkimizda"
+     },
+     {
+      "metin": "Kampanyalar",
+      "adres": "/kampanyalar"
+     },
+     {
+      "metin": "Hazır Yazılımlar",
+      "adres": "/hazir-yazilim"
+     },
+     {
+      "metin": "Blog",
+      "adres": "/blog"
+     },
+     {
+      "metin": "Legal",
+      "adres": "/legal"
+     },
+     {
+      "metin": "İletişim",
+      "adres": "/iletisim"
+     }
+    ]
+   }
+  ],
+  "btkMetni": "5651 sayılı kanun kapsamında Bilgi Teknolojileri ve İletişim Kurumu tarafından yetkilendirilmiş Yer Sağlayıcı'dır.",
+  "btkBaglanti": "https://internet.btk.gov.tr/yer-saglayici-listesi?page=1&q=SunucumWEB",
+  "btkLogo": "https://cdn.yetkinweb.com/genel/genel/btklogo_320x320.png",
+  "etbisMetni": "Elektronik Ticaret Bilgi Sistemi'ne (ETBİS) kayıtlı elektronik ticaret sitesidir.",
+  "etbisBaglanti": "https://etbis.ticaret.gov.tr/tr/SiteSorgulamaSonuc?siteId=ce4da5d2-fe8d-4bcd-9e5f-40b2aa345658",
+  "etbisLogo": "https://cdn.yetkinbulut.com/meta/etbislogo_200x70.png",
+  "trustpilotPuan": 3.8,
+  "trustpilotYorumSayisi": 2,
+  "trustpilotBaglanti": "https://www.trustpilot.com/review/sunucumweb.com",
+  "googleYorumBaglanti": "https://www.google.com/search?q=SunucumWEB&rldimm=10560064220033697496&tbm=lcl#lkt=LocalPoiReviews",
+  "altyapiBasligi": "Altyapımız",
+  "ctaBaslik": "Bugün başlayın, farkı hemen hissedin",
+  "ctaMetni": "Dakikalar içinde kurulum, 30 gün içinde memnun kalmazsanız iade garantisi."
+ },
+ "iletisim": {
+  "ad": "İletişim",
+  "ust": {
+   "ustBaslik": "İletişim",
+   "baslik": "Size nasıl yardımcı olabiliriz?",
+   "aciklama": "Satış, teknik destek veya kurumsal talepleriniz için formu doldurun; ekibimiz aynı gün içinde dönüş yapsın."
+  },
+  "kanallar": [
+   {
+    "ikon": "phone",
+    "baslik": "Telefon",
+    "deger": "0(850) 302 5809",
+    "aciklama": "Hafta içi 09:00 – 18:00",
+    "baglanti": "tel:08503025809"
+   },
+   {
+    "ikon": "chat",
+    "baslik": "Canlı destek",
+    "deger": "Müşteri paneli",
+    "aciklama": "7/24 teknik ekip",
+    "baglanti": "https://my.sunucumweb.com"
+   },
+   {
+    "ikon": "mail",
+    "baslik": "E-posta",
+    "deger": "info@sunucumweb.com",
+    "aciklama": "Aynı gün içinde yanıt",
+    "baglanti": "mailto:info@sunucumweb.com"
+   },
+   {
+    "ikon": "pin",
+    "baslik": "Adres",
+    "deger": "Hasanbey Mah. Sokullu Sok. No: 16",
+    "aciklama": "Keçiborlu / Isparta",
+    "baglanti": null
+   }
+  ],
+  "konular": [
+   {
+    "kod": "satis",
+    "etiket": "Satış ve fiyat teklifi"
+   },
+   {
+    "kod": "teknik",
+    "etiket": "Teknik destek"
+   },
+   {
+    "kod": "fatura",
+    "etiket": "Fatura ve ödeme"
+   },
+   {
+    "kod": "kurumsal",
+    "etiket": "Kurumsal / özel çözüm"
+   },
+   {
+    "kod": "transfer",
+    "etiket": "Hesap veya alan adı taşıma"
+   },
+   {
+    "kod": "sikayet",
+    "etiket": "Şikayet ve geri bildirim"
+   },
+   {
+    "kod": "diger",
+    "etiket": "Diğer"
+   }
+  ],
+  "basariMetni": "Talebiniz ilgili ekibe iletildi. Acil bir konuysa 0(850) 302 5809 numaralı hattımızdan doğrudan ulaşabilirsiniz."
+ },
+ "araclar": [
+  {
+   "baslik": "İnternet Hız Testi",
+   "slug": "hiz-testi",
+   "kisa": "Hız testi",
+   "ozet": "İndirme ve yükleme hızınızı, ping ve jitter değerinizi tarayıcıdan anında ölçün.",
+   "ikon": "gauge",
+   "girdiEtiketi": null,
+   "ornek": null,
+   "girdiOpsiyonel": false,
+   "aciklama": "Test, bağlantınızın indirme ve yükleme hızını sunucumuza karşı gerçek zamanlı ölçer; ayrıca gecikmeyi (ping) ve gecikme kararlılığını (jitter) raporlar. İndirme hızı büyük dosya indirme ve akış (streaming) deneyiminizi, yükleme hızı dosya gönderme ve görüntülü görüşmeleri, ping ise oyun ve anlık uygulamalardaki tepki süresini belirler. Ölçüm birden çok paralel bağlantı kullanılarak yapılır; sonuç modem, Wi-Fi ve internet sağlayıcınızın o anki durumuna göre değişebilir. En doğru sonuç için testi kablolu bağlantıyla ve arka planda indirme/yükleme yokken çalıştırın.",
+   "seo": "İnternet hız testi: indirme, yükleme, ping ve jitter değerlerinizi ücretsiz, üyeliksiz ölçün.",
+   "aktif": true,
+   "sira": 10
+  },
+  {
+   "baslik": "DNS Kayıt Sorgulama",
+   "slug": "dns",
+   "kisa": "DNS sorgulama",
+   "ozet": "Kayıt tipini seçin; A, AAAA, CNAME, MX, NS, TXT, SOA, SRV, CAA ve PTR kayıtlarını dokuz çözümleyiciden canlı sorgulayın.",
+   "ikon": "server",
+   "girdiEtiketi": "Alan adı",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "DNS kayıtları, alan adınızın hangi sunucuya ve hangi posta servisine yönlendiğini belirler. Kayıt değişikliklerinin yayılması genellikle birkaç dakika ile birkaç saat arasında sürer; bu araç aynı sorguyu farklı bölgelerdeki dokuz genel çözümleyiciye göndererek değişikliğin nereye ulaştığını gösterir.",
+   "seo": "DNS kayıt sorgulama aracı: alan adının A, MX, NS, TXT ve CAA kayıtlarını anında görüntüleyin.",
+   "aktif": true,
+   "sira": 20
+  },
+  {
+   "baslik": "WHOIS Sorgulama",
+   "slug": "whois",
+   "kisa": "WHOIS",
+   "ozet": "Alan adının kayıt firması, kayıt ve bitiş tarihleri ile isim sunucularını gösterir.",
+   "ikon": "search",
+   "girdiEtiketi": "Alan adı",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "Sorgu, ilgili uzantının resmî RDAP sunucusundan yapılır. Kayıt sahibi bilgileri gizlilik hizmeti nedeniyle çoğu uzantıda maskelenir. .tr uzantıları RDAP desteklemediği için nic.tr üzerinden sorgulanmalıdır.",
+   "seo": "WHOIS sorgulama: alan adının kayıt firması, tescil ve bitiş tarihi ile isim sunucularını öğrenin.",
+   "aktif": true,
+   "sira": 30
+  },
+  {
+   "baslik": "SSL Sertifika Kontrolü",
+   "slug": "ssl",
+   "kisa": "SSL kontrolü",
+   "ozet": "Sertifikanın geçerliliğini, sağlayıcısını ve bitiş tarihine kalan gün sayısını kontrol eder.",
+   "ikon": "lock",
+   "girdiEtiketi": "Alan adı",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "Araç, alan adının 443 portuna bağlanıp sunucunun sunduğu sertifikayı okur. Süresi dolmuş ya da alan adıyla eşleşmeyen sertifikalar tarayıcıda güvenlik uyarısına yol açar; bitişe 30 günden az kaldıysa yenileme zamanı gelmiş demektir.",
+   "seo": "SSL sertifika kontrolü: sertifikanın geçerliliğini, sağlayıcısını ve kalan gün sayısını sorgulayın.",
+   "aktif": true,
+   "sira": 40
+  },
+  {
+   "baslik": "E-posta Kayıt Kontrolü",
+   "slug": "eposta",
+   "kisa": "E-posta kayıtları",
+   "ozet": "MX, SPF ve DMARC kayıtlarını kontrol eder; eksik ayarları uyarı olarak bildirir.",
+   "ikon": "mail",
+   "girdiEtiketi": "Alan adı",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "MX kaydı gelen postanın hangi sunucuya düşeceğini, SPF ve DMARC kayıtları ise sizin adınıza kimin posta gönderebileceğini belirler. SPF veya DMARC eksik olan alan adları adına sahte e-posta gönderilmesi kolaylaşır ve gönderdiğiniz iletiler spam klasörüne düşebilir.",
+   "seo": "E-posta kayıt kontrolü: alan adının MX, SPF ve DMARC kayıtlarını denetleyin.",
+   "aktif": true,
+   "sira": 50
+  },
+  {
+   "baslik": "Kara Liste (RBL) Kontrolü",
+   "slug": "karaliste",
+   "kisa": "Kara liste",
+   "ozet": "Alan adınızın ve posta sunucularınızın IP adreslerini 12 spam kara listesinde sorgular.",
+   "ikon": "ban",
+   "girdiEtiketi": "Alan adı veya IP adresi",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "Spam kara listeleri (RBL / DNSBL), spam gönderdiği tespit edilen IP adreslerini tutar. Posta sunucunuzun adresi bu listelerden birine düştüyse gönderdiğiniz iletiler karşı tarafa hiç ulaşmaz ya da doğrudan spam klasörüne düşer. Bu araç alan adınızın A kaydındaki ve MX sunucularınızdaki IP adreslerini on iki listede birden sorgular; listede görünen adres için listeleme sebebini de gösterir.",
+   "seo": "Kara liste kontrolü: IP adresinizin spam kara listelerinde olup olmadığını ücretsiz sorgulayın.",
+   "aktif": true,
+   "sira": 60
+  },
+  {
+   "baslik": "HTTP Güvenlik Başlıkları",
+   "slug": "basliklar",
+   "kisa": "Güvenlik başlıkları",
+   "ozet": "Sitenizin gönderdiği güvenlik başlıklarını denetler, yönlendirme zincirini ve çerez ayarlarını gösterir.",
+   "ikon": "shield",
+   "girdiEtiketi": "Alan adı",
+   "ornek": "sunucumweb.com",
+   "girdiOpsiyonel": false,
+   "aciklama": "Web sunucunuzun yanıtla birlikte gönderdiği başlıklar, tarayıcının sitenizi nasıl koruyacağını belirler. HSTS bağlantıyı HTTPS ile sınırlar, Content-Security-Policy betik çalıştırma saldırılarının etkisini azaltır, çerçeveleme koruması sayfanızın başka bir sitenin içine gömülmesini engeller. Araç sitenizin yönlendirme zincirini izler, son yanıttaki başlıkları denetler ve eksikleri puanlayarak listeler.",
+   "seo": "HTTP güvenlik başlığı denetimi: HSTS, CSP, X-Frame-Options ve çerez ayarlarınızı ücretsiz kontrol edin.",
+   "aktif": true,
+   "sira": 70
+  },
+  {
+   "baslik": "IP Sorgulama",
+   "slug": "ip",
+   "kisa": "IP sorgulama",
+   "ozet": "Kendi IP adresinizi gösterir; girdiğiniz IP için ters DNS (PTR) kaydını sorgular.",
+   "ikon": "globe",
+   "girdiEtiketi": "IP adresi",
+   "ornek": "8.8.8.8",
+   "girdiOpsiyonel": true,
+   "aciklama": "Alan boş bırakılırsa siteye bağlandığınız IP adresi gösterilir. Ters DNS kaydı, bir IP adresinin hangi sunucu adına ait olduğunu belirtir; posta sunucularında PTR kaydının doğru tanımlanmış olması teslim edilebilirlik için önemlidir.",
+   "seo": "IP sorgulama: kendi IP adresinizi görün, herhangi bir IP için ters DNS kaydını öğrenin.",
+   "aktif": true,
+   "sira": 80
+  }
+ ],
+ "araclarSayfa": {
+  "ustBaslik": "Araçlar",
+  "baslik": "Ağ ve alan adı araçları",
+  "aciklama": "Alan adı, DNS, sertifika ve e-posta ayarlarınızı kontrol etmek için kullandığımız araçları müşterilerimizin ve ziyaretçilerin kullanımına açtık. Hepsi ücretsiz, üyelik gerektirmiyor.",
+  "seoBaslik": "Ağ ve Alan Adı Araçları",
+  "seoAciklama": "Alan adı, DNS, sertifika ve e-posta ayarlarınızı kontrol etmek için kullandığımız araçları müşterilerimizin ve ziyaretçilerin kullanımına açtık. Hepsi ücretsiz, üyelik gerektirmiyor."
+ },
+ "altyapi": [
+  {
+   "ad": "cPanel",
+   "dosya": "cpanel.webp",
+   "sira": 10
+  },
+  {
+   "ad": "LiteSpeed",
+   "dosya": "litespeed.webp",
+   "sira": 20
+  },
+  {
+   "ad": "CloudLinux",
+   "dosya": "cloudlinux.webp",
+   "sira": 30
+  },
+  {
+   "ad": "Imunify360",
+   "dosya": "imunify360.webp",
+   "sira": 40
+  },
+  {
+   "ad": "JetBackup",
+   "dosya": "jetbackup.webp",
+   "sira": 50
+  },
+  {
+   "ad": "Softaculous",
+   "dosya": "softaculous.webp",
+   "sira": 60
+  },
+  {
+   "ad": "VMware",
+   "dosya": "vmware.webp",
+   "sira": 70
+  },
+  {
+   "ad": "Intel",
+   "dosya": "intel.webp",
+   "sira": 80
+  }
+ ],
+ "anasayfa": {
+  "kategoriler": [
+   {
+    "baslik": "Hosting",
+    "ikon": "globe",
+    "ozet": "Web siteniz için hazır, yönetimi kolay paketler",
+    "oneCikan": false,
+    "urunler": [
+     {
+      "metin": "Web Hosting",
+      "aciklama": "Bireysel & KOBİ siteleri",
+      "adres": "/web-hosting"
+     },
+     {
+      "metin": "WordPress Hosting",
+      "aciklama": "WordPress için optimize",
+      "adres": "/wordpress-hosting"
+     },
+     {
+      "metin": "Reseller Hosting",
+      "aciklama": "Kendi hosting işinizi kurun",
+      "adres": "/reseller-hosting"
+     },
+     {
+      "metin": "Kurumsal Hosting",
+      "aciklama": "Yüksek trafik & izole kaynak",
+      "adres": "/kurumsal-hosting"
+     }
+    ]
+   },
+   {
+    "baslik": "Sunucular",
+    "ikon": "server",
+    "ozet": "Tam kontrol ve yüksek performans isteyenler için",
+    "oneCikan": true,
+    "urunler": [
+     {
+      "metin": "Sanal Sunucu (VDS)",
+      "aciklama": "Root erişimli, ölçeklenebilir",
+      "adres": "/sanal-sunucu"
+     },
+     {
+      "metin": "Dedicated Sunucu",
+      "aciklama": "Fiziksel, tüm kaynak sizin",
+      "adres": "/dedicated-sunucu"
+     },
+     {
+      "metin": "Premium Sunucu",
+      "aciklama": "Premium işlemci gücü",
+      "adres": "/premium-sunucu"
+     },
+     {
+      "metin": "GPU Sunucu",
+      "aciklama": "Yapay zekâ, render, hesaplama",
+      "adres": "/gpu-sunucu"
+     }
+    ]
+   },
+   {
+    "baslik": "Alan Adı",
+    "ikon": "globe",
+    "ozet": "Markanızı güvence altına alın",
+    "oneCikan": false,
+    "urunler": [
+     {
+      "metin": "Alan Adı Tescil",
+      "aciklama": "Yeni alan adı kaydı",
+      "adres": "/alan-adi"
+     },
+     {
+      "metin": "Alan Adı Transfer",
+      "aciklama": "Mevcut domaininizi taşıyın",
+      "adres": "/transfer"
+     },
+     {
+      "metin": "WHOIS Sorgulama",
+      "aciklama": "Tescil bilgisi sorgulayın",
+      "adres": "/whois"
+     }
+    ]
+   },
+   {
+    "baslik": "Veri Merkezi",
+    "ikon": "database",
+    "ozet": "Kendi donanımınız, bizim altyapımız",
+    "oneCikan": false,
+    "urunler": [
+     {
+      "metin": "Sunucu Barındırma",
+      "aciklama": "Tier-3 colocation",
+      "adres": "/sunucu-barindirma"
+     },
+     {
+      "metin": "IP Kiralama",
+      "aciklama": "Temiz IPv4 / IPv6 blokları",
+      "adres": "/ip-kiralama"
+     }
+    ]
+   }
+  ],
+  "altyapiMaddeleri": [
+   {
+    "ikon": "database",
+    "baslik": "Tier-3 veri merkezi",
+    "aciklama": "Yedekli güç, hassas iklimlendirme ve N+1 mimari ile kesintisiz çalışma."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "7/24 fiziksel güvenlik",
+    "aciklama": "Kartlı geçiş, kamera ve sürekli personel. Verileriniz yurt içinde kalır."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yedekli omurga",
+    "aciklama": "Çoklu uplink ve BGP yönlendirme ile düşük gecikmeli, kesintisiz bağlantı."
+   },
+   {
+    "ikon": "signal",
+    "baslik": "Canlı izleme (NOC)",
+    "aciklama": "Ağ ve donanım sürekli izlenir; sorun büyümeden çözülür."
+   }
+  ],
+  "cozumlerBolumu": {
+   "ustBaslik": "Çözümlerimiz",
+   "baslik": "Size uygun çözümü seçin",
+   "aciklama": "Küçük bir web sitesinden kurumsal altyapıya kadar tüm hizmetlerimiz. İhtiyacınıza tıklayın, detaylara geçelim."
+  },
+  "nedenBolumu": {
+   "ustBaslik": "Neden SunucumWEB",
+   "baslik": "Performans ve güveni bir arada sunuyoruz",
+   "aciklama": "Altyapımızı; hız, kesintisizlik ve destek üçgeninde kurduk. Teknik detayları biz düşünelim, siz işinize odaklanın."
+  },
+  "altyapiBolumu": {
+   "ustBaslik": "Altyapımız",
+   "baslik": "Kendi veri merkezi altyapımız, Türkiye lokasyonunda",
+   "aciklama": "Sunucularınız yedekli güç, hassas iklimlendirme ve sürekli izlenen bir ağ omurgasında çalışır. Donanımdan kablolamaya kadar altyapının tamamı bizim kontrolümüzde; bu da daha hızlı müdahale ve daha yüksek erişilebilirlik demek."
+  },
+  "paketlerBolumu": {
+   "ustBaslik": "Öne Çıkan Paketler",
+   "baslik": "İhtiyacınıza göre ölçeklenen çözümler",
+   "aciklama": "Hosting'ten sanal sunucuya en çok tercih edilen paketler. Size en uygun yapılandırmayı birlikte belirleyelim."
+  },
+  "yazilimBolumu": {
+   "ustBaslik": "Hazır Yazılımlar",
+   "baslik": "Kurmadan hazır, dakikalar içinde yayında",
+   "aciklama": "E-ticaretten kurumsal siteye, rezervasyondan eğitim platformuna; işinizi hızla internete taşıyacak hazır web yazılımları."
+  },
+  "referansBolumu": {
+   "ustBaslik": "Referanslar",
+   "baslik": "Bizimle çalışan markalar",
+   "aciklama": "Altyapımızı kullanan müşterilerimiz ve birlikte iş yaptığımız kurumlar."
+  },
+  "sssBolumu": {
+   "ustBaslik": "SSS",
+   "baslik": "Aklınıza takılanlar",
+   "aciklama": null
+  },
+  "durumBolumu": {
+   "ustBaslik": "Sistem Durumu",
+   "baslik": "Altyapımız şeffaf ve izlenebilir",
+   "aciklama": "Servislerimizin anlık durumunu ve yanıt sürelerini canlı olarak buradan takip edebilirsiniz."
+  },
+  "guvenBolumu": {
+   "ustBaslik": null,
+   "baslik": "Binlerce işletme altyapısını bize emanet ediyor",
+   "aciklama": "Startup'lardan kurumsal firmalara; hız, güvenlik ve kesintisiz destek arayan herkes SunucumWEB'i tercih ediyor."
+  }
+ }
+}

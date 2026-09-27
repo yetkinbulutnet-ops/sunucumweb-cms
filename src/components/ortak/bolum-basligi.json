@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ortak_bolum_basligi",
+  "info": {
+    "displayName": "Bölüm Başlığı",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "ustBaslik": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "baslik": {
+      "type": "string",
+      "maxLength": 120,
+      "required": true
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 400
+    }
+  }
+}

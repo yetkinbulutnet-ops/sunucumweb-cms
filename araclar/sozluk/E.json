@@ -1,0 +1,4 @@
+[
+ { "anahtar": "genel.varsayilan_incele", "grup": "Genel – varsayılanlar", "konum": "Kampanya ve duyuru bağlantısında buton metni boş bırakılırsa", "metin": "İncele" },
+ { "anahtar": "cark.varsayilan_rozet", "grup": "Çark", "konum": "Çark ayarlarında rozet metni boş bırakılırsa köşedeki buton", "metin": "Çarkı çevir" }
+]

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "ai_ayarlari",
+  "info": {
+    "singularName": "ai-ayari",
+    "pluralName": "ai-ayarlari",
+    "displayName": "AI Ayarları",
+    "description": "Yapay zekâ alan adı bulucusuna verilen talimatlar"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "default": "AI Ayarları",
+      "maxLength": 40
+    },
+    "sistemTalimati": {
+      "type": "text",
+      "required": true,
+      "maxLength": 10000
+    },
+    "kullaniciSablonu": {
+      "type": "text",
+      "required": true,
+      "maxLength": 3000
+    },
+    "uzantiSatiri": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "jsonTalimati": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "iletisim_sayfalari",
+  "info": {
+    "singularName": "iletisim",
+    "pluralName": "iletisim-sayfalari",
+    "displayName": "İletişim",
+    "description": "İletişim sayfası kanalları ve form konuları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 40,
+      "default": "İletişim"
+    },
+    "ust": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "kanallar": {
+      "type": "component",
+      "component": "iletisim.kanal",
+      "repeatable": true
+    },
+    "konular": {
+      "type": "component",
+      "component": "iletisim.konu",
+      "repeatable": true
+    },
+    "basariMetni": {
+      "type": "text",
+      "maxLength": 300
+    }
+  }
+}

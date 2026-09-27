@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arayuz_metinleri",
+  "info": {
+    "singularName": "arayuz-metni",
+    "pluralName": "arayuz-metinleri",
+    "displayName": "Arayüz Metni",
+    "description": "Sitedeki buton, etiket ve kısa metinler (sayfaya göre gruplu)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metin": {
+      "type": "text",
+      "maxLength": 2000,
+      "required": true
+    },
+    "grup": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "konum": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "anahtar": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 120
+    }
+  }
+}

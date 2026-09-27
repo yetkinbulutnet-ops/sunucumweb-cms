@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_ortak_sayfa_ust",
+  "info": {
+    "displayName": "Sayfa Üst Metni",
+    "icon": "bulletList",
+    "description": "Sayfanın en üstündeki başlık alanı + arama motoru metinleri"
+  },
+  "options": {},
+  "attributes": {
+    "ustBaslik": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "baslik": {
+      "type": "string",
+      "maxLength": 120,
+      "required": true
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "seoBaslik": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 200
+    }
+  }
+}

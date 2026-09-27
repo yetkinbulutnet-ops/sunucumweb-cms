@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "bulten_ayarlari",
+  "info": {
+    "singularName": "bulten-ayari",
+    "pluralName": "bulten-ayarlari",
+    "displayName": "Bülten Ayarları",
+    "description": "Bülten abonelik formlarının genel ayarları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aktif": {
+      "type": "boolean",
+      "default": false
+    },
+    "ciftOnay": {
+      "type": "boolean",
+      "default": true
+    },
+    "footerda": {
+      "type": "boolean",
+      "default": true
+    },
+    "anasayfada": {
+      "type": "boolean",
+      "default": false
+    },
+    "kampanyalarda": {
+      "type": "boolean",
+      "default": true
+    },
+    "blogda": {
+      "type": "boolean",
+      "default": true
+    },
+    "ozet": {
+      "type": "text"
+    }
+  }
+}

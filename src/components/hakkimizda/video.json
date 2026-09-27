@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_hakkimizda_video",
+  "info": {
+    "displayName": "Video",
+    "icon": "star",
+    "description": "Bunny Stream videosu"
+  },
+  "options": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "maxLength": 80,
+      "required": true
+    },
+    "kutuphane": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "video": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    }
+  }
+}

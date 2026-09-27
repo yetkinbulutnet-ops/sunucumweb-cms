@@ -1,0 +1,340 @@
+{
+ "dns": [
+  {
+   "tip": "A",
+   "ad": "A kaydı",
+   "kisa": "IPv4 adresi",
+   "ozet": "Alan adını bir IPv4 adresine bağlar.",
+   "ornek": "93.184.216.34",
+   "aciklama": "A kaydı, bir alan adının hangi sunucunun IPv4 adresine gideceğini söyler. Tarayıcıya adresi yazdığınızda ilk sorulan kayıt budur; değeri yanlışsa site açılmaz ya da eski sunucudan açılmaya devam eder. Bir alan adında birden fazla A kaydı bulunabilir, bu durumda istekler adresler arasında dağıtılır.",
+   "ipucu": "Sunucu taşırken A kaydının TTL değerini bir gün önceden 300 saniyeye düşürün; yeni adres birkaç dakikada yayılır.",
+   "sira": 10
+  },
+  {
+   "tip": "AAAA",
+   "ad": "AAAA kaydı",
+   "kisa": "IPv6 adresi",
+   "ozet": "Alan adını bir IPv6 adresine bağlar.",
+   "ornek": "2606:2800:220:1:248:1893:25c8:1946",
+   "aciklama": "AAAA kaydı A kaydının IPv6 karşılığıdır. Mobil operatörlerin ve yeni erişim ağlarının önemli bir kısmı artık öncelikle IPv6 kullanıyor; kayıt tanımlıysa bu ziyaretçiler siteye doğrudan IPv6 üzerinden ulaşır. Kayıt yoksa bağlantı IPv4 üzerinden kurulur, yani AAAA olmaması siteyi erişilemez yapmaz.",
+   "ipucu": "AAAA kaydını yalnızca sunucunuz gerçekten IPv6 dinliyorsa tanımlayın; dinlemeyen bir adres ziyaretçide uzun bekleme süresine yol açar.",
+   "sira": 20
+  },
+  {
+   "tip": "CNAME",
+   "ad": "CNAME kaydı",
+   "kisa": "Takma ad",
+   "ozet": "Bir alt alan adını başka bir alan adına yönlendirir.",
+   "ornek": "magaza.ornek.com → shops.saglayici.com",
+   "aciklama": "CNAME kaydı bir adı başka bir adın takma adı yapar. Çözümleyici CNAME gördüğünde hedefteki adı yeniden sorgular ve asıl adresi oradan alır. CDN, e-ticaret altyapısı ve doğrulama servisleri genellikle bu yöntemle bağlanır; böylece sağlayıcı IP adresini değiştirdiğinde sizin bir şey yapmanız gerekmez.",
+   "ipucu": "Alan adının kökünde (ornek.com) CNAME kullanılamaz; kökte yalnızca A veya AAAA kaydı tanımlanır.",
+   "sira": 30
+  },
+  {
+   "tip": "MX",
+   "ad": "MX kaydı",
+   "kisa": "Posta sunucusu",
+   "ozet": "Alan adına gelen e-postayı hangi sunucunun karşılayacağını belirtir.",
+   "ornek": "10 mail.ornek.com",
+   "aciklama": "MX kaydı, alan adınıza gönderilen e-postaların hangi sunucuya teslim edileceğini gösterir. Her kaydın bir öncelik sayısı vardır; gönderen sunucu önce en küçük sayılı adresi dener, ulaşamazsa sıradakine geçer. MX kaydı yoksa ya da yanlışsa alan adınıza hiç e-posta ulaşmaz.",
+   "ipucu": "MX kayıtları bir CNAME değil, doğrudan A kaydı olan bir sunucu adını göstermelidir; CNAME hedefi çoğu posta sunucusunda reddedilir.",
+   "sira": 40
+  },
+  {
+   "tip": "NS",
+   "ad": "NS kaydı",
+   "kisa": "İsim sunucusu",
+   "ozet": "Alan adının DNS kayıtlarını hangi sunucuların yönettiğini gösterir.",
+   "ornek": "ns1.sunucumweb.com",
+   "aciklama": "NS kayıtları, bir alan adının bölgesinden hangi isim sunucularının sorumlu olduğunu belirtir. Alan adını başka bir hosting firmasına taşırken değiştirilen ilk kayıt budur ve değişikliğin yayılması diğer kayıtlara göre daha uzun sürebilir. Uzantının kök sunucularındaki kayıtla panelinizdeki kaydın aynı olması gerekir.",
+   "ipucu": "İki isim sunucusundan azını tanımlamayın; tek sunucu kesintiye uğradığında alan adı tamamen çözümlenemez hâle gelir.",
+   "sira": 50
+  },
+  {
+   "tip": "TXT",
+   "ad": "TXT kaydı",
+   "kisa": "Metin kaydı",
+   "ozet": "Serbest metin tutar; SPF, DKIM ve doğrulama kayıtları burada durur.",
+   "ornek": "v=spf1 include:_spf.ornek.com -all",
+   "aciklama": "TXT kaydı alan adına serbest metin eklemenizi sağlar. Bugün en çok e-posta güvenliği için kullanılıyor: SPF gönderim yetkisini, DKIM imza anahtarını, DMARC ise doğrulamayı geçemeyen iletilere ne yapılacağını tanımlar. Google, Microsoft ve benzeri servislerin alan adı sahipliği doğrulamaları da TXT kaydıyla yapılır.",
+   "ipucu": "Bir alan adında yalnızca tek bir SPF kaydı bulunmalıdır; ikinci bir SPF eklendiğinde doğrulama tamamen geçersiz sayılır.",
+   "sira": 60
+  },
+  {
+   "tip": "SOA",
+   "ad": "SOA kaydı",
+   "kisa": "Bölge bilgisi",
+   "ozet": "Bölgenin yetkili sunucusunu, seri numarasını ve yenileme sürelerini taşır.",
+   "ornek": "ns1.ornek.com hostmaster.ornek.com 2026081801",
+   "aciklama": "SOA kaydı her bölgede tek olan yönetim kaydıdır. Birincil isim sunucusunu, yetkili e-posta adresini, bölgenin seri numarasını ve ikincil sunucuların ne sıklıkla senkronize olacağını tutar. Bir kayıt değiştirdiğinizde seri numarasının artması gerekir; artmıyorsa ikincil sunucular değişikliği fark etmez.",
+   "ipucu": "Sorun yaşadığınızda seri numarasını iki farklı isim sunucusunda karşılaştırın; farklıysa bölgeler arasında senkronizasyon sorunu var demektir.",
+   "sira": 70
+  },
+  {
+   "tip": "SRV",
+   "ad": "SRV kaydı",
+   "kisa": "Servis kaydı",
+   "ozet": "Bir servisin hangi sunucuda ve hangi portta çalıştığını duyurur.",
+   "ornek": "_sip._tcp.ornek.com 10 5 5060 sip.ornek.com",
+   "aciklama": "SRV kaydı, adres bilgisine port ve öncelik de ekler. SIP telefon santralleri, XMPP mesajlaşma, Microsoft 365 otomatik yapılandırma ve bazı oyun sunucuları istemcinin doğru adrese bağlanması için bu kaydı okur. Ad biçimi servis ve protokol öneki içerir: `_servis._protokol.alanadi`.",
+   "ipucu": "Öncelik değeri küçük olan önce denenir; aynı öncelikteki kayıtlar arasında yük, ağırlık değerine göre paylaştırılır.",
+   "sira": 80
+  },
+  {
+   "tip": "CAA",
+   "ad": "CAA kaydı",
+   "kisa": "Sertifika yetkisi",
+   "ozet": "Alan adına hangi sertifika sağlayıcılarının SSL verebileceğini belirler.",
+   "ornek": "0 issue \"letsencrypt.org\"",
+   "aciklama": "CAA kaydı, alan adınız için sertifika üretme yetkisini belirli sağlayıcılarla sınırlar. Sertifika makamları belge düzenlemeden önce bu kaydı kontrol etmek zorundadır; listede olmayan bir sağlayıcı talebi reddeder. Böylece izniniz dışında düzenlenmiş bir sertifikayla yapılabilecek saldırıların önü kapanır.",
+   "ipucu": "CAA tanımlarken kullandığınız tüm sağlayıcıları listeleyin; eksik bıraktığınız sağlayıcı yenileme sırasında sertifikayı üretemez.",
+   "sira": 90
+  },
+  {
+   "tip": "PTR",
+   "ad": "PTR kaydı",
+   "kisa": "Ters DNS",
+   "ozet": "Bir IP adresinin hangi sunucu adına ait olduğunu gösterir.",
+   "ornek": "8.8.8.8 → dns.google",
+   "aciklama": "PTR kaydı A kaydının tersini yapar: adresten ada gider. Kayıt, alan adının bölgesinde değil IP bloğunun sahibi tarafından tanımlanır, yani sunucu sağlayıcınızdan istemeniz gerekir. Posta sunucularında en çok bakılan kayıtlardan biridir; PTR tanımı olmayan sunucudan gönderilen iletiler sıklıkla reddedilir veya spam sayılır.",
+   "ipucu": "Bu tipte alan adı yerine doğrudan IP adresi girin; sorgu otomatik olarak in-addr.arpa biçimine çevrilir.",
+   "sira": 100
+  }
+ ],
+ "urun": {
+  "ad": "Ürün Sayfası Ortak Bölümleri",
+  "guvenSeridi": [
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "SLA garantili erişilebilirlik"
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "30 Gün İade",
+    "aciklama": "Koşulsuz para iade garantisi"
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Destek",
+    "aciklama": "Ortalama 5 dakikada yanıt"
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "Hızlı Kurulum",
+    "aciklama": "Dakikalar içinde aktivasyon"
+   }
+  ],
+  "performans": [
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Diskler",
+    "aciklama": "En son nesil NVMe ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "gauge",
+    "baslik": "LiteSpeed & Önbellek",
+    "aciklama": "Optimize sunucu yazılımı ve gelişmiş önbellekleme."
+   },
+   {
+    "ikon": "pin",
+    "baslik": "İstanbul Lokasyonu",
+    "aciklama": "Türkiye içi düşük gecikme, hedef kitlenize yakın."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yedekli Premium Ağ",
+    "aciklama": "Çift hatlı, yüksek bant genişlikli kesintisiz bağlantı."
+   }
+  ],
+  "guvenlik": [
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş filtreleme ile saldırılara karşı sürekli koruma."
+   },
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz SSL",
+    "aciklama": "Otomatik kurulan Let's Encrypt sertifikaları."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yedekleme",
+    "aciklama": "Düzenli yedekle verileriniz her zaman güvende."
+   },
+   {
+    "ikon": "check",
+    "baslik": "Güvenlik Duvarı",
+    "aciklama": "Katmanlı güvenlik, kötü amaçlı trafik filtreleme."
+   }
+  ],
+  "hostingAdimlari": [
+   {
+    "baslik": "Paketinizi seçin",
+    "aciklama": "İhtiyacınıza uygun paketi seçip sepete ekleyin."
+   },
+   {
+    "baslik": "Kurulum & ücretsiz taşıma",
+    "aciklama": "Hesabınız anında kurulur; mevcut sitenizi biz taşırız."
+   },
+   {
+    "baslik": "Dakikalar içinde yayında",
+    "aciklama": "Siteniz canlıda; her şeyi kolay panelden yönetin."
+   }
+  ],
+  "karsilastirma": [
+   {
+    "baslik": "Genel Özellikler",
+    "satirlar": "cPanel Kontrol Paneli\n24/7 FTP Erişimi\nHaftalık Otomatik Yedekleme\nSınırsız Alan Adı Yönlendirme\nZiyaretçi & Trafik İstatistikleri\nŞifre Korumalı Dizin\nÖzel Hata Sayfaları\nWeb Üzerinden Dosya Yönetimi"
+   },
+   {
+    "baslik": "E-Posta Özellikleri",
+    "satirlar": "SMTP / POP3 / IMAP\nWeb Mail Erişimi\nAnti-Spam / Anti-Virüs\nOtomatik Cevaplama\nTakma Ad (Alias)\nE-posta Yönlendirme\nE-posta Grupları"
+   },
+   {
+    "baslik": "Güvenlik & Altyapı",
+    "satirlar": "Ücretsiz SSL Sertifikası\nDDoS Koruması\nNVMe SSD Disk\nLiteSpeed Web Sunucusu\nImunify360 Güvenlik\nSoftaculous Oto Kurulum"
+   }
+  ]
+ },
+ "alanadi": {
+  "ad": "Alan Adı Sayfası",
+  "uzantilar": [
+   {
+    "uzanti": ".com",
+    "fiyat": "719"
+   },
+   {
+    "uzanti": ".com.tr",
+    "fiyat": "119"
+   },
+   {
+    "uzanti": ".net",
+    "fiyat": "889"
+   },
+   {
+    "uzanti": ".org",
+    "fiyat": "539"
+   },
+   {
+    "uzanti": ".tr",
+    "fiyat": "209"
+   },
+   {
+    "uzanti": ".xyz",
+    "fiyat": "129"
+   },
+   {
+    "uzanti": ".io",
+    "fiyat": "2829"
+   },
+   {
+    "uzanti": ".dev",
+    "fiyat": "1289"
+   },
+   {
+    "uzanti": ".co",
+    "fiyat": "1229"
+   },
+   {
+    "uzanti": ".info",
+    "fiyat": "289"
+   },
+   {
+    "uzanti": ".biz",
+    "fiyat": "1479"
+   },
+   {
+    "uzanti": ".online",
+    "fiyat": "129"
+   }
+  ],
+  "ozellikler": [
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz WHOIS Gizliliği",
+    "aciklama": "Kişisel bilgileriniz WHOIS sorgularında gizli kalır, spam ve dolandırıcılıktan korunursunuz."
+   },
+   {
+    "ikon": "gauge",
+    "baslik": "Kolay DNS Yönetimi",
+    "aciklama": "A, CNAME, MX, TXT ve tüm kayıtlarınızı sezgisel panelden saniyeler içinde düzenleyin."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yenileme",
+    "aciklama": "Alan adınızı asla kaybetmeyin; otomatik yenileme ve bitiş uyarılarıyla güvende kalın."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Alan adı ve DNS işlemlerinizde uzman ekibimiz her an yanınızda."
+   }
+  ],
+  "tescilAdimlari": [
+   {
+    "baslik": "Alan adını sorgulayın",
+    "aciklama": "İstediğiniz ismi yazın, uygun uzantıları anında görün."
+   },
+   {
+    "baslik": "Uzantıyı seçin",
+    "aciklama": "Size en uygun uzantıyı ve süreyi belirleyip sepete ekleyin."
+   },
+   {
+    "baslik": "Dakikalar içinde yayında",
+    "aciklama": "Ödeme sonrası alan adınız anında aktifleşir, panelden yönetirsiniz."
+   }
+  ],
+  "transferAdimlari": [
+   {
+    "baslik": "Alan adınızı girin",
+    "aciklama": "Taşımak istediğiniz alan adını sorgulayın ve uygunluğunu görün."
+   },
+   {
+    "baslik": "Transfer kodunu alın",
+    "aciklama": "Mevcut sağlayıcınızdan EPP/transfer kodunuzu temin edin."
+   },
+   {
+    "baslik": "Taşıma tamamlansın",
+    "aciklama": "Onay sonrası alan adınız güvenle SunucumWEB'e taşınır, 1 yıl uzatma hediye."
+   }
+  ],
+  "tescilSss": [
+   {
+    "soru": "Alan adı ne kadar sürede aktif olur?",
+    "cevap": "Ödeme onaylandıktan sonra çoğu uzantı birkaç dakika içinde aktifleşir. .tr uzantılarında kurum onayı gerektiğinde süreç biraz uzayabilir."
+   },
+   {
+    "soru": "WHOIS gizliliği ücretsiz mi?",
+    "cevap": "Evet, destekleyen tüm uzantılarda WHOIS gizliliğini ücretsiz sunuyoruz; kişisel bilgileriniz sorgularda görünmez."
+   },
+   {
+    "soru": "Sadece alan adı, hosting almadan alabilir miyim?",
+    "cevap": "Elbette. Alan adını tek başına alabilir, DNS yönetimini ücretsiz panelimizden yapabilirsiniz."
+   },
+   {
+    "soru": "Alan adımı sonradan taşıyabilir miyim?",
+    "cevap": "Alan adı size aittir. Dilediğiniz zaman EPP/transfer kodunuzu alıp başka bir sağlayıcıya taşıyabilirsiniz."
+   }
+  ],
+  "transferSss": [
+   {
+    "soru": "Transfer sırasında sitem kapanır mı?",
+    "cevap": "Hayır. DNS kayıtlarınız korunduğu sürece siteniz ve e-postalarınız kesintisiz çalışmaya devam eder."
+   },
+   {
+    "soru": "Transfer ne kadar sürer?",
+    "cevap": "Onay sonrası çoğu uzantıda 1-5 gün içinde tamamlanır; süreç boyunca sizi bilgilendiririz."
+   },
+   {
+    "soru": "Transfer ücretli mi?",
+    "cevap": "Çoğu uzantıda transfer işlemi alan adınıza 1 yıl uzatma ekler; bir yıllık yenileme bedeliyle hem taşır hem süre kazanırsınız."
+   },
+   {
+    "soru": "EPP/transfer kodunu nereden alırım?",
+    "cevap": "Mevcut sağlayıcınızın panelinden talep edebilirsiniz. Takıldığınız yerde destek ekibimiz adım adım yardımcı olur."
+   }
+  ]
+ }
+}

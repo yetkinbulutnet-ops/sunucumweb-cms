@@ -1,0 +1,89 @@
+{
+  "collectionName": "components_iletisim_kanal",
+  "info": {
+    "displayName": "İletişim Kanalı",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent",
+        "binaOfis"
+      ],
+      "default": "phone",
+      "required": true
+    },
+    "baslik": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "deger": {
+      "type": "string",
+      "maxLength": 80,
+      "required": true
+    },
+    "aciklama": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "baglanti": {
+      "type": "string",
+      "maxLength": 200
+    }
+  }
+}

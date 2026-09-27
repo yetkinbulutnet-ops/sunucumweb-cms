@@ -1,0 +1,148 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_ayarlari",
+  "info": {
+    "singularName": "site-ayari",
+    "pluralName": "site-ayarlari",
+    "displayName": "Site Ayarları",
+    "description": "Tüm sayfalarda ortak: firma bilgileri, menüler, alt bilgi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 40,
+      "default": "Site Ayarları"
+    },
+    "firmaUnvani": {
+      "type": "string",
+      "maxLength": 90,
+      "required": true
+    },
+    "adres": {
+      "type": "string",
+      "maxLength": 160,
+      "required": true
+    },
+    "adresSokak": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "adresIlce": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "adresIl": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "postaKodu": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "telefon": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "telefonBaglanti": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "eposta": {
+      "type": "email",
+      "required": true
+    },
+    "kep": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "panelAdresi": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "durumAdresi": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "sosyalMedya": {
+      "type": "component",
+      "component": "site.sosyal",
+      "repeatable": true
+    },
+    "ustMenu": {
+      "type": "component",
+      "component": "site.ust-menu",
+      "repeatable": true
+    },
+    "aracMenusu": {
+      "type": "component",
+      "component": "site.ust-menu",
+      "repeatable": false
+    },
+    "altMenuler": {
+      "type": "component",
+      "component": "site.menu-grubu",
+      "repeatable": true
+    },
+    "btkMetni": {
+      "type": "text",
+      "maxLength": 300
+    },
+    "btkBaglanti": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "btkLogo": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "etbisMetni": {
+      "type": "text",
+      "maxLength": 300
+    },
+    "etbisBaglanti": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "etbisLogo": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "trustpilotPuan": {
+      "type": "decimal",
+      "min": 0,
+      "max": 5
+    },
+    "trustpilotYorumSayisi": {
+      "type": "integer",
+      "min": 0
+    },
+    "trustpilotBaglanti": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "googleYorumBaglanti": {
+      "type": "string",
+      "maxLength": 400
+    },
+    "altyapiBasligi": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "ctaBaslik": {
+      "type": "string",
+      "maxLength": 120,
+      "required": true
+    },
+    "ctaMetni": {
+      "type": "text",
+      "maxLength": 300
+    }
+  }
+}

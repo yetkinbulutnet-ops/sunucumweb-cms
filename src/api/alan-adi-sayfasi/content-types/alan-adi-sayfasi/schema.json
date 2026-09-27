@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "alan_adi_sayfalari",
+  "info": {
+    "singularName": "alan-adi-sayfasi",
+    "pluralName": "alan-adi-sayfalari",
+    "displayName": "Alan Adı Sayfası",
+    "description": "Alan adı tescil ve transfer sayfaları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 40,
+      "default": "Alan Adı Sayfası"
+    },
+    "uzantilar": {
+      "type": "component",
+      "component": "alanadi.uzanti",
+      "repeatable": true
+    },
+    "ozellikler": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    },
+    "tescilAdimlari": {
+      "type": "component",
+      "component": "ortak.baslik-aciklama",
+      "repeatable": true
+    },
+    "transferAdimlari": {
+      "type": "component",
+      "component": "ortak.baslik-aciklama",
+      "repeatable": true
+    },
+    "tescilSss": {
+      "type": "component",
+      "component": "ortak.sss",
+      "repeatable": true
+    },
+    "transferSss": {
+      "type": "component",
+      "component": "ortak.sss",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_kategorileri",
+  "info": {
+    "singularName": "blog-kategorisi",
+    "pluralName": "blog-kategorileri",
+    "displayName": "Blog Kategorisi",
+    "description": "Blog yazı kategorileri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ad",
+      "required": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 300
+    },
+    "seoBaslik": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 170
+    },
+    "yazilar": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-yazisi.blog-yazisi",
+      "mappedBy": "kategori"
+    }
+  }
+}

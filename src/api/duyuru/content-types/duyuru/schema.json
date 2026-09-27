@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "duyurular",
+  "info": {
+    "singularName": "duyuru",
+    "pluralName": "duyurular",
+    "displayName": "Duyuru",
+    "description": "Sitenin en üstündeki duyuru bandı"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metin": {
+      "type": "string",
+      "required": true,
+      "maxLength": 180
+    },
+    "baglanti": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "baglantiMetni": {
+      "type": "string",
+      "default": "İncele",
+      "maxLength": 30
+    },
+    "ton": {
+      "type": "enumeration",
+      "enum": [
+        "marka",
+        "bilgi",
+        "kampanya",
+        "uyari",
+        "basari"
+      ],
+      "default": "marka",
+      "required": true
+    },
+    "baslangic": {
+      "type": "datetime"
+    },
+    "bitis": {
+      "type": "datetime"
+    },
+    "kapatilabilir": {
+      "type": "boolean",
+      "default": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

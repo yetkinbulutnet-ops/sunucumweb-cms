@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "ticari_bilgiler",
+  "info": {
+    "singularName": "ticari-bilgi",
+    "pluralName": "ticari-bilgiler",
+    "displayName": "Ticari Bilgiler",
+    "description": "Legal sayfasındaki resmî şirket bilgileri"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "kisaAd": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "ozet": {
+      "type": "text",
+      "maxLength": 300,
+      "required": true
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 170,
+      "required": true
+    },
+    "bilgiler": {
+      "type": "component",
+      "component": "ticari.bilgi",
+      "repeatable": true
+    },
+    "epostalar": {
+      "type": "component",
+      "component": "ortak.etiket-deger",
+      "repeatable": true
+    },
+    "hizmetler": {
+      "type": "text",
+      "maxLength": 600
+    },
+    "kayitlar": {
+      "type": "component",
+      "component": "ticari.kayit",
+      "repeatable": true
+    }
+  }
+}

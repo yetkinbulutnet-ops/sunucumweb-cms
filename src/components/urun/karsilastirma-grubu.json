@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_urun_karsilastirma_grubu",
+  "info": {
+    "displayName": "Karşılaştırma Grubu",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "satirlar": {
+      "type": "text",
+      "maxLength": 1500,
+      "required": true
+    }
+  }
+}

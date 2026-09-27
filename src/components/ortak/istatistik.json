@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ortak_istatistik",
+  "info": {
+    "displayName": "İstatistik",
+    "icon": "chartBubble",
+    "description": "Büyük değer + kısa etiket"
+  },
+  "options": {},
+  "attributes": {
+    "deger": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "etiket": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    }
+  }
+}

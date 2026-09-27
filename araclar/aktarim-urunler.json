@@ -1,0 +1,2777 @@
+[
+ {
+  "slug": "web-hosting",
+  "baslik": "Web Hosting",
+  "durum": "yayinda",
+  "sira": 10,
+  "ikon": "globe",
+  "ustBaslik": "Web Hosting",
+  "altBaslik": "Bireysel siteler ve işletmeler için hızlı, güvenli ve yönetimi kolay NVMe hosting paketleri.",
+  "seoBaslik": "Web Hosting Fiyatları — NVMe SSD & cPanel",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "%99.9",
+    "etiket": "Uptime"
+   },
+   {
+    "deger": "NVMe",
+    "etiket": "SSD Disk"
+   },
+   {
+    "deger": "7/24",
+    "etiket": "Destek"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Disk",
+    "deger": "NVMe SSD"
+   },
+   {
+    "etiket": "Panel",
+    "deger": "cPanel"
+   },
+   {
+    "etiket": "SSL",
+    "deger": "Ücretsiz"
+   },
+   {
+    "etiket": "Yedekleme",
+    "deger": "Günlük"
+   },
+   {
+    "etiket": "E-posta",
+    "deger": "Sınırsız"
+   }
+  ],
+  "ozelliklerBasligi": "Sitenizi hızlı ve güvende tutan her şey",
+  "ozellikler": [
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz SSL",
+    "aciklama": "Tüm alan adlarınız için otomatik kurulan, ücretsiz Let's Encrypt SSL sertifikaları."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yedekleme",
+    "aciklama": "Günlük otomatik yedekleme ile verileriniz her zaman güvende, tek tıkla geri yükleyin."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "gauge",
+    "baslik": "Kolay Yönetim",
+    "aciklama": "Kullanıcı dostu kontrol paneli ile her şeyi tek yerden yönetin."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/hosting/web-hosting",
+  "planlar": [
+   {
+    "ad": "cPanel Başlangıç",
+    "sira": 10,
+    "altBaslik": "Yeni başlayanlar için ideal",
+    "fiyat": 49.9,
+    "eskiFiyat": 69.99,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "1 Adet Site\n10 GB SSD Disk Alanı\nLimitsiz Trafik\n5 Adet E-Posta Adresi\n2 Adet Subdomain\n2 Adet MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/222",
+    "detaylar": []
+   },
+   {
+    "ad": "cPanel İdeal",
+    "sira": 20,
+    "altBaslik": "Geliştiriciler için özel",
+    "fiyat": 79.9,
+    "eskiFiyat": 89.99,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "3 Adet Site\n30 GB SSD Disk Alanı\nLimitsiz Trafik\n10 Adet E-Posta Adresi\n5 Adet Subdomain\n5 Adet MySQL Veritabanı\n4 Core CPU\n4 GB RAM",
+    "siparisYolu": "hosting/223",
+    "detaylar": []
+   },
+   {
+    "ad": "cPanel Plus",
+    "sira": 30,
+    "altBaslik": "İleri Düzey İşler için",
+    "fiyat": 99.99,
+    "eskiFiyat": 109.99,
+    "indirim": "%25",
+    "populer": true,
+    "ozellikler": "5 Adet Site\n50 GB SSD Disk Alanı\nLimitsiz Trafik\n15 Adet E-Posta Adresi\n10 Adet Subdomain\n10 Adet MySQL Veritabanı\n6 Core CPU\n6 GB RAM",
+    "siparisYolu": "hosting/224",
+    "detaylar": []
+   }
+  ]
+ },
+ {
+  "slug": "wordpress-hosting",
+  "baslik": "WordPress Hosting",
+  "durum": "yayinda",
+  "sira": 20,
+  "ikon": "globe",
+  "ustBaslik": "WordPress Hosting",
+  "altBaslik": "WordPress için özel optimize edilmiş, LiteSpeed önbellekli ve tek tıkla kurulumlu hosting.",
+  "seoBaslik": "WordPress Hosting — LiteSpeed Optimizeli",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "1-Tık",
+    "etiket": "Kurulum"
+   },
+   {
+    "deger": "LiteSpeed",
+    "etiket": "Cache"
+   },
+   {
+    "deger": "%99.9",
+    "etiket": "Uptime"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Optimizasyon",
+    "deger": "WordPress"
+   },
+   {
+    "etiket": "Cache",
+    "deger": "LiteSpeed"
+   },
+   {
+    "etiket": "SSL",
+    "deger": "Ücretsiz"
+   },
+   {
+    "etiket": "Kurulum",
+    "deger": "Tek Tık"
+   },
+   {
+    "etiket": "Yedekleme",
+    "deger": "Günlük"
+   }
+  ],
+  "ozelliklerBasligi": "WordPress için uçtan uca optimize",
+  "ozellikler": [
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Güncelleme",
+    "aciklama": "WordPress çekirdek ve eklenti güncellemeleri güvenle yönetilir."
+   },
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz SSL",
+    "aciklama": "Tüm alan adlarınız için otomatik kurulan, ücretsiz Let's Encrypt SSL sertifikaları."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yedekleme",
+    "aciklama": "Günlük otomatik yedekleme ile verileriniz her zaman güvende, tek tıkla geri yükleyin."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/hosting/web-hosting",
+  "planlar": [
+   {
+    "ad": "WP Başlangıç",
+    "sira": 10,
+    "altBaslik": "Yeni başlayanlar için ideal",
+    "fiyat": 49.9,
+    "eskiFiyat": 69.99,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "1 Adet Site\n10 GB SSD Disk Alanı\nLimitsiz Trafik\n5 Adet E-Posta Adresi\n2 Adet Subdomain\n2 Adet MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/222",
+    "detaylar": []
+   },
+   {
+    "ad": "WP İdeal",
+    "sira": 20,
+    "altBaslik": "Geliştiriciler için özel",
+    "fiyat": 79.9,
+    "eskiFiyat": 89.99,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "3 Adet Site\n30 GB SSD Disk Alanı\nLimitsiz Trafik\n10 Adet E-Posta Adresi\n5 Adet Subdomain\n5 Adet MySQL Veritabanı\n4 Core CPU\n4 GB RAM",
+    "siparisYolu": "hosting/223",
+    "detaylar": []
+   },
+   {
+    "ad": "WP Plus",
+    "sira": 30,
+    "altBaslik": "İleri Düzey İşler için",
+    "fiyat": 99.99,
+    "eskiFiyat": 109.99,
+    "indirim": "%25",
+    "populer": true,
+    "ozellikler": "5 Adet Site\n50 GB SSD Disk Alanı\nLimitsiz Trafik\n15 Adet E-Posta Adresi\n10 Adet Subdomain\n10 Adet MySQL Veritabanı\n6 Core CPU\n6 GB RAM",
+    "siparisYolu": "hosting/224",
+    "detaylar": []
+   }
+  ]
+ },
+ {
+  "slug": "reseller-hosting",
+  "baslik": "Reseller Hosting",
+  "durum": "yayinda",
+  "sira": 30,
+  "ikon": "users",
+  "ustBaslik": "Reseller Hosting",
+  "altBaslik": "Kendi hosting işinizi kurun: WHM ile sınırsız cPanel hesabı oluşturun, markanızla satış yapın.",
+  "seoBaslik": "Reseller Hosting — WHM ile Bayilik",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "WHM",
+    "etiket": "Yönetim"
+   },
+   {
+    "deger": "White",
+    "etiket": "Label"
+   },
+   {
+    "deger": "7/24",
+    "etiket": "Destek"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Panel",
+    "deger": "WHM / cPanel"
+   },
+   {
+    "etiket": "Marka",
+    "deger": "White Label"
+   },
+   {
+    "etiket": "Hesap",
+    "deger": "Sınırsız"
+   },
+   {
+    "etiket": "SSL",
+    "deger": "Ücretsiz"
+   },
+   {
+    "etiket": "Yedekleme",
+    "deger": "Günlük"
+   }
+  ],
+  "ozelliklerBasligi": "Hosting işinizi büyütmek için ihtiyacınız olan her şey",
+  "ozellikler": [
+   {
+    "ikon": "users",
+    "baslik": "Sınırsız cPanel",
+    "aciklama": "Dilediğiniz kadar müşteri hesabı oluşturun ve yönetin."
+   },
+   {
+    "ikon": "gauge",
+    "baslik": "Kolay Yönetim",
+    "aciklama": "Kullanıcı dostu kontrol paneli ile her şeyi tek yerden yönetin."
+   },
+   {
+    "ikon": "lock",
+    "baslik": "Ücretsiz SSL",
+    "aciklama": "Tüm alan adlarınız için otomatik kurulan, ücretsiz Let's Encrypt SSL sertifikaları."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yedekleme",
+    "aciklama": "Günlük otomatik yedekleme ile verileriniz her zaman güvende, tek tıkla geri yükleyin."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/hosting/bayi-reseller-hosting",
+  "planlar": [
+   {
+    "ad": "Bronz Bayi",
+    "sira": 10,
+    "altBaslik": "Yeni başlayanlar için ideal",
+    "fiyat": 149.9,
+    "eskiFiyat": 189.9,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "10 Adet Site\n25 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/124",
+    "detaylar": []
+   },
+   {
+    "ad": "Silver Bayi",
+    "sira": 20,
+    "altBaslik": "Geliştiriciler için özel",
+    "fiyat": 189.9,
+    "eskiFiyat": 209.99,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "20 Adet Site\n50 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/125",
+    "detaylar": []
+   },
+   {
+    "ad": "Gold Bayi",
+    "sira": 30,
+    "altBaslik": "İleri Düzey İşler için",
+    "fiyat": 239.9,
+    "eskiFiyat": 259.99,
+    "indirim": "%20",
+    "populer": true,
+    "ozellikler": "50 Adet Site\n75 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/126",
+    "detaylar": []
+   },
+   {
+    "ad": "Platin Bayi",
+    "sira": 40,
+    "altBaslik": "Profesyoneller için",
+    "fiyat": 389.9,
+    "eskiFiyat": 419.9,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "75 Adet Site\nLimitsiz SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/127",
+    "detaylar": []
+   }
+  ]
+ },
+ {
+  "slug": "kurumsal-hosting",
+  "baslik": "Kurumsal Hosting",
+  "durum": "yayinda",
+  "sira": 40,
+  "ikon": "layers",
+  "ustBaslik": "Kurumsal Hosting",
+  "altBaslik": "Yüksek trafikli kurumsal siteler için izole kaynaklar, gelişmiş güvenlik ve öncelikli SLA.",
+  "seoBaslik": "Kurumsal Hosting — İzole Kaynak & SLA",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "İzole",
+    "etiket": "Kaynak"
+   },
+   {
+    "deger": "SLA",
+    "etiket": "Öncelikli"
+   },
+   {
+    "deger": "%99.9",
+    "etiket": "Uptime"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Kaynak",
+    "deger": "İzole / Garantili"
+   },
+   {
+    "etiket": "Güvenlik",
+    "deger": "Gelişmiş"
+   },
+   {
+    "etiket": "SLA",
+    "deger": "Kurumsal"
+   },
+   {
+    "etiket": "SSL",
+    "deger": "Ücretsiz"
+   },
+   {
+    "etiket": "Yedekleme",
+    "deger": "Günlük"
+   }
+  ],
+  "ozelliklerBasligi": "Kurumsal ihtiyaçlar için güçlü altyapı",
+  "ozellikler": [
+   {
+    "ikon": "layers",
+    "baslik": "İzole Kaynaklar",
+    "aciklama": "Garantili CPU ve RAM ile performansınız komşulardan etkilenmez."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Otomatik Yedekleme",
+    "aciklama": "Günlük otomatik yedekleme ile verileriniz her zaman güvende, tek tıkla geri yükleyin."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/hosting/kurumsal-hosting",
+  "planlar": [
+   {
+    "ad": "Kurumsal Başlangıç",
+    "sira": 10,
+    "altBaslik": "Yeni başlayanlar için ideal",
+    "fiyat": 99.9,
+    "eskiFiyat": 119.9,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "1 Adet Site\n10 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n2 Core CPU\n2 GB RAM",
+    "siparisYolu": "hosting/120",
+    "detaylar": []
+   },
+   {
+    "ad": "Kurumsal Standart",
+    "sira": 20,
+    "altBaslik": "Geliştiriciler için özel",
+    "fiyat": 129.9,
+    "eskiFiyat": 139.9,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "3 Adet Site\n50 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n4 Core CPU\n4 GB RAM",
+    "siparisYolu": "hosting/121",
+    "detaylar": []
+   },
+   {
+    "ad": "Kurumsal Plus+",
+    "sira": 30,
+    "altBaslik": "İleri Düzey İşler için",
+    "fiyat": 169.9,
+    "eskiFiyat": 189.9,
+    "indirim": "%20",
+    "populer": true,
+    "ozellikler": "5 Adet Site\n75 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n6 Core CPU\n6 GB RAM",
+    "siparisYolu": "hosting/122",
+    "detaylar": []
+   },
+   {
+    "ad": "Kurumsal Premium",
+    "sira": 40,
+    "altBaslik": "Profesyoneller için",
+    "fiyat": 189.9,
+    "eskiFiyat": 209.9,
+    "indirim": "%20",
+    "populer": false,
+    "ozellikler": "10 Site Barındırma\n100 GB SSD Disk Alanı\nLimitsiz Trafik\nLimitsiz E-Posta Adresi\nLimitsiz Subdomain\nLimitsiz MySQL Veritabanı\n8 Core CPU\n8 GB RAM",
+    "siparisYolu": "hosting/123",
+    "detaylar": []
+   }
+  ]
+ },
+ {
+  "slug": "sanal-sunucu",
+  "baslik": "Sanal Sunucu",
+  "durum": "yayinda",
+  "sira": 50,
+  "ikon": "server",
+  "ustBaslik": "Sanal Sunucu (VDS)",
+  "altBaslik": "Tam root erişimli, NVMe destekli ve saniyeler içinde ölçeklenebilen yüksek performanslı sanal sunucular.",
+  "seoBaslik": "Sanal Sunucu (VDS) Kiralama — Tam Root",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Root",
+    "etiket": "Erişim"
+   },
+   {
+    "deger": "NVMe",
+    "etiket": "SSD"
+   },
+   {
+    "deger": "Anlık",
+    "etiket": "Kurulum"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "CPU",
+    "deger": "Dedike vCPU"
+   },
+   {
+    "etiket": "Disk",
+    "deger": "NVMe SSD"
+   },
+   {
+    "etiket": "Erişim",
+    "deger": "Tam Root"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "DDoS Korumalı"
+   },
+   {
+    "etiket": "Kurulum",
+    "deger": "Anlık"
+   }
+  ],
+  "ozelliklerBasligi": "Fiziksel sunucu gücü, sanal esneklik",
+  "ozellikler": [
+   {
+    "ikon": "terminal",
+    "baslik": "Tam Root Erişimi",
+    "aciklama": "Sunucunuzun tam kontrolü sizde; dilediğiniz yazılımı kurun."
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "scale",
+    "baslik": "Anında Ölçekleme",
+    "aciklama": "İhtiyacınız arttıkça kaynaklarınızı saniyeler içinde büyütün."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/ssd-sanal-sunucular-vds-vps/turkiye-lokasyon-vds-vps",
+  "planlar": [
+   {
+    "ad": "TR - VDS 1",
+    "sira": 10,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 99.9,
+    "eskiFiyat": 124.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "2 Core CPU\n2 GB DDR4 RAM\n30 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/104",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "2 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "2 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "30 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 2",
+    "sira": 20,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 109.9,
+    "eskiFiyat": 141.65,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "2 Core CPU\n4 GB DDR4 RAM\n40 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/105",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "2 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "4 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "40 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 3",
+    "sira": 30,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 129.9,
+    "eskiFiyat": 191.5,
+    "indirim": "%40",
+    "populer": true,
+    "ozellikler": "4 Core CPU\n6 GB DDR4 RAM\n50 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/103",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "4 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "6 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "50 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 4",
+    "sira": 40,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 139.9,
+    "eskiFiyat": 224.83,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "4 Core CPU\n8 GB DDR4 RAM\n60 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/106",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "4 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "8 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "60 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 5",
+    "sira": 50,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 179.9,
+    "eskiFiyat": 291.5,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "6 Core CPU\n10 GB DDR4 RAM\n70 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/107",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "6 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "10 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "70 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 6",
+    "sira": 60,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 189.9,
+    "eskiFiyat": 358.17,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "8 Core CPU\n12 GB DDR4 RAM\n80 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/108",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "8 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "12 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "80 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 7",
+    "sira": 70,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 239.9,
+    "eskiFiyat": 491.5,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "8 Core CPU\n16 GB DDR4 RAM\n100 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/109",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "8 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "16 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "100 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "TR - VDS 8",
+    "sira": 80,
+    "altBaslik": "Intel® Xeon® 2699V4",
+    "fiyat": 399.9,
+    "eskiFiyat": 624.83,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "16 Core CPU\n32 GB DDR4 RAM\n150 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/189",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "16 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "32 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "150 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "premium-sunucu",
+  "baslik": "Premium Sunucu",
+  "durum": "yayinda",
+  "sira": 60,
+  "ikon": "rocket",
+  "ustBaslik": "Premium Sunucu",
+  "altBaslik": "En yüksek performansı arayanlar için premium işlemciler, öncelikli ağ ve garantili kaynaklar.",
+  "seoBaslik": "Premium Sunucu — Yüksek Performanslı VDS",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Premium",
+    "etiket": "CPU"
+   },
+   {
+    "deger": "Öncelikli",
+    "etiket": "Ağ"
+   },
+   {
+    "deger": "Garantili",
+    "etiket": "Kaynak"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "CPU",
+    "deger": "Premium Nesil"
+   },
+   {
+    "etiket": "Disk",
+    "deger": "NVMe SSD"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "Öncelikli"
+   },
+   {
+    "etiket": "Kaynak",
+    "deger": "Garantili"
+   },
+   {
+    "etiket": "Kurulum",
+    "deger": "Anlık"
+   }
+  ],
+  "ozelliklerBasligi": "Performansın zirvesi",
+  "ozellikler": [
+   {
+    "ikon": "cpu",
+    "baslik": "Premium İşlemci",
+    "aciklama": "En yeni nesil yüksek frekanslı işlemcilerle maksimum performans."
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "scale",
+    "baslik": "Anında Ölçekleme",
+    "aciklama": "İhtiyacınız arttıkça kaynaklarınızı saniyeler içinde büyütün."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/ssd-sanal-sunucular-vds-vps/turkiye-lokasyon-vds-vps",
+  "planlar": [
+   {
+    "ad": "PRE VDS 1",
+    "sira": 10,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 149.99,
+    "eskiFiyat": 189.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "2 Core CPU\n2 GB DDR4 RAM\n30 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/170",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "2 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "2 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "30 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 2",
+    "sira": 20,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 179.99,
+    "eskiFiyat": 239.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "2 Core CPU\n4 GB DDR4 RAM\n40 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/171",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "2 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "4 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "40 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 3",
+    "sira": 30,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 229.99,
+    "eskiFiyat": 313.98,
+    "indirim": "%40",
+    "populer": true,
+    "ozellikler": "4 Core CPU\n6 GB DDR4 RAM\n50 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/172",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "4 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "6 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "50 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 4",
+    "sira": 40,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 279.99,
+    "eskiFiyat": 413.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "4 Core CPU\n8 GB DDR4 RAM\n60 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/173",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "4 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "8 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "60 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 5",
+    "sira": 50,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 309.99,
+    "eskiFiyat": 433.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "6 Core CPU\n10 GB DDR4 RAM\n70 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/174",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "6 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "10 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "70 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 6",
+    "sira": 60,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 369.99,
+    "eskiFiyat": 517.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "8 Core CPU\n12 GB DDR4 RAM\n80 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/175",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "8 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "12 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "80 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 7",
+    "sira": 70,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 399.99,
+    "eskiFiyat": 559.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "8 Core CPU\n16 GB DDR4 RAM\n100 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/176",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "8 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "16 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "100 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "PRE VDS 8",
+    "sira": 80,
+    "altBaslik": "Intel® Xeon® Platinum 8173M",
+    "fiyat": 799.99,
+    "eskiFiyat": 1119.98,
+    "indirim": "%40",
+    "populer": false,
+    "ozellikler": "16 Core CPU\n32 GB DDR4 RAM\n150 GB NVMe SSD\n1 Gbit Hat · Sınırsız Trafik",
+    "siparisYolu": "server/190",
+    "detaylar": [
+     {
+      "etiket": "İşlemci",
+      "deger": "16 Core CPU",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "32 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "150 GB NVMe SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat · Sınırsız Trafik",
+      "donanim": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "dedicated-sunucu",
+  "baslik": "Dedicated Sunucu",
+  "durum": "yayinda",
+  "sira": 70,
+  "ikon": "server",
+  "ustBaslik": "Dedicated Sunucu",
+  "altBaslik": "Tüm kaynakları size ait fiziksel sunucular. Maksimum güç, güvenlik ve tam donanım kontrolü.",
+  "seoBaslik": "Dedicated Sunucu Kiralama — Fiziksel Xeon",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Fiziksel",
+    "etiket": "Sunucu"
+   },
+   {
+    "deger": "Xeon",
+    "etiket": "İşlemci"
+   },
+   {
+    "deger": "IPMI",
+    "etiket": "Yönetim"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Tip",
+    "deger": "Fiziksel Sunucu"
+   },
+   {
+    "etiket": "CPU",
+    "deger": "Intel Xeon"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "1 Gbps"
+   },
+   {
+    "etiket": "Yönetim",
+    "deger": "IPMI / KVM"
+   },
+   {
+    "etiket": "SLA",
+    "deger": "Kurumsal"
+   }
+  ],
+  "ozelliklerBasligi": "Sınırsız güç, tam kontrol",
+  "ozellikler": [
+   {
+    "ikon": "cpu",
+    "baslik": "Xeon İşlemci",
+    "aciklama": "Sunucu sınıfı Intel Xeon işlemcilerle kurumsal iş yükleri."
+   },
+   {
+    "ikon": "server",
+    "baslik": "Özel Donanım",
+    "aciklama": "Kaynakları paylaşmadan, tüm donanım yalnızca size ait."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "terminal",
+    "baslik": "IPMI / KVM",
+    "aciklama": "Uzaktan tam donanım yönetimi ve konsol erişimi."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/fiziksel-sunucular-dedicated/turkiye-lokasyon-fiziksel-sunucular",
+  "planlar": [
+   {
+    "ad": "Dedicated 1",
+    "sira": 10,
+    "altBaslik": "2 × Intel Xeon® X5670",
+    "fiyat": 2299.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "128 GB ECC DDR3 RAM\n1 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/217",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "128 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "1 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 2",
+    "sira": 20,
+    "altBaslik": "2 × Intel Xeon® E5-2697v2",
+    "fiyat": 3499.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "128 GB ECC DDR3 RAM\n1 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/129",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "128 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "1 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 3",
+    "sira": 30,
+    "altBaslik": "2 × Intel Xeon® E5-2697v2",
+    "fiyat": 3999.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": true,
+    "ozellikler": "256 GB ECC DDR3 RAM\n1 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/128",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "256 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "1 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 4",
+    "sira": 40,
+    "altBaslik": "2 × Intel Xeon® E5-2697v2",
+    "fiyat": 4499.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "384 GB ECC DDR3 RAM\n2 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/130",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "384 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "2 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 5",
+    "sira": 50,
+    "altBaslik": "2 × Intel Xeon® E5-2697v2",
+    "fiyat": 4999.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "512 GB ECC DDR3 RAM\n2 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/131",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "512 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "2 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 6",
+    "sira": 60,
+    "altBaslik": "2 × Intel Xeon® E5-2690v4",
+    "fiyat": 6499.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "256 GB ECC DDR3 RAM\n1 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/218",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "256 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "1 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "Dedicated 7",
+    "sira": 70,
+    "altBaslik": "2 × Intel Xeon® Gold 6154",
+    "fiyat": 6999.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "256 GB ECC DDR3 RAM\n1 TB Enterprise SSD\n1 Gbit Port · Limitsiz Trafik\nAnti-DDoS Korumalı\nİstanbul Lokasyon\n7/24 Teknik Destek",
+    "siparisYolu": "server/219",
+    "detaylar": [
+     {
+      "etiket": "RAM",
+      "deger": "256 GB ECC DDR3 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "1 TB Enterprise SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Port · Limitsiz Trafik",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Anti-DDoS Korumalı",
+      "donanim": false
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "gpu-sunucu",
+  "baslik": "GPU Sunucu",
+  "durum": "yayinda",
+  "sira": 80,
+  "ikon": "cpu",
+  "ustBaslik": "GPU Sunucu",
+  "altBaslik": "Yapay zeka, render ve yoğun hesaplama iş yükleri için güçlü GPU hızlandırmalı sunucular.",
+  "seoBaslik": "GPU Sunucu Kiralama — AI & Render",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "GPU",
+    "etiket": "Hızlandırma"
+   },
+   {
+    "deger": "AI/ML",
+    "etiket": "Hazır"
+   },
+   {
+    "deger": "NVMe",
+    "etiket": "SSD"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "GPU",
+    "deger": "NVIDIA"
+   },
+   {
+    "etiket": "Kullanım",
+    "deger": "AI / Render"
+   },
+   {
+    "etiket": "Disk",
+    "deger": "NVMe SSD"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "Yüksek Bant"
+   },
+   {
+    "etiket": "Erişim",
+    "deger": "Tam Root"
+   }
+  ],
+  "ozelliklerBasligi": "Hesaplama gücünüzü katlayın",
+  "ozellikler": [
+   {
+    "ikon": "cpu",
+    "baslik": "NVIDIA GPU",
+    "aciklama": "Yapay zeka ve derin öğrenme için güçlü GPU hızlandırma."
+   },
+   {
+    "ikon": "layers",
+    "baslik": "AI/ML Hazır",
+    "aciklama": "CUDA, TensorFlow ve PyTorch ile uyumlu, hazır ortamlar."
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "terminal",
+    "baslik": "Tam Root Erişimi",
+    "aciklama": "Sunucunuzun tam kontrolü sizde; dilediğiniz yazılımı kurun."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/ssd-sanal-sunucular-vds-vps/ekran-kartli-sunucular",
+  "planlar": [
+   {
+    "ad": "GPU VDS Starter",
+    "sira": 10,
+    "altBaslik": "4 GB Paylaşımlı GPU",
+    "fiyat": 2499.99,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "4 GB Paylaşımlı GPU\n12 Core · 13. Nesil\n16 GB DDR4 RAM\n250 GB SSD\n1 Gbit Hat / 100 Mbit Port\nİstanbul Lokasyon",
+    "siparisYolu": "server/159",
+    "detaylar": [
+     {
+      "etiket": "GPU",
+      "deger": "4 GB Paylaşımlı GPU",
+      "donanim": true
+     },
+     {
+      "etiket": "İşlemci",
+      "deger": "12 Core · 13. Nesil",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "16 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "250 GB SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "GPU VDS Pro",
+    "sira": 20,
+    "altBaslik": "4 GB Paylaşımlı GPU",
+    "fiyat": 2899.99,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": true,
+    "ozellikler": "4 GB Paylaşımlı GPU\n12 Core · Ryzen 5 5600G\n16 GB DDR4 RAM\n250 GB SSD\n1 Gbit Hat / 100 Mbit Port\nİstanbul Lokasyon",
+    "siparisYolu": "server/160",
+    "detaylar": [
+     {
+      "etiket": "GPU",
+      "deger": "4 GB Paylaşımlı GPU",
+      "donanim": true
+     },
+     {
+      "etiket": "İşlemci",
+      "deger": "12 Core · Ryzen 5 5600G",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "16 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "250 GB SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     }
+    ]
+   },
+   {
+    "ad": "GPU VDS Enterprise",
+    "sira": 30,
+    "altBaslik": "4 GB Paylaşımlı GPU",
+    "fiyat": 3899.99,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "4 GB Paylaşımlı GPU\n16 Core · Ryzen 7 5700G\n32 GB DDR4 RAM\n500 GB SSD\n1 Gbit Hat / 100 Mbit Port\nİstanbul Lokasyon",
+    "siparisYolu": "server/161",
+    "detaylar": [
+     {
+      "etiket": "GPU",
+      "deger": "4 GB Paylaşımlı GPU",
+      "donanim": true
+     },
+     {
+      "etiket": "İşlemci",
+      "deger": "16 Core · Ryzen 7 5700G",
+      "donanim": true
+     },
+     {
+      "etiket": "RAM",
+      "deger": "32 GB DDR4 RAM",
+      "donanim": true
+     },
+     {
+      "etiket": "Disk",
+      "deger": "500 GB SSD",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbit Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Lokasyon",
+      "deger": "İstanbul Lokasyon",
+      "donanim": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "sunucu-barindirma",
+  "baslik": "Sunucu Barındırma",
+  "durum": "yayinda",
+  "sira": 90,
+  "ikon": "database",
+  "ustBaslik": "Sunucu Barındırma",
+  "altBaslik": "Kendi fiziksel sunucunuzu Tier-3 veri merkezimizde güvenle barındırın (colocation).",
+  "seoBaslik": "Sunucu Barındırma — Tier-3 Colocation",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Tier-3",
+    "etiket": "Veri Merkezi"
+   },
+   {
+    "deger": "Yedekli",
+    "etiket": "Güç"
+   },
+   {
+    "deger": "7/24",
+    "etiket": "Güvenlik"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Tesis",
+    "deger": "Tier-3 DC"
+   },
+   {
+    "etiket": "Güç",
+    "deger": "Yedekli (N+1)"
+   },
+   {
+    "etiket": "Soğutma",
+    "deger": "Hassas Klima"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "Yedekli Uplink"
+   },
+   {
+    "etiket": "Güvenlik",
+    "deger": "7/24 Fiziksel"
+   }
+  ],
+  "ozelliklerBasligi": "Sunucunuz için en güvenli ev",
+  "ozellikler": [
+   {
+    "ikon": "database",
+    "baslik": "Tier-3 Tesis",
+    "aciklama": "Yedekli güç ve soğutmaya sahip profesyonel veri merkezi."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "7/24 Fiziksel Güvenlik",
+    "aciklama": "Kamera, kartlı geçiş ve 7/24 personel ile tam güvenlik."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "refresh",
+    "baslik": "Yedekli Güç",
+    "aciklama": "UPS ve jeneratör ile kesintisiz enerji."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": "/kategori/fiziksel-sunucular-dedicated/sunucu-barindirma",
+  "planlar": [
+   {
+    "ad": "1U Kabin",
+    "sira": 10,
+    "altBaslik": "1U Rack · 1 Amper",
+    "fiyat": 2999.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "1U Rack Alanı\n1 Amper Enerji\n1 Gbps Hat / 100 Mbit Port\nGelişmiş DDoS Koruması\nÜcretsiz KVM Desteği\n1 Adet Ücretsiz IP\nÜcretsiz Taşıma ve Kurulum\n7/24 Teknik Destek",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "Kabin",
+      "deger": "1U Rack Alanı",
+      "donanim": true
+     },
+     {
+      "etiket": "Enerji",
+      "deger": "1 Amper Enerji",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbps Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Gelişmiş DDoS Koruması",
+      "donanim": false
+     },
+     {
+      "etiket": "Yönetim",
+      "deger": "Ücretsiz KVM Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "1 Adet Ücretsiz IP",
+      "donanim": false
+     },
+     {
+      "etiket": "Kurulum",
+      "deger": "Ücretsiz Taşıma ve Kurulum",
+      "donanim": false
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "2U Kabin",
+    "sira": 20,
+    "altBaslik": "2U Rack · 1 Amper",
+    "fiyat": 3199.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "2U Rack Alanı\n1 Amper Enerji\n1 Gbps Hat / 100 Mbit Port\nGelişmiş DDoS Koruması\nÜcretsiz KVM Desteği\n1 Adet Ücretsiz IP\nÜcretsiz Taşıma ve Kurulum\n7/24 Teknik Destek",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "Kabin",
+      "deger": "2U Rack Alanı",
+      "donanim": true
+     },
+     {
+      "etiket": "Enerji",
+      "deger": "1 Amper Enerji",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbps Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Gelişmiş DDoS Koruması",
+      "donanim": false
+     },
+     {
+      "etiket": "Yönetim",
+      "deger": "Ücretsiz KVM Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "1 Adet Ücretsiz IP",
+      "donanim": false
+     },
+     {
+      "etiket": "Kurulum",
+      "deger": "Ücretsiz Taşıma ve Kurulum",
+      "donanim": false
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "4U Kabin",
+    "sira": 30,
+    "altBaslik": "4U Rack · 1 Amper",
+    "fiyat": 3599.9,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": true,
+    "ozellikler": "4U Rack Alanı\n1 Amper Enerji\n1 Gbps Hat / 100 Mbit Port\nGelişmiş DDoS Koruması\nÜcretsiz KVM Desteği\n1 Adet Ücretsiz IP\nÜcretsiz Taşıma ve Kurulum\n7/24 Teknik Destek",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "Kabin",
+      "deger": "4U Rack Alanı",
+      "donanim": true
+     },
+     {
+      "etiket": "Enerji",
+      "deger": "1 Amper Enerji",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbps Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Gelişmiş DDoS Koruması",
+      "donanim": false
+     },
+     {
+      "etiket": "Yönetim",
+      "deger": "Ücretsiz KVM Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "1 Adet Ücretsiz IP",
+      "donanim": false
+     },
+     {
+      "etiket": "Kurulum",
+      "deger": "Ücretsiz Taşıma ve Kurulum",
+      "donanim": false
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "ATX Kabin",
+    "sira": 40,
+    "altBaslik": "ATX Rack · 1 Amper",
+    "fiyat": 2999.99,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "ATX Rack Alanı\n1 Amper Enerji\n1 Gbps Hat / 100 Mbit Port\nGelişmiş DDoS Koruması\nÜcretsiz KVM Desteği\n1 Adet Ücretsiz IP\nÜcretsiz Taşıma ve Kurulum\n7/24 Teknik Destek",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "Kabin",
+      "deger": "ATX Rack Alanı",
+      "donanim": true
+     },
+     {
+      "etiket": "Enerji",
+      "deger": "1 Amper Enerji",
+      "donanim": true
+     },
+     {
+      "etiket": "Ağ",
+      "deger": "1 Gbps Hat / 100 Mbit Port",
+      "donanim": true
+     },
+     {
+      "etiket": "Güvenlik",
+      "deger": "Gelişmiş DDoS Koruması",
+      "donanim": false
+     },
+     {
+      "etiket": "Yönetim",
+      "deger": "Ücretsiz KVM Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "1 Adet Ücretsiz IP",
+      "donanim": false
+     },
+     {
+      "etiket": "Kurulum",
+      "deger": "Ücretsiz Taşıma ve Kurulum",
+      "donanim": false
+     },
+     {
+      "etiket": "Destek",
+      "deger": "7/24 Teknik Destek",
+      "donanim": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "ip-kiralama",
+  "baslik": "IP Kiralama",
+  "durum": "yayinda",
+  "sira": 100,
+  "ikon": "globe",
+  "ustBaslik": "IP Kiralama",
+  "altBaslik": "Temiz, itibarlı IPv4 ve IPv6 blokları. E-posta gönderimi ve altyapınız için ideal IP adresleri.",
+  "seoBaslik": "IP Kiralama — Temiz IPv4 & IPv6 Blokları",
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Temiz",
+    "etiket": "IP İtibarı"
+   },
+   {
+    "deger": "IPv4",
+    "etiket": "& IPv6"
+   },
+   {
+    "deger": "Hızlı",
+    "etiket": "Tahsis"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Tip",
+    "deger": "IPv4 / IPv6"
+   },
+   {
+    "etiket": "İtibar",
+    "deger": "Temiz / Blacklist-siz"
+   },
+   {
+    "etiket": "Yönlendirme",
+    "deger": "BGP Destekli"
+   },
+   {
+    "etiket": "Tahsis",
+    "deger": "Hızlı"
+   },
+   {
+    "etiket": "rDNS",
+    "deger": "Özelleştirilebilir"
+   }
+  ],
+  "ozelliklerBasligi": "İtibarlı IP adresleriyle güvende kalın",
+  "ozellikler": [
+   {
+    "ikon": "globe",
+    "baslik": "Temiz IP İtibarı",
+    "aciklama": "Kara listede olmayan, e-posta gönderimine uygun temiz IP blokları."
+   },
+   {
+    "ikon": "layers",
+    "baslik": "IPv4 & IPv6",
+    "aciklama": "İhtiyacınıza göre esnek IPv4 ve IPv6 blok seçenekleri."
+   },
+   {
+    "ikon": "terminal",
+    "baslik": "Özel rDNS",
+    "aciklama": "Ters DNS kayıtlarını kendiniz yönetin."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": null,
+  "planlar": [
+   {
+    "ad": "IPv4 /30",
+    "sira": 10,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "1 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "1 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /29",
+    "sira": 20,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "5 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "5 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /28",
+    "sira": 30,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "13 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "13 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /27",
+    "sira": 40,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "29 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "29 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /26",
+    "sira": 50,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "61 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "61 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /25",
+    "sira": 60,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "125 Kullanılabilir IP\nIPv6 Desteği\nHizmet alımı ile birlikte",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "125 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Hizmet alımı ile birlikte",
+      "donanim": false
+     }
+    ]
+   },
+   {
+    "ad": "IPv4 /24",
+    "sira": 70,
+    "altBaslik": null,
+    "fiyat": null,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "253 Kullanılabilir IP\nIPv6 Desteği\nWHOIS Kaydı Dahil\nTek başına kiralanabilir",
+    "siparisYolu": null,
+    "detaylar": [
+     {
+      "etiket": "IP Bloğu",
+      "deger": "253 Kullanılabilir IP",
+      "donanim": true
+     },
+     {
+      "etiket": null,
+      "deger": "IPv6 Desteği",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "WHOIS Kaydı Dahil",
+      "donanim": false
+     },
+     {
+      "etiket": null,
+      "deger": "Tek başına kiralanabilir",
+      "donanim": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "isp-sunucu",
+  "baslik": "ISP Sunucu",
+  "durum": "yapim-asamasi",
+  "sira": 110,
+  "ikon": "wifi",
+  "ustBaslik": "ISP Sunucu",
+  "altBaslik": "Servis sağlayıcılar için yüksek kapasiteli, yedekli ağ altyapısına sahip taşıyıcı sınıfı sunucular.",
+  "seoBaslik": null,
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "Taşıyıcı",
+    "etiket": "Sınıfı"
+   },
+   {
+    "deger": "Yedekli",
+    "etiket": "Ağ"
+   },
+   {
+    "deger": "Yüksek",
+    "etiket": "Kapasite"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Ağ",
+    "deger": "Taşıyıcı Sınıfı"
+   },
+   {
+    "etiket": "Uplink",
+    "deger": "Yedekli (BGP)"
+   },
+   {
+    "etiket": "Kapasite",
+    "deger": "Yüksek Bant"
+   },
+   {
+    "etiket": "SLA",
+    "deger": "Kurumsal"
+   },
+   {
+    "etiket": "Yönetim",
+    "deger": "IPMI"
+   }
+  ],
+  "ozelliklerBasligi": "Servis sağlayıcılar için sağlam temel",
+  "ozellikler": [
+   {
+    "ikon": "wifi",
+    "baslik": "Taşıyıcı Sınıfı Ağ",
+    "aciklama": "Çoklu uplink ve BGP ile kesintisiz, yüksek kapasiteli bağlantı."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "%99.9 Uptime",
+    "aciklama": "Yedekli ağ ve kesintisiz güç kaynağı ile SLA garantili erişilebilirlik."
+   },
+   {
+    "ikon": "scale",
+    "baslik": "Ölçeklenebilir",
+    "aciklama": "Abone tabanınız büyüdükçe altyapınızı kolayca genişletin."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": null,
+  "planlar": [
+   {
+    "ad": "ISP Start",
+    "sira": 10,
+    "altBaslik": null,
+    "fiyat": 1299,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "Yedekli Uplink\n1 Gbps Port\n/29 IP Bloğu\nBGP Desteği\nIPMI Yönetim",
+    "siparisYolu": null,
+    "detaylar": []
+   },
+   {
+    "ad": "ISP Pro",
+    "sira": 20,
+    "altBaslik": null,
+    "fiyat": 2799,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": true,
+    "ozellikler": "Çift Yedekli Uplink\n10 Gbps Port\n/27 IP Bloğu\nBGP Desteği\nKurumsal SLA",
+    "siparisYolu": null,
+    "detaylar": []
+   },
+   {
+    "ad": "ISP Enterprise",
+    "sira": 30,
+    "altBaslik": null,
+    "fiyat": 5499,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "Çoklu Uplink\n10+ Gbps Port\n/24 IP Bloğu\nÖzel Yönlendirme\nÖzel Destek Yöneticisi",
+    "siparisYolu": null,
+    "detaylar": []
+   }
+  ]
+ },
+ {
+  "slug": "abd-sunucu",
+  "baslik": "ABD Sunucu",
+  "durum": "yapim-asamasi",
+  "sira": 120,
+  "ikon": "globe",
+  "ustBaslik": "ABD Lokasyonu",
+  "altBaslik": "Amerika lokasyonlu sunucularla global kitlenize düşük gecikmeyle ulaşın, ABD pazarına yakın olun.",
+  "seoBaslik": null,
+  "seoAciklama": null,
+  "heroIstatistikleri": [
+   {
+    "deger": "ABD",
+    "etiket": "Lokasyon"
+   },
+   {
+    "deger": "Düşük",
+    "etiket": "Gecikme"
+   },
+   {
+    "deger": "Premium",
+    "etiket": "Ağ"
+   }
+  ],
+  "teknikOzellikler": [
+   {
+    "etiket": "Lokasyon",
+    "deger": "ABD Veri Merkezi"
+   },
+   {
+    "etiket": "Ağ",
+    "deger": "Premium / Düşük Gecikme"
+   },
+   {
+    "etiket": "Disk",
+    "deger": "NVMe SSD"
+   },
+   {
+    "etiket": "Erişim",
+    "deger": "Tam Root"
+   },
+   {
+    "etiket": "Kurulum",
+    "deger": "Anlık"
+   }
+  ],
+  "ozelliklerBasligi": "Global erişim, yerel performans",
+  "ozellikler": [
+   {
+    "ikon": "globe",
+    "baslik": "ABD Lokasyonu",
+    "aciklama": "Amerika ve global kitleye en düşük gecikmeyle hizmet verin."
+   },
+   {
+    "ikon": "wifi",
+    "baslik": "Yüksek Hızlı Ağ",
+    "aciklama": "Düşük gecikmeli, yüksek bant genişlikli premium ağ altyapısı."
+   },
+   {
+    "ikon": "bolt",
+    "baslik": "NVMe SSD Hız",
+    "aciklama": "En son nesil NVMe diskler ve LiteSpeed ile üstün okuma/yazma performansı."
+   },
+   {
+    "ikon": "shield",
+    "baslik": "DDoS Koruması",
+    "aciklama": "Gelişmiş DDoS filtreleme ile hizmetiniz saldırılara karşı korunur."
+   },
+   {
+    "ikon": "terminal",
+    "baslik": "Tam Root Erişimi",
+    "aciklama": "Sunucunuzun tam kontrolü sizde; dilediğiniz yazılımı kurun."
+   },
+   {
+    "ikon": "headset",
+    "baslik": "7/24 Uzman Destek",
+    "aciklama": "Gerçek insanlardan, ortalama 5 dakikada yanıt. Ticket, canlı destek ve telefon."
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Kurulum ne kadar sürer?",
+    "cevap": "Ödeme onaylandıktan sonra hizmetiniz genellikle birkaç dakika içinde otomatik olarak aktif edilir."
+   },
+   {
+    "soru": "İade garantiniz var mı?",
+    "cevap": "Evet, 30 gün içinde memnun kalmazsanız koşulsuz iade garantisi sunuyoruz."
+   },
+   {
+    "soru": "Teknik destek nasıl alırım?",
+    "cevap": "7/24 canlı destek, ticket sistemi ve telefon ile uzman ekibimize ulaşabilirsiniz."
+   }
+  ],
+  "siparisKategoriYolu": null,
+  "planlar": [
+   {
+    "ad": "ABD VDS 2",
+    "sira": 10,
+    "altBaslik": null,
+    "fiyat": 249,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "2 vCPU · 4 GB RAM\n80 GB NVMe SSD\nABD Lokasyonu\nTam Root Erişimi\nDDoS Koruması",
+    "siparisYolu": null,
+    "detaylar": []
+   },
+   {
+    "ad": "ABD VDS 4",
+    "sira": 20,
+    "altBaslik": null,
+    "fiyat": 399,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": true,
+    "ozellikler": "4 vCPU · 8 GB RAM\n160 GB NVMe SSD\nABD Lokasyonu\nPremium Ağ\nÜcretsiz Yedek",
+    "siparisYolu": null,
+    "detaylar": []
+   },
+   {
+    "ad": "ABD VDS 8",
+    "sira": 30,
+    "altBaslik": null,
+    "fiyat": 699,
+    "eskiFiyat": null,
+    "indirim": null,
+    "populer": false,
+    "ozellikler": "8 vCPU · 16 GB RAM\n320 GB NVMe SSD\nABD Lokasyonu\nÖncelikli Ağ\nÖzel Destek",
+    "siparisYolu": null,
+    "detaylar": []
+   }
+  ]
+ }
+]

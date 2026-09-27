@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_anasayfa_kategori_urunu",
+  "info": {
+    "displayName": "Kategori Ürünü",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "metin": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "aciklama": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "adres": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    }
+  }
+}

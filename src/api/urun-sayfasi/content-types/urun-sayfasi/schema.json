@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "urun_sayfalari",
+  "info": {
+    "singularName": "urun-sayfasi",
+    "pluralName": "urun-sayfalari",
+    "displayName": "Ürün Sayfası Ortak Bölümleri",
+    "description": "Tüm ürün sayfalarında ortak görünen bölümler"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 40,
+      "default": "Ürün Sayfası Ortak Bölümleri"
+    },
+    "guvenSeridi": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    },
+    "performans": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    },
+    "guvenlik": {
+      "type": "component",
+      "component": "urun.ozellik",
+      "repeatable": true
+    },
+    "hostingAdimlari": {
+      "type": "component",
+      "component": "ortak.baslik-aciklama",
+      "repeatable": true
+    },
+    "karsilastirma": {
+      "type": "component",
+      "component": "urun.karsilastirma-grubu",
+      "repeatable": true
+    }
+  }
+}

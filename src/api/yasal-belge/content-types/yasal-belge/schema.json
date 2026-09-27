@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yasal_belgeler",
+  "info": {
+    "singularName": "yasal-belge",
+    "pluralName": "yasal-belgeler",
+    "displayName": "Yasal Belge",
+    "description": "Sözleşmeler ve yasal metinler (/legal)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "required": true,
+      "maxLength": 90
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "baslik",
+      "required": true
+    },
+    "kisaAd": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "ozet": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160
+    },
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent"
+      ],
+      "default": "doc",
+      "required": true
+    },
+    "seoAciklama": {
+      "type": "text",
+      "required": true,
+      "maxLength": 170
+    },
+    "icerik": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

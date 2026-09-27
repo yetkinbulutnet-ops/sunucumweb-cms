@@ -1,0 +1,153 @@
+{
+  "kind": "collectionType",
+  "collectionName": "urunler",
+  "info": {
+    "singularName": "urun",
+    "pluralName": "urunler",
+    "displayName": "Ürün",
+    "description": "Hosting ve sunucu ürün sayfaları"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "baslik",
+      "required": true
+    },
+    "durum": {
+      "type": "enumeration",
+      "enum": [
+        "yayinda",
+        "yapim-asamasi"
+      ],
+      "default": "yayinda",
+      "required": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent"
+      ],
+      "default": "server",
+      "required": true
+    },
+    "ustBaslik": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "altBaslik": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "seoBaslik": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "seoAciklama": {
+      "type": "text",
+      "maxLength": 170
+    },
+    "heroIstatistikleri": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ortak.istatistik",
+      "max": 4
+    },
+    "teknikOzellikler": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ortak.etiket-deger",
+      "max": 8
+    },
+    "ozelliklerBasligi": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "ozellikler": {
+      "type": "component",
+      "repeatable": true,
+      "component": "urun.ozellik",
+      "max": 12
+    },
+    "sss": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ortak.sss"
+    },
+    "siparisKategoriYolu": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "planlar": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "urun"
+    }
+  }
+}

@@ -1,0 +1,1370 @@
+[
+  {
+    "anahtar": "arac.whois_kayitsiz",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – kayıtsız alan adı başlığı",
+    "metin": "{alan} kayıtlı görünmüyor."
+  },
+  {
+    "anahtar": "arac.whois_musait",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – kayıtsız alan adı açıklaması",
+    "metin": "Bu alan adı müsait olabilir; tescil için alan adı sayfamızdan sorgulayın."
+  },
+  {
+    "anahtar": "arac.alan_adi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – kutu başlığı ve satır etiketi",
+    "metin": "Alan adı"
+  },
+  {
+    "anahtar": "arac.suresi_dolmus",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – bitiş rozeti (süresi geçmiş)",
+    "metin": "Süresi dolmuş"
+  },
+  {
+    "anahtar": "arac.gun_kaldi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – bitişe kalan gün rozeti",
+    "metin": "{gun} gün kaldı"
+  },
+  {
+    "anahtar": "arac.tescil",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Tescil"
+  },
+  {
+    "anahtar": "arac.son_guncelleme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Son güncelleme"
+  },
+  {
+    "anahtar": "arac.bitis",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS / SSL sonucu – satır etiketi",
+    "metin": "Bitiş"
+  },
+  {
+    "anahtar": "arac.yas",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Yaş"
+  },
+  {
+    "anahtar": "arac.yil_sayi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – alan adı yaşı (yıl)",
+    "metin": "{sayi} yıl"
+  },
+  {
+    "anahtar": "arac.gun_sayi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Sonuç ekranları – gün cinsinden süre",
+    "metin": "{sayi} gün"
+  },
+  {
+    "anahtar": "arac.imzali",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – DNSSEC değeri",
+    "metin": "İmzalı"
+  },
+  {
+    "anahtar": "arac.imzasiz",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – DNSSEC değeri",
+    "metin": "İmzasız"
+  },
+  {
+    "anahtar": "arac.kayit_firmasi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – kutu başlığı",
+    "metin": "Kayıt firması"
+  },
+  {
+    "anahtar": "arac.firma",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Firma"
+  },
+  {
+    "anahtar": "arac.iana_kimligi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "IANA kimliği"
+  },
+  {
+    "anahtar": "arac.kotuye_kullanim",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Kötüye kullanım"
+  },
+  {
+    "anahtar": "arac.telefon",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Telefon"
+  },
+  {
+    "anahtar": "arac.web_sitesi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Web sitesi"
+  },
+  {
+    "anahtar": "arac.kayit_sahibi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Kayıt sahibi"
+  },
+  {
+    "anahtar": "arac.ulke",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – satır etiketi",
+    "metin": "Ülke"
+  },
+  {
+    "anahtar": "arac.isim_sunuculari",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu ve DNS raporu – kutu başlığı",
+    "metin": "İsim sunucuları"
+  },
+  {
+    "anahtar": "arac.isim_sunucusu_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – boş durum",
+    "metin": "İsim sunucusu bildirilmemiş."
+  },
+  {
+    "anahtar": "arac.durum",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – kutu başlığı",
+    "metin": "Durum"
+  },
+  {
+    "anahtar": "arac.durum_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – boş durum",
+    "metin": "Durum bilgisi yok."
+  },
+  {
+    "anahtar": "arac.kaynak",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – alt bilgi (kaynak ve sunucu)",
+    "metin": "Kaynak: {kaynak} · {sunucu}"
+  },
+  {
+    "anahtar": "arac.ham_gizle",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – ham çıktı düğmesi",
+    "metin": "Ham çıktıyı gizle"
+  },
+  {
+    "anahtar": "arac.ham_goster",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "WHOIS sonucu – ham çıktı düğmesi",
+    "metin": "Ham çıktıyı göster"
+  },
+  {
+    "anahtar": "arac.genel_durum",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL / kara liste sonucu – kutu başlığı",
+    "metin": "Genel durum"
+  },
+  {
+    "anahtar": "arac.sertifika_gecerli",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – durum rozeti",
+    "metin": "Sertifika geçerli"
+  },
+  {
+    "anahtar": "arac.sorunlu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – durum rozeti",
+    "metin": "Sorunlu"
+  },
+  {
+    "anahtar": "arac.kalan_sure",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – özet kartı etiketi",
+    "metin": "Kalan süre"
+  },
+  {
+    "anahtar": "arac.alan_eslesmesi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – özet kartı etiketi",
+    "metin": "Alan adı eşleşmesi"
+  },
+  {
+    "anahtar": "arac.uygun",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL / e-posta sonucu – durum değeri",
+    "metin": "Uygun"
+  },
+  {
+    "anahtar": "arac.eslesmiyor",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – alan adı eşleşmesi değeri",
+    "metin": "Eşleşmiyor"
+  },
+  {
+    "anahtar": "arac.baglanti",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – özet kartı etiketi",
+    "metin": "Bağlantı"
+  },
+  {
+    "anahtar": "arac.dogrulama_hatasi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – doğrulama hatası satırı",
+    "metin": "Doğrulama hatası: {sebep}"
+  },
+  {
+    "anahtar": "arac.sertifika",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – kutu başlığı",
+    "metin": "Sertifika"
+  },
+  {
+    "anahtar": "arac.sahip",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Sahip"
+  },
+  {
+    "anahtar": "arac.kurum",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Kurum"
+  },
+  {
+    "anahtar": "arac.saglayici",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Sağlayıcı"
+  },
+  {
+    "anahtar": "arac.baslangic",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Başlangıç"
+  },
+  {
+    "anahtar": "arac.anahtar",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Anahtar"
+  },
+  {
+    "anahtar": "arac.seri_no",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Seri no"
+  },
+  {
+    "anahtar": "arac.protokol_destegi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – kutu başlığı",
+    "metin": "Protokol desteği"
+  },
+  {
+    "anahtar": "arac.eski_protokol_acik",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – uyarı rozeti",
+    "metin": "Eski protokol açık"
+  },
+  {
+    "anahtar": "arac.acik",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – protokol durumu",
+    "metin": "Açık"
+  },
+  {
+    "anahtar": "arac.kapali",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – protokol durumu",
+    "metin": "Kapalı"
+  },
+  {
+    "anahtar": "arac.tls_notu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – protokol kutusu notu",
+    "metin": "TLS 1.0 ve 1.1 güncelliğini yitirmiştir; kapalı olmaları beklenir."
+  },
+  {
+    "anahtar": "arac.sifreleme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – kutu başlığı",
+    "metin": "Şifreleme"
+  },
+  {
+    "anahtar": "arac.sunulan_protokol",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Sunulan protokol"
+  },
+  {
+    "anahtar": "arac.sifre_paketi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Şifre paketi"
+  },
+  {
+    "anahtar": "arac.sunucu_adresi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Sunucu adresi"
+  },
+  {
+    "anahtar": "arac.parmak_izi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – satır etiketi",
+    "metin": "Parmak izi"
+  },
+  {
+    "anahtar": "arac.kapsanan_alanlar",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – kutu başlığı (alan adı sayısıyla)",
+    "metin": "Kapsanan alan adları ({sayi})"
+  },
+  {
+    "anahtar": "arac.tane_daha",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – fazladan alan adı sayısı",
+    "metin": "+{sayi} tane daha"
+  },
+  {
+    "anahtar": "arac.alternatif_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – boş durum",
+    "metin": "Alternatif ad tanımlı değil."
+  },
+  {
+    "anahtar": "arac.sertifika_zinciri",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – kutu başlığı",
+    "metin": "Sertifika zinciri"
+  },
+  {
+    "anahtar": "arac.ara_sertifika",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – adsız zincir sertifikası",
+    "metin": "Ara sertifika"
+  },
+  {
+    "anahtar": "arac.imzalayan",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "SSL sonucu – zincir satırı",
+    "metin": "İmzalayan: {ad}"
+  },
+  {
+    "anahtar": "arac.genel_degerlendirme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta / başlık sonucu – kutu başlığı",
+    "metin": "Genel değerlendirme"
+  },
+  {
+    "anahtar": "arac.tanimli",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Sonuç ekranları – durum değeri",
+    "metin": "Tanımlı"
+  },
+  {
+    "anahtar": "arac.yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Sonuç ekranları – durum değeri",
+    "metin": "Yok"
+  },
+  {
+    "anahtar": "arac.secici_sayi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DKIM seçici sayısı",
+    "metin": "{sayi} seçici"
+  },
+  {
+    "anahtar": "arac.bulunamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DKIM durumu",
+    "metin": "Bulunamadı"
+  },
+  {
+    "anahtar": "arac.posta_sunuculari_mx",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – kutu başlığı",
+    "metin": "Posta sunucuları (MX)"
+  },
+  {
+    "anahtar": "arac.oncelik",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu ve DNS raporu – MX önceliği",
+    "metin": "öncelik {sayi}"
+  },
+  {
+    "anahtar": "arac.mx_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – boş durum",
+    "metin": "MX kaydı yok; bu alan adına e-posta ulaşmaz."
+  },
+  {
+    "anahtar": "arac.eksik",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Sonuç ekranları – durum değeri",
+    "metin": "Eksik"
+  },
+  {
+    "anahtar": "arac.dikkat",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – durum değeri",
+    "metin": "Dikkat"
+  },
+  {
+    "anahtar": "arac.dns_sorgu_sayisi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – SPF satır etiketi",
+    "metin": "DNS sorgu sayısı"
+  },
+  {
+    "anahtar": "arac.dahil_edilenler",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – SPF satır etiketi",
+    "metin": "Dahil edilenler"
+  },
+  {
+    "anahtar": "arac.tanimli_ip",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – SPF satır etiketi",
+    "metin": "Tanımlı IP"
+  },
+  {
+    "anahtar": "arac.spf_sinir_asimi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – SPF sorgu sınırı uyarısı",
+    "metin": "10 sorgu sınırı aşılmış; SPF doğrulaması hata verir."
+  },
+  {
+    "anahtar": "arac.politika",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DMARC satır etiketi",
+    "metin": "Politika"
+  },
+  {
+    "anahtar": "arac.alt_alan_adlari",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta / başlık sonucu – satır etiketi",
+    "metin": "Alt alan adları"
+  },
+  {
+    "anahtar": "arac.uygulama_orani",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DMARC satır etiketi",
+    "metin": "Uygulama oranı"
+  },
+  {
+    "anahtar": "arac.rapor_adresi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DMARC satır etiketi",
+    "metin": "Rapor adresi"
+  },
+  {
+    "anahtar": "arac.dkim_bulundu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DKIM seçici satırı",
+    "metin": "._domainkey kaydı bulundu"
+  },
+  {
+    "anahtar": "arac.dkim_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "E-posta sonucu – DKIM boş durum",
+    "metin": "Bilinen seçicilerde DKIM kaydı bulunamadı. Farklı bir seçici kullanıyor olabilirsiniz."
+  },
+  {
+    "anahtar": "arac.kara_listede_degil",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – genel durum rozeti",
+    "metin": "Kara listede değil"
+  },
+  {
+    "anahtar": "arac.listede_kayitli",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – genel durum rozeti",
+    "metin": "{sayi} listede kayıtlı"
+  },
+  {
+    "anahtar": "arac.karaliste_ozet",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – özet cümlesi",
+    "metin": "{adres} IP adresi, {bolge} kara liste bölgesinde sorgulandı."
+  },
+  {
+    "anahtar": "arac.karaliste_temiz",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – temiz açıklaması",
+    "metin": "Sorgulanan adreslerin hiçbiri listelerde görünmüyor."
+  },
+  {
+    "anahtar": "arac.karaliste_listede",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – listede açıklaması",
+    "metin": "Listeye düşen adresler aşağıda işaretli; listeden çıkmak için ilgili listenin kendi başvuru sayfasını kullanmanız gerekir."
+  },
+  {
+    "anahtar": "arac.listede_sayi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – IP kutusu rozeti",
+    "metin": "{sayi} listede"
+  },
+  {
+    "anahtar": "arac.temiz",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – durum değeri",
+    "metin": "Temiz"
+  },
+  {
+    "anahtar": "arac.listede",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – durum değeri",
+    "metin": "Listede"
+  },
+  {
+    "anahtar": "arac.sorgulanamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – durum değeri",
+    "metin": "Sorgulanamadı"
+  },
+  {
+    "anahtar": "arac.sorgu_sayfasi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Kara liste sonucu – liste bağlantısı",
+    "metin": "Sorgu sayfası"
+  },
+  {
+    "anahtar": "arac.son_adres",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – özet kartı etiketi",
+    "metin": "Son adres"
+  },
+  {
+    "anahtar": "arac.durum_kodu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – özet kartı etiketi",
+    "metin": "Durum kodu"
+  },
+  {
+    "anahtar": "arac.sunucu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – özet kartı etiketi",
+    "metin": "Sunucu"
+  },
+  {
+    "anahtar": "arac.bildirilmemis",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – sunucu bilgisi yoksa",
+    "metin": "Bildirilmemiş"
+  },
+  {
+    "anahtar": "arac.guvenlik_basliklari",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – kutu başlığı",
+    "metin": "Güvenlik başlıkları"
+  },
+  {
+    "anahtar": "arac.gelistirilmeli",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – durum değeri",
+    "metin": "Geliştirilmeli"
+  },
+  {
+    "anahtar": "arac.yonlendirme_zinciri",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – kutu başlığı",
+    "metin": "Yönlendirme zinciri"
+  },
+  {
+    "anahtar": "arac.hsts_suresi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – satır etiketi",
+    "metin": "HSTS süresi"
+  },
+  {
+    "anahtar": "arac.kapsiyor",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – HSTS alt alan değeri",
+    "metin": "Kapsıyor"
+  },
+  {
+    "anahtar": "arac.kapsamiyor",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – HSTS alt alan değeri",
+    "metin": "Kapsamıyor"
+  },
+  {
+    "anahtar": "arac.on_yukleme_listesi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – satır etiketi",
+    "metin": "Ön yükleme listesi"
+  },
+  {
+    "anahtar": "arac.isaretli",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – ön yükleme değeri",
+    "metin": "İşaretli"
+  },
+  {
+    "anahtar": "arac.isaretsiz",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – ön yükleme değeri",
+    "metin": "İşaretsiz"
+  },
+  {
+    "anahtar": "arac.cerezler_sunucu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – kutu başlığı",
+    "metin": "Çerezler ve sunucu bilgisi"
+  },
+  {
+    "anahtar": "arac.yok_kucuk",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – SameSite yoksa (SameSite yok)",
+    "metin": "yok"
+  },
+  {
+    "anahtar": "arac.cerez_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – boş durum",
+    "metin": "Yanıtta çerez ayarlanmıyor."
+  },
+  {
+    "anahtar": "arac.icerik_turu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – satır etiketi",
+    "metin": "İçerik türü"
+  },
+  {
+    "anahtar": "arac.sikistirma",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – satır etiketi",
+    "metin": "Sıkıştırma"
+  },
+  {
+    "anahtar": "arac.onbellek",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – satır etiketi",
+    "metin": "Önbellek"
+  },
+  {
+    "anahtar": "arac.surum_ifsa",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Başlık sonucu – sürüm ifşası uyarısı",
+    "metin": "Sürüm bilgisi ifşa ediliyor: {liste}. Bu başlıkları gizlemek, bilinen açıkları arayan taramaları zorlaştırır."
+  },
+  {
+    "anahtar": "arac.bagli_ip",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – kutu başlığı (kendi IP)",
+    "metin": "Bağlandığınız IP adresi"
+  },
+  {
+    "anahtar": "arac.sorgulanan_ip",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – kutu başlığı",
+    "metin": "Sorgulanan IP"
+  },
+  {
+    "anahtar": "arac.a_kaydi_kaynak",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – kaynak alan adı notu",
+    "metin": "{alan} alan adının A kaydı"
+  },
+  {
+    "anahtar": "arac.ag_bilgisi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – kutu başlığı",
+    "metin": "Ağ bilgisi"
+  },
+  {
+    "anahtar": "arac.otonom_sistem",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "Otonom sistem"
+  },
+  {
+    "anahtar": "arac.operator",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "Operatör"
+  },
+  {
+    "anahtar": "arac.ip_blogu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "IP bloğu"
+  },
+  {
+    "anahtar": "arac.kayit_kurulusu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "Kayıt kuruluşu"
+  },
+  {
+    "anahtar": "arac.tahsis_tarihi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "Tahsis tarihi"
+  },
+  {
+    "anahtar": "arac.ulke_kodu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – satır etiketi",
+    "metin": "Ülke kodu"
+  },
+  {
+    "anahtar": "arac.ters_dns",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – kutu başlığı",
+    "metin": "Ters DNS (PTR)"
+  },
+  {
+    "anahtar": "arac.ptr_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "IP sonucu – boş durum",
+    "metin": "PTR kaydı tanımlı değil. Posta sunucularında bu kayıt teslim edilebilirlik için gereklidir."
+  },
+  {
+    "anahtar": "arac.tumu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS aracı – tip seçici ve diğer tipler bağlantısı",
+    "metin": "Tümü"
+  },
+  {
+    "anahtar": "arac.alan_adi_girin",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – boş alan adı hatası",
+    "metin": "Alan adı girin."
+  },
+  {
+    "anahtar": "arac.girdi_girin",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – boş girdi hatası",
+    "metin": "{etiket} girin."
+  },
+  {
+    "anahtar": "arac.sorgu_tamamlanamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – sorgu hatası",
+    "metin": "Sorgu tamamlanamadı."
+  },
+  {
+    "anahtar": "arac.sunucuya_ulasilamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – bağlantı hatası",
+    "metin": "Sunucuya ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin."
+  },
+  {
+    "anahtar": "arac.girdi_opsiyonel",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – isteğe bağlı girdi ipucu",
+    "metin": "{ornek} (boş bırakırsanız kendi IP'niz)"
+  },
+  {
+    "anahtar": "arac.sorgulaniyor",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – düğme (yükleniyor)",
+    "metin": "Sorgulanıyor…"
+  },
+  {
+    "anahtar": "arac.sorgula",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – düğme",
+    "metin": "Sorgula"
+  },
+  {
+    "anahtar": "arac.son_sorgular",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "Araç formu – geçmiş etiketi",
+    "metin": "Son sorgular:"
+  },
+  {
+    "anahtar": "dnsrapor.yayilim_kontrolu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – yayılım kutusu başlığı",
+    "metin": "Yayılım kontrolü"
+  },
+  {
+    "anahtar": "dnsrapor.sunucuda_ayni",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – yayılım rozeti (tutarlı)",
+    "metin": "{sayi} sunucuda aynı"
+  },
+  {
+    "anahtar": "dnsrapor.sunucu_uyusuyor",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – yayılım rozeti (farklı)",
+    "metin": "{uyusan} / {ulasan} sunucu uyuşuyor"
+  },
+  {
+    "anahtar": "dnsrapor.kayit_yok_kucuk",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – çözümleyici sonucu boş",
+    "metin": "kayıt yok"
+  },
+  {
+    "anahtar": "dnsrapor.ulasilamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – çözümleyiciye ulaşılamadı",
+    "metin": "ulaşılamadı"
+  },
+  {
+    "anahtar": "dnsrapor.yayilim_notu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – yayılım kutusu açıklaması",
+    "metin": "Sorgu, farklı sağlayıcıların genel çözümleyicilerine aynı anda gönderilir. Değerler farklıysa değişiklik henüz her yere ulaşmamış demektir; kaydın TTL süresi dolduğunda tümü eşitlenir."
+  },
+  {
+    "anahtar": "dnsrapor.tip_kaydi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – kayıt tipi kutu başlığı",
+    "metin": "{tip} kaydı"
+  },
+  {
+    "anahtar": "dnsrapor.kayit_sayi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – kayıt sayısı",
+    "metin": "{sayi} kayıt"
+  },
+  {
+    "anahtar": "dnsrapor.soa_ayrintisi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – kutu başlığı",
+    "metin": "SOA ayrıntısı"
+  },
+  {
+    "anahtar": "dnsrapor.birincil_sunucu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Birincil sunucu"
+  },
+  {
+    "anahtar": "dnsrapor.yetkili_eposta",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Yetkili e-posta"
+  },
+  {
+    "anahtar": "dnsrapor.seri_numarasi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Seri numarası"
+  },
+  {
+    "anahtar": "dnsrapor.yenileme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Yenileme"
+  },
+  {
+    "anahtar": "dnsrapor.sona_erme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Sona erme"
+  },
+  {
+    "anahtar": "dnsrapor.tekrar_deneme",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "Tekrar deneme"
+  },
+  {
+    "anahtar": "dnsrapor.en_az_ttl",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SOA satır etiketi",
+    "metin": "En az TTL"
+  },
+  {
+    "anahtar": "dnsrapor.posta_sunuculari",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – kutu başlığı",
+    "metin": "Posta sunucuları"
+  },
+  {
+    "anahtar": "dnsrapor.dnssec_imzali",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – DNSSEC rozeti",
+    "metin": "DNSSEC imzalı"
+  },
+  {
+    "anahtar": "dnsrapor.dnssec_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – DNSSEC rozeti",
+    "metin": "DNSSEC yok"
+  },
+  {
+    "anahtar": "dnsrapor.bos_tipler",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – kaydı olmayan tipler satırı",
+    "metin": "Kayıt bulunmayan tipler: {tipler}"
+  },
+  {
+    "anahtar": "dnsrapor.alan_bulunamadi",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – tek tip rozeti (alan yok)",
+    "metin": "Alan adı bulunamadı"
+  },
+  {
+    "anahtar": "dnsrapor.kayit_bulundu",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – tek tip rozeti",
+    "metin": "{sayi} kayıt bulundu"
+  },
+  {
+    "anahtar": "dnsrapor.kayit_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – tek tip rozeti (kayıt yok)",
+    "metin": "Kayıt yok"
+  },
+  {
+    "anahtar": "dnsrapor.nxdomain",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – alan adı bulunamadı açıklaması",
+    "metin": "Bu alan adı DNS üzerinde tanımlı değil. Yazımını kontrol edin ya da alan adının tescilli olduğundan emin olun."
+  },
+  {
+    "anahtar": "dnsrapor.tip_yok",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – tipte kayıt yok açıklaması",
+    "metin": "Bu alan adında {tip} tipinde kayıt tanımlı değil. Diğer tipleri aşağıdaki bağlantılardan sorgulayabilirsiniz."
+  },
+  {
+    "anahtar": "dnsrapor.takma_ad",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – CNAME üzerinden çözümleme notu",
+    "metin": "Sorgu bir takma ad üzerinden çözümlendi"
+  },
+  {
+    "anahtar": "dnsrapor.posta_adresleri",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – MX kutu başlığı",
+    "metin": "Posta sunucuları ve adresleri"
+  },
+  {
+    "anahtar": "dnsrapor.isim_adresleri",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – NS kutu başlığı",
+    "metin": "İsim sunucuları ve adresleri"
+  },
+  {
+    "anahtar": "dnsrapor.servis_tanimlari",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SRV kutu başlığı",
+    "metin": "Servis tanımları"
+  },
+  {
+    "anahtar": "dnsrapor.srv_oncelik",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – SRV öncelik ve ağırlık",
+    "metin": "öncelik {oncelik} · ağırlık {agirlik}"
+  },
+  {
+    "anahtar": "dnsrapor.sertifika_yetkileri",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – CAA kutu başlığı",
+    "metin": "Sertifika yetkileri"
+  },
+  {
+    "anahtar": "dnsrapor.caa_issue",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – CAA issue açıklaması",
+    "metin": "sertifika verebilir"
+  },
+  {
+    "anahtar": "dnsrapor.caa_issuewild",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – CAA issuewild açıklaması",
+    "metin": "joker sertifika verebilir"
+  },
+  {
+    "anahtar": "dnsrapor.caa_iodef",
+    "grup": "Araçlar – sonuç ekranı",
+    "konum": "DNS raporu – CAA iodef açıklaması",
+    "metin": "ihlal bildirim adresi"
+  },
+  {
+    "anahtar": "hiztesti.az_once",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaşılan sonuç – zaman",
+    "metin": "az önce"
+  },
+  {
+    "anahtar": "hiztesti.dakika_once",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaşılan sonuç – zaman",
+    "metin": "{sayi} dakika önce"
+  },
+  {
+    "anahtar": "hiztesti.saat_once",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaşılan sonuç – zaman",
+    "metin": "{sayi} saat önce"
+  },
+  {
+    "anahtar": "hiztesti.durum_hazir",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "Ölçmeye hazır"
+  },
+  {
+    "anahtar": "hiztesti.durum_ping",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "Gecikme ölçülüyor"
+  },
+  {
+    "anahtar": "hiztesti.durum_indirme",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "İndirme ölçülüyor"
+  },
+  {
+    "anahtar": "hiztesti.durum_yukleme",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "Yükleme ölçülüyor"
+  },
+  {
+    "anahtar": "hiztesti.durum_bitti",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "Test tamamlandı"
+  },
+  {
+    "anahtar": "hiztesti.durum_hata",
+    "grup": "Araçlar – hız testi",
+    "konum": "Gösterge altı durum metni",
+    "metin": "Bir sorun oldu"
+  },
+  {
+    "anahtar": "hiztesti.olcum_hata",
+    "grup": "Araçlar – hız testi",
+    "konum": "Ölçüm hatası mesajı",
+    "metin": "Ölçüm tamamlanamadı. Bağlantınızı kontrol edip tekrar deneyin."
+  },
+  {
+    "anahtar": "hiztesti.paylasilan_sonuc",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaşılan sonuç şeridi ve durum metni",
+    "metin": "Paylaşılan sonuç"
+  },
+  {
+    "anahtar": "hiztesti.paylas_hazirlaniyor",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaş düğmesi – hazırlanıyor",
+    "metin": "Hazırlanıyor…"
+  },
+  {
+    "anahtar": "hiztesti.paylas_kopyalandi",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaş düğmesi – kopyalandı",
+    "metin": "Link kopyalandı"
+  },
+  {
+    "anahtar": "hiztesti.paylas_tekrar",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaş düğmesi – hata",
+    "metin": "Tekrar deneyin"
+  },
+  {
+    "anahtar": "hiztesti.paylas",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaş düğmesi",
+    "metin": "Sonucu Paylaş"
+  },
+  {
+    "anahtar": "hiztesti.tekrar_dene",
+    "grup": "Araçlar – hız testi",
+    "konum": "Başlat düğmesi – hata sonrası",
+    "metin": "Tekrar Dene"
+  },
+  {
+    "anahtar": "hiztesti.basla",
+    "grup": "Araçlar – hız testi",
+    "konum": "Başlat düğmesi",
+    "metin": "Başla"
+  },
+  {
+    "anahtar": "hiztesti.iptal",
+    "grup": "Araçlar – hız testi",
+    "konum": "İptal düğmesi",
+    "metin": "İptal"
+  },
+  {
+    "anahtar": "hiztesti.kendi_testin",
+    "grup": "Araçlar – hız testi",
+    "konum": "Paylaşılan sonuçta kendi testini başlat düğmesi",
+    "metin": "Kendi Testini Yap"
+  },
+  {
+    "anahtar": "hiztesti.tekrar_test",
+    "grup": "Araçlar – hız testi",
+    "konum": "Test sonrası tekrar düğmesi",
+    "metin": "Tekrar Test Et"
+  },
+  {
+    "anahtar": "hiztesti.indirme",
+    "grup": "Araçlar – hız testi",
+    "konum": "Metrik kartı etiketi",
+    "metin": "İndirme"
+  },
+  {
+    "anahtar": "hiztesti.yukleme",
+    "grup": "Araçlar – hız testi",
+    "konum": "Metrik kartı etiketi",
+    "metin": "Yükleme"
+  },
+  {
+    "anahtar": "hiztesti.sunucu",
+    "grup": "Araçlar – hız testi",
+    "konum": "Bilgi satırı etiketi",
+    "metin": "Sunucu"
+  },
+  {
+    "anahtar": "hiztesti.test_sunucusu",
+    "grup": "Araçlar – hız testi",
+    "konum": "Sunucu bilgi satırı alt metni",
+    "metin": "Test sunucusu"
+  },
+  {
+    "anahtar": "hiztesti.turkiye",
+    "grup": "Araçlar – hız testi",
+    "konum": "Sunucu bilgi satırı varsayılan ülke",
+    "metin": "Türkiye"
+  },
+  {
+    "anahtar": "hiztesti.baglanti",
+    "grup": "Araçlar – hız testi",
+    "konum": "Bilgi satırı etiketi (paylaşılan sonuç)",
+    "metin": "Bağlantı"
+  },
+  {
+    "anahtar": "hiztesti.saglayiciniz",
+    "grup": "Araçlar – hız testi",
+    "konum": "Bilgi satırı etiketi",
+    "metin": "Sağlayıcınız"
+  },
+  {
+    "anahtar": "hiztesti.bilinmiyor",
+    "grup": "Araçlar – hız testi",
+    "konum": "Sağlayıcı bilinmiyorsa",
+    "metin": "Bilinmiyor"
+  },
+  {
+    "anahtar": "hiztesti.algilaniyor",
+    "grup": "Araçlar – hız testi",
+    "konum": "Sağlayıcı algılanırken",
+    "metin": "Algılanıyor…"
+  },
+  {
+    "anahtar": "hiztesti.alt_not",
+    "grup": "Araçlar – hız testi",
+    "konum": "Hız testi alt açıklaması",
+    "metin": "Ölçüm, SunucumWEB sunucusuna karşı çoklu bağlantıyla yapılır; en doğru sonuç için kablolu bağlantı kullanın ve arka planda indirme/yükleme olmasın. Paylaştığınız sonuç 24 saat saklanır, sonra otomatik silinir."
+  },
+  {
+    "anahtar": "hiztesti.meta_baslik",
+    "grup": "Araçlar – hız testi",
+    "konum": "Hız testi sayfası – sayfa başlığı (title)",
+    "metin": "İnternet Hız Testi — İndirme, Yükleme, Ping"
+  },
+  {
+    "anahtar": "dns.icin_sorgula",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS kayıt tipi kartı – bağlantı metni",
+    "metin": "{alan} için sorgula"
+  },
+  {
+    "anahtar": "dns.nedir",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – başlık",
+    "metin": "{ad} nedir?"
+  },
+  {
+    "anahtar": "dns.ornek_deger",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – kutu başlığı",
+    "metin": "Örnek değer"
+  },
+  {
+    "anahtar": "dns.pratik_ipucu",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – kutu başlığı",
+    "metin": "Pratik ipucu"
+  },
+  {
+    "anahtar": "dns.tip_anlatim_1",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – paragraf (bağlantıdan önce)",
+    "metin": "Yukarıdaki sonuçlar {alan} alan adının {tip} kayıtlarını dokuz farklı genel DNS çözümleyicisinden canlı olarak sorgular. Aynı alan adının"
+  },
+  {
+    "anahtar": "dns.tip_anlatim_link",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – paragraf içi bağlantı",
+    "metin": "tüm kayıt tiplerini tek sayfada"
+  },
+  {
+    "anahtar": "dns.tip_anlatim_2",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Kayıt tipi anlatımı – paragraf (bağlantıdan sonra)",
+    "metin": "da görebilirsiniz."
+  },
+  {
+    "anahtar": "dns.yayilim_nedir",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Genel anlatım – başlık",
+    "metin": "DNS yayılımı ne demek?"
+  },
+  {
+    "anahtar": "dns.yayilim_p1",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Genel anlatım – 1. paragraf",
+    "metin": "Bir alan adını yeni sunucuya yönlendirdiğinizde, MX kaydını değiştirdiğinizde ya da doğrulama için TXT kaydı eklediğinizde bu değişikliğin dünyadaki DNS çözümleyicilerine ulaşması gerekir. Çözümleyiciler önceki yanıtı kaydın TTL süresi boyunca önbellekte tuttuğu için değişiklik anında görünmez; bu arada kalan süreye DNS yayılımı denir."
+  },
+  {
+    "anahtar": "dns.yayilim_p2",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Genel anlatım – 2. paragraf ({ozne} cümlenin öznesi)",
+    "metin": "{ozne}, aynı kaydı Cloudflare, Google, AdGuard, NextDNS ve Uzak Doğu dahil farklı bölgelerdeki dokuz çözümleyiciye aynı anda sorar. Dönen değerler birbirinin aynıysa değişiklik tamamen yayılmış demektir. Farklıysa TTL süresinin dolmasını beklemeniz gerekir; taşımadan bir gün önce TTL değerini düşürmek bu süreyi belirgin biçimde kısaltır."
+  },
+  {
+    "anahtar": "dns.yayilim_ozne_alan",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Genel anlatım – 2. paragraf öznesi (alan adı varken)",
+    "metin": "{alan} için yaptığımız sorgu"
+  },
+  {
+    "anahtar": "dns.yayilim_ozne",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "Genel anlatım – 2. paragraf öznesi (alan adı yokken)",
+    "metin": "Bu araç"
+  },
+  {
+    "anahtar": "dns.baslik_tip",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – başlık (tip seçili)",
+    "metin": "{alan} {tip} kayıtları"
+  },
+  {
+    "anahtar": "dns.baslik_alan",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – başlık (tüm tipler)",
+    "metin": "{alan} DNS kayıtları"
+  },
+  {
+    "anahtar": "dns.ozet_tip",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – özet (tip seçili)",
+    "metin": "{alan} alan adının {tip} kayıtlarını dokuz farklı çözümleyiciden canlı sorguluyoruz. {ozet}"
+  },
+  {
+    "anahtar": "dns.ozet_alan",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – özet (tüm tipler)",
+    "metin": "{alan} alan adının A, AAAA, MX, NS, TXT, SOA ve CAA kayıtları ile yayılım durumu."
+  },
+  {
+    "anahtar": "dns.diger_tipler",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – diğer kayıt tipleri başlığı",
+    "metin": "{alan} için diğer kayıt tipleri"
+  },
+  {
+    "anahtar": "dns.kayit_tipleri",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS aracı sayfası – bölüm başlığı",
+    "metin": "DNS kayıt tipleri"
+  },
+  {
+    "anahtar": "dns.kayit_tipleri_aciklama",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS aracı sayfası – bölüm açıklaması",
+    "metin": "Sorgulayabileceğiniz on kayıt tipi ve ne işe yaradıkları. Bir alan adı girdiğinizde her tip için ayrı sonuç sayfası açılır."
+  },
+  {
+    "anahtar": "dns.meta_baslik",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS aracı sayfası – sayfa başlığı (title)",
+    "metin": "DNS Kayıt Sorgulama — A, AAAA, MX, NS, TXT, CAA"
+  },
+  {
+    "anahtar": "dns.meta_aciklama",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS aracı sayfası – meta açıklama",
+    "metin": "Alan adının DNS kayıtlarını dokuz farklı genel çözümleyiciden canlı sorgulayın. Kayıt tipini seçin, değerleri ve yayılım durumunu anında görün."
+  },
+  {
+    "anahtar": "dns.meta_alan_baslik",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS alan adı sayfası – sayfa başlığı (title)",
+    "metin": "{alan} DNS kayıtları — A, MX, NS, TXT sorgulama"
+  },
+  {
+    "anahtar": "dns.meta_alan_aciklama",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS alan adı sayfası – meta açıklama",
+    "metin": "{alan} alan adının A, AAAA, MX, NS, TXT, SOA ve CAA kayıtlarını canlı sorgulayın. Değerleri, TTL sürelerini ve dünya genelindeki yayılım durumunu tek sayfada görün."
+  },
+  {
+    "anahtar": "dns.meta_tip_baslik",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS kayıt tipi sayfası – sayfa başlığı (title)",
+    "metin": "{alan} {tip} kayıtları — DNS sorgulama"
+  },
+  {
+    "anahtar": "dns.meta_tip_aciklama",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS kayıt tipi sayfası – meta açıklama",
+    "metin": "{alan} alan adının {tip} kayıtlarını dokuz farklı DNS çözümleyicisinden canlı sorgulayın. {ozet} Değerleri, TTL sürelerini ve yayılım durumunu görün."
+  },
+  {
+    "anahtar": "dns.sorgu_hata",
+    "grup": "Araçlar – DNS sayfası",
+    "konum": "DNS sonuç sayfası – sorgu hatası",
+    "metin": "Sorgu şu anda tamamlanamadı. Birkaç saniye sonra tekrar deneyin."
+  },
+  {
+    "anahtar": "arac.araci_ac",
+    "grup": "Araçlar – genel",
+    "konum": "Araçlar listesi – kart bağlantısı",
+    "metin": "Aracı aç"
+  },
+  {
+    "anahtar": "arac.araclar",
+    "grup": "Araçlar – genel",
+    "konum": "Araçlar – sayfa kırıntısı",
+    "metin": "Araçlar"
+  },
+  {
+    "anahtar": "arac.diger_araclar",
+    "grup": "Araçlar – genel",
+    "konum": "Araç sayfaları – diğer araçlar başlığı",
+    "metin": "Diğer araçlar"
+  },
+  {
+    "anahtar": "arac.site_haritasi",
+    "grup": "Araçlar – genel",
+    "konum": "Araç sayfaları – kırıntı menüsü erişilebilirlik etiketi",
+    "metin": "Site haritası"
+  },
+  {
+    "anahtar": "arac.ana_sayfa",
+    "grup": "Araçlar – genel",
+    "konum": "Araç sayfaları – kırıntı",
+    "metin": "Ana Sayfa"
+  },
+  {
+    "anahtar": "arac.ne_ise_yarar",
+    "grup": "Araçlar – genel",
+    "konum": "Araç sayfaları – açıklama başlığı",
+    "metin": "Bu araç ne işe yarar?"
+  }
+]

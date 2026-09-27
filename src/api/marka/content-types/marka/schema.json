@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markalar",
+  "info": {
+    "singularName": "marka",
+    "pluralName": "markalar",
+    "displayName": "Marka",
+    "description": "Logo şeritleri: bizimle çalışan markalar ve altyapı teknolojileri"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "site": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "aciklama": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "tur": {
+      "type": "enumeration",
+      "enum": [
+        "referans",
+        "altyapi"
+      ],
+      "default": "referans",
+      "required": true
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

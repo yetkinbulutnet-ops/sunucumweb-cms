@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "araclar",
+  "info": {
+    "singularName": "arac",
+    "pluralName": "araclar",
+    "displayName": "Araç",
+    "description": "Ücretsiz ağ ve alan adı araçlarının metinleri"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "maxLength": 80,
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 40
+    },
+    "kisa": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "ozet": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "ikon": {
+      "type": "enumeration",
+      "enum": [
+        "bolt",
+        "shield",
+        "headset",
+        "lock",
+        "check",
+        "arrow",
+        "chevron",
+        "search",
+        "server",
+        "globe",
+        "cpu",
+        "database",
+        "cloud",
+        "gauge",
+        "clock",
+        "phone",
+        "mail",
+        "pin",
+        "star",
+        "users",
+        "refresh",
+        "layers",
+        "wifi",
+        "scale",
+        "rocket",
+        "doc",
+        "chat",
+        "terminal",
+        "sparkles",
+        "copy",
+        "xmark",
+        "question",
+        "pencil",
+        "sun",
+        "moon",
+        "cart",
+        "trash",
+        "plus",
+        "minus",
+        "user",
+        "signal",
+        "ban",
+        "kurumsal",
+        "magaza",
+        "vds",
+        "dedicated",
+        "gpu",
+        "colocation",
+        "wrench",
+        "external",
+        "tag",
+        "gift",
+        "percent",
+        "binaOfis"
+      ],
+      "default": "server",
+      "required": true
+    },
+    "girdiEtiketi": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "ornek": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "girdiOpsiyonel": {
+      "type": "boolean",
+      "default": false
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 1500,
+      "required": true
+    },
+    "seo": {
+      "type": "text",
+      "maxLength": 200,
+      "required": true
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": true
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

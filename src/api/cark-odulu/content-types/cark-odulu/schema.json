@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cark_odulleri",
+  "info": {
+    "singularName": "cark-odulu",
+    "pluralName": "cark-odulleri",
+    "displayName": "Çark Ödülü",
+    "description": "Çarktaki dilimler"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "etiket": {
+      "type": "string",
+      "required": true,
+      "maxLength": 16
+    },
+    "aciklama": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "renk": {
+      "type": "enumeration",
+      "enum": [
+        "turkuaz",
+        "lacivert",
+        "amber",
+        "gul",
+        "mor",
+        "yesil",
+        "gri"
+      ],
+      "default": "turkuaz",
+      "required": true
+    },
+    "agirlik": {
+      "type": "integer",
+      "default": 10,
+      "min": 0,
+      "max": 1000,
+      "required": true
+    },
+    "kazanamaz": {
+      "type": "boolean",
+      "default": false
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": true
+    },
+    "gecerlilik": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "baglanti": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "sira": {
+      "type": "integer",
+      "default": 0
+    },
+    "olasilik": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "yeniKuponlar": {
+      "type": "text"
+    },
+    "kuponlar": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cark-kuponu.cark-kuponu",
+      "mappedBy": "odul"
+    }
+  }
+}

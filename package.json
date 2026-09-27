@@ -1,0 +1,32 @@
+{
+  "name": "sunucumweb-cms",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "strapi build && node scripts/marka.js",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/database": "5.55.1",
+    "@strapi/provider-email-nodemailer": "5.55.1",
+    "@strapi/strapi": "5.55.1",
+    "geoip-lite": "^1.4.10",
+    "mysql2": "3.20.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.3",
+    "strapi-provider-upload-swb": "file:providers/strapi-provider-upload-swb",
+    "styled-components": "^6.0.0",
+    "ua-parser-js": "^1.0.41"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=26.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "94690ec5-f7f8-4e31-a4df-0403a1935a6f",
+    "telemetryDisabled": true
+  }
+}

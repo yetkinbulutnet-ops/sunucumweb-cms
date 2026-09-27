@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_urun_detay",
+  "info": {
+    "displayName": "Plan Detayı",
+    "icon": "cog",
+    "description": "Sunucu satırında gösterilen donanım/ek özellik"
+  },
+  "options": {},
+  "attributes": {
+    "etiket": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "deger": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "donanim": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

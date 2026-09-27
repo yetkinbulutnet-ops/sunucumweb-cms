@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_site_baglanti",
+  "info": {
+    "displayName": "Bağlantı",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "metin": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "adres": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    }
+  }
+}

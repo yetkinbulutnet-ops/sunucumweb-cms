@@ -1,0 +1,279 @@
+{
+ "hakkimizda": {
+  "seoBaslik": "Şirket Profili",
+  "seoAciklama": "SunucumWEB 2023 yılında kuruldu; Keçiborlu / Isparta merkezli, BTK kayıtlı yer sağlayıcıdır. Web hosting, sanal sunucu ve sunucu barındırma hizmetleri.",
+  "baslik": "Şirket Profili",
+  "giris": "SunucumWEB, 2023 yılından bu yana web hosting, sanal sunucu ve sunucu barındırma hizmeti sunmaktadır. Keçiborlu / Isparta’daki merkezimizden Türkiye genelindeki işletmelere altyapı hizmeti veriyoruz.",
+  "hikaye": "Şirket, barındırma sektöründeki iki eksikliği gidermek üzere kuruldu: fiyatlandırmanın şeffaf olmaması ve teknik ekibe doğrudan ulaşılamaması. Kendi projelerimizde karşılaştığımız bu sorunlar, hizmet modelimizin çıkış noktası oldu.\n\nBugün bireysel kullanıcılardan kurumsal firmalara uzanan bir müşteri portföyüne hizmet veriyoruz. Sunucuları kuran ekip ile destek taleplerini karşılayan ekip aynıdır; talebiniz aracı bir katmandan geçmez.",
+  "fotograflar": [
+   {
+    "dosya": "kabin-yogun.webp",
+    "alt": "Etiketlenmiş sunucuların yerleştiği kabin"
+   },
+   {
+    "dosya": "ekip-kabin.webp",
+    "alt": "Teknisyenimiz kabin arkasında kablolama yaparken"
+   },
+   {
+    "dosya": "kabin-dellemc.webp",
+    "alt": "Dell EMC sunucuların bulunduğu kabinin ön yüzü"
+   },
+   {
+    "dosya": "kabin-anahtar.webp",
+    "alt": "Ağ anahtarı ve blade sunucuların bulunduğu kabin"
+   },
+   {
+    "dosya": "kabin-gpu.webp",
+    "alt": "GPU sunucunun yerleştirildiği kabin bölümü"
+   },
+   {
+    "dosya": "kabin-acik.webp",
+    "alt": "Kapağı açık kabinde çalışan sunucular"
+   }
+  ],
+  "rakamlar": [
+   {
+    "deger": "%99.9",
+    "etiket": "Uptime garantisi"
+   },
+   {
+    "deger": "10.000+",
+    "etiket": "Aktif müşteri"
+   },
+   {
+    "deger": "<5 dk",
+    "etiket": "Ortalama ilk yanıt"
+   },
+   {
+    "deger": "7/24",
+    "etiket": "Teknik destek"
+   }
+  ],
+  "ilkelerUstBaslik": "Çalışma biçimimiz",
+  "ilkelerBaslik": "Hizmet ilkelerimiz",
+  "ilkeler": [
+   {
+    "baslik": "Şeffaf fiyatlandırma",
+    "aciklama": "Pakette belirtilen tutar geçerlidir. Yenileme döneminde beklenmedik artış ya da sonradan eklenen kurulum bedeli uygulanmaz."
+   },
+   {
+    "baslik": "Doğrudan teknik iletişim",
+    "aciklama": "Talebinizi yanıtlayan kişi sunucuya müdahale yetkisine sahiptir. Ortalama ilk yanıt süremiz 5 dakikadır."
+   },
+   {
+    "baslik": "Kendi işlettiğimiz altyapı",
+    "aciklama": "Yedekli güç ve ağ, DDoS koruması ile 7/24 izleme kendi ekibimiz tarafından yürütülür."
+   },
+   {
+    "baslik": "Veri konumunda netlik",
+    "aciklama": "Sunucularımız Türkiye’de bulunur. Talep eden müşterilerimize ayrıca ABD lokasyonu sunulur."
+   }
+  ],
+  "veriMerkeziUstBaslik": "Altyapı",
+  "veriMerkeziBaslik": "Veri merkezimiz",
+  "veriMerkeziMetni": "Sunucularımız İstanbul’daki Netweb veri merkezinde barınıyor. Operatör bağımsız bir tesis olduğu için trafiğimiz tek bir servis sağlayıcıya bağlı değil; bir hatta sorun çıktığında bağlantı diğer taşıyıcılar üzerinden devam eder. Türkiye’deki ziyaretçileriniz için gecikme süresi yurt dışı barındırmaya göre belirgin biçimde düşüktür.",
+  "veriMerkeziOzellikleri": "EN 50600 standardında tesis altyapısı\nYedekli güç ve iklimlendirme\n1:1 simetrik internet bağlantısı\nŞebeke seviyesinde DDoS koruması\nKabin ve colocation imkânı\n7/24 fiziksel güvenlik ve izleme",
+  "kartBaslik": "Netweb · İstanbul",
+  "kartMetni": "Kabinlerimizden görüntüler:",
+  "videolar": [
+   {
+    "baslik": "Kabin sıralarından aydınlık çekim",
+    "kutuphane": "734078",
+    "video": "e68489b9-9b61-4d3f-8985-11b3489b7227"
+   },
+   {
+    "baslik": "Kabin ışıklarından karanlık çekim",
+    "kutuphane": "734078",
+    "video": "b42057cf-5755-481c-945b-a9c3bc95207b"
+   }
+  ],
+  "ctaBaslik": "İhtiyacınıza uygun yapılandırmayı birlikte belirleyelim",
+  "ctaMetni": "Hangi paketin işinize uygun olduğundan emin değilseniz teknik ekibimizle görüşün."
+ },
+ "markalar": [
+  {
+   "ad": "YetkinBulut",
+   "site": "https://yetkinbulut.com",
+   "aciklama": "Hosting, alan adı ve kurumsal mail çözümleri",
+   "dosya": "yetkinbulut.webp",
+   "sira": 10
+  },
+  {
+   "ad": "Netweb",
+   "site": "https://www.netweb.com.tr",
+   "aciklama": "Veri merkezi ve kabin kiralama",
+   "dosya": "netweb.webp",
+   "sira": 20
+  },
+  {
+   "ad": "Yazgaç.net",
+   "site": "https://www.yazgac.net",
+   "aciklama": "Sanal sunucu, dedicated sunucu ve hosting",
+   "dosya": "yazgac.png",
+   "sira": 30
+  },
+  {
+   "ad": "ScriptEvim",
+   "site": "https://scriptevim.com",
+   "aciklama": "Hazır script ve özel yazılım çözümleri",
+   "dosya": "scriptevim.png",
+   "sira": 40
+  },
+  {
+   "ad": "YetkinWeb",
+   "site": "https://yetkinweb.com",
+   "aciklama": null,
+   "dosya": "yetkinweb.webp",
+   "sira": 50
+  },
+  {
+   "ad": "MultiPortal",
+   "site": "https://multiportal.tr",
+   "aciklama": "E-dönüşüm, e-fatura ve kontör çözümleri",
+   "dosya": "multiportal.png",
+   "sira": 60
+  },
+  {
+   "ad": "ERC Soft",
+   "site": "https://ercsoft.com.tr",
+   "aciklama": "e-Fatura, e-Arşiv ve e-Defter çözümleri",
+   "dosya": "ercsoft.png",
+   "sira": 70
+  },
+  {
+   "ad": "Bazaarica",
+   "site": "https://bazaarica.com",
+   "aciklama": "Kozmetik ve takviye ürünleri e-ticareti",
+   "dosya": "bazaarica.svg",
+   "sira": 80
+  },
+  {
+   "ad": "Paketti",
+   "site": "https://paketti.com.tr",
+   "aciklama": "Kurye ve teslimat hizmetleri",
+   "dosya": "paketti.png",
+   "sira": 90
+  }
+ ],
+ "ticari": {
+  "baslik": "Şirket Bilgileri",
+  "kisaAd": "Şirket",
+  "ozet": "Faturalandırma, sözleşme ve resmî yazışmalarda geçerli bilgilerimiz.",
+  "seoAciklama": "SunucumWEB resmî şirket bilgileri: ünvan, vergi dairesi ve numarası, adres, yer sağlayıcı kaydı ve iletişim adresleri.",
+  "bilgiler": [
+   {
+    "etiket": "Şirket ünvanı",
+    "deger": "SunucumWEB Bilişim Hizmetleri",
+    "baglanti": null
+   },
+   {
+    "etiket": "Ticari ünvan",
+    "deger": "Ortam Medya Bilişim Teknolojileri",
+    "baglanti": null
+   },
+   {
+    "etiket": "Vergi dairesi",
+    "deger": "Keçiborlu Vergi Dairesi",
+    "baglanti": null
+   },
+   {
+    "etiket": "Vergi numarası",
+    "deger": "2220195996",
+    "baglanti": null
+   },
+   {
+    "etiket": "Adres",
+    "deger": "Hasanbey Mahallesi, Sokullu Sokak No: 16, Keçiborlu / Isparta",
+    "baglanti": null
+   },
+   {
+    "etiket": "Telefon",
+    "deger": "0(850) 302 5809",
+    "baglanti": "tel:08503025809"
+   },
+   {
+    "etiket": "KEP adresi",
+    "deger": "mustafa.cakir.13@hs01.kep.tr",
+    "baglanti": null
+   },
+   {
+    "etiket": "Yer sağlayıcı",
+    "deger": "SunucumWEB Internet Hizmetleri (Mustafa Çakır)",
+    "baglanti": null
+   },
+   {
+    "etiket": "Yetkilendirme",
+    "deger": "5651 sayılı kanun kapsamında BTK tarafından yetkilendirilmiştir",
+    "baglanti": null
+   }
+  ],
+  "epostalar": [
+   {
+    "etiket": "Genel",
+    "deger": "info@sunucumweb.com"
+   },
+   {
+    "etiket": "Satış",
+    "deger": "satis@sunucumweb.com"
+   },
+   {
+    "etiket": "Kötüye kullanım",
+    "deger": "abuse@sunucumweb.com"
+   }
+  ],
+  "hizmetler": "Web Hosting\nSunucu Kiralama\nSunucu Barındırma\nAlan Adı Hizmetleri",
+  "kayitlar": [
+   {
+    "ad": "ETBİS",
+    "aciklama": "Ticaret Bakanlığı — Kayıtlı Elektronik Ticaret Sitesi",
+    "baglanti": "https://etbis.ticaret.gov.tr/tr/SiteSorgulamaSonuc?siteId=ce4da5d2-fe8d-4bcd-9e5f-40b2aa345658",
+    "logoAdresi": "https://cdn.yetkinbulut.com/meta/etbislogo_200x70.png",
+    "logoGenislik": 200,
+    "logoYukseklik": 70
+   },
+   {
+    "ad": "BTK Yer Sağlayıcı",
+    "aciklama": "5651 sayılı kanun kapsamında yetkilendirilmiş Yer Sağlayıcı",
+    "baglanti": "https://internet.btk.gov.tr/yer-saglayici-listesi?page=1&q=SunucumWEB",
+    "logoAdresi": "https://cdn.yetkinweb.com/genel/genel/btklogo_320x320.png",
+    "logoGenislik": 320,
+    "logoYukseklik": 320
+   },
+   {
+    "ad": "Vergi Levhası",
+    "aciklama": "PDF olarak görüntüleyin",
+    "baglanti": "/vergi-levhasi.pdf",
+    "logoAdresi": null,
+    "logoGenislik": null,
+    "logoYukseklik": null
+   }
+  ]
+ },
+ "sayfa": {
+  "kampanyalar": {
+   "ustBaslik": "Fırsatlar",
+   "baslik": "Kampanyalar",
+   "aciklama": "Hosting, sunucu ve alan adı hizmetlerinde güncel indirimler ve sınırlı süreli fırsatlar. Kampanya kodunu sipariş sırasında girmeniz yeterli.",
+   "seoBaslik": "Kampanyalar — Hosting, Sunucu ve Alan Adı Fırsatları",
+   "seoAciklama": "SunucumWEB güncel kampanyaları: hosting, sanal sunucu (VDS) ve alan adı hizmetlerinde sınırlı süreli indirimler. Kampanya kodunu sipariş sırasında girin."
+  },
+  "hazirYazilim": {
+   "ustBaslik": "Hazır Yazılımlar",
+   "baslik": "Kuruluma hazır web yazılımları",
+   "aciklama": "E-ticaretten kurumsal siteye, otel rezervasyonundan QR menüye 40’tan fazla hazır web yazılımı. Hepsi açık kaynak, mobil uyumlu ve SunucumWEB altyapısında kuruluma hazır.",
+   "seoBaslik": "Hazır Yazılımlar — Kuruluma Hazır Web Yazılımları",
+   "seoAciklama": "E-ticaret, kurumsal tanıtım, blog, rezervasyon, eğitim ve daha fazlası. Mobil uyumlu, SEO dostu, kurulumu bize ait hazır web yazılımları SunucumWEB altyapısında yayında."
+  },
+  "legal": {
+   "ustBaslik": "Kurumsal",
+   "baslik": "Sözleşmeler ve yasal bilgiler",
+   "aciklama": "Hizmetlerimizi kullanırken geçerli olan sözleşmeler ile şirketimize ait resmî ticari bilgiler bu sayfada toplanmıştır.",
+   "seoBaslik": "Legal",
+   "seoAciklama": "SunucumWEB sözleşmeleri, yasal metinleri ve ticari bilgileri: hizmet kullanım koşulları, gizlilik sözleşmesi, iade politikası, şirket ünvanı, vergi ve yer sağlayıcı bilgileri."
+  },
+  "markalar": {
+   "baslik": "Bizimle çalışan markalar",
+   "aciklama": "Altyapımızı kullanan müşterilerimiz ve birlikte iş yaptığımız kurumlar. Logoya tıklayınca ilgili kurumun sitesi yeni sekmede açılır."
+  }
+ }
+}
