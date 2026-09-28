@@ -1135,31 +1135,31 @@
   },
   {
     "anahtar": "seo.manifest_ad",
-    "grup": "SEO – varsayılan",
+    "grup": "SEO: varsayılan",
     "konum": "Web uygulaması (manifest) adı",
     "metin": "SunucumWEB Hosting ve Sunucu Çözümleri"
   },
   {
     "anahtar": "seo.manifest_aciklama",
-    "grup": "SEO – varsayılan",
+    "grup": "SEO: varsayılan",
     "konum": "Web uygulaması (manifest) açıklaması",
     "metin": "Isparta merkezli veri merkezimizden NVMe hosting, sanal sunucu (VDS), dedicated sunucu ve alan adı hizmetleri."
   },
   {
     "anahtar": "seo.aciklama",
-    "grup": "SEO – varsayılan",
+    "grup": "SEO: varsayılan",
     "konum": "Varsayılan meta açıklama (OG/Twitter dahil)",
-    "metin": "Isparta merkezli veri merkezimizden NVMe hosting, sanal sunucu (VDS), dedicated sunucu ve alan adı hizmetleri. Ücretsiz SSL, günlük yedek, DDoS koruması ve gerçek 7/24 destek."
+    "metin": "Isparta merkezli SunucumWEB, İstanbul veri merkezinde NVMe hosting, VDS, dedicated sunucu ve alan adı sunuyor. Ücretsiz SSL, günlük yedek, 7/24 destek."
   },
   {
     "anahtar": "seo.baslik",
-    "grup": "SEO – varsayılan",
+    "grup": "SEO: varsayılan",
     "konum": "Varsayılan sayfa başlığı (OG/Twitter dahil)",
     "metin": "SunucumWEB | Güvenilir Hosting ve Sunucu Çözümleri"
   },
   {
     "anahtar": "seo.og_gorsel_alt",
-    "grup": "SEO – varsayılan",
+    "grup": "SEO: varsayılan",
     "konum": "Paylaşım görseli alternatif metni",
     "metin": "SunucumWEB hosting ve sunucu çözümleri"
   }

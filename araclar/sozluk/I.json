@@ -235,61 +235,61 @@
   },
   {
     "anahtar": "sistem.abone_cok_fazla_deneme",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: deneme sınırı aşıldı",
     "metin": "Çok fazla deneme. Lütfen birkaç dakika sonra tekrar dene."
   },
   {
     "anahtar": "sistem.abone_gecersiz_istek",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: geçersiz istek",
     "metin": "Geçersiz istek."
   },
   {
     "anahtar": "sistem.abone_eposta_gecersiz",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: geçersiz e-posta",
     "metin": "Geçerli bir e-posta adresi yaz."
   },
   {
     "anahtar": "sistem.abone_izin",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: izin verilmedi",
     "metin": "Devam etmek için izin kutusunu işaretle."
   },
   {
     "anahtar": "sistem.abone_dogrulama_eksik",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: güvenlik doğrulaması eksik",
     "metin": "Güvenlik doğrulaması eksik. Sayfayı yenileyip tekrar dene."
   },
   {
     "anahtar": "sistem.abone_dogrulama_basarisiz",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: güvenlik doğrulaması başarısız",
     "metin": "Güvenlik doğrulaması başarısız oldu. Lütfen tekrar dene."
   },
   {
     "anahtar": "sistem.abone_dogrulama_yapilamiyor",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: doğrulama servisine ulaşılamadı",
     "metin": "Güvenlik doğrulaması şu anda yapılamıyor. Lütfen biraz sonra tekrar dene."
   },
   {
     "anahtar": "sistem.abone_kapali",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: abonelik formları kapalı",
     "metin": "Bülten aboneliği şu anda kapalı."
   },
   {
     "anahtar": "sistem.abone_gecersiz_baglanti",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: onay / çıkış bağlantısı geçersiz",
     "metin": "Bu bağlantı geçersiz ya da süresi dolmuş."
   },
   {
     "anahtar": "sistem.abone_yanit_yok",
-    "grup": "Sistem – bülten",
+    "grup": "Sistem: bülten",
     "konum": "Bülten: sunucuya ulaşılamadı",
     "metin": "Şu anda işlem yapılamıyor. Lütfen biraz sonra tekrar dene."
   },
@@ -319,103 +319,103 @@
   },
   {
     "anahtar": "sistem.cark_cms_yetkisiz",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: iç yetkilendirme hatası",
     "metin": "Yetkisiz"
   },
   {
     "anahtar": "sistem.cark_cms_eposta_gecersiz",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: geçersiz e-posta",
     "metin": "Geçerli bir e-posta adresi girin."
   },
   {
     "anahtar": "sistem.cark_cms_kvkk",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: aydınlatma onayı yok",
     "metin": "Devam etmek için aydınlatma metnini onaylayın."
   },
   {
     "anahtar": "sistem.cark_cms_kapali",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: çark kapalı",
     "metin": "Çark şu anda aktif değil."
   },
   {
     "anahtar": "sistem.cark_cms_zaten_kazandi",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: bu e-posta bu dönem ödül kazandı",
     "metin": "Bu e-posta adresiyle bu dönem çark zaten çevrildi. Kazandığın kupon e-postanda."
   },
   {
     "anahtar": "sistem.cark_cms_hak_bitti",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: bu e-postanın bu dönemki hakları bitti",
     "metin": "Bu e-posta adresiyle bu dönemki çevirme hakların doldu."
   },
   {
     "anahtar": "sistem.cark_cms_ip_limit",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: aynı bağlantıdan günlük sınır aşıldı",
     "metin": "Bu bağlantıdan bugün çok fazla katılım oldu. Lütfen yarın tekrar deneyin."
   },
   {
     "anahtar": "sistem.cark_cms_odul_kalmadi",
-    "grup": "Sistem – çark",
+    "grup": "Sistem: çark",
     "konum": "Çark: dağıtılacak ödül kalmadı",
     "metin": "Şu anda dağıtılacak ödül kalmadı. Yakında yeniden deneyin."
   },
   {
     "anahtar": "eposta.bulten_konu",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: konu satırı",
     "metin": "E-posta aboneliğini onayla | SunucumWEB"
   },
   {
     "anahtar": "eposta.bulten_on_baslik",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: gelen kutusunda konunun yanında görünen önizleme",
     "metin": "Kampanya ve duyurularımızı almak için tek adım kaldı."
   },
   {
     "anahtar": "eposta.bulten_baslik",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: başlık",
     "metin": "Aboneliğini onayla"
   },
   {
     "anahtar": "eposta.bulten_metin",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: ana metin",
     "metin": "SunucumWEB kampanya, fırsat ve duyurularından haberdar olmak için bu e-posta adresiyle abonelik isteği aldık. Aboneliğini başlatmak için aşağıdaki butona tıkla:"
   },
   {
     "anahtar": "eposta.bulten_buton",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: buton",
     "metin": "Aboneliğimi onayla"
   },
   {
     "anahtar": "eposta.bulten_yedek",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: buton çalışmazsa notu",
     "metin": "Buton çalışmıyorsa şu bağlantıyı tarayıcına yapıştır:"
   },
   {
     "anahtar": "eposta.bulten_uyari",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: uyarı kutusu",
     "metin": "Bu isteği sen yapmadıysan bu e-postayı yok sayabilirsin; onaylamadığın sürece listeye eklenmezsin."
   },
   {
     "anahtar": "eposta.bulten_alt_bilgi",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: en alttaki bilgi satırı",
     "metin": "Bu e-postayı, sunucumweb.com'da bülten aboneliği istendiği için aldınız."
   },
   {
     "anahtar": "eposta.bulten_iptal",
-    "grup": "E-posta – bülten onayı",
+    "grup": "E-posta: bülten onayı",
     "konum": "Onay e-postası: abonelikten çık bağlantısı",
     "metin": "Abonelikten çık"
   }

@@ -1,0 +1,6 @@
+[
+ {"anahtar":"seo.aciklama","eski":"Isparta merkezli veri merkezimizden NVMe hosting, sanal sunucu (VDS), dedicated sunucu ve alan adı hizmetleri. Ücretsiz SSL, günlük yedek, DDoS koruması ve gerçek 7/24 destek.","yeni":"Isparta merkezli SunucumWEB, İstanbul veri merkezinde NVMe hosting, VDS, dedicated sunucu ve alan adı sunuyor. Ücretsiz SSL, günlük yedek, 7/24 destek."},
+ {"anahtar":"dns.meta_alan_aciklama","eski":"{alan} alan adının A, AAAA, MX, NS, TXT, SOA ve CAA kayıtlarını canlı sorgulayın. Değerleri, TTL sürelerini ve dünya genelindeki yayılım durumunu tek sayfada görün.","yeni":"{alan} alan adının A, AAAA, MX, NS, TXT ve CAA kayıtlarını canlı sorgulayın; değerleri, TTL sürelerini ve yayılım durumunu görün."},
+ {"anahtar":"dns.meta_tip_aciklama","eski":"{alan} alan adının {tip} kayıtlarını dokuz farklı DNS çözümleyicisinden canlı sorgulayın. {ozet} Değerleri, TTL sürelerini ve yayılım durumunu görün.","yeni":"{alan} için {tip} kayıtlarını 9 DNS çözümleyicisinden canlı sorgulayın. {ozet}"},
+ {"anahtar":"genel.telif","eski":"© 2026 {unvan}","yeni":"© {yil} {unvan}"}
+]

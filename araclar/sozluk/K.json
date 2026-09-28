@@ -7,8 +7,44 @@
   },
   {
     "anahtar": "sistem.form_dogrulama_basarisiz",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "İletişim formu: güvenlik doğrulaması başarısız",
     "metin": "Güvenlik doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin."
+  },
+  {
+    "anahtar": "seo.alanadi_baslik",
+    "grup": "SEO: varsayılan",
+    "konum": "Alan adı sayfası: arama sonucu başlığı",
+    "metin": "Alan Adı Tescili: .com, .com.tr ve .net Fiyatları"
+  },
+  {
+    "anahtar": "seo.alanadi_aciklama",
+    "grup": "SEO: varsayılan",
+    "konum": "Alan adı sayfası: arama sonucu açıklaması",
+    "metin": "Alan adınızı hemen tescil edin. .com, .com.tr, .net, .org, .io ve daha fazla uzantı uygun fiyatla, tüm alan adı işlemleri tek panelden."
+  },
+  {
+    "anahtar": "seo.transfer_baslik",
+    "grup": "SEO: varsayılan",
+    "konum": "Transfer sayfası: arama sonucu başlığı",
+    "metin": "Alan Adı Transferi: 3 Adımda Taşıma"
+  },
+  {
+    "anahtar": "seo.transfer_aciklama",
+    "grup": "SEO: varsayılan",
+    "konum": "Transfer sayfası: arama sonucu açıklaması",
+    "metin": "Alan adınızı transfer kodunuzla 3 adımda SunucumWEB'e taşıyın. Çoğu uzantıda 1 yıl uzatma hediye, tüm alan adı işlemleri tek panelden."
+  },
+  {
+    "anahtar": "yazilim.meta_ek",
+    "grup": "Hazır yazılımlar",
+    "konum": "Yazılım sayfası: kısa açıklamanın sonuna eklenen özellik ve fiyat cümlesi",
+    "metin": "Özellikler: {ozellikler}. Fiyat: {fiyat} TL."
+  },
+  {
+    "anahtar": "yazilim.meta_ek_fiyat",
+    "grup": "Hazır yazılımlar",
+    "konum": "Yazılım sayfası: özellik sığmazsa eklenen fiyat cümlesi",
+    "metin": "Fiyat: {fiyat} TL."
   }
 ]

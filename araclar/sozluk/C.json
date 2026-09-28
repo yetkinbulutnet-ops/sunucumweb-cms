@@ -1,493 +1,493 @@
 [
   {
     "anahtar": "genel.acik_moda_gec",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst bar tema butonu etiketi (koyu moddayken)",
     "metin": "Açık moda geç"
   },
   {
     "anahtar": "genel.koyu_moda_gec",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst bar tema butonu etiketi (açık moddayken)",
     "metin": "Koyu moda geç"
   },
   {
     "anahtar": "genel.acik_mod",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü tema satırı (koyu moddayken)",
     "metin": "Açık mod"
   },
   {
     "anahtar": "genel.koyu_mod",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü tema satırı (açık moddayken)",
     "metin": "Koyu mod"
   },
   {
     "anahtar": "genel.tema",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü tema satırı (yüklenirken)",
     "metin": "Tema"
   },
   {
     "anahtar": "genel.ucretsiz_araclar",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst bar bağlantısı ve başla penceresi öğesi",
     "metin": "Ücretsiz Araçlar"
   },
   {
     "anahtar": "genel.ag_durumu",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst bar ve mobil menü ağ durumu bağlantısı",
     "metin": "Ağ Durumu"
   },
   {
     "anahtar": "genel.musteri_paneli",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst bar ve alt bilgi müşteri paneli bağlantısı",
     "metin": "Müşteri Paneli"
   },
   {
     "anahtar": "sepet.buton_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet butonu ekran okuyucu etiketi",
     "metin": "Sepet ({adet} ürün)"
   },
   {
     "anahtar": "sepet.eklendi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepete ekleme bildirimi",
     "metin": "{urun} sepete eklendi"
   },
   {
     "anahtar": "sepet.sepet",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet paneli ekran okuyucu etiketi",
     "metin": "Sepet"
   },
   {
     "anahtar": "sepet.sepetim",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet paneli başlığı",
     "metin": "Sepetim"
   },
   {
     "anahtar": "genel.kapat",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Pencere/panel kapatma butonu etiketi",
     "metin": "Kapat"
   },
   {
     "anahtar": "sepet.bos",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Boş sepet başlığı",
     "metin": "Sepetiniz boş"
   },
   {
     "anahtar": "sepet.bos_metin",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Boş sepet açıklaması",
     "metin": "Paketleri inceleyip beğendiğinizi sepete ekleyin."
   },
   {
     "anahtar": "sepet.yazilimlari_incele",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Boş sepet butonu",
     "metin": "Yazılımları İncele"
   },
   {
     "anahtar": "sepet.satin_al",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet ürünü satın al bağlantısı",
     "metin": "Satın Al"
   },
   {
     "anahtar": "sepet.cikar_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepetten çıkar butonu etiketi",
     "metin": "{paket} paketini sepetten çıkar"
   },
   {
     "anahtar": "sepet.azalt",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet adet azalt butonu etiketi",
     "metin": "Azalt"
   },
   {
     "anahtar": "sepet.artir",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet adet artır butonu etiketi",
     "metin": "Artır"
   },
   {
     "anahtar": "sepet.bosalt",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepeti boşalt butonu",
     "metin": "Sepeti boşalt"
   },
   {
     "anahtar": "sepet.ara_toplam",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet ara toplam etiketi",
     "metin": "Ara toplam"
   },
   {
     "anahtar": "sepet.kdv_notu",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet alt notu",
     "metin": "KDV ve varsa kurulum ücretleri ödeme adımında hesaplanır."
   },
   {
     "anahtar": "sepet.odemeye_gec",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet ödeme butonu",
     "metin": "Ödemeye Geç"
   },
   {
     "anahtar": "sepet.devam",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepet alışverişe devam butonu",
     "metin": "Alışverişe devam et"
   },
   {
     "anahtar": "genel.basla_yazilim_grup",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi ek grup başlığı",
     "metin": "Yazılım & Araçlar"
   },
   {
     "anahtar": "genel.basla_hazir_yazilim",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi öğesi",
     "metin": "Hazır Yazılımlar"
   },
   {
     "anahtar": "genel.basla_hazir_yazilim_metin",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi öğe açıklaması",
     "metin": "Kuruluma hazır e-ticaret, kurumsal site, blog ve daha fazlası."
   },
   {
     "anahtar": "genel.basla_araclar_metin",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi öğe açıklaması",
     "metin": "DNS, WHOIS, SSL, e-posta ve IP sorgulama; kayıt gerekmez."
   },
   {
     "anahtar": "genel.basla_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi ekran okuyucu etiketi",
     "metin": "Hangi hizmetle başlayalım?"
   },
   {
     "anahtar": "genel.basla_baslik",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi başlığı",
     "metin": "Nereden başlamak istersiniz?"
   },
   {
     "anahtar": "genel.basla_metin",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Hemen Başla penceresi açıklaması",
     "metin": "İlgilendiğiniz hizmeti seçin, sizi doğru sayfaya götürelim."
   },
   {
     "anahtar": "genel.hemen_basla",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Üst menü ve mobil menü butonu",
     "metin": "Hemen Başla"
   },
   {
     "anahtar": "genel.menu",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü butonu/penceresi etiketi",
     "metin": "Menü"
   },
   {
     "anahtar": "genel.hizli_erisim",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü hızlı erişim başlığı",
     "metin": "Hızlı erişim"
   },
   {
     "anahtar": "genel.ara",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü telefonla ara butonu",
     "metin": "Ara"
   },
   {
     "anahtar": "genel.musteri_girisi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü müşteri girişi butonu",
     "metin": "Müşteri Girişi"
   },
   {
     "anahtar": "genel.canli_destek",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Mobil menü canlı destek butonu",
     "metin": "Canlı Destek"
   },
   {
     "anahtar": "genel.google_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi Google değerlendirme kutusu etiketi",
     "metin": "Google değerlendirmemiz 5 üzerinden {puan}, {adet} yorum"
   },
   {
     "anahtar": "genel.ataturk_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Atatürk sözü bölümü etiketi",
     "metin": "Atatürk sözü"
   },
   {
     "anahtar": "genel.ataturk_soz",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi üstü Atatürk sözü",
     "metin": "Hayatta en hakiki mürşit ilimdir, fendir."
   },
   {
     "anahtar": "genel.ataturk_imza",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Atatürk imzası görsel açıklaması",
     "metin": "Mustafa Kemal Atatürk imzası"
   },
   {
     "anahtar": "genel.trustpilot_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi Trustpilot kutusu etiketi",
     "metin": "Trustpilot değerlendirmemiz 5 üzerinden {puan}, {adet} yorum"
   },
   {
     "anahtar": "genel.footer_tanitim",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi logo altı tanıtım yazısı",
     "metin": "Isparta merkezli veri merkezimizden hosting, sanal sunucu ve dedicated sunucu hizmeti veriyoruz."
   },
   {
     "anahtar": "genel.kep",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi KEP adresi etiketi",
     "metin": "KEP:"
   },
   {
     "anahtar": "genel.alt_menu",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi menü etiketi",
     "metin": "Alt menü"
   },
   {
     "anahtar": "genel.etbis_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi ETBİS bağlantısı etiketi",
     "metin": "ETBİS - Kayıtlı Elektronik Ticaret Sitesi doğrulaması"
   },
   {
     "anahtar": "genel.telif",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi telif satırı",
-    "metin": "© 2026 {unvan}"
+    "metin": "© {yil} {unvan}"
   },
   {
     "anahtar": "genel.bize_ulasin",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sayfa sonu çağrı bandı butonu",
     "metin": "Bize Ulaşın"
   },
   {
     "anahtar": "genel.ana_sayfa",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sayfa başlığı içerik yolu (breadcrumb)",
     "metin": "Ana Sayfa"
   },
   {
     "anahtar": "sepet.satin_al_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Satın Al butonu ekran okuyucu etiketi",
     "metin": "{urun} satın al"
   },
   {
     "anahtar": "sepet.ekle_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepete Ekle butonu ekran okuyucu etiketi",
     "metin": "{paket} paketini sepete ekle"
   },
   {
     "anahtar": "sepet.sepete_eklendi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepete Ekle butonu (eklendikten sonra)",
     "metin": "Sepete eklendi"
   },
   {
     "anahtar": "sepet.sepete_ekle",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Sepete Ekle butonu",
     "metin": "Sepete Ekle"
   },
   {
     "anahtar": "genel.pb_usd",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Para birimi seçici USD adı",
     "metin": "Amerikan Doları"
   },
   {
     "anahtar": "genel.pb_try",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Para birimi seçici TL adı",
     "metin": "Türk Lirası"
   },
   {
     "anahtar": "genel.pb_aria",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Para birimi butonu ekran okuyucu etiketi",
     "metin": "Para birimi: {ad}"
   },
   {
     "anahtar": "genel.pb_sec",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Para birimi listesi ekran okuyucu etiketi",
     "metin": "Para birimi seçin"
   },
   {
     "anahtar": "durum.sistem_durumu",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Alt bilgi durum rozeti (yüklenirken)",
     "metin": "Sistem durumu"
   },
   {
     "anahtar": "durum.operasyonel",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum rozeti ve durum kutusu (sorunsuz)",
     "metin": "Tüm sistemler operasyonel"
   },
   {
     "anahtar": "durum.durum_sayfasi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum rozeti ve durum kutusu bağlantısı",
     "metin": "Durum sayfası"
   },
   {
     "anahtar": "durum.kesinti",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum rozeti ve durum kutusu (kesinti varken)",
     "metin": "{adet} serviste kesinti"
   },
   {
     "anahtar": "durum.son_kontrol",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum rozeti ipucu yazısı",
     "metin": "Son kontrol: {zaman}"
   },
   {
     "anahtar": "durum.aktif",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu servis etiketi",
     "metin": "Aktif"
   },
   {
     "anahtar": "durum.kesinti_etiket",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu servis etiketi",
     "metin": "Kesinti"
   },
   {
     "anahtar": "durum.bilinmiyor",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu servis etiketi",
     "metin": "Bilinmiyor"
   },
   {
     "anahtar": "durum.alinamadi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu hata mesajı",
     "metin": "Durum bilgisi şu an alınamadı."
   },
   {
     "anahtar": "durum.sayfayi_ac",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu hata bağlantısı",
     "metin": "Durum sayfasını aç →"
   },
   {
     "anahtar": "durum.guncellendi",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Durum kutusu güncelleme zamanı",
     "metin": "Güncellendi: {zaman}"
   },
   {
     "anahtar": "duyuru.duyuru",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Duyuru bandı ekran okuyucu etiketi",
     "metin": "Duyuru"
   },
   {
     "anahtar": "duyuru.kapat",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Duyuru bandı kapatma butonu etiketi",
     "metin": "Duyuruyu kapat"
   },
   {
     "anahtar": "duyuru.cark_gizle",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Çark rozeti gizleme butonu etiketi",
     "metin": "Çark rozetini gizle"
   },
   {
     "anahtar": "hakkimizda_vm.galeri",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Kabin fotoğraf galerisi rol açıklaması",
     "metin": "galeri"
   },
   {
     "anahtar": "hakkimizda_vm.foto_aria",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Kabin fotoğraf galerisi ekran okuyucu etiketi",
     "metin": "Veri merkezi fotoğrafı {no} / {toplam}"
   },
   {
     "anahtar": "hakkimizda_vm.onceki_foto",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Kabin galerisi önceki butonu etiketi",
     "metin": "Önceki fotoğraf"
   },
   {
     "anahtar": "hakkimizda_vm.sonraki_foto",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Kabin galerisi sonraki butonu etiketi",
     "metin": "Sonraki fotoğraf"
   },
   {
     "anahtar": "hakkimizda_vm.dunyaya_don",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Veri merkezi kartı geri butonu",
     "metin": "Dünyaya dön"
   },
   {
     "anahtar": "hakkimizda_vm.isarete_dokun",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Küre altı yönlendirme yazısı",
     "metin": "{etiket} işaretine dokunun"
   },
   {
     "anahtar": "hakkimizda_vm.konum",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Veri merkezi bilgi kutusu başlığı",
     "metin": "Konum"
   },
   {
     "anahtar": "hakkimizda_vm.tesis",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "Veri merkezi bilgi kutusu başlığı",
     "metin": "Tesis"
   },
   {
     "anahtar": "hakkimizda_vm.kure_aria",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "3B küre ekran okuyucu etiketi",
     "metin": "{etiket} veri merkezi konumu"
   },
   {
     "anahtar": "hakkimizda_vm.destek_yok",
-    "grup": "Hakkımızda – veri merkezi",
+    "grup": "Hakkımızda: veri merkezi",
     "konum": "3B desteklenmediğinde gösterilen yazı",
     "metin": "Tarayıcınız 3B görüntülemeyi desteklemiyor. Veri merkezimiz {etiket} konumundadır."
   },
@@ -511,31 +511,31 @@
   },
   {
     "anahtar": "urunbulucu.adim",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu adım göstergesi",
     "metin": "Adım {adim} / {toplam}"
   },
   {
     "anahtar": "urunbulucu.geri",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu geri butonu",
     "metin": "← Geri"
   },
   {
     "anahtar": "urunbulucu.onerimiz",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu sonuç üst başlığı",
     "metin": "Size önerimiz"
   },
   {
     "anahtar": "urunbulucu.urun_incele",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu sonuç butonu",
     "metin": "{ad} İncele"
   },
   {
     "anahtar": "urunbulucu.bastan",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu yeniden başlat butonu",
     "metin": "Baştan Başla"
   },
@@ -679,133 +679,133 @@
   },
   {
     "anahtar": "urunbulucu.s1_soru",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 1. soru",
     "metin": "Sunucuyu ne için kullanacaksınız?"
   },
   {
     "anahtar": "urunbulucu.s1_web",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 1. soru seçeneği",
     "metin": "Web sitesi / blog"
   },
   {
     "anahtar": "urunbulucu.s1_ecom",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 1. soru seçeneği",
     "metin": "E-ticaret / yoğun trafik"
   },
   {
     "anahtar": "urunbulucu.s1_app",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 1. soru seçeneği",
     "metin": "Uygulama / özel sunucu"
   },
   {
     "anahtar": "urunbulucu.s1_gpu",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 1. soru seçeneği",
     "metin": "Yapay zeka / render"
   },
   {
     "anahtar": "urunbulucu.s2_soru",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 2. soru",
     "metin": "Beklediğiniz büyüklük nedir?"
   },
   {
     "anahtar": "urunbulucu.s2_small",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
     "metin": "Küçük, yeni başlıyorum"
   },
   {
     "anahtar": "urunbulucu.s2_mid",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
     "metin": "Orta, büyüyen bir işletme"
   },
   {
     "anahtar": "urunbulucu.s2_big",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
     "metin": "Büyük, kurumsal ölçek"
   },
   {
     "anahtar": "urunbulucu.s3_soru",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 3. soru",
     "metin": "Teknik kontrol tercihiniz?"
   },
   {
     "anahtar": "urunbulucu.s3_easy",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 3. soru seçeneği",
     "metin": "Kolay olsun, panel yeter"
   },
   {
     "anahtar": "urunbulucu.s3_root",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Ürün bulucu 3. soru seçeneği",
     "metin": "Tam kontrol istiyorum (root)"
   },
   {
     "anahtar": "urunbulucu.gpu_ad",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu ürün adı",
     "metin": "GPU Sunucu"
   },
   {
     "anahtar": "urunbulucu.gpu_neden",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu açıklaması",
     "metin": "Yapay zeka ve render iş yükleriniz için GPU hızlandırmalı sunucu en doğru seçim."
   },
   {
     "anahtar": "urunbulucu.dedicated_ad",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu ürün adı",
     "metin": "Dedicated Sunucu"
   },
   {
     "anahtar": "urunbulucu.dedicated_neden",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu açıklaması",
     "metin": "Tam kontrol ve büyük ölçek için tüm kaynakları size ait fiziksel sunucu."
   },
   {
     "anahtar": "urunbulucu.vds_ad",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu ürün adı",
     "metin": "Sanal Sunucu (VDS)"
   },
   {
     "anahtar": "urunbulucu.vds_neden",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu açıklaması",
     "metin": "Root erişimli, ölçeklenebilir ve uygun maliyetli sanal sunucu size göre."
   },
   {
     "anahtar": "urunbulucu.kurumsal_ad",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu ürün adı",
     "metin": "Kurumsal Hosting"
   },
   {
     "anahtar": "urunbulucu.kurumsal_neden",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu açıklaması",
     "metin": "Yüksek trafik ve izole kaynak ihtiyacınız için kurumsal hosting ideal."
   },
   {
     "anahtar": "urunbulucu.web_ad",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu ürün adı",
     "metin": "Web Hosting"
   },
   {
     "anahtar": "urunbulucu.web_neden",
-    "grup": "Ana sayfa – ürün bulucu",
+    "grup": "Ana sayfa: ürün bulucu",
     "konum": "Öneri sonucu açıklaması",
     "metin": "Web siteniz için hızlı, güvenli ve yönetimi kolay hosting yeterli olacaktır."
   },

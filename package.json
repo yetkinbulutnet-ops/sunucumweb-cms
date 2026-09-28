@@ -12,8 +12,8 @@
     "@strapi/database": "5.55.1",
     "@strapi/provider-email-nodemailer": "5.55.1",
     "@strapi/strapi": "5.55.1",
-    "geoip-lite": "^1.4.10",
-    "mysql2": "3.20.0",
+    "geoip-lite": "2.0.3",
+    "mysql2": "3.24.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.30.3",
@@ -28,5 +28,9 @@
   "strapi": {
     "uuid": "94690ec5-f7f8-4e31-a4df-0403a1935a6f",
     "telemetryDisabled": true
+  },
+  "overrides": {
+    "nodemailer": "10.0.11",
+    "sharp": "0.35.5"
   }
 }

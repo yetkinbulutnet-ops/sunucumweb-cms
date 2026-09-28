@@ -1,25 +1,25 @@
 [
   {
     "anahtar": "arac.sure_gun",
-    "grup": "Araçlar – sonuç ekranı",
+    "grup": "Araçlar: sonuç ekranı",
     "konum": "Süre gösterimi (TTL vb.), gün cinsinden",
     "metin": "{n} gün"
   },
   {
     "anahtar": "arac.sure_saat",
-    "grup": "Araçlar – sonuç ekranı",
+    "grup": "Araçlar: sonuç ekranı",
     "konum": "Süre gösterimi, saat cinsinden",
     "metin": "{n} saat"
   },
   {
     "anahtar": "arac.sure_dakika",
-    "grup": "Araçlar – sonuç ekranı",
+    "grup": "Araçlar: sonuç ekranı",
     "konum": "Süre gösterimi, dakika cinsinden",
     "metin": "{n} dakika"
   },
   {
     "anahtar": "arac.sure_saniye",
-    "grup": "Araçlar – sonuç ekranı",
+    "grup": "Araçlar: sonuç ekranı",
     "konum": "Süre gösterimi, saniye cinsinden",
     "metin": "{n} sn"
   },
@@ -37,13 +37,13 @@
   },
   {
     "anahtar": "genel.logo_siteyi_ac",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Logo şeritlerinde logo üzerine gelince görünen ipucu",
     "metin": "{ad} sitesini aç"
   },
   {
     "anahtar": "genel.logo_alt",
-    "grup": "Genel – üst menü ve alt bilgi",
+    "grup": "Genel: üst menü ve alt bilgi",
     "konum": "Logo şeritlerindeki logoların alternatif metni",
     "metin": "{ad} logosu"
   },
@@ -55,91 +55,91 @@
   },
   {
     "anahtar": "sistem.form_eposta_konu",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: konu satırı",
     "metin": "Konu: {deger}"
   },
   {
     "anahtar": "sistem.form_eposta_ad",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: ad soyad satırı",
     "metin": "Ad Soyad: {deger}"
   },
   {
     "anahtar": "sistem.form_eposta_telefon",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: telefon satırı",
     "metin": "Telefon: {deger}"
   },
   {
     "anahtar": "sistem.form_eposta_eposta",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: e-posta satırı",
     "metin": "E-posta: {deger}"
   },
   {
     "anahtar": "sistem.form_eposta_ip",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: IP satırı",
     "metin": "IP: {deger}"
   },
   {
     "anahtar": "sistem.form_eposta_bilinmiyor",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postası: IP tespit edilemezse",
     "metin": "bilinmiyor"
   },
   {
     "anahtar": "sistem.form_eposta_baslik",
-    "grup": "Sistem – iletişim formu",
+    "grup": "Sistem: iletişim formu",
     "konum": "Şirkete giden form e-postasının konu başlığı",
     "metin": "[Site] {konu}: {ad}"
   },
   {
     "anahtar": "sistem.dns_cozumleyici_360",
-    "grup": "Sistem – araç sonuçları",
+    "grup": "Sistem: araç sonuçları",
     "konum": "DNS yayılım kontrolünde Çin'deki 360 çözümleyicisinin adı",
     "metin": "360 Güvenli DNS"
   },
   {
     "anahtar": "sistem.yorum_kapali",
-    "grup": "Sistem – genel hata mesajları",
+    "grup": "Sistem: genel hata mesajları",
     "konum": "Google yorum servisi kapalıyken dönen mesaj",
     "metin": "yorum motoru kapali."
   },
   {
     "anahtar": "sistem.motor_domain_ai",
-    "grup": "Sistem – servis adları",
+    "grup": "Sistem: servis adları",
     "konum": "Sistem durum yanıtında (/api/health) servis adı",
     "metin": "AI Alan Adı Önerici"
   },
   {
     "anahtar": "sistem.motor_domain_availability",
-    "grup": "Sistem – servis adları",
+    "grup": "Sistem: servis adları",
     "konum": "Sistem durum yanıtında (/api/health) servis adı",
     "metin": "Alan Adı Müsaitlik Kontrolü"
   },
   {
     "anahtar": "sistem.motor_product_finder",
-    "grup": "Sistem – servis adları",
+    "grup": "Sistem: servis adları",
     "konum": "Sistem durum yanıtında (/api/health) servis adı",
     "metin": "Ürün Bulucu"
   },
   {
     "anahtar": "sistem.motor_google_reviews",
-    "grup": "Sistem – servis adları",
+    "grup": "Sistem: servis adları",
     "konum": "Sistem durum yanıtında (/api/health) servis adı",
     "metin": "Google Müşteri Yorumları"
   },
   {
     "anahtar": "sistem.motor_tools",
-    "grup": "Sistem – servis adları",
+    "grup": "Sistem: servis adları",
     "konum": "Sistem durum yanıtında (/api/health) servis adı",
     "metin": "Ağ Araçları"
   },
   {
     "anahtar": "sistem.ai_ayar_eksik",
-    "grup": "Sistem – AI alan adı",
+    "grup": "Sistem: AI alan adı",
     "konum": "AI Ayarları'nda talimat boş bırakılırsa ziyaretçiye dönen mesaj",
     "metin": "Öneri servisi şu anda yapılandırılmamış, lütfen daha sonra tekrar deneyin."
   }
