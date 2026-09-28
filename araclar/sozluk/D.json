@@ -21,7 +21,7 @@
     "anahtar": "blog.sayfa_ayrac",
     "grup": "Blog",
     "konum": "Başlık sonuna eklenen sayfa numarası",
-    "metin": "— Sayfa {sayfa}"
+    "metin": "(Sayfa {sayfa})"
   },
   {
     "anahtar": "blog.sayfa_n",
@@ -33,7 +33,7 @@
     "anahtar": "blog.meta_baslik",
     "grup": "Blog",
     "konum": "Blog ana liste meta başlığı",
-    "metin": "Blog — Hosting ve Sunucu Rehberleri"
+    "metin": "Blog: Hosting ve Sunucu Rehberleri"
   },
   {
     "anahtar": "blog.kategori_meta_baslik",
@@ -969,7 +969,7 @@
     "anahtar": "hakkimizda.konum_koordinat",
     "grup": "Hakkımızda",
     "konum": "Koordinat gösterimi",
-    "metin": "41.0082° K · 28.9784° D"
+    "metin": "41.0082° K, 28.9784° D"
   },
   {
     "anahtar": "hakkimizda.tesis_not",
@@ -1023,7 +1023,7 @@
     "anahtar": "guvenlik.alt_bilgi",
     "grup": "Güvenlik doğrulama sayfası",
     "konum": "Alt bilgi satırı",
-    "metin": "© SunucumWEB Bilişim Teknolojileri · Güvenli Erişim Kontrolü"
+    "metin": "© SunucumWEB Bilişim Teknolojileri | Güvenli Erişim Kontrolü"
   },
   {
     "anahtar": "guvenlik.ip_adresi",
@@ -1083,7 +1083,7 @@
     "anahtar": "guvenlik.widget_hata",
     "grup": "Güvenlik doğrulama sayfası",
     "konum": "Doğrulama aracı yüklenemedi",
-    "metin": "Bir sorun oluştu — tekrar deneyin"
+    "metin": "Bir sorun oluştu, tekrar deneyin."
   },
   {
     "anahtar": "hata.bulunamadi_baslik",
@@ -1137,7 +1137,7 @@
     "anahtar": "seo.manifest_ad",
     "grup": "SEO – varsayılan",
     "konum": "Web uygulaması (manifest) adı",
-    "metin": "SunucumWEB — Hosting ve Sunucu Çözümleri"
+    "metin": "SunucumWEB Hosting ve Sunucu Çözümleri"
   },
   {
     "anahtar": "seo.manifest_aciklama",
@@ -1155,12 +1155,12 @@
     "anahtar": "seo.baslik",
     "grup": "SEO – varsayılan",
     "konum": "Varsayılan sayfa başlığı (OG/Twitter dahil)",
-    "metin": "SunucumWEB — Güvenilir Hosting ve Sunucu Çözümleri"
+    "metin": "SunucumWEB | Güvenilir Hosting ve Sunucu Çözümleri"
   },
   {
     "anahtar": "seo.og_gorsel_alt",
     "grup": "SEO – varsayılan",
     "konum": "Paylaşım görseli alternatif metni",
-    "metin": "SunucumWEB — Hosting ve Sunucu Çözümleri"
+    "metin": "SunucumWEB hosting ve sunucu çözümleri"
   }
 ]

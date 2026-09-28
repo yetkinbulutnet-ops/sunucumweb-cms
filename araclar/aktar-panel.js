@@ -21,7 +21,7 @@ const ETIKET = {
     konu: ['Konu kodu', 'Formdaki konunun teknik kodu'],
     konuAdi: ['Konu', ''],
     mesaj: ['Mesaj', ''],
-    durum: ['Durum', 'yeni · okundu · yanitlandi · arsiv — yanıtlamak için sol menüdeki Gelen Mesajlar sayfasını kullanın'],
+    durum: ['Durum', 'yeni, okundu, yanitlandi, arsiv, yanıtlamak için sol menüdeki Gelen Mesajlar sayfasını kullanın'],
     okunmaTarihi: ['Okunma tarihi', ''],
     sonYanitTarihi: ['Son yanıt tarihi', ''],
     yanitlar: ['Yanıt geçmişi', 'Gelen Mesajlar sayfasından gönderilen yanıtlar'],

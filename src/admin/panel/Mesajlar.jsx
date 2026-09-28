@@ -494,13 +494,13 @@ export default function Mesajlar() {
                       </Bilgi>
                     </div>
                     <div className="balon-ust">
-                      <Mail width="14" height="14" /> {d.ad} yazdı · {zamanOnce(d.createdAt)}
+                      <Mail width="14" height="14" /> {d.ad}, {zamanOnce(d.createdAt)}
                     </div>
                     <div className="balon">{d.mesaj}</div>
                     {yanitlar.map((y, i) => (
                       <React.Fragment key={i}>
                         <div className="balon-ust yanit">
-                          <Check width="14" height="14" /> {y.gonderenAd} yanıtladı · {tarihUzun(y.tarih)}
+                          <Check width="14" height="14" /> {y.gonderenAd} yanıtladı, {tarihUzun(y.tarih)}
                         </div>
                         <div className="balon yanit">{y.metin}</div>
                       </React.Fragment>
@@ -509,10 +509,10 @@ export default function Mesajlar() {
                       <label htmlFor="swb-yanit" style={{ display: 'block', fontWeight: 700, fontSize: 14, marginBottom: 8 }}>
                         Yanıt yaz
                       </label>
-                      <textarea id="swb-yanit" value={yanit} onChange={(e) => setYanit(e.target.value)} placeholder={`Merhaba ${d.ad.split(' ')[0]}, …`} maxLength={8000} />
+                      <textarea id="swb-yanit" value={yanit} onChange={(e) => setYanit(e.target.value)} placeholder={`Merhaba ${d.ad.split(' ')[0]},`} maxLength={8000} />
                       <div className="yanit-alt">
                         <span>
-                          Yanıt <b>{d.eposta}</b> adresine “SunucumWEB” adıyla gönderilir; e-postada müşterinin mesajı da alıntılanır.
+                          Yanıt <b>{d.eposta}</b> adresine SunucumWEB adıyla gider, altında müşterinin mesajı da yer alır.
                         </span>
                         <Dugme type="button" $ana className="sag" disabled={gonderiliyor || yanit.trim().length < 2} onClick={gonder}>
                           <PaperPlane /> {gonderiliyor ? 'Gönderiliyor…' : 'Yanıtı gönder'}

@@ -153,7 +153,7 @@
     "anahtar": "arac.kaynak",
     "grup": "Araçlar – sonuç ekranı",
     "konum": "WHOIS sonucu – alt bilgi (kaynak ve sunucu)",
-    "metin": "Kaynak: {kaynak} · {sunucu}"
+    "metin": "Kaynak: {kaynak} ({sunucu})"
   },
   {
     "anahtar": "arac.ham_gizle",
@@ -963,7 +963,7 @@
     "anahtar": "dnsrapor.srv_oncelik",
     "grup": "Araçlar – sonuç ekranı",
     "konum": "DNS raporu – SRV öncelik ve ağırlık",
-    "metin": "öncelik {oncelik} · ağırlık {agirlik}"
+    "metin": "öncelik {oncelik}, ağırlık {agirlik}"
   },
   {
     "anahtar": "dnsrapor.sertifika_yetkileri",
@@ -1173,7 +1173,7 @@
     "anahtar": "hiztesti.meta_baslik",
     "grup": "Araçlar – hız testi",
     "konum": "Hız testi sayfası – sayfa başlığı (title)",
-    "metin": "İnternet Hız Testi — İndirme, Yükleme, Ping"
+    "metin": "İnternet Hız Testi: İndirme, Yükleme ve Ping"
   },
   {
     "anahtar": "dns.icin_sorgula",
@@ -1293,7 +1293,7 @@
     "anahtar": "dns.meta_baslik",
     "grup": "Araçlar – DNS sayfası",
     "konum": "DNS aracı sayfası – sayfa başlığı (title)",
-    "metin": "DNS Kayıt Sorgulama — A, AAAA, MX, NS, TXT, CAA"
+    "metin": "DNS Kayıt Sorgulama (A, AAAA, MX, NS, TXT, CAA)"
   },
   {
     "anahtar": "dns.meta_aciklama",
@@ -1305,7 +1305,7 @@
     "anahtar": "dns.meta_alan_baslik",
     "grup": "Araçlar – DNS sayfası",
     "konum": "DNS alan adı sayfası – sayfa başlığı (title)",
-    "metin": "{alan} DNS kayıtları — A, MX, NS, TXT sorgulama"
+    "metin": "{alan} DNS kayıtları: A, MX, NS ve TXT"
   },
   {
     "anahtar": "dns.meta_alan_aciklama",
@@ -1317,7 +1317,7 @@
     "anahtar": "dns.meta_tip_baslik",
     "grup": "Araçlar – DNS sayfası",
     "konum": "DNS kayıt tipi sayfası – sayfa başlığı (title)",
-    "metin": "{alan} {tip} kayıtları — DNS sorgulama"
+    "metin": "{alan} {tip} kaydı sorgulama"
   },
   {
     "anahtar": "dns.meta_tip_aciklama",

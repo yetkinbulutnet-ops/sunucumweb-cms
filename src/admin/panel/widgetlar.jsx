@@ -59,7 +59,7 @@ export function TrafikWidget() {
     <Kutu>
       <Satir>
         <div className="kpi">
-          <small>Ziyaretçi · 7 gün</small>
+          <small>Son 7 günde ziyaretçi</small>
           <SayacB n={o.visitors.deger} />
           <Degisim yuzde={degisim(o.visitors.deger, o.visitors.onceki)} />
         </div>
@@ -131,10 +131,8 @@ export function MesajWidget() {
   const m = veri.mesaj;
   return (
     <Kutu>
-      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-        <Rozet $renk={m.yeni ? '#2dd4bf' : '#9fb0c2'}>{m.yeni ? `${m.yeni} okunmamış` : 'Okunmamış yok'}</Rozet>
-        <Rozet $renk="#60a5fa">{m.yanitlandi} yanıtlandı</Rozet>
-        <Rozet $renk="#9fb0c2">toplam {m.toplam}</Rozet>
+      <div style={{ fontSize: 13, color: '#9fb0c2' }}>
+        {m.yeni ? <b style={{ color: '#5eead4' }}>{m.yeni} okunmamış mesaj</b> : 'Okunmamış mesaj yok'}, toplam {m.toplam}
       </div>
       {!m.son.length ? (
         <BosDurum kucuk ikon={Message} metin="Henüz mesaj yok. İletişim formundan gelenler burada görünür." />
@@ -148,10 +146,10 @@ export function MesajWidget() {
                 </Avatar>
                 <span className="g">
                   <span className="ad">
-                    {x.durum === 'yeni' && <span style={{ color: '#2dd4bf' }}>● </span>}
-                    {x.ad} · {x.konuAdi || x.konu}
+                    {x.ad}
+                    {x.durum === 'yeni' && <span style={{ color: '#2dd4bf', fontWeight: 600 }}> (yeni)</span>}
                   </span>
-                  <span className="oz">{x.mesaj}</span>
+                  <span className="oz">{x.konuAdi || x.konu}: {x.mesaj}</span>
                 </span>
                 <span className="z">{zamanOnce(x.createdAt)}</span>
               </Link>
@@ -288,7 +286,7 @@ export function KisayolWidget() {
     <Karolar>
       {KISAYOLLAR.map((k) => (
         <Link key={k.ad} to={k.yol}>
-          <IkonKutu $renk={k.renk} $boy={34}>
+          <IkonKutu $boy={34}>
             <k.ikon />
           </IkonKutu>
           {k.ad}

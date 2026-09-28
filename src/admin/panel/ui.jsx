@@ -69,7 +69,6 @@ export const useSayac = (hedef, sure = 900) => {
   return deger;
 };
 
-const yukari = keyframes`from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}`;
 const nabiz = keyframes`0%{box-shadow:0 0 0 0 rgba(45,212,191,.55)}70%{box-shadow:0 0 0 10px rgba(45,212,191,0)}100%{box-shadow:0 0 0 0 rgba(45,212,191,0)}`;
 const ciz = keyframes`from{stroke-dashoffset:var(--uz)}to{stroke-dashoffset:0}`;
 const belir = keyframes`from{opacity:0}to{opacity:1}`;
@@ -97,9 +96,6 @@ export const Kart = styled.section`
   padding: ${({ $dolgu }) => $dolgu || '22px 24px'};
   min-width: 0;
   box-sizing: border-box;
-  animation: ${yukari} 0.45s ease both;
-  animation-delay: ${({ $gecikme }) => ($gecikme || 0) * 60}ms;
-  ${hareketsiz}
 `;
 
 export const KartBaslik = styled.div`
@@ -133,8 +129,8 @@ export const IkonKutu = styled.span`
   width: ${({ $boy }) => $boy || 36}px;
   height: ${({ $boy }) => $boy || 36}px;
   border-radius: ${({ $boy }) => Math.round(($boy || 36) / 3.2)}px;
-  background: ${({ $renk }) => `${$renk || '#2dd4bf'}1f`};
-  color: ${({ $renk }) => $renk || '#2dd4bf'};
+  background: ${({ theme }) => theme.colors.neutral100};
+  color: ${({ theme }) => theme.colors.neutral600};
   svg {
     width: ${({ $boy }) => Math.round(($boy || 36) * 0.5)}px;
     height: ${({ $boy }) => Math.round(($boy || 36) * 0.5)}px;
@@ -431,7 +427,7 @@ const CubukKutu = styled.ul`
   li .bar {
     position: absolute;
     inset: 0 auto 0 0;
-    background: ${({ $renk }) => `${$renk || '#2dd4bf'}1c`};
+    background: rgba(45, 212, 191, 0.13);
     border-radius: 8px;
     transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
     ${hareketsiz}
@@ -830,14 +826,14 @@ export const IsiHaritasi = ({ veri }) => {
             {Array.from({ length: 24 }, (_, s) => {
               const v = sat[s] || 0;
               const o = v ? 0.12 + 0.88 * Math.sqrt(v / enBuyuk) : 0;
-              return <span key={s} className="hucre" title={`${GUNLER[g]} ${iki(s)}:00–${iki((s + 1) % 24)}:00 · ${sayi(v)} ziyaret`} style={{ background: v ? `rgba(45,212,191,${o.toFixed(2)})` : '#1a222d' }} />;
+              return <span key={s} className="hucre" title={`${GUNLER[g]} ${iki(s)}:00-${iki((s + 1) % 24)}:00, ${sayi(v)} ziyaret`} style={{ background: v ? `rgba(45,212,191,${o.toFixed(2)})` : '#1a222d' }} />;
             })}
           </React.Fragment>
         ))}
       </div>
       {tepe.v > 0 && (
         <div className="ozet">
-          En yoğun zaman: <b>{GUNLER[tepe.g]} {iki(tepe.s)}:00–{iki((tepe.s + 1) % 24)}:00</b> ({sayi(tepe.v)} ziyaret)
+          En yoğun saat <b>{GUNLER[tepe.g]} {iki(tepe.s)}:00-{iki((tepe.s + 1) % 24)}:00</b> arası, {sayi(tepe.v)} ziyaret.
         </div>
       )}
     </IsiKutu>

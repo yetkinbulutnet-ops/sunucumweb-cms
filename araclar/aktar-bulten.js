@@ -3,18 +3,18 @@ const { createStrapi, compileStrapi } = require('@strapi/strapi');
 const ETIKET = {
   'api::abone.abone': {
     eposta: ['E-posta', ''],
-    durum: ['Durum', 'aktif: e-posta alır · beklemede: onay e-postasındaki bağlantıya henüz tıklamadı, e-posta GÖNDERİLMEZ · iptal: abonelikten çıktı, e-posta GÖNDERİLMEZ'],
+    durum: ['Durum', 'aktif: e-posta alır, beklemede: onay e-postasındaki bağlantıya henüz tıklamadı, e-posta GÖNDERİLMEZ, iptal: abonelikten çıktı, e-posta GÖNDERİLMEZ'],
     kaynak: ['İlk geldiği yer', 'Aboneliğin ilk alındığı form (footer = sayfa altı, cark = çark kampanya izni, panel = elle eklendi)'],
     sonKaynak: ['Son geldiği yer', 'En son hangi formdan abone olmaya çalıştı'],
     izinMetni: ['İzin metni (kanıt)', 'Ziyaretçinin onay kutusunda gördüğü ve işaretlediği metnin birebir kopyası (KVKK / İYS kanıtı)'],
     izinTarihi: ['İzin tarihi', 'Onay kutusunun işaretlenip formun gönderildiği an'],
     izinIp: ['İzin IP adresi', ''],
     tarayici: ['Tarayıcı bilgisi', 'Formu gönderen cihazın tarayıcı kimliği'],
-    onayYontemi: ['Onay yöntemi', 'cift-onay: e-postadaki bağlantıyla doğruladı · tek-adim: form veya çark ile doğrudan · panel: elle eklendi'],
+    onayYontemi: ['Onay yöntemi', 'cift-onay: e-postadaki bağlantıyla doğruladı, tek-adim: form veya çark ile doğrudan, panel: elle eklendi'],
     onayTarihi: ['Onay tarihi', ''],
     onayIp: ['Onay IP adresi', ''],
     iptalTarihi: ['Ayrılma tarihi', ''],
-    iptalYontemi: ['Ayrılma yöntemi', 'baglanti: abonelikten çık sayfası · tek-tik: e-posta programının abonelikten çık düğmesi · panel: elle'],
+    iptalYontemi: ['Ayrılma yöntemi', 'baglanti: abonelikten çık sayfası, tek-tik: e-posta programının abonelikten çık düğmesi, panel: elle'],
     onayGonderimi: ['Gönderilen onay e-postası', 'Bu adrese gönderilen onay e-postası sayısı (10 dakikada en fazla 1, günde en fazla 5)'],
     sonOnayGonderimi: ['Son onay e-postası', ''],
     notlar: ['Not', 'Sadece panelde görünür'],
@@ -35,7 +35,7 @@ const ETIKET = {
   },
   'api::cark-odulu.cark-odulu': {
     agirlik: ['Şans puanı', 'Oran = bu dilimin puanı ÷ tüm aktif dilimlerin puan toplamı. Ör. puanlar 15+15+15+15+20+20 = 100 ise 15 puanlı dilim %15 çıkar. 0 = hiç çıkmaz. Kaydedince yüzde, Kazanma oranı alanında ve Çark Ayarları → Şans özeti bölümünde görünür'],
-    olasilik: ['Kazanma oranı', 'Otomatik hesaplanır. Ayarlanan = puana göre oran · Şu an = kuponu biten dilimler çıkarıldıktan sonraki gerçek oran'],
+    olasilik: ['Kazanma oranı', 'Otomatik hesaplanır. Ayarlanan = puana göre oran, Şu an = kuponu biten dilimler çıkarıldıktan sonraki gerçek oran'],
   },
 };
 

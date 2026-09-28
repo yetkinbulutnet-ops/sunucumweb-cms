@@ -53,8 +53,8 @@ const ozetHesapla = async () => {
     if (n) kaynaklar.push(`${KAYNAK_ADI[k]} ${n}`);
   }
   const ozet = [
-    `Aktif abone: ${aktif} · Onay bekleyen: ${beklemede} · Ayrılan: ${iptal} · Toplam kayıt: ${aktif + beklemede + iptal}`,
-    kaynaklar.length ? `Aktif abonelerin geldiği yer: ${kaynaklar.join(' · ')}` : '',
+    `Aktif abone: ${aktif}\nOnay bekleyen: ${beklemede}\nAyrılan: ${iptal}\nToplam kayıt: ${aktif + beklemede + iptal}`,
+    kaynaklar.length ? `Aktif abonelerin geldiği yer: ${kaynaklar.join(', ')}` : '',
     `Son güncelleme: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' })}`,
   ].filter(Boolean).join('\n');
   const ayar = await strapi.db.query(AYAR).findOne({ select: ['id'] });

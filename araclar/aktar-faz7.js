@@ -57,7 +57,7 @@ const TIPLER = {
     sira: ['Sıralama', 'Küçük sayı önce gelir'],
   },
   'api::marka.marka': {
-    tur: ['Tür', 'referans: “Bizimle çalışan markalar” şeridi · altyapi: alt bilgideki teknoloji logoları'],
+    tur: ['Tür', 'referans: “Bizimle çalışan markalar” şeridi, altyapi: alt bilgideki teknoloji logoları'],
   },
   'api::anasayfa.anasayfa': {
     kategoriler: ['Çözüm kategorileri', '“Size uygun çözümü seçin” bölümündeki kartlar'],

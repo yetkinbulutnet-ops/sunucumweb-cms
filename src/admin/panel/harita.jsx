@@ -122,7 +122,7 @@ export const TurkiyeHaritasi = ({ iller, secili, sec }) => {
       {ustunde && konum && (
         <div className="ipucu" style={{ left: konum.x, top: konum.y }}>
           <b>{ADLAR[ustunde]}</b>
-          {deger[ustunde] ? `${sayi(deger[ustunde])} ziyaretçi · %${((deger[ustunde] / toplam) * 100).toFixed(1).replace('.', ',')}` : 'Bu dönemde ziyaret yok'}
+          {deger[ustunde] ? `${sayi(deger[ustunde])} ziyaretçi (%${((deger[ustunde] / toplam) * 100).toFixed(1).replace('.', ',')})` : 'Bu dönemde ziyaret yok'}
         </div>
       )}
       <Lejant>
@@ -190,7 +190,7 @@ export const IlDetay = ({ plaka, aralik, iller }) => {
   return (
     <Detay>
       <h3>{ADLAR[plaka]}</h3>
-      <div className="alt">{sira ? `İller arasında ${sira}. sırada · Türkiye trafiğindeki payı %${((ilDeger / toplam) * 100).toFixed(1).replace('.', ',')}` : 'Bu dönemde ziyaret yok'}</div>
+      <div className="alt">{!sira ? 'Bu dönemde ziyaret yok' : (ilDeger / toplam) * 100 < 1 ? `${sira}. sırada. Türkiye'deki ziyaretçilerin %1'inden azı bu ilden.` : `${sira}. sırada. Türkiye'den gelen her 100 ziyaretçiden ${Math.round((ilDeger / toplam) * 100)} tanesi bu ilden.`}</div>
       {hata && !veri && (
         <div style={{ marginTop: 14 }}>
           <HataKutu>{hata}</HataKutu>

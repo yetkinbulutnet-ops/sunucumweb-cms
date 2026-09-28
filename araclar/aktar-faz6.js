@@ -6,7 +6,7 @@ const TIPLER = {
   'api::anasayfa-slayti.anasayfa-slayti': {
     vurgu: ['Vurgulu başlık', 'Başlığın turkuaz renkli kısmı (ör. hızlı NVMe hosting)'],
     gorsel: ['Görsel', '4:3 oranlı, en az 1280×960 önerilir; otomatik WebP ve mobil boyutları üretilir. Alternatif metni medya kütüphanesinden girin'],
-    ustBaslik: ['Üst etiket', 'Başlığın üstündeki küçük hap (ör. NVMe hosting · cPanel)'],
+    ustBaslik: ['Üst etiket', 'Başlığın üstündeki küçük hap (ör. NVMe hosting, cPanel)'],
     onMetin: ['Başlık öncesi', 'Vurgulu kısımdan önceki metin (ör. Siteniz için)'],
     sonMetin: ['Başlık sonrası', 'Vurgulu kısımdan sonraki metin (genelde boş)'],
     aciklama: ['Açıklama', ''],

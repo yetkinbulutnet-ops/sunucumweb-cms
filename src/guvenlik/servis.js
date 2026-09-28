@@ -106,7 +106,7 @@ const cihazCoz = (ua) => {
   return { tarayici: tarayici.slice(0, 120), isletim: isletim.slice(0, 120), tur };
 };
 
-const cihazOzeti = (c) => `${c.tarayici} · ${c.isletim}`;
+const cihazOzeti = (c) => `${c.tarayici}, ${c.isletim}`;
 
 const tarihYaz = (d) =>
   d ? new Date(d).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', dateStyle: 'medium', timeStyle: 'short' }) : '';
@@ -165,7 +165,7 @@ const aktifDigerOturum = async (userId, haricDevice) => {
   const cihazlar = new Set(aktifler.map((s) => s.deviceId).filter((d) => d && d !== haricDevice));
   if (!cihazlar.size) return null;
   const o = await db()('swb_oturum').where({ user_id: userId }).whereIn('device_id', [...cihazlar]).whereNull('bitis').orderBy('son_aktif', 'desc').first();
-  return o ? `${o.tarayici} · ${o.isletim} · ${o.konum}` : true;
+  return o ? `${o.tarayici}, ${o.isletim}, ${o.konum}` : true;
 };
 
 const kodOlustur = async ({ user, deviceId, beniHatirla, ctx }) => {
@@ -361,7 +361,7 @@ const cihazBildirimi = async (ctx) => {
   const yeni = await db()('swb_oturum').where({ user_id: o.user_id }).whereNot({ cihaz_hash: h }).orderBy('giris', 'desc').first();
   return {
     zaman: o.bitis,
-    yeniCihaz: yeni ? `${yeni.tarayici} · ${yeni.isletim}` : null,
+    yeniCihaz: yeni ? `${yeni.tarayici}, ${yeni.isletim}` : null,
     yeniKonum: yeni ? yeni.konum : null,
   };
 };

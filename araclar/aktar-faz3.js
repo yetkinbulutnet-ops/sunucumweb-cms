@@ -5,7 +5,7 @@ const ETIKET = {
     metin: ['Duyuru metni', 'En fazla 180 karakter; kısa ve net tutun'],
     baglanti: ['Bağlantı', 'ör. /kampanyalar veya https://...'],
     baglantiMetni: ['Bağlantı metni', 'ör. İncele'],
-    ton: ['Renk', 'marka: turkuaz · bilgi: mavi · kampanya: amber · uyari: kırmızı · basari: yeşil'],
+    ton: ['Renk', 'marka: turkuaz, bilgi: mavi, kampanya: amber, uyari: kırmızı, basari: yeşil'],
     baslangic: ['Başlangıç', 'Boşsa yayınlanınca hemen başlar'],
     bitis: ['Bitiş', 'Boşsa süresiz gösterilir; bu tarihte otomatik kalkar'],
     kapatilabilir: ['Kapatılabilir', 'Ziyaretçi çarpı ile kapatabilir (bir daha görmez)'],

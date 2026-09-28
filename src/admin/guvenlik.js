@@ -73,9 +73,9 @@ const el = (etiket, ozellik = {}, ...cocuklar) => {
 const jsonYanit = (govde, status) => new Response(JSON.stringify(govde), { status, headers: { 'Content-Type': 'application/json' } });
 const hataYanit = (mesaj, status = 400) => jsonYanit({ data: null, error: { status, name: 'ApplicationError', message: mesaj, details: {} } }, status);
 
-const tarih = (d) => (d ? new Date(d).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' }) : '—');
+const tarih = (d) => (d ? new Date(d).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' }) : '-');
 const once = (d) => {
-  if (!d) return '—';
+  if (!d) return '-';
   const sn = Math.round((new Date(d).getTime() - Date.now()) / 1000);
   const rtf = new Intl.RelativeTimeFormat('tr', { numeric: 'auto' });
   const a = Math.abs(sn);
@@ -397,18 +397,18 @@ const oturumKarti = (o) =>
     el(
       'div',
       { class: 'swb-ust' },
-      el('span', { class: 'swb-cihaz' }, `${o.tur} · ${o.tarayici} · ${o.isletim}`),
+      el('span', { class: 'swb-cihaz' }, `${o.tarayici}, ${o.isletim} (${o.tur})`),
       o.buCihaz ? el('span', { class: 'swb-rozet bu' }, 'Bu cihaz') : null,
-      el('span', { class: `swb-rozet ${o.durum}` }, o.durum === 'aktif' ? 'Aktif' : `Kapalı${o.neden ? ` · ${o.neden}` : ''}`)
+      el('span', { class: `swb-rozet ${o.durum}` }, o.durum === 'aktif' ? 'Aktif' : `Kapalı${o.neden ? `: ${o.neden}` : ''}`)
     ),
     el(
       'div',
       { class: 'swb-detay' },
-      el('div', {}, el('span', {}, 'IP adresi'), el('strong', {}, o.ip || '—')),
-      el('div', {}, el('span', {}, 'Konum'), el('strong', {}, o.konum || '—')),
+      el('div', {}, el('span', {}, 'IP adresi'), el('strong', {}, o.ip || '-')),
+      el('div', {}, el('span', {}, 'Konum'), el('strong', {}, o.konum || '-')),
       el('div', {}, el('span', {}, 'Giriş'), el('strong', {}, tarih(o.giris))),
       el('div', {}, el('span', {}, o.bitis ? 'Bitiş' : 'Son aktiflik'), el('strong', {}, o.bitis ? tarih(o.bitis) : once(o.sonAktif))),
-      el('div', {}, el('span', {}, 'Doğrulama'), el('strong', {}, `${o.dogrulama}${o.beniHatirla ? ' · Beni hatırla' : ''}`))
+      el('div', {}, el('span', {}, 'Doğrulama'), el('strong', {}, `${o.dogrulama}${o.beniHatirla ? ', beni hatırla açık' : ''}`))
     )
   );
 

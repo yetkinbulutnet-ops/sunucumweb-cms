@@ -24,13 +24,13 @@ const hesapla = async () => {
     const etkin = etkinToplam && cekilise.includes(o) ? (o.agirlik / etkinToplam) * 100 : 0;
     if (!o.kazanamaz) kuponSansi += etkin;
     let metin;
-    if (!o.aktif) metin = 'Pasif — çarkta görünmez';
-    else if (!(o.agirlik > 0)) metin = 'Şans puanı 0 — hiç çıkmaz';
+    if (!o.aktif) metin = 'Pasif, çarkta görünmez';
+    else if (!(o.agirlik > 0)) metin = 'Şans puanı 0, hiç çıkmaz';
     else {
       const ayarlanan = toplam ? (o.agirlik / toplam) * 100 : 0;
       const kupon = o.kazanamaz ? 'boş dilim' : kalanlar.get(o.id) > 0 ? `${kalanlar.get(o.id)} kupon kaldı` : 'kupon bitti, çıkmaz';
-      metin = `Ayarlanan ${yuzde(ayarlanan)} · Şu an ${yuzde(etkin)} · ${kupon}`;
-      satirlar.push(`• ${o.ad} (sıra ${o.sira ?? 0}, puan ${o.agirlik}): ${metin}`);
+      metin = `Ayarlanan ${yuzde(ayarlanan)}, şu an ${yuzde(etkin)} (${kupon})`;
+      satirlar.push(`- ${o.ad} (sıra ${o.sira ?? 0}, puan ${o.agirlik}): ${metin}`);
     }
     await strapi.db.query(ODUL).update({ where: { id: o.id }, data: { olasilik: metin.slice(0, 200) } });
   }

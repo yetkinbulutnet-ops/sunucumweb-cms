@@ -1,119 +1,704 @@
 [
- {"anahtar": "sistem.baslik_hsts_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – HSTS açıklaması", "metin": "Tarayıcıya bu siteye yalnızca HTTPS ile bağlanmasını söyler."},
- {"anahtar": "sistem.baslik_csp_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – CSP açıklaması", "metin": "Sayfanın hangi kaynaklardan betik ve içerik yükleyebileceğini sınırlar, XSS etkisini azaltır."},
- {"anahtar": "sistem.baslik_nosniff_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – X-Content-Type-Options açıklaması", "metin": "Tarayıcının dosya türünü tahmin etmesini engeller."},
- {"anahtar": "sistem.baslik_cerceve_ad", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – çerçeveleme kontrolünün adı", "metin": "Çerçeveleme koruması"},
- {"anahtar": "sistem.baslik_cerceve_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – çerçeveleme koruması açıklaması", "metin": "Sitenizin başka bir sayfanın içine gömülüp tıklama hırsızlığına araç olmasını engeller."},
- {"anahtar": "sistem.baslik_referrer_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – Referrer-Policy açıklaması", "metin": "Başka siteye geçişte hangi adres bilgisinin gönderileceğini belirler."},
- {"anahtar": "sistem.baslik_izin_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – Permissions-Policy açıklaması", "metin": "Kamera, mikrofon, konum gibi tarayıcı yeteneklerine erişimi kısıtlar."},
- {"anahtar": "sistem.baslik_https_ad", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – HTTPS yönlendirme kontrolünün adı", "metin": "HTTPS yönlendirmesi"},
- {"anahtar": "sistem.baslik_https_aciklama", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – HTTPS yönlendirmesi açıklaması", "metin": "HTTP isteklerinin şifreli adrese yönlendirilmesi."},
- {"anahtar": "sistem.baslik_https_yonlendiriliyor", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – HTTP, HTTPS’e yönleniyor durumu", "metin": "HTTP isteği HTTPS adresine yönlendiriliyor"},
- {"anahtar": "sistem.baslik_https_http_yanitsiz", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – HTTP portu yanıtsız durumu", "metin": "HTTPS çalışıyor, HTTP portundan yanıt alınamadı"},
- {"anahtar": "sistem.baslik_https_sifresiz", "grup": "Sistem – araç sonuçları", "konum": "HTTP başlık kontrolü – site yalnızca HTTP durumu", "metin": "Site şifresiz HTTP üzerinden yanıt veriyor"},
- {"anahtar": "sistem.baslik_cok_fazla_yonlendirme", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık kontrolü – yönlendirme sınırı aşıldı", "metin": "Yönlendirme zinciri çok uzun."},
- {"anahtar": "sistem.arac_gecersiz_alan_adres", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık kontrolü – geçersiz girdi", "metin": "Geçerli bir alan adı veya adres girin."},
- {"anahtar": "sistem.arac_yerel_ag_cozumleniyor", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık kontrolü – hedef yerel ağa çözümleniyor", "metin": "Bu adres yerel ağ adresine çözümleniyor, sorgulanamaz."},
- {"anahtar": "sistem.arac_alan_cozumlenemedi", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık ve SSL kontrolü – alan adı çözümlenemedi", "metin": "Alan adı çözümlenemedi."},
- {"anahtar": "sistem.arac_zaman_asimi", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık kontrolü – sunucu zaman aşımı", "metin": "Sunucu zaman aşımına uğradı."},
- {"anahtar": "sistem.arac_sunucuya_ulasilamadi", "grup": "Sistem – araç hata mesajları", "konum": "HTTP başlık kontrolü – genel bağlantı hatası", "metin": "Sunucuya ulaşılamadı."},
- {"anahtar": "sistem.rbl_tur_sikayet", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (SpamCop)", "metin": "Şikâyet tabanlı"},
- {"anahtar": "sistem.rbl_tur_itibar", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (Barracuda, Mailspike)", "metin": "İtibar"},
- {"anahtar": "sistem.rbl_tur_tuzak", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (PSBL)", "metin": "Tuzak hesap"},
- {"anahtar": "sistem.rbl_tur_tek_ip", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (UCEPROTECT L1)", "metin": "Tek IP"},
- {"anahtar": "sistem.rbl_tur_bot", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (DroneBL)", "metin": "Bot / zararlı"},
- {"anahtar": "sistem.rbl_tur_karma", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (S5H, InterServer)", "metin": "Karma"},
- {"anahtar": "sistem.rbl_tur_saldiri", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (Blocklist.de)", "metin": "Saldırı bildirimi"},
- {"anahtar": "sistem.rbl_tur_istatistiksel", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (GBUdb)", "metin": "İstatistiksel"},
- {"anahtar": "sistem.rbl_tur_geri_sacilma", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (Backscatterer)", "metin": "Geri saçılma"},
- {"anahtar": "sistem.rbl_tur_sektor_standardi", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – liste türü (Spamhaus ZEN)", "metin": "Sektör standardı"},
- {"anahtar": "sistem.rbl_spamhaus_not", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – Spamhaus satırındaki not", "metin": "Spamhaus, genel DNS çözümleyicilerinden gelen sorguları yanıtlamıyor. Sonucu spamhaus.org üzerindeki kendi sorgu sayfasından kontrol edin."},
- {"anahtar": "sistem.rbl_kaynak_a_kaydi", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – IP kaynağı: alan adının A kaydı", "metin": "A kaydı"},
- {"anahtar": "sistem.rbl_kaynak_girilen", "grup": "Sistem – araç sonuçları", "konum": "Kara liste kontrolü – IP kaynağı: doğrudan girilen IP", "metin": "Girilen adres"},
- {"anahtar": "sistem.rbl_ip_bulunamadi", "grup": "Sistem – araç hata mesajları", "konum": "Kara liste kontrolü – alan adında IP yok", "metin": "Bu alan adı için sorgulanabilir bir IP adresi bulunamadı."},
- {"anahtar": "sistem.dns_bolge_kuresel", "grup": "Sistem – araç sonuçları", "konum": "DNS yayılım kontrolü – çözümleyici konumu (anycast)", "metin": "Küresel anycast"},
- {"anahtar": "sistem.dns_bolge_avrupa", "grup": "Sistem – araç sonuçları", "konum": "DNS yayılım kontrolü – çözümleyici konumu (Avrupa)", "metin": "Avrupa"},
- {"anahtar": "sistem.dns_txt_spf", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "SPF — gönderim yetkisi"},
- {"anahtar": "sistem.dns_txt_dkim", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "DKIM anahtarı"},
- {"anahtar": "sistem.dns_txt_dmarc", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "DMARC politikası"},
- {"anahtar": "sistem.dns_txt_google", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Google doğrulaması"},
- {"anahtar": "sistem.dns_txt_microsoft", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Microsoft doğrulaması"},
- {"anahtar": "sistem.dns_txt_meta", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Meta doğrulaması"},
- {"anahtar": "sistem.dns_txt_atlassian", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Atlassian doğrulaması"},
- {"anahtar": "sistem.dns_txt_apple", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Apple doğrulaması"},
- {"anahtar": "sistem.dns_txt_alan_dogrulama", "grup": "Sistem – araç sonuçları", "konum": "DNS sorgusu – TXT kaydı türü etiketi", "metin": "Alan adı doğrulaması"},
- {"anahtar": "sistem.eposta_spf_yok", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF kaydı yok", "metin": "SPF kaydı bulunamadı. Adınıza sahte e-posta gönderilmesi kolaylaşır."},
- {"anahtar": "sistem.eposta_spf_yumusak", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF ~all değerlendirmesi", "metin": "Yumuşak SPF (~all): tanımsız sunucular yalnızca işaretlenir."},
- {"anahtar": "sistem.eposta_spf_all_yok", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF’de all kuralı yok", "metin": "Kayıtta \"all\" kuralı yok; SPF pratikte hiçbir gönderimi engellemez."},
- {"anahtar": "sistem.eposta_spf_arti_all", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF +all değerlendirmesi", "metin": "\"+all\" tüm dünyaya izin verir; SPF korumasını tamamen iptal eder."},
- {"anahtar": "sistem.eposta_spf_kati", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF -all değerlendirmesi", "metin": "Katı SPF (-all): tanımlı olmayan sunucuların gönderimi reddedilir."},
- {"anahtar": "sistem.eposta_spf_notr", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – SPF ?all değerlendirmesi", "metin": "Nötr SPF (?all): alıcı sunucuya hiçbir yönlendirme yapılmaz."},
- {"anahtar": "sistem.eposta_dmarc_yok", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DMARC kaydı yok", "metin": "DMARC kaydı yok. Sahte gönderimler engellenmez, rapor da alınmaz."},
- {"anahtar": "sistem.eposta_dmarc_reject", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DMARC p=reject değerlendirmesi", "metin": "p=reject: kimlik doğrulaması başarısız iletiler reddedilir."},
- {"anahtar": "sistem.eposta_dmarc_quarantine", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DMARC p=quarantine değerlendirmesi", "metin": "p=quarantine: şüpheli iletiler spam klasörüne düşer."},
- {"anahtar": "sistem.eposta_dmarc_none", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DMARC p=none değerlendirmesi", "metin": "p=none: yalnızca raporlama yapılır, hiçbir ileti engellenmez."},
- {"anahtar": "sistem.eposta_dmarc_okunamadi", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DMARC politikası anlaşılamadı", "metin": "DMARC politikası okunamadı."},
- {"anahtar": "sistem.eposta_hizalama_kati", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DKIM/SPF hizalama modu (s)", "metin": "katı"},
- {"anahtar": "sistem.eposta_hizalama_gevsek", "grup": "Sistem – araç sonuçları", "konum": "E-posta kontrolü – DKIM/SPF hizalama modu (r)", "metin": "gevşek"},
- {"anahtar": "sistem.arac_kapali", "grup": "Sistem – araç hata mesajları", "konum": "Tüm araçlar – araç motoru kapalıyken", "metin": "Araçlar şu anda kapalı."},
- {"anahtar": "sistem.arac_gecersiz_alan", "grup": "Sistem – araç hata mesajları", "konum": "DNS, WHOIS, SSL, e-posta ve başlık araçları – geçersiz alan adı", "metin": "Geçerli bir alan adı girin."},
- {"anahtar": "sistem.arac_desteklenmeyen_tip", "grup": "Sistem – araç hata mesajları", "konum": "DNS sorgusu – desteklenmeyen kayıt tipi", "metin": "Desteklenmeyen kayıt tipi."},
- {"anahtar": "sistem.arac_yerel_ag", "grup": "Sistem – araç hata mesajları", "konum": "Kara liste, IP ve SSL araçları – yerel ağ adresi girildi", "metin": "Yerel ağ adresleri sorgulanamaz."},
- {"anahtar": "sistem.arac_gecersiz_alan_ipv4", "grup": "Sistem – araç hata mesajları", "konum": "Kara liste kontrolü – geçersiz girdi", "metin": "Geçerli bir alan adı veya IPv4 adresi girin."},
- {"anahtar": "sistem.arac_gecersiz_ipv4_alan", "grup": "Sistem – araç hata mesajları", "konum": "IP sorgusu – geçersiz alan adı girdisi", "metin": "Geçerli bir IPv4 adresi veya alan adı girin."},
- {"anahtar": "sistem.arac_a_kaydi_yok", "grup": "Sistem – araç hata mesajları", "konum": "IP sorgusu – alan adının A kaydı yok ({alan} = alan adı)", "metin": "{alan} için A kaydı bulunamadı."},
- {"anahtar": "sistem.arac_gecersiz_ipv4", "grup": "Sistem – araç hata mesajları", "konum": "IP sorgusu – geçersiz IPv4 adresi", "metin": "Geçerli bir IPv4 adresi girin."},
- {"anahtar": "sistem.arac_bilinmeyen", "grup": "Sistem – araç hata mesajları", "konum": "Tüm araçlar – bilinmeyen araç kimliği", "metin": "Bilinmeyen araç."},
- {"anahtar": "sistem.arac_sorgu_tamamlanamadi", "grup": "Sistem – araç hata mesajları", "konum": "Tüm araçlar – beklenmeyen hata", "metin": "Sorgu tamamlanamadı, lütfen tekrar deneyin."},
- {"anahtar": "sistem.ip_rir_ripencc", "grup": "Sistem – araç sonuçları", "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (RIPE)", "metin": "RIPE NCC (Avrupa)"},
- {"anahtar": "sistem.ip_rir_arin", "grup": "Sistem – araç sonuçları", "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (ARIN)", "metin": "ARIN (Kuzey Amerika)"},
- {"anahtar": "sistem.ip_rir_apnic", "grup": "Sistem – araç sonuçları", "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (APNIC)", "metin": "APNIC (Asya-Pasifik)"},
- {"anahtar": "sistem.ip_rir_lacnic", "grup": "Sistem – araç sonuçları", "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (LACNIC)", "metin": "LACNIC (Latin Amerika)"},
- {"anahtar": "sistem.ip_rir_afrinic", "grup": "Sistem – araç sonuçları", "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (AFRINIC)", "metin": "AFRINIC (Afrika)"},
- {"anahtar": "sistem.ssl_zaman_asimi", "grup": "Sistem – araç hata mesajları", "konum": "SSL kontrolü – 443 portu zaman aşımı", "metin": "443 portuna bağlanılamadı (zaman aşımı)."},
- {"anahtar": "sistem.ssl_baglanti_yok", "grup": "Sistem – araç hata mesajları", "konum": "SSL kontrolü – TLS bağlantısı kurulamadı", "metin": "TLS bağlantısı kurulamadı."},
- {"anahtar": "sistem.whois_durum_transfer_kilit_firma", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Transfer kilidi açık (kayıt firması)"},
- {"anahtar": "sistem.whois_durum_silme_kilit", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Silme kilidi açık"},
- {"anahtar": "sistem.whois_durum_guncelleme_kilit", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Güncelleme kilidi açık"},
- {"anahtar": "sistem.whois_durum_yenileme_kilit", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Yenileme kilidi açık"},
- {"anahtar": "sistem.whois_durum_client_hold", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Alan adı yayından kaldırılmış"},
- {"anahtar": "sistem.whois_durum_transfer_kilit_kurulus", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Transfer kilidi açık (kayıt kuruluşu)"},
- {"anahtar": "sistem.whois_durum_silme_kilit_kurulus", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Silme kilidi açık (kayıt kuruluşu)"},
- {"anahtar": "sistem.whois_durum_server_hold", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Kayıt kuruluşu yayını durdurmuş"},
- {"anahtar": "sistem.whois_durum_aktif", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Aktif"},
- {"anahtar": "sistem.whois_durum_pasif", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Pasif (isim sunucusu yok)"},
- {"anahtar": "sistem.whois_durum_silinme_surecinde", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Silinme sürecinde"},
- {"anahtar": "sistem.whois_durum_transfer_surecinde", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Transfer sürecinde"},
- {"anahtar": "sistem.whois_durum_kurtarma_suresi", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Kurtarma süresinde"},
- {"anahtar": "sistem.whois_durum_otomatik_yenileme", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Otomatik yenileme süresinde"},
- {"anahtar": "sistem.whois_durum_yeni_kayit", "grup": "Sistem – araç sonuçları", "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması", "metin": "Yeni kayıt süresinde"},
- {"anahtar": "sistem.whois_ulasilamadi", "grup": "Sistem – araç hata mesajları", "konum": "WHOIS sorgusu – kayıt sunucusuna ulaşılamadı", "metin": "Kayıt sunucusuna ulaşılamadı."},
- {"anahtar": "sistem.ulke_tr", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (TR)", "metin": "Türkiye"},
- {"anahtar": "sistem.ulke_us", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (US)", "metin": "ABD"},
- {"anahtar": "sistem.ulke_de", "grup": "Sistem – ülke adları", "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (DE)", "metin": "Almanya"},
- {"anahtar": "sistem.ulke_nl", "grup": "Sistem – ülke adları", "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (NL)", "metin": "Hollanda"},
- {"anahtar": "sistem.ulke_gb", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (GB)", "metin": "Birleşik Krallık"},
- {"anahtar": "sistem.ulke_fr", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (FR)", "metin": "Fransa"},
- {"anahtar": "sistem.ulke_ru", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (RU)", "metin": "Rusya"},
- {"anahtar": "sistem.ulke_ie", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (IE)", "metin": "İrlanda"},
- {"anahtar": "sistem.ulke_sg", "grup": "Sistem – ülke adları", "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (SG)", "metin": "Singapur"},
- {"anahtar": "sistem.ulke_jp", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (JP)", "metin": "Japonya"},
- {"anahtar": "sistem.ulke_ca", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (CA)", "metin": "Kanada"},
- {"anahtar": "sistem.ulke_pl", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (PL)", "metin": "Polonya"},
- {"anahtar": "sistem.ulke_it", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (IT)", "metin": "İtalya"},
- {"anahtar": "sistem.ulke_es", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (ES)", "metin": "İspanya"},
- {"anahtar": "sistem.ulke_ro", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (RO)", "metin": "Romanya"},
- {"anahtar": "sistem.ulke_bg", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (BG)", "metin": "Bulgaristan"},
- {"anahtar": "sistem.ulke_ua", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (UA)", "metin": "Ukrayna"},
- {"anahtar": "sistem.ulke_ae", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (AE)", "metin": "BAE"},
- {"anahtar": "sistem.ulke_cn", "grup": "Sistem – ülke adları", "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (CN)", "metin": "Çin"},
- {"anahtar": "sistem.ulke_in", "grup": "Sistem – ülke adları", "konum": "IP sorgusu ve hız testi – ülke adı (IN)", "metin": "Hindistan"},
- {"anahtar": "sistem.ulke_az", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (AZ)", "metin": "Azerbaycan"},
- {"anahtar": "sistem.ulke_ge", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (GE)", "metin": "Gürcistan"},
- {"anahtar": "sistem.ulke_be", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (BE)", "metin": "Belçika"},
- {"anahtar": "sistem.ulke_se", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (SE)", "metin": "İsveç"},
- {"anahtar": "sistem.ulke_ch", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (CH)", "metin": "İsviçre"},
- {"anahtar": "sistem.ulke_at", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (AT)", "metin": "Avusturya"},
- {"anahtar": "sistem.ulke_gr", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (GR)", "metin": "Yunanistan"},
- {"anahtar": "sistem.ulke_cy", "grup": "Sistem – ülke adları", "konum": "Hız testi – ülke adı (CY)", "metin": "Kıbrıs"}
+  {
+    "anahtar": "sistem.baslik_hsts_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – HSTS açıklaması",
+    "metin": "Tarayıcıya bu siteye yalnızca HTTPS ile bağlanmasını söyler."
+  },
+  {
+    "anahtar": "sistem.baslik_csp_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – CSP açıklaması",
+    "metin": "Sayfanın hangi kaynaklardan betik ve içerik yükleyebileceğini sınırlar, XSS etkisini azaltır."
+  },
+  {
+    "anahtar": "sistem.baslik_nosniff_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – X-Content-Type-Options açıklaması",
+    "metin": "Tarayıcının dosya türünü tahmin etmesini engeller."
+  },
+  {
+    "anahtar": "sistem.baslik_cerceve_ad",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – çerçeveleme kontrolünün adı",
+    "metin": "Çerçeveleme koruması"
+  },
+  {
+    "anahtar": "sistem.baslik_cerceve_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – çerçeveleme koruması açıklaması",
+    "metin": "Sitenizin başka bir sayfanın içine gömülüp tıklama hırsızlığına araç olmasını engeller."
+  },
+  {
+    "anahtar": "sistem.baslik_referrer_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – Referrer-Policy açıklaması",
+    "metin": "Başka siteye geçişte hangi adres bilgisinin gönderileceğini belirler."
+  },
+  {
+    "anahtar": "sistem.baslik_izin_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – Permissions-Policy açıklaması",
+    "metin": "Kamera, mikrofon, konum gibi tarayıcı yeteneklerine erişimi kısıtlar."
+  },
+  {
+    "anahtar": "sistem.baslik_https_ad",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – HTTPS yönlendirme kontrolünün adı",
+    "metin": "HTTPS yönlendirmesi"
+  },
+  {
+    "anahtar": "sistem.baslik_https_aciklama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – HTTPS yönlendirmesi açıklaması",
+    "metin": "HTTP isteklerinin şifreli adrese yönlendirilmesi."
+  },
+  {
+    "anahtar": "sistem.baslik_https_yonlendiriliyor",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – HTTP, HTTPS’e yönleniyor durumu",
+    "metin": "HTTP isteği HTTPS adresine yönlendiriliyor"
+  },
+  {
+    "anahtar": "sistem.baslik_https_http_yanitsiz",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – HTTP portu yanıtsız durumu",
+    "metin": "HTTPS çalışıyor, HTTP portundan yanıt alınamadı"
+  },
+  {
+    "anahtar": "sistem.baslik_https_sifresiz",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "HTTP başlık kontrolü – site yalnızca HTTP durumu",
+    "metin": "Site şifresiz HTTP üzerinden yanıt veriyor"
+  },
+  {
+    "anahtar": "sistem.baslik_cok_fazla_yonlendirme",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık kontrolü – yönlendirme sınırı aşıldı",
+    "metin": "Yönlendirme zinciri çok uzun."
+  },
+  {
+    "anahtar": "sistem.arac_gecersiz_alan_adres",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık kontrolü – geçersiz girdi",
+    "metin": "Geçerli bir alan adı veya adres girin."
+  },
+  {
+    "anahtar": "sistem.arac_yerel_ag_cozumleniyor",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık kontrolü – hedef yerel ağa çözümleniyor",
+    "metin": "Bu adres yerel ağ adresine çözümleniyor, sorgulanamaz."
+  },
+  {
+    "anahtar": "sistem.arac_alan_cozumlenemedi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık ve SSL kontrolü – alan adı çözümlenemedi",
+    "metin": "Alan adı çözümlenemedi."
+  },
+  {
+    "anahtar": "sistem.arac_zaman_asimi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık kontrolü – sunucu zaman aşımı",
+    "metin": "Sunucu zaman aşımına uğradı."
+  },
+  {
+    "anahtar": "sistem.arac_sunucuya_ulasilamadi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "HTTP başlık kontrolü – genel bağlantı hatası",
+    "metin": "Sunucuya ulaşılamadı."
+  },
+  {
+    "anahtar": "sistem.rbl_tur_sikayet",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (SpamCop)",
+    "metin": "Şikâyet tabanlı"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_itibar",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (Barracuda, Mailspike)",
+    "metin": "İtibar"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_tuzak",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (PSBL)",
+    "metin": "Tuzak hesap"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_tek_ip",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (UCEPROTECT L1)",
+    "metin": "Tek IP"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_bot",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (DroneBL)",
+    "metin": "Bot / zararlı"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_karma",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (S5H, InterServer)",
+    "metin": "Karma"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_saldiri",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (Blocklist.de)",
+    "metin": "Saldırı bildirimi"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_istatistiksel",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (GBUdb)",
+    "metin": "İstatistiksel"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_geri_sacilma",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (Backscatterer)",
+    "metin": "Geri saçılma"
+  },
+  {
+    "anahtar": "sistem.rbl_tur_sektor_standardi",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – liste türü (Spamhaus ZEN)",
+    "metin": "Sektör standardı"
+  },
+  {
+    "anahtar": "sistem.rbl_spamhaus_not",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – Spamhaus satırındaki not",
+    "metin": "Spamhaus, genel DNS çözümleyicilerinden gelen sorguları yanıtlamıyor. Sonucu spamhaus.org üzerindeki kendi sorgu sayfasından kontrol edin."
+  },
+  {
+    "anahtar": "sistem.rbl_kaynak_a_kaydi",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – IP kaynağı: alan adının A kaydı",
+    "metin": "A kaydı"
+  },
+  {
+    "anahtar": "sistem.rbl_kaynak_girilen",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "Kara liste kontrolü – IP kaynağı: doğrudan girilen IP",
+    "metin": "Girilen adres"
+  },
+  {
+    "anahtar": "sistem.rbl_ip_bulunamadi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Kara liste kontrolü – alan adında IP yok",
+    "metin": "Bu alan adı için sorgulanabilir bir IP adresi bulunamadı."
+  },
+  {
+    "anahtar": "sistem.dns_bolge_kuresel",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS yayılım kontrolü – çözümleyici konumu (anycast)",
+    "metin": "Küresel anycast"
+  },
+  {
+    "anahtar": "sistem.dns_bolge_avrupa",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS yayılım kontrolü – çözümleyici konumu (Avrupa)",
+    "metin": "Avrupa"
+  },
+  {
+    "anahtar": "sistem.dns_txt_spf",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "SPF (gönderim yetkisi)"
+  },
+  {
+    "anahtar": "sistem.dns_txt_dkim",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "DKIM anahtarı"
+  },
+  {
+    "anahtar": "sistem.dns_txt_dmarc",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "DMARC politikası"
+  },
+  {
+    "anahtar": "sistem.dns_txt_google",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Google doğrulaması"
+  },
+  {
+    "anahtar": "sistem.dns_txt_microsoft",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Microsoft doğrulaması"
+  },
+  {
+    "anahtar": "sistem.dns_txt_meta",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Meta doğrulaması"
+  },
+  {
+    "anahtar": "sistem.dns_txt_atlassian",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Atlassian doğrulaması"
+  },
+  {
+    "anahtar": "sistem.dns_txt_apple",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Apple doğrulaması"
+  },
+  {
+    "anahtar": "sistem.dns_txt_alan_dogrulama",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "DNS sorgusu – TXT kaydı türü etiketi",
+    "metin": "Alan adı doğrulaması"
+  },
+  {
+    "anahtar": "sistem.eposta_spf_yok",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF kaydı yok",
+    "metin": "SPF kaydı bulunamadı. Adınıza sahte e-posta gönderilmesi kolaylaşır."
+  },
+  {
+    "anahtar": "sistem.eposta_spf_yumusak",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF ~all değerlendirmesi",
+    "metin": "Yumuşak SPF (~all): tanımsız sunucular yalnızca işaretlenir."
+  },
+  {
+    "anahtar": "sistem.eposta_spf_all_yok",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF’de all kuralı yok",
+    "metin": "Kayıtta \"all\" kuralı yok; SPF pratikte hiçbir gönderimi engellemez."
+  },
+  {
+    "anahtar": "sistem.eposta_spf_arti_all",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF +all değerlendirmesi",
+    "metin": "\"+all\" tüm dünyaya izin verir; SPF korumasını tamamen iptal eder."
+  },
+  {
+    "anahtar": "sistem.eposta_spf_kati",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF -all değerlendirmesi",
+    "metin": "Katı SPF (-all): tanımlı olmayan sunucuların gönderimi reddedilir."
+  },
+  {
+    "anahtar": "sistem.eposta_spf_notr",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – SPF ?all değerlendirmesi",
+    "metin": "Nötr SPF (?all): alıcı sunucuya hiçbir yönlendirme yapılmaz."
+  },
+  {
+    "anahtar": "sistem.eposta_dmarc_yok",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DMARC kaydı yok",
+    "metin": "DMARC kaydı yok. Sahte gönderimler engellenmez, rapor da alınmaz."
+  },
+  {
+    "anahtar": "sistem.eposta_dmarc_reject",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DMARC p=reject değerlendirmesi",
+    "metin": "p=reject: kimlik doğrulaması başarısız iletiler reddedilir."
+  },
+  {
+    "anahtar": "sistem.eposta_dmarc_quarantine",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DMARC p=quarantine değerlendirmesi",
+    "metin": "p=quarantine: şüpheli iletiler spam klasörüne düşer."
+  },
+  {
+    "anahtar": "sistem.eposta_dmarc_none",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DMARC p=none değerlendirmesi",
+    "metin": "p=none: yalnızca raporlama yapılır, hiçbir ileti engellenmez."
+  },
+  {
+    "anahtar": "sistem.eposta_dmarc_okunamadi",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DMARC politikası anlaşılamadı",
+    "metin": "DMARC politikası okunamadı."
+  },
+  {
+    "anahtar": "sistem.eposta_hizalama_kati",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DKIM/SPF hizalama modu (s)",
+    "metin": "katı"
+  },
+  {
+    "anahtar": "sistem.eposta_hizalama_gevsek",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "E-posta kontrolü – DKIM/SPF hizalama modu (r)",
+    "metin": "gevşek"
+  },
+  {
+    "anahtar": "sistem.arac_kapali",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Tüm araçlar – araç motoru kapalıyken",
+    "metin": "Araçlar şu anda kapalı."
+  },
+  {
+    "anahtar": "sistem.arac_gecersiz_alan",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "DNS, WHOIS, SSL, e-posta ve başlık araçları – geçersiz alan adı",
+    "metin": "Geçerli bir alan adı girin."
+  },
+  {
+    "anahtar": "sistem.arac_desteklenmeyen_tip",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "DNS sorgusu – desteklenmeyen kayıt tipi",
+    "metin": "Desteklenmeyen kayıt tipi."
+  },
+  {
+    "anahtar": "sistem.arac_yerel_ag",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Kara liste, IP ve SSL araçları – yerel ağ adresi girildi",
+    "metin": "Yerel ağ adresleri sorgulanamaz."
+  },
+  {
+    "anahtar": "sistem.arac_gecersiz_alan_ipv4",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Kara liste kontrolü – geçersiz girdi",
+    "metin": "Geçerli bir alan adı veya IPv4 adresi girin."
+  },
+  {
+    "anahtar": "sistem.arac_gecersiz_ipv4_alan",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "IP sorgusu – geçersiz alan adı girdisi",
+    "metin": "Geçerli bir IPv4 adresi veya alan adı girin."
+  },
+  {
+    "anahtar": "sistem.arac_a_kaydi_yok",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "IP sorgusu – alan adının A kaydı yok ({alan} = alan adı)",
+    "metin": "{alan} için A kaydı bulunamadı."
+  },
+  {
+    "anahtar": "sistem.arac_gecersiz_ipv4",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "IP sorgusu – geçersiz IPv4 adresi",
+    "metin": "Geçerli bir IPv4 adresi girin."
+  },
+  {
+    "anahtar": "sistem.arac_bilinmeyen",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Tüm araçlar – bilinmeyen araç kimliği",
+    "metin": "Bilinmeyen araç."
+  },
+  {
+    "anahtar": "sistem.arac_sorgu_tamamlanamadi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "Tüm araçlar – beklenmeyen hata",
+    "metin": "Sorgu tamamlanamadı, lütfen tekrar deneyin."
+  },
+  {
+    "anahtar": "sistem.ip_rir_ripencc",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (RIPE)",
+    "metin": "RIPE NCC (Avrupa)"
+  },
+  {
+    "anahtar": "sistem.ip_rir_arin",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (ARIN)",
+    "metin": "ARIN (Kuzey Amerika)"
+  },
+  {
+    "anahtar": "sistem.ip_rir_apnic",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (APNIC)",
+    "metin": "APNIC (Asya-Pasifik)"
+  },
+  {
+    "anahtar": "sistem.ip_rir_lacnic",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (LACNIC)",
+    "metin": "LACNIC (Latin Amerika)"
+  },
+  {
+    "anahtar": "sistem.ip_rir_afrinic",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "IP sorgusu – bölgesel kayıt kuruluşu adı (AFRINIC)",
+    "metin": "AFRINIC (Afrika)"
+  },
+  {
+    "anahtar": "sistem.ssl_zaman_asimi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "SSL kontrolü – 443 portu zaman aşımı",
+    "metin": "443 portuna bağlanılamadı (zaman aşımı)."
+  },
+  {
+    "anahtar": "sistem.ssl_baglanti_yok",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "SSL kontrolü – TLS bağlantısı kurulamadı",
+    "metin": "TLS bağlantısı kurulamadı."
+  },
+  {
+    "anahtar": "sistem.whois_durum_transfer_kilit_firma",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Transfer kilidi açık (kayıt firması)"
+  },
+  {
+    "anahtar": "sistem.whois_durum_silme_kilit",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Silme kilidi açık"
+  },
+  {
+    "anahtar": "sistem.whois_durum_guncelleme_kilit",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Güncelleme kilidi açık"
+  },
+  {
+    "anahtar": "sistem.whois_durum_yenileme_kilit",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Yenileme kilidi açık"
+  },
+  {
+    "anahtar": "sistem.whois_durum_client_hold",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Alan adı yayından kaldırılmış"
+  },
+  {
+    "anahtar": "sistem.whois_durum_transfer_kilit_kurulus",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Transfer kilidi açık (kayıt kuruluşu)"
+  },
+  {
+    "anahtar": "sistem.whois_durum_silme_kilit_kurulus",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Silme kilidi açık (kayıt kuruluşu)"
+  },
+  {
+    "anahtar": "sistem.whois_durum_server_hold",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Kayıt kuruluşu yayını durdurmuş"
+  },
+  {
+    "anahtar": "sistem.whois_durum_aktif",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Aktif"
+  },
+  {
+    "anahtar": "sistem.whois_durum_pasif",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Pasif (isim sunucusu yok)"
+  },
+  {
+    "anahtar": "sistem.whois_durum_silinme_surecinde",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Silinme sürecinde"
+  },
+  {
+    "anahtar": "sistem.whois_durum_transfer_surecinde",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Transfer sürecinde"
+  },
+  {
+    "anahtar": "sistem.whois_durum_kurtarma_suresi",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Kurtarma süresinde"
+  },
+  {
+    "anahtar": "sistem.whois_durum_otomatik_yenileme",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Otomatik yenileme süresinde"
+  },
+  {
+    "anahtar": "sistem.whois_durum_yeni_kayit",
+    "grup": "Sistem – araç sonuçları",
+    "konum": "WHOIS sorgusu – alan adı durum (EPP) açıklaması",
+    "metin": "Yeni kayıt süresinde"
+  },
+  {
+    "anahtar": "sistem.whois_ulasilamadi",
+    "grup": "Sistem – araç hata mesajları",
+    "konum": "WHOIS sorgusu – kayıt sunucusuna ulaşılamadı",
+    "metin": "Kayıt sunucusuna ulaşılamadı."
+  },
+  {
+    "anahtar": "sistem.ulke_tr",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (TR)",
+    "metin": "Türkiye"
+  },
+  {
+    "anahtar": "sistem.ulke_us",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (US)",
+    "metin": "ABD"
+  },
+  {
+    "anahtar": "sistem.ulke_de",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (DE)",
+    "metin": "Almanya"
+  },
+  {
+    "anahtar": "sistem.ulke_nl",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (NL)",
+    "metin": "Hollanda"
+  },
+  {
+    "anahtar": "sistem.ulke_gb",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (GB)",
+    "metin": "Birleşik Krallık"
+  },
+  {
+    "anahtar": "sistem.ulke_fr",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (FR)",
+    "metin": "Fransa"
+  },
+  {
+    "anahtar": "sistem.ulke_ru",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (RU)",
+    "metin": "Rusya"
+  },
+  {
+    "anahtar": "sistem.ulke_ie",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (IE)",
+    "metin": "İrlanda"
+  },
+  {
+    "anahtar": "sistem.ulke_sg",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (SG)",
+    "metin": "Singapur"
+  },
+  {
+    "anahtar": "sistem.ulke_jp",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (JP)",
+    "metin": "Japonya"
+  },
+  {
+    "anahtar": "sistem.ulke_ca",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (CA)",
+    "metin": "Kanada"
+  },
+  {
+    "anahtar": "sistem.ulke_pl",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (PL)",
+    "metin": "Polonya"
+  },
+  {
+    "anahtar": "sistem.ulke_it",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (IT)",
+    "metin": "İtalya"
+  },
+  {
+    "anahtar": "sistem.ulke_es",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (ES)",
+    "metin": "İspanya"
+  },
+  {
+    "anahtar": "sistem.ulke_ro",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (RO)",
+    "metin": "Romanya"
+  },
+  {
+    "anahtar": "sistem.ulke_bg",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (BG)",
+    "metin": "Bulgaristan"
+  },
+  {
+    "anahtar": "sistem.ulke_ua",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (UA)",
+    "metin": "Ukrayna"
+  },
+  {
+    "anahtar": "sistem.ulke_ae",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (AE)",
+    "metin": "BAE"
+  },
+  {
+    "anahtar": "sistem.ulke_cn",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu, hız testi ve DNS çözümleyici konumu – ülke adı (CN)",
+    "metin": "Çin"
+  },
+  {
+    "anahtar": "sistem.ulke_in",
+    "grup": "Sistem – ülke adları",
+    "konum": "IP sorgusu ve hız testi – ülke adı (IN)",
+    "metin": "Hindistan"
+  },
+  {
+    "anahtar": "sistem.ulke_az",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (AZ)",
+    "metin": "Azerbaycan"
+  },
+  {
+    "anahtar": "sistem.ulke_ge",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (GE)",
+    "metin": "Gürcistan"
+  },
+  {
+    "anahtar": "sistem.ulke_be",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (BE)",
+    "metin": "Belçika"
+  },
+  {
+    "anahtar": "sistem.ulke_se",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (SE)",
+    "metin": "İsveç"
+  },
+  {
+    "anahtar": "sistem.ulke_ch",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (CH)",
+    "metin": "İsviçre"
+  },
+  {
+    "anahtar": "sistem.ulke_at",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (AT)",
+    "metin": "Avusturya"
+  },
+  {
+    "anahtar": "sistem.ulke_gr",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (GR)",
+    "metin": "Yunanistan"
+  },
+  {
+    "anahtar": "sistem.ulke_cy",
+    "grup": "Sistem – ülke adları",
+    "konum": "Hız testi – ülke adı (CY)",
+    "metin": "Kıbrıs"
+  }
 ]

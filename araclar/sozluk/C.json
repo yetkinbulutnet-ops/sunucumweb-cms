@@ -585,7 +585,7 @@
     "anahtar": "anasayfa.lokasyon",
     "grup": "Ana sayfa",
     "konum": "Altyapı bölümü konum rozeti",
-    "metin": "İstanbul · Türkiye lokasyonu"
+    "metin": "İstanbul, Türkiye lokasyonu"
   },
   {
     "anahtar": "anasayfa.alt_gpu",
@@ -717,19 +717,19 @@
     "anahtar": "urunbulucu.s2_small",
     "grup": "Ana sayfa – ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
-    "metin": "Küçük · yeni başlıyorum"
+    "metin": "Küçük, yeni başlıyorum"
   },
   {
     "anahtar": "urunbulucu.s2_mid",
     "grup": "Ana sayfa – ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
-    "metin": "Orta · büyüyen işletme"
+    "metin": "Orta, büyüyen bir işletme"
   },
   {
     "anahtar": "urunbulucu.s2_big",
     "grup": "Ana sayfa – ürün bulucu",
     "konum": "Ürün bulucu 2. soru seçeneği",
-    "metin": "Büyük · kurumsal ölçek"
+    "metin": "Büyük, kurumsal ölçek"
   },
   {
     "anahtar": "urunbulucu.s3_soru",

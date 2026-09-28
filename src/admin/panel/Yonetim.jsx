@@ -150,7 +150,7 @@ function Merkez() {
           {bolumler.map((b) => (
             <section key={b.ad}>
               <BolumBaslik>
-                <IkonKutu $renk={b.renk} $boy={42}>
+                <IkonKutu $boy={42}>
                   <b.ikon />
                 </IkonKutu>
                 <div>
@@ -160,8 +160,8 @@ function Merkez() {
               </BolumBaslik>
               <Kutular>
                 {b.ogeler.map((o) => (
-                  <Oge key={o.yol} to={o.yol} $renk={b.renk}>
-                    <IkonKutu $renk={b.renk} $boy={38}>
+                  <Oge key={o.yol} to={o.yol} $renk="#2dd4bf">
+                    <IkonKutu $boy={38}>
                       <o.ikon />
                     </IkonKutu>
                     <span style={{ minWidth: 0, flex: 1 }}>

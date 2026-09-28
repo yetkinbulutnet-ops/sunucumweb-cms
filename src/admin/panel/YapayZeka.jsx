@@ -427,7 +427,7 @@ export default function YapayZeka() {
     const sorunlu = BOLUMLER.find((x) => x.zorunlu.some((z) => !String(form[x.alan] || '').includes(`{${z}}`)));
     if (sorunlu) {
       setAktif(sorunlu.alan);
-      toggleNotification({ type: 'warning', message: `“${sorunlu.ad}” bölümünde zorunlu bir alan eksik.` });
+      toggleNotification({ type: 'warning', message: `${sorunlu.ad} bölümünde zorunlu bir alan eksik.` });
       return;
     }
     setKaydediliyor(true);
@@ -455,7 +455,7 @@ export default function YapayZeka() {
         <div>
           {motor?.ready ? (
             <>
-              <b>Sitede açık.</b> Ziyaretçiler “Alan adı” sayfasındaki yapay zekâ bulucuyu kullanabiliyor.
+              <b>Sitede açık.</b> Ziyaretçiler alan adı sayfasındaki yapay zekâ bulucuyu kullanabiliyor.
             </>
           ) : (
             <>

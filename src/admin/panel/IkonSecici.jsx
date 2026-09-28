@@ -244,7 +244,7 @@ const IkonSecici = React.forwardRef((props, ref) => {
           <Kaplama onMouseDown={(e) => e.target === e.currentTarget && setAcik(false)}>
             <Pencere role="dialog" aria-modal="true" aria-label="İkon seç">
               <header>
-                <h2>İkon seç{label ? ` · ${label}` : ''}</h2>
+                <h2>{label ? `${label} için ikon seçin` : 'İkon seçin'}</h2>
                 <button type="button" onClick={() => setAcik(false)} aria-label="Kapat">
                   ×
                 </button>

@@ -209,7 +209,7 @@ export default function Istatistikler() {
                         <i style={{ background: '#2dd4bf' }} /> Görüntüleme
                       </span>
                       <span>
-                        <i style={{ background: '#a78bfa' }} /> Ziyaret
+                        <i style={{ background: '#7c8ea6' }} /> Ziyaret
                       </span>
                       <span>
                         <i className="kesik" /> Önceki dönem
@@ -217,21 +217,21 @@ export default function Istatistikler() {
                     </Lejant>
                   }
                 >
-                  Trafik · {aralikAdi}
+                  Trafik ({aralikAdi.toLocaleLowerCase('tr')})
                 </Baslik>
                 <AlanGrafik
                   yukseklik={300}
                   birim={veri.birim}
                   seriler={[
                     { ad: 'Görüntüleme', renk: '#2dd4bf', veri: veri.seri.goruntuleme },
-                    { ad: 'Ziyaret', renk: '#a78bfa', veri: veri.seri.ziyaret },
+                    { ad: 'Ziyaret', renk: '#7c8ea6', veri: veri.seri.ziyaret },
                     { ad: 'Önceki dönem', renk: '#9fb0c2', veri: veri.seri.onceki || [], kesikli: true },
                   ]}
                 />
               </Kart>
 
               <Kart $gecikme={2}>
-                <Baslik ikon={PinMap} renk="#2dd4bf" ek={<span className="ek">{sayi(iller.reduce((t, i) => t + i.y, 0))} ziyaretçi · {iller.length} il</span>}>
+                <Baslik ikon={PinMap} renk="#2dd4bf" ek={<span className="ek">{iller.length} ilden {sayi(iller.reduce((t, i) => t + i.y, 0))} ziyaretçi</span>}>
                   Türkiye'de ziyaretçiler
                 </Baslik>
                 <HaritaDuzen>

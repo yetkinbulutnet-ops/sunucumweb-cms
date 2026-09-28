@@ -1,19 +1,104 @@
 [
-  { "anahtar": "eposta.mesaj_bildirim_konu", "grup": "E-posta – iletişim mesajı", "konum": "Yöneticilere giden bildirim: konu satırı ({konu}, {ad})", "metin": "Yeni iletişim mesajı: {konu} — {ad}" },
-  { "anahtar": "eposta.mesaj_bildirim_baslik", "grup": "E-posta – iletişim mesajı", "konum": "Yöneticilere giden bildirim: başlık", "metin": "Yeni bir iletişim mesajı var" },
-  { "anahtar": "eposta.mesaj_bildirim_giris", "grup": "E-posta – iletişim mesajı", "konum": "Yöneticilere giden bildirim: giriş cümlesi", "metin": "sunucumweb.com iletişim formundan yeni bir mesaj geldi:" },
-  { "anahtar": "eposta.mesaj_bildirim_buton", "grup": "E-posta – iletişim mesajı", "konum": "Yöneticilere giden bildirim: buton", "metin": "Panelde görüntüle ve yanıtla" },
-  { "anahtar": "eposta.mesaj_bildirim_not", "grup": "E-posta – iletişim mesajı", "konum": "Yöneticilere giden bildirim: alt not", "metin": "Bu e-postayı doğrudan yanıtlarsanız yanıtınız müşteriye gider. Panelden yanıtlarsanız yanıt, mesaj geçmişine de kaydedilir." },
-  { "anahtar": "eposta.mesaj_etiket_ad", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: ad soyad etiketi", "metin": "Ad soyad" },
-  { "anahtar": "eposta.mesaj_etiket_eposta", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: e-posta etiketi", "metin": "E-posta" },
-  { "anahtar": "eposta.mesaj_etiket_telefon", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: telefon etiketi", "metin": "Telefon" },
-  { "anahtar": "eposta.mesaj_etiket_konu", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: konu etiketi", "metin": "Konu" },
-  { "anahtar": "eposta.mesaj_etiket_tarih", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: tarih etiketi", "metin": "Tarih" },
-  { "anahtar": "eposta.mesaj_etiket_ip", "grup": "E-posta – iletişim mesajı", "konum": "Bildirim tablosu: IP etiketi", "metin": "IP adresi" },
-  { "anahtar": "eposta.mesaj_yanit_konu", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: konu satırı ({konu})", "metin": "Re: {konu} — SunucumWEB" },
-  { "anahtar": "eposta.mesaj_yanit_baslik", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: başlık ({konu})", "metin": "Mesajınız hakkında: {konu}" },
-  { "anahtar": "eposta.mesaj_yanit_selam", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: selamlama ({ad})", "metin": "Merhaba {ad}," },
-  { "anahtar": "eposta.mesaj_yanit_imza", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: imza satırı (yanıtlayanın adının altında)", "metin": "SunucumWEB Müşteri Hizmetleri" },
-  { "anahtar": "eposta.mesaj_yanit_alinti", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: alıntı başlığı ({tarih})", "metin": "{tarih} tarihinde gönderdiğiniz mesaj:" },
-  { "anahtar": "eposta.mesaj_yanit_alt_bilgi", "grup": "E-posta – iletişim mesajı", "konum": "Müşteriye giden yanıt: en alttaki bilgi satırı", "metin": "Bu e-posta, sunucumweb.com iletişim formundan gönderdiğiniz mesaja yanıt olarak gönderildi." }
+  {
+    "anahtar": "eposta.mesaj_bildirim_konu",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Yöneticilere giden bildirim: konu satırı ({konu}, {ad})",
+    "metin": "Yeni iletişim mesajı: {konu} ({ad})"
+  },
+  {
+    "anahtar": "eposta.mesaj_bildirim_baslik",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Yöneticilere giden bildirim: başlık",
+    "metin": "Yeni bir iletişim mesajı var"
+  },
+  {
+    "anahtar": "eposta.mesaj_bildirim_giris",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Yöneticilere giden bildirim: giriş cümlesi",
+    "metin": "sunucumweb.com iletişim formundan yeni bir mesaj geldi:"
+  },
+  {
+    "anahtar": "eposta.mesaj_bildirim_buton",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Yöneticilere giden bildirim: buton",
+    "metin": "Panelde görüntüle ve yanıtla"
+  },
+  {
+    "anahtar": "eposta.mesaj_bildirim_not",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Yöneticilere giden bildirim: alt not",
+    "metin": "Bu e-postayı doğrudan yanıtlarsanız yanıtınız müşteriye gider. Panelden yanıtlarsanız yanıt, mesaj geçmişine de kaydedilir."
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_ad",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: ad soyad etiketi",
+    "metin": "Ad soyad"
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_eposta",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: e-posta etiketi",
+    "metin": "E-posta"
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_telefon",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: telefon etiketi",
+    "metin": "Telefon"
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_konu",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: konu etiketi",
+    "metin": "Konu"
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_tarih",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: tarih etiketi",
+    "metin": "Tarih"
+  },
+  {
+    "anahtar": "eposta.mesaj_etiket_ip",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Bildirim tablosu: IP etiketi",
+    "metin": "IP adresi"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_konu",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: konu satırı ({konu})",
+    "metin": "Re: {konu}"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_baslik",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: başlık ({konu})",
+    "metin": "Mesajınız hakkında: {konu}"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_selam",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: selamlama ({ad})",
+    "metin": "Merhaba {ad},"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_imza",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: imza satırı (yanıtlayanın adının altında)",
+    "metin": "SunucumWEB Müşteri Hizmetleri"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_alinti",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: alıntı başlığı ({tarih})",
+    "metin": "{tarih} tarihinde gönderdiğiniz mesaj:"
+  },
+  {
+    "anahtar": "eposta.mesaj_yanit_alt_bilgi",
+    "grup": "E-posta – iletişim mesajı",
+    "konum": "Müşteriye giden yanıt: en alttaki bilgi satırı",
+    "metin": "Bu e-posta, sunucumweb.com iletişim formundan gönderdiğiniz mesaja yanıt olarak gönderildi."
+  }
 ]

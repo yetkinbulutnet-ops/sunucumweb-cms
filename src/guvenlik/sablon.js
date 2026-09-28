@@ -34,7 +34,7 @@ ${icerik}
 </td></tr>
 <tr><td style="padding:18px 32px;background:#f6f8fa;border-top:1px solid #e1e7ee;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.6;color:#76869b;">
 ${altBilgi ? `${altBilgi}<br>` : musteri ? 'Bu e-posta, sunucumweb.com çark kampanyasına katıldığınız için gönderildi.<br>' : `Bu e-posta <a href="${PANEL}" style="color:#0d9488;text-decoration:none;">SunucumWEB Admin</a> tarafından otomatik gönderildi, lütfen yanıtlamayın.<br>`}
-<a href="${SITE}" style="color:#76869b;text-decoration:none;">sunucumweb.com</a> · YetkinWeb Systems
+<a href="${SITE}" style="color:#76869b;text-decoration:none;">sunucumweb.com</a> | YetkinWeb Systems
 </td></tr>
 </table>
 </td></tr>
@@ -85,13 +85,13 @@ const duz = (html) =>
 
 const paket = (subject, onBaslik, baslik, icerik, musteri = false, altBilgi = '') => {
   const html = sarmal({ onBaslik, baslik, icerik, musteri, altBilgi });
-  const imza = musteri ? 'SunucumWEB · sunucumweb.com' : 'SunucumWEB Admin · YetkinWeb Systems';
+  const imza = musteri ? 'SunucumWEB | sunucumweb.com' : 'SunucumWEB Admin | YetkinWeb Systems';
   return { subject, html, text: duz(`${baslik}\n\n${icerik}\n\n${imza}`) };
 };
 
 const carkKuponu = ({ odul, aciklama, kupon, gecerlilik, baglanti }) =>
   paket(
-    `Tebrikler! ${odul} kazandın — SunucumWEB`,
+    `Tebrikler, ${odul} kazandın | SunucumWEB`,
     `Kupon kodun: ${kupon}`,
     `Tebrikler, ${odul} kazandın!`,
     paragraf('SunucumWEB çarkını çevirdin ve ödülü kaptın. Kupon kodunu sipariş sırasında kullanabilirsin:') +
@@ -112,7 +112,7 @@ const tarihTr = (d) => new Date(d || Date.now()).toLocaleString('tr-TR', { timeZ
 const yeniMesaj = ({ t, m, baglanti }) => {
   const konu = m.konuAdi || m.konu || '-';
   return paket(
-    t('eposta.mesaj_bildirim_konu', { konu, ad: m.ad }, `Yeni iletişim mesajı: ${konu} — ${m.ad}`),
+    t('eposta.mesaj_bildirim_konu', { konu, ad: m.ad }, `Yeni iletişim mesajı: ${konu} (${m.ad})`),
     `${m.ad}: ${String(m.mesaj).slice(0, 90)}`,
     t('eposta.mesaj_bildirim_baslik', null, 'Yeni bir iletişim mesajı var'),
     paragraf(kacis(t('eposta.mesaj_bildirim_giris', null, 'sunucumweb.com iletişim formundan yeni bir mesaj geldi:'))) +
@@ -133,7 +133,7 @@ const yeniMesaj = ({ t, m, baglanti }) => {
 const mesajYaniti = ({ t, m, yanit, gonderenAd }) => {
   const konu = m.konuAdi || m.konu || 'Mesajınız';
   return paket(
-    t('eposta.mesaj_yanit_konu', { konu }, `Re: ${konu} — SunucumWEB`),
+    t('eposta.mesaj_yanit_konu', { konu }, `Re: ${konu}`),
     String(yanit).slice(0, 90),
     t('eposta.mesaj_yanit_baslik', { konu }, `Mesajınız hakkında: ${konu}`),
     paragraf(kacis(t('eposta.mesaj_yanit_selam', { ad: m.ad }, `Merhaba ${m.ad},`))) +
@@ -147,7 +147,7 @@ const mesajYaniti = ({ t, m, yanit, gonderenAd }) => {
 
 const bultenOnay = ({ t, onayUrl, iptalUrl }) =>
   paket(
-    t('eposta.bulten_konu', null, 'E-posta aboneliğini onayla — SunucumWEB'),
+    t('eposta.bulten_konu', null, 'E-posta aboneliğini onayla | SunucumWEB'),
     t('eposta.bulten_on_baslik', null, 'Kampanya ve duyurularımızı almak için tek adım kaldı.'),
     t('eposta.bulten_baslik', null, 'Aboneliğini onayla'),
     paragraf(kacis(t('eposta.bulten_metin', null, 'SunucumWEB kampanya, fırsat ve duyurularından haberdar olmak için bu e-posta adresiyle abonelik isteği aldık. Aboneliğini başlatmak için aşağıdaki butona tıkla:'))) +
@@ -160,7 +160,7 @@ const bultenOnay = ({ t, onayUrl, iptalUrl }) =>
 
 const dogrulamaKodu = ({ ad, kod, dakika, oturum, digerCihaz }) =>
   paket(
-    `${kod} — SunucumWEB Admin giriş doğrulama kodunuz`,
+    `${kod}: SunucumWEB Admin giriş doğrulama kodunuz`,
     `Giriş doğrulama kodunuz: ${kod}`,
     'Giriş doğrulama kodunuz',
     paragraf(`Merhaba ${kacis(ad)},`) +
@@ -221,7 +221,7 @@ const sifreSifirlamaSablonu = () => {
     .replace('URL_METIN', '<%= url %>');
   return {
     subject: 'SunucumWEB Admin: şifre sıfırlama talebi',
-    text: 'Merhaba <%= user.firstname %>,\n\nSunucumWEB Admin hesabınız için şifre sıfırlama talebi aldık. Yeni şifre belirlemek için şu bağlantıyı açın:\n<%= url %>\n\nBu talebi siz yapmadıysanız bu e-postayı yok sayın.\n\nSunucumWEB Admin · YetkinWeb Systems',
+    text: 'Merhaba <%= user.firstname %>,\n\nSunucumWEB Admin hesabınız için şifre sıfırlama talebi aldık. Yeni şifre belirlemek için şu bağlantıyı açın:\n<%= url %>\n\nBu talebi siz yapmadıysanız bu e-postayı yok sayın.\n\nSunucumWEB Admin | YetkinWeb Systems',
     html,
   };
 };
