@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { styled } from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Layouts, Page } from '@strapi/strapi/admin';
 import { Main } from '@strapi/design-system';
 import { Search } from '@strapi/icons';
 import { Sayfa, Kart, IkonKutu, useVeri, sayi } from './ui';
 import { BOLUMLER } from './bolumler';
+
+const YapayZeka = React.lazy(() => import('./YapayZeka'));
 
 const Ara = styled.label`
   display: flex;
@@ -118,6 +120,17 @@ const Oge = styled(Link)`
 const kucuk = (s) => s.toLocaleLowerCase('tr');
 
 export default function Yonetim() {
+  const alt = useParams()['*'];
+  if (alt === 'yapay-zeka')
+    return (
+      <React.Suspense fallback={null}>
+        <YapayZeka />
+      </React.Suspense>
+    );
+  return <Merkez />;
+}
+
+function Merkez() {
   const [ara, setAra] = React.useState('');
   const { veri } = useVeri('/swb-panel/ozet');
   const sayilar = veri?.sayilar || {};

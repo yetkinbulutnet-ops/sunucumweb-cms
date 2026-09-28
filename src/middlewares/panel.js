@@ -67,8 +67,8 @@ const doldur = (anahtarlar, dizi) => {
 };
 
 const istatistik = async (aralik) => {
-  const a = ARALIKLAR[aralik] || ARALIKLAR['7g'];
-  const anahtar = aralik in ARALIKLAR ? aralik : '7g';
+  const a = ARALIKLAR[aralik] || ARALIKLAR['30g'];
+  const anahtar = aralik in ARALIKLAR ? aralik : '30g';
   const o = onbellek.get(anahtar);
   if (o && Date.now() - o.zaman < 60000) return o.veri;
   const site = process.env.UMAMI_SITE;
@@ -77,9 +77,14 @@ const istatistik = async (aralik) => {
   const baslangic = bitis - a.ms;
   const q = `startAt=${baslangic}&endAt=${bitis}`;
   const metrik = (tur, limit = 8) => umamiGet(`/websites/${site}/metrics?${q}&type=${tur}&limit=${limit}`).catch(() => []);
-  const [ozet, seri, aktif, sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar] = await Promise.all([
+  const oq = `startAt=${baslangic - a.ms}&endAt=${baslangic}`;
+  const tz = encodeURIComponent(SAAT_DILIMI);
+  const [ozet, seri, oncekiSeri, haftalik, iller, aktif, sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar] = await Promise.all([
     umamiGet(`/websites/${site}/stats?${q}`),
-    umamiGet(`/websites/${site}/pageviews?${q}&unit=${a.birim}&timezone=${encodeURIComponent(SAAT_DILIMI)}`),
+    umamiGet(`/websites/${site}/pageviews?${q}&unit=${a.birim}&timezone=${tz}`),
+    umamiGet(`/websites/${site}/pageviews?${oq}&unit=${a.birim}&timezone=${tz}`).catch(() => ({ pageviews: [] })),
+    umamiGet(`/websites/${site}/sessions/weekly?${q}&timezone=${tz}`).catch(() => null),
+    umamiGet(`/websites/${site}/metrics?${q}&type=region&country=TR&limit=100`).catch(() => []),
     umamiGet(`/websites/${site}/active`).catch(() => ({ visitors: 0 })),
     metrik('path', 10),
     metrik('entry', 8),
@@ -98,11 +103,38 @@ const istatistik = async (aralik) => {
     aralik: anahtar,
     birim: a.birim,
     ozet: Object.fromEntries(alanlar.map((k) => [k, { deger: deger(k), onceki: onceki(k) }])),
-    seri: { goruntuleme: doldur(anahtarlar, seri.pageviews), ziyaret: doldur(anahtarlar, seri.sessions) },
+    seri: {
+      goruntuleme: doldur(anahtarlar, seri.pageviews),
+      ziyaret: doldur(anahtarlar, seri.sessions),
+      onceki: doldur(kovalar(baslangic - a.ms, baslangic, a.birim), oncekiSeri.pageviews).slice(-anahtarlar.length).map((v, i) => ({ x: anahtarlar[i], y: v.y })),
+    },
+    haftalik: Array.isArray(haftalik) && haftalik.length === 7 ? haftalik : null,
+    iller: (iller || []).filter((x) => /^TR-\d{2}$/.test(x.x)).map((x) => ({ plaka: Number(x.x.slice(3)), y: x.y })),
     aktif: aktif?.visitors ?? aktif?.x ?? 0,
     listeler: { sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar },
-    raporAdresi: `${UMAMI}/websites/${site}`,
+    raporAdresi: process.env.UMAMI_PAYLASIM_URL || 'https://istatistik.yetkinweb.com/share/wZZElSlME9SkBQua',
   };
+  onbellek.set(anahtar, { zaman: Date.now(), veri });
+  return veri;
+};
+
+const ilIstatistik = async (kod, aralik) => {
+  const a = ARALIKLAR[aralik] || ARALIKLAR['30g'];
+  const anahtar = `il:${kod}:${aralik}`;
+  const o = onbellek.get(anahtar);
+  if (o && Date.now() - o.zaman < 60000) return o.veri;
+  const site = process.env.UMAMI_SITE;
+  const bitis = Date.now();
+  const q = `startAt=${bitis - a.ms}&endAt=${bitis}&region=${kod}`;
+  const [ozet, ilceler, sayfalar, kaynaklar, cihazlar] = await Promise.all([
+    umamiGet(`/websites/${site}/stats?${q}`),
+    umamiGet(`/websites/${site}/metrics?${q}&type=city&limit=8`).catch(() => []),
+    umamiGet(`/websites/${site}/metrics?${q}&type=path&limit=6`).catch(() => []),
+    umamiGet(`/websites/${site}/metrics?${q}&type=referrer&limit=5`).catch(() => []),
+    umamiGet(`/websites/${site}/metrics?${q}&type=device&limit=4`).catch(() => []),
+  ]);
+  const d = (k) => (typeof ozet[k] === 'object' && ozet[k] !== null ? ozet[k].value : ozet[k]) || 0;
+  const veri = { kod, ozet: { visitors: d('visitors'), pageviews: d('pageviews'), visits: d('visits'), bounces: d('bounces'), totaltime: d('totaltime') }, ilceler, sayfalar, kaynaklar, cihazlar };
   onbellek.set(anahtar, { zaman: Date.now(), veri });
   return veri;
 };
@@ -187,10 +219,28 @@ const panel = async (ctx) => {
     if (m === 'GET' && y === '/ozet') return (ctx.body = { data: await ozet() });
     if (m === 'GET' && y === '/istatistik') {
       try {
-        return (ctx.body = { data: await istatistik(String(ctx.query.aralik || '7g')) });
+        return (ctx.body = { data: await istatistik(String(ctx.query.aralik || '30g')) });
       } catch (e) {
         strapi.log.warn(`panel istatistik: ${e.message}`);
         return hata(ctx, 502, 'İstatistik servisine şu an ulaşılamıyor.');
+      }
+    }
+    if (m === 'GET' && y === '/istatistik/il') {
+      const kod = String(ctx.query.kod || '');
+      if (!/^TR-\d{2}$/.test(kod)) return hata(ctx, 400, 'Geçersiz il.');
+      try {
+        return (ctx.body = { data: await ilIstatistik(kod, String(ctx.query.aralik || '30g')) });
+      } catch (e) {
+        strapi.log.warn(`panel il: ${e.message}`);
+        return hata(ctx, 502, 'İstatistik servisine şu an ulaşılamıyor.');
+      }
+    }
+    if (m === 'GET' && y === '/site-durumu') {
+      try {
+        const r = await fetch(`${(process.env.SITE_INTERNAL_URL || 'http://127.0.0.1:3800').replace(/\/+$/, '')}/api/health`, { signal: AbortSignal.timeout(6000) });
+        return (ctx.body = { data: await r.json() });
+      } catch {
+        return hata(ctx, 502, 'Site durumu alınamadı.');
       }
     }
     if (m === 'GET' && y === '/mesajlar') {

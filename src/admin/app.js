@@ -139,6 +139,19 @@ export default {
   },
   bootstrap() {
     telefonBaslat();
+    const yonlendir = () => {
+      if (/\/content-manager\/single-types\/api::ai-ayari\.ai-ayari\/?$/.test(location.pathname)) {
+        history.replaceState(history.state, '', '/admin/yonetim/yapay-zeka');
+        window.dispatchEvent(new PopStateEvent('popstate', { state: history.state }));
+      }
+    };
+    let sonYol = '';
+    new MutationObserver(() => {
+      if (location.pathname !== sonYol) {
+        sonYol = location.pathname;
+        yonlendir();
+      }
+    }).observe(document.body, { childList: true, subtree: true });
     const stil = document.createElement('style');
     stil.textContent = gizleCss;
     document.head.appendChild(stil);

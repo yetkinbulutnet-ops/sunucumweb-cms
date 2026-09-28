@@ -1,4 +1,4 @@
-import { House, Images, Information, Phone, Paragraph, Layout, Globe, Book, Briefcase, Star, Store, PriceTag, Sparkle, Folder, Server, Code, Feather, Hashtag, User, Bell, Gift, Key, Crown, Mail, Cog, Magic, Paperclip, Message, Pencil } from '@strapi/icons';
+import { House, Images, Information, Phone, Paragraph, Layout, Globe, Book, Briefcase, Star, Store, PriceTag, Sparkle, Folder, Server, Code, Feather, Hashtag, User, Bell, Gift, Key, Crown, Mail, Cog, Paperclip, Message, Pencil } from '@strapi/icons';
 
 const liste = (ad) => `/content-manager/collection-types/api::${ad}.${ad}`;
 const tekil = (ad) => `/content-manager/single-types/api::${ad}.${ad}`;
@@ -71,7 +71,7 @@ export const BOLUMLER = [
     ogeler: [
       { ad: 'Genel ayarlar', aciklama: 'Menü, alt bilgi, firma, sosyal medya', ikon: Cog, yol: tekil('site-ayari') },
       { ad: 'Sitedeki yazılar', aciklama: 'Buton, uyarı ve arayüz metinleri', ikon: Paragraph, yol: liste('arayuz-metni'), uid: 'api::arayuz-metni.arayuz-metni' },
-      { ad: 'Yapay zekâ ayarları', aciklama: 'Alan adı bulucunun talimatları', ikon: Magic, yol: tekil('ai-ayari') },
+      { ad: 'Yapay zekâ ayarları', aciklama: 'Alan adı bulucunun talimatları', ikon: Code, yol: '/yonetim/yapay-zeka' },
       { ad: 'Medya kütüphanesi', aciklama: 'Görseller ve dosyalar', ikon: Paperclip, yol: '/plugins/upload' },
       { ad: 'Gelen mesajlar', aciklama: 'İletişim formu mesajları', ikon: Message, yol: '/mesajlar', uid: 'api::iletisim-mesaji.iletisim-mesaji' },
     ],

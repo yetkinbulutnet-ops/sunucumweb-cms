@@ -86,7 +86,7 @@ const ekle = ({ girdi, mod }) => {
     zaman = setTimeout(async () => {
       try {
         const r = await yetkiliFetch(uc, { method: 'POST', body: JSON.stringify({ telefon: g.value.trim() }) });
-        not.textContent = r.ok ? 'Telefon kaydedildi ✓' : 'Kaydedilemedi, tekrar deneyin';
+        not.textContent = r.ok ? 'Kaydedildi' : 'Kaydedilemedi, tekrar deneyin';
       } catch {
         not.textContent = 'Kaydedilemedi, tekrar deneyin';
       }

@@ -216,16 +216,6 @@ const KpiKutu = styled(Kart)`
     color: ${({ theme }) => theme.colors.neutral500};
     flex-wrap: wrap;
   }
-  &::after {
-    content: '';
-    position: absolute;
-    right: -30px;
-    top: -30px;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background: ${({ $renk }) => `${$renk || '#2dd4bf'}14`};
-  }
 `;
 
 export const Kpi = ({ etiket, deger, bicim = sayi, ikon: Ikon, renk, yuzde, ters, alt, gecikme }) => {
@@ -304,7 +294,22 @@ export const xEtiket = (x, birim) => {
   return `${Number(g)} ${AYLAR[Number(a) - 1] || ''}`;
 };
 
-const yolOlustur = (noktalar) => noktalar.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+const yolOlustur = (n) => {
+  if (n.length < 3) return n.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+  const m = n.map((p, i) => {
+    if (i === 0) return (n[1][1] - p[1]) / (n[1][0] - p[0] || 1);
+    if (i === n.length - 1) return (p[1] - n[i - 1][1]) / (p[0] - n[i - 1][0] || 1);
+    const a = (p[1] - n[i - 1][1]) / (p[0] - n[i - 1][0] || 1);
+    const b = (n[i + 1][1] - p[1]) / (n[i + 1][0] - p[0] || 1);
+    return a * b <= 0 ? 0 : (a + b) / 2;
+  });
+  let d = `M${n[0][0].toFixed(1)} ${n[0][1].toFixed(1)}`;
+  for (let i = 0; i < n.length - 1; i++) {
+    const dx = (n[i + 1][0] - n[i][0]) / 3;
+    d += ` C${(n[i][0] + dx).toFixed(1)} ${(n[i][1] + m[i] * dx).toFixed(1)} ${(n[i + 1][0] - dx).toFixed(1)} ${(n[i + 1][1] - m[i + 1] * dx).toFixed(1)} ${n[i + 1][0].toFixed(1)} ${n[i + 1][1].toFixed(1)}`;
+  }
+  return d;
+};
 
 export const AlanGrafik = ({ seriler, yukseklik = 220, birim = 'day', eksen = true }) => {
   const kutu = React.useRef(null);
@@ -326,7 +331,7 @@ export const AlanGrafik = ({ seriler, yukseklik = 220, birim = 'day', eksen = tr
   const ust = 10;
   const w = Math.max(0, en - sol - 4);
   const h = yukseklik - alt - ust;
-  const enBuyuk = Math.max(1, ...seriler.flatMap((s) => s.veri.map((v) => v.y)));
+  const enBuyuk = Math.max(1, ...seriler.flatMap((s) => s.veri.map((v) => v?.y || 0)));
   const tavan = Math.ceil(enBuyuk / 4) * 4 || 4;
   const px = (i) => sol + (n <= 1 ? w / 2 : (i / (n - 1)) * w);
   const py = (y) => ust + h - (y / tavan) * h;
@@ -369,22 +374,21 @@ export const AlanGrafik = ({ seriler, yukseklik = 220, birim = 'day', eksen = tr
               ) : null
             )}
           {seriler.map((s, si) => {
-            const nk = s.veri.map((v, i) => [px(i), py(v.y)]);
+            const nk = s.veri.slice(0, n).map((v, i) => [px(i), py(Math.min(v?.y || 0, tavan))]);
+            if (!nk.length) return null;
             const cizgi = yolOlustur(nk);
-            const uz = Math.ceil(nk.reduce((t, p, i) => (i ? t + Math.hypot(p[0] - nk[i - 1][0], p[1] - nk[i - 1][1]) : 0), 0)) + 10;
+            const uz = Math.ceil(nk.reduce((t, p, i) => (i ? t + Math.hypot(p[0] - nk[i - 1][0], p[1] - nk[i - 1][1]) : 0), 0) * 1.2) + 10;
             return (
               <g key={`${si}-${n}-${en}`}>
-                <path className="alan" d={`${cizgi} L${px(n - 1)} ${ust + h} L${px(0)} ${ust + h} Z`} fill={`url(#g${kimlik}${si})`} />
-                <path className="cizgi" style={{ '--uz': uz }} d={cizgi} fill="none" stroke={s.renk} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+                {!s.kesikli && <path className="alan" d={`${cizgi} L${nk[nk.length - 1][0]} ${ust + h} L${nk[0][0]} ${ust + h} Z`} fill={`url(#g${kimlik}${si})`} />}
+                <path className={s.kesikli ? 'alan' : 'cizgi'} style={s.kesikli ? undefined : { '--uz': uz }} d={cizgi} fill="none" stroke={s.renk} strokeWidth={s.kesikli ? 1.6 : 2.5} strokeDasharray={s.kesikli ? '5 5' : undefined} strokeLinejoin="round" strokeLinecap="round" opacity={s.kesikli ? 0.75 : 1} />
               </g>
             );
           })}
           {imlec != null && (
             <g>
               <line x1={px(imlec)} x2={px(imlec)} y1={ust} y2={ust + h} stroke="#3d4d60" />
-              {seriler.map((s, si) => (
-                <circle key={si} cx={px(imlec)} cy={py(s.veri[imlec].y)} r="4.5" fill="#0b1017" stroke={s.renk} strokeWidth="2.5" />
-              ))}
+              {seriler.map((s, si) => (s.veri[imlec] && !s.kesikli ? <circle key={si} cx={px(imlec)} cy={py(s.veri[imlec].y)} r="4.5" fill="#0b1017" stroke={s.renk} strokeWidth="2.5" /> : null))}
             </g>
           )}
         </svg>
@@ -392,12 +396,14 @@ export const AlanGrafik = ({ seriler, yukseklik = 220, birim = 'day', eksen = tr
       {imlec != null && seriler[0]?.veri[imlec] && (
         <div className="ipucu" style={{ left: Math.min(Math.max(px(imlec), 80), en - 80) }}>
           <b>{xEtiket(seriler[0].veri[imlec].x, birim)}</b>
-          {seriler.map((s, si) => (
-            <div key={si}>
-              <i style={{ background: s.renk }} />
-              {s.ad}: <strong>{sayi(s.veri[imlec].y)}</strong>
-            </div>
-          ))}
+          {seriler.map((s, si) =>
+            s.veri[imlec] ? (
+              <div key={si}>
+                <i style={{ background: s.renk }} />
+                {s.ad}: <strong>{sayi(s.veri[imlec].y)}</strong>
+              </div>
+            ) : null
+          )}
         </div>
       )}
     </GrafikKutu>
@@ -646,12 +652,11 @@ const ulkeAdlari = typeof Intl.DisplayNames === 'function' ? new Intl.DisplayNam
 export const ulke = (kod) => {
   const k = String(kod || '').toUpperCase();
   if (!/^[A-Z]{2}$/.test(k)) return kod || 'Bilinmiyor';
-  const bayrak = String.fromCodePoint(...[...k].map((c) => 127397 + c.charCodeAt(0)));
-  let ad = k;
   try {
-    ad = ulkeAdlari?.of(k) || k;
-  } catch {}
-  return `${bayrak}  ${ad}`;
+    return ulkeAdlari?.of(k) || k;
+  } catch {
+    return k;
+  }
 };
 
 const TARAYICI = { chrome: 'Chrome', crios: 'Chrome (iOS)', ios: 'Safari (iOS)', safari: 'Safari', firefox: 'Firefox', fxios: 'Firefox (iOS)', 'edge-chromium': 'Edge', edge: 'Edge', 'edge-ios': 'Edge (iOS)', opera: 'Opera', samsung: 'Samsung Internet', 'android-webview': 'Android WebView', 'ios-webview': 'iOS WebView', yandexbrowser: 'Yandex', facebook: 'Facebook', instagram: 'Instagram' };
@@ -660,3 +665,181 @@ const CIHAZ = { desktop: 'Masaüstü', laptop: 'Dizüstü', mobile: 'Mobil', tab
 export const cihaz = (x) => CIHAZ[x] || x || 'Bilinmiyor';
 export const sayfaAdi = (x) => (x === '/' ? 'Ana sayfa  /' : x || '-');
 export const kaynakAdi = (x) => x || 'Doğrudan / bilinmiyor';
+
+const PASTA_RENK = ['#2dd4bf', '#60a5fa', '#a78bfa', '#f59e0b', '#f472b6', '#94a3b8'];
+
+const PastaKutu = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  svg circle.dilim {
+    transition: stroke-dasharray 1s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.2s, stroke-width 0.2s;
+    ${hareketsiz}
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    min-width: 150px;
+    display: grid;
+    gap: 8px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: ${({ theme }) => theme.colors.neutral700};
+    min-width: 0;
+    cursor: default;
+  }
+  li i {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  li span {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  li b {
+    color: ${({ theme }) => theme.colors.neutral800};
+    font-variant-numeric: tabular-nums;
+  }
+`;
+
+export const Pasta = ({ ogeler, ad = (o) => o.x, boy = 132 }) => {
+  const [hazir, setHazir] = React.useState(false);
+  const [vurgu, setVurgu] = React.useState(null);
+  React.useEffect(() => {
+    const t = requestAnimationFrame(() => setHazir(true));
+    return () => cancelAnimationFrame(t);
+  }, [ogeler]);
+  if (!ogeler?.length) return <BosDurum kucuk metin="Bu dönemde veri yok." />;
+  const ilk = ogeler.slice(0, 5);
+  const diger = ogeler.slice(5).reduce((t, o) => t + o.y, 0);
+  const liste = diger ? [...ilk, { x: '__diger', y: diger }] : ilk;
+  const toplam = liste.reduce((t, o) => t + o.y, 0) || 1;
+  const r = boy / 2 - 12;
+  const c = 2 * Math.PI * r;
+  let bas = 0;
+  return (
+    <PastaKutu>
+      <svg width={boy} height={boy} viewBox={`0 0 ${boy} ${boy}`} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }} aria-hidden="true">
+        <circle cx={boy / 2} cy={boy / 2} r={r} fill="none" stroke="#1c2430" strokeWidth="16" />
+        {liste.map((o, i) => {
+          const pay = (o.y / toplam) * c;
+          const el = (
+            <circle
+              key={o.x}
+              className="dilim"
+              cx={boy / 2}
+              cy={boy / 2}
+              r={r}
+              fill="none"
+              stroke={PASTA_RENK[i % PASTA_RENK.length]}
+              strokeWidth={vurgu === i ? 20 : 16}
+              strokeDasharray={hazir ? `${Math.max(0, pay - 2)} ${c}` : `0 ${c}`}
+              strokeDashoffset={-bas}
+              opacity={vurgu == null || vurgu === i ? 1 : 0.35}
+            />
+          );
+          bas += pay;
+          return el;
+        })}
+      </svg>
+      <ul>
+        {liste.map((o, i) => (
+          <li key={o.x} onMouseEnter={() => setVurgu(i)} onMouseLeave={() => setVurgu(null)}>
+            <i style={{ background: PASTA_RENK[i % PASTA_RENK.length] }} />
+            <span>{o.x === '__diger' ? 'Diğer' : ad(o)}</span>
+            <b>%{Math.round((o.y / toplam) * 100)}</b>
+          </li>
+        ))}
+      </ul>
+    </PastaKutu>
+  );
+};
+
+const GUNLER = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+const iki = (n) => String(n).padStart(2, '0');
+
+const IsiKutu = styled.div`
+  overflow-x: auto;
+  .izgara {
+    display: grid;
+    grid-template-columns: 78px repeat(24, minmax(14px, 1fr));
+    gap: 3px;
+    min-width: 520px;
+    font-size: 11px;
+    color: ${({ theme }) => theme.colors.neutral500};
+  }
+  .gun {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: ${({ theme }) => theme.colors.neutral600};
+  }
+  .saat {
+    text-align: center;
+  }
+  .hucre {
+    aspect-ratio: 1 / 1;
+    min-height: 14px;
+    border-radius: 4px;
+    transition: transform 0.12s;
+  }
+  .hucre:hover {
+    transform: scale(1.25);
+    outline: 1px solid #e8eef5;
+  }
+  .ozet {
+    margin-top: 14px;
+    font-size: 13px;
+    color: ${({ theme }) => theme.colors.neutral600};
+  }
+  .ozet b {
+    color: ${({ theme }) => theme.colors.neutral800};
+  }
+`;
+
+export const IsiHaritasi = ({ veri }) => {
+  if (!veri) return <BosDurum kucuk metin="Bu dönemde veri yok." />;
+  const satirlar = [1, 2, 3, 4, 5, 6, 0].map((g) => veri[g] || []);
+  const enBuyuk = Math.max(1, ...satirlar.flat());
+  let tepe = { g: 0, s: 0, v: -1 };
+  satirlar.forEach((sat, g) => sat.forEach((v, s) => v > tepe.v && (tepe = { g, s, v })));
+  return (
+    <IsiKutu>
+      <div className="izgara">
+        <span />
+        {Array.from({ length: 24 }, (_, s) => (
+          <span key={s} className="saat">
+            {s % 3 === 0 ? iki(s) : ''}
+          </span>
+        ))}
+        {satirlar.map((sat, g) => (
+          <React.Fragment key={g}>
+            <span className="gun">{GUNLER[g]}</span>
+            {Array.from({ length: 24 }, (_, s) => {
+              const v = sat[s] || 0;
+              const o = v ? 0.12 + 0.88 * Math.sqrt(v / enBuyuk) : 0;
+              return <span key={s} className="hucre" title={`${GUNLER[g]} ${iki(s)}:00–${iki((s + 1) % 24)}:00 · ${sayi(v)} ziyaret`} style={{ background: v ? `rgba(45,212,191,${o.toFixed(2)})` : '#1a222d' }} />;
+            })}
+          </React.Fragment>
+        ))}
+      </div>
+      {tepe.v > 0 && (
+        <div className="ozet">
+          En yoğun zaman: <b>{GUNLER[tepe.g]} {iki(tepe.s)}:00–{iki((tepe.s + 1) % 24)}:00</b> ({sayi(tepe.v)} ziyaret)
+        </div>
+      )}
+    </IsiKutu>
+  );
+};
