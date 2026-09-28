@@ -1,0 +1,14 @@
+[
+  {
+    "anahtar": "iletisim.hata_dogrulama",
+    "grup": "İletişim sayfası",
+    "konum": "Form: güvenlik doğrulaması tamamlanmadı",
+    "metin": "Güvenlik doğrulaması tamamlanamadı. Lütfen birkaç saniye bekleyip tekrar gönderin."
+  },
+  {
+    "anahtar": "sistem.form_dogrulama_basarisiz",
+    "grup": "Sistem – iletişim formu",
+    "konum": "İletişim formu: güvenlik doğrulaması başarısız",
+    "metin": "Güvenlik doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin."
+  }
+]
