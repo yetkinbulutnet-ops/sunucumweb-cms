@@ -80,7 +80,9 @@ const kuponlariAktar = async (odulId, ham) => {
 };
 
 module.exports = {
-  register() {},
+  register({ strapi }) {
+    strapi.customFields.register({ name: 'ikon', type: 'string' });
+  },
   async bootstrap({ strapi }) {
     await tablolariKur();
     setTimeout(() => {

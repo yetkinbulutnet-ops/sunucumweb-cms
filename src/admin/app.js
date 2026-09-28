@@ -2,7 +2,7 @@ import logoYatay from './extensions/logo-yatay.png';
 import logoIkon from './extensions/logo-ikon.png';
 import tr from './tr.json';
 import React from 'react';
-import { Shield, ChartPie, Mail, SquaresFour, Gift, Lightning } from '@strapi/icons';
+import { Shield, ChartPie, Mail, SquaresFour, Gift, Lightning, Star } from '@strapi/icons';
 import { guvenlikBaslat, oturumSayfasiCiz } from './guvenlik';
 import { telefonBaslat } from './telefon';
 
@@ -55,6 +55,14 @@ const OturumSayfasi = () => {
 
 export default {
   register(app) {
+    app.customFields.register({
+      name: 'ikon',
+      type: 'string',
+      intlLabel: { id: 'swb.alan.ikon', defaultMessage: 'İkon' },
+      intlDescription: { id: 'swb.alan.ikon.aciklama', defaultMessage: 'Görsel ikon seçici' },
+      icon: Star,
+      components: { Input: async () => import('./panel/IkonSecici') },
+    });
     const w = (ad) => async () => (await import('./panel/widgetlar'))[ad];
     app.widgets.register((mevcut) => [
       { id: 'swb-trafik', icon: ChartPie, title: { id: 'swb.widget.trafik', defaultMessage: 'Site trafiği' }, link: { label: { id: 'swb.widget.trafik.link', defaultMessage: 'Tüm istatistikler' }, href: '/istatistikler' }, component: w('TrafikWidget') },
