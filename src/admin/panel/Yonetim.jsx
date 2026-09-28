@@ -6,6 +6,7 @@ import { Main } from '@strapi/design-system';
 import { Search } from '@strapi/icons';
 import { Sayfa, Kart, IkonKutu, useVeri, sayi } from './ui';
 import { BOLUMLER } from './bolumler';
+import YonetimMenusu from './YonetimMenusu';
 
 const YapayZeka = React.lazy(() => import('./YapayZeka'));
 
@@ -137,10 +138,10 @@ function Merkez() {
   const q = kucuk(ara.trim());
   const bolumler = BOLUMLER.map((b) => ({ ...b, ogeler: q ? b.ogeler.filter((o) => kucuk(`${o.ad} ${o.aciklama} ${b.ad}`).includes(q)) : b.ogeler })).filter((b) => b.ogeler.length);
   return (
-    <Layouts.Root>
+    <Layouts.Root sideNav={<YonetimMenusu />}>
       <Main>
         <Page.Title>Site Yönetimi</Page.Title>
-        <Layouts.Header title="Site Yönetimi" subtitle="Düzenlemek istediğiniz bölümü seçin. Kaydettiğiniz değişiklikler birkaç saniye içinde sitede görünür." />
+        <Layouts.Header title="Site Yönetimi" subtitle="Soldaki menüden ya da aşağıdan bir bölüm seçin. Kaydettiğiniz değişiklikler birkaç saniye içinde sitede görünür." />
         <Sayfa>
           <Ara>
             <Search />

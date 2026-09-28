@@ -5,6 +5,7 @@ import React from 'react';
 import { Shield, ChartPie, Mail, SquaresFour, Gift, Lightning, Star } from '@strapi/icons';
 import { guvenlikBaslat, oturumSayfasiCiz } from './guvenlik';
 import { telefonBaslat } from './telefon';
+import { yonetimYerlesimBaslat } from './yonetimYerlesim';
 
 const MARKA = 'SunucumWEB Admin';
 
@@ -139,6 +140,7 @@ export default {
   },
   bootstrap() {
     telefonBaslat();
+    yonetimYerlesimBaslat();
     const AI_YOLU = /\/content-manager\/single-types\/api::ai-ayari\.ai-ayari\/?$/;
     const CM_KOK = /\/admin\/content-manager\/?$/;
     const git = (hedef) =>
@@ -153,6 +155,7 @@ export default {
         const once = oncekiYol;
         asil(durum, baslik, url);
         oncekiYol = location.pathname;
+        window.dispatchEvent(new Event('swb-yol'));
         if (!AI_YOLU.test(location.pathname)) return;
         if (ad === 'replaceState' && CM_KOK.test(once)) git('/admin/content-manager/single-types/api::anasayfa.anasayfa');
         else git('/admin/yonetim/yapay-zeka');

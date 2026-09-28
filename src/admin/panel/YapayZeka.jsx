@@ -5,6 +5,7 @@ import { Layouts, Page, useFetchClient, useNotification } from '@strapi/strapi/a
 import { Main } from '@strapi/design-system';
 import { ArrowLeft, Information, WarningCircle, CheckCircle } from '@strapi/icons';
 import { Sayfa, Kart, Yukleniyor, HataKutu, useVeri } from './ui';
+import YonetimMenusu from './YonetimMenusu';
 
 const UC = '/content-manager/single-types/api::ai-ayari.ai-ayari';
 
@@ -557,7 +558,7 @@ export default function YapayZeka() {
 
 function Kabuk({ children }) {
   return (
-    <Layouts.Root>
+    <Layouts.Root sideNav={<YonetimMenusu />}>
       <Main>
         <Page.Title>Yapay zekâ ayarları</Page.Title>
         <Layouts.Header title="Yapay zekâ ayarları" subtitle="Alan adı sayfasındaki yapay zekâ bulucunun ziyaretçilere nasıl öneri üreteceğini buradan yönetirsiniz." />
