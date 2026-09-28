@@ -79,11 +79,10 @@ const istatistik = async (aralik) => {
   const metrik = (tur, limit = 8) => umamiGet(`/websites/${site}/metrics?${q}&type=${tur}&limit=${limit}`).catch(() => []);
   const oq = `startAt=${baslangic - a.ms}&endAt=${baslangic}`;
   const tz = encodeURIComponent(SAAT_DILIMI);
-  const [ozet, seri, oncekiSeri, haftalik, iller, aktif, sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar] = await Promise.all([
+  const [ozet, seri, oncekiSeri, iller, aktif, sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar] = await Promise.all([
     umamiGet(`/websites/${site}/stats?${q}`),
     umamiGet(`/websites/${site}/pageviews?${q}&unit=${a.birim}&timezone=${tz}`),
     umamiGet(`/websites/${site}/pageviews?${oq}&unit=${a.birim}&timezone=${tz}`).catch(() => ({ pageviews: [] })),
-    umamiGet(`/websites/${site}/sessions/weekly?${q}&timezone=${tz}`).catch(() => null),
     umamiGet(`/websites/${site}/metrics?${q}&type=region&country=TR&limit=100`).catch(() => []),
     umamiGet(`/websites/${site}/active`).catch(() => ({ visitors: 0 })),
     metrik('path', 10),
@@ -108,7 +107,6 @@ const istatistik = async (aralik) => {
       ziyaret: doldur(anahtarlar, seri.sessions),
       onceki: doldur(kovalar(baslangic - a.ms, baslangic, a.birim), oncekiSeri.pageviews).slice(-anahtarlar.length).map((v, i) => ({ x: anahtarlar[i], y: v.y })),
     },
-    haftalik: Array.isArray(haftalik) && haftalik.length === 7 ? haftalik : null,
     iller: (iller || []).filter((x) => /^TR-\d{2}$/.test(x.x)).map((x) => ({ plaka: Number(x.x.slice(3)), y: x.y })),
     aktif: aktif?.visitors ?? aktif?.x ?? 0,
     listeler: { sayfalar, girisler, kaynaklar, ulkeler, sehirler, tarayicilar, sistemler, cihazlar },

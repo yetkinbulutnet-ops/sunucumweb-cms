@@ -139,19 +139,26 @@ export default {
   },
   bootstrap() {
     telefonBaslat();
-    const yonlendir = () => {
-      if (/\/content-manager\/single-types\/api::ai-ayari\.ai-ayari\/?$/.test(location.pathname)) {
-        history.replaceState(history.state, '', '/admin/yonetim/yapay-zeka');
+    const AI_YOLU = /\/content-manager\/single-types\/api::ai-ayari\.ai-ayari\/?$/;
+    const CM_KOK = /\/admin\/content-manager\/?$/;
+    const git = (hedef) =>
+      setTimeout(() => {
+        history.replaceState(history.state, '', hedef);
         window.dispatchEvent(new PopStateEvent('popstate', { state: history.state }));
-      }
-    };
-    let sonYol = '';
-    new MutationObserver(() => {
-      if (location.pathname !== sonYol) {
-        sonYol = location.pathname;
-        yonlendir();
-      }
-    }).observe(document.body, { childList: true, subtree: true });
+      }, 0);
+    let oncekiYol = location.pathname;
+    for (const ad of ['pushState', 'replaceState']) {
+      const asil = history[ad].bind(history);
+      history[ad] = (durum, baslik, url) => {
+        const once = oncekiYol;
+        asil(durum, baslik, url);
+        oncekiYol = location.pathname;
+        if (!AI_YOLU.test(location.pathname)) return;
+        if (ad === 'replaceState' && CM_KOK.test(once)) git('/admin/content-manager/single-types/api::anasayfa.anasayfa');
+        else git('/admin/yonetim/yapay-zeka');
+      };
+    }
+    if (AI_YOLU.test(location.pathname)) git('/admin/yonetim/yapay-zeka');
     const stil = document.createElement('style');
     stil.textContent = gizleCss;
     document.head.appendChild(stil);

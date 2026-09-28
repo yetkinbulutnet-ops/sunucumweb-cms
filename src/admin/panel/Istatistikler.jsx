@@ -2,8 +2,8 @@ import * as React from 'react';
 import { styled } from 'styled-components';
 import { Layouts, Page } from '@strapi/strapi/admin';
 import { Main } from '@strapi/design-system';
-import { User, Eye, Cursor, ArrowLeft, Clock, File, Link as LinkIkon, Earth, Monitor, Command, Television, ExternalLink, ChartPie, PinMap, Calendar } from '@strapi/icons';
-import { Sayfa, Kart, KartBaslik, IkonKutu, Izgara, Kpi, AlanGrafik, CubukListe, Pasta, IsiHaritasi, Secici, Nabiz, Yukleniyor, HataKutu, sayi, sureYaz, degisim, useVeri, ulke, tarayici, cihaz, sayfaAdi, kaynakAdi } from './ui';
+import { User, Eye, Cursor, ArrowLeft, Clock, File, Link as LinkIkon, Earth, Monitor, Command, Television, ExternalLink, ChartPie, PinMap } from '@strapi/icons';
+import { Sayfa, Kart, KartBaslik, IkonKutu, Izgara, Kpi, AlanGrafik, CubukListe, Pasta, Secici, Nabiz, Yukleniyor, HataKutu, sayi, sureYaz, degisim, useVeri, ulke, tarayici, cihaz, sayfaAdi, kaynakAdi } from './ui';
 import { TurkiyeHaritasi, IlDetay, ilAdi } from './harita';
 
 const ARALIKLAR = [
@@ -247,13 +247,6 @@ export default function Istatistikler() {
                   </div>
                   <div className="yan">{il ? <IlDetay key={`${il}-${aralik}`} plaka={il} aralik={aralik} iller={iller} /> : <span>Haritadan bir il seçin.</span>}</div>
                 </HaritaDuzen>
-              </Kart>
-
-              <Kart $gecikme={3}>
-                <Baslik ikon={Calendar} renk="#a78bfa">
-                  Ziyaretçiler ne zaman geliyor?
-                </Baslik>
-                <IsiHaritasi veri={veri.haftalik} />
               </Kart>
 
               <Izgara $min={320}>
