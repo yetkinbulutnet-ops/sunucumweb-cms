@@ -226,4 +226,44 @@ const sifreSifirlamaSablonu = () => {
   };
 };
 
-module.exports = { yeniMesaj, mesajYaniti, bultenOnay, carkKuponu, dogrulamaKodu, yeniCihaz, sifreDegisti, smtpTest, sifreSifirlamaSablonu };
+const otoBlogHazir = ({ baslik, ozet, yayinda, kelime, kategori, uyarilar = [], panelUrl, siteUrl }) =>
+  paket(
+    yayinda ? `SunucumWEB Admin: yeni blog yazısı yayında` : `SunucumWEB Admin: yeni blog yazısı onayınızı bekliyor`,
+    baslik,
+    yayinda ? 'Yeni blog yazısı yayınlandı' : 'Yeni blog yazısı taslak olarak hazır',
+    paragraf(
+      yayinda
+        ? 'Otomatik blog sistemi yeni bir yazı hazırladı ve sitede yayınladı. Göz atıp gerekirse panelden düzenleyebilirsiniz.'
+        : 'Otomatik blog sistemi yeni bir yazı hazırladı. Yazı taslak olarak bekliyor; okuyup uygun görürseniz panelden yayınlayabilirsiniz.'
+    ) +
+      bilgiTablosu([
+        ['Başlık', baslik],
+        ['Kategori', kategori],
+        ['Uzunluk', kelime ? `${kelime} kelime` : ''],
+        ['Durum', yayinda ? 'Yayında' : 'Taslak'],
+      ]) +
+      (ozet ? paragraf(kacis(ozet)) : '') +
+      (uyarilar.length ? uyari(`Kalite kontrolünde dikkat edilmesi gerekenler:<br>${uyarilar.map((u) => kacis(u)).join('<br>')}`) : '') +
+      buton(panelUrl, yayinda ? 'Panelde aç' : 'Yazıyı incele') +
+      (siteUrl ? paragraf(`Sitede görüntüle: <a href="${kacis(siteUrl)}" style="color:#0d9488;">${kacis(siteUrl)}</a>`) : '')
+  );
+
+const otoBlogOneri = ({ konular, baglanti }) =>
+  paket(
+    `SunucumWEB Admin: ${konular.length} yeni blog konusu onay bekliyor`,
+    'Konu havuzu azaldı, yapay zekâ yeni konular önerdi.',
+    'Yeni konu önerileri',
+    paragraf('Blog konu havuzunda sıradaki konu sayısı azaldığı için yapay zekâ aşağıdaki konuları önerdi. Onayladığınız konular sıraya girer ve sırayla yazılır.') +
+      `<ul style="margin:0 0 18px 0;padding-left:20px;">${konular.map((k) => `<li style="margin:0 0 6px 0;">${kacis(k)}</li>`).join('')}</ul>` +
+      buton(baglanti, 'Önerileri incele')
+  );
+
+const otoBlogSorun = ({ ayrinti, baglanti }) =>
+  paket(
+    'SunucumWEB Admin: otomatik blog yazısı üretilemedi',
+    ayrinti,
+    'Otomatik blog yazısı üretilemedi',
+    paragraf('Zamanlanmış blog yazısı üretimi tamamlanamadı. Sorun giderildiğinde sistem bir sonraki saatte tekrar dener.') + uyari(kacis(ayrinti)) + buton(baglanti, 'Otomatik blog sayfasını aç')
+  );
+
+module.exports = { yeniMesaj, mesajYaniti, bultenOnay, carkKuponu, dogrulamaKodu, yeniCihaz, sifreDegisti, smtpTest, sifreSifirlamaSablonu, otoBlogHazir, otoBlogOneri, otoBlogSorun };

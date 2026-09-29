@@ -1,0 +1,111 @@
+{
+  "kind": "singleType",
+  "collectionName": "otomatik_blog_ayari",
+  "info": {
+    "singularName": "otomatik-blog",
+    "pluralName": "otomatik-bloglar",
+    "displayName": "Otomatik Blog Ayarları",
+    "description": "Yapay zekâ ile düzenli blog yazısı üretimi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "default": "Otomatik Blog Ayarları",
+      "maxLength": 40
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": false
+    },
+    "otoYayin": {
+      "type": "boolean",
+      "default": false
+    },
+    "periyotGun": {
+      "type": "integer",
+      "default": 2,
+      "min": 1,
+      "max": 30,
+      "required": true
+    },
+    "saat": {
+      "type": "integer",
+      "default": 10,
+      "min": 0,
+      "max": 23,
+      "required": true
+    },
+    "bildirim": {
+      "type": "boolean",
+      "default": true
+    },
+    "yazar": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-yazari.blog-yazari"
+    },
+    "model": {
+      "type": "string",
+      "default": "deepseek-v4-pro",
+      "maxLength": 60,
+      "required": true
+    },
+    "kelimeMin": {
+      "type": "integer",
+      "default": 1000,
+      "min": 300,
+      "max": 5000
+    },
+    "kelimeMax": {
+      "type": "integer",
+      "default": 1800,
+      "min": 400,
+      "max": 6000
+    },
+    "oneriEsigi": {
+      "type": "integer",
+      "default": 5,
+      "min": 0,
+      "max": 50
+    },
+    "oneriAdedi": {
+      "type": "integer",
+      "default": 8,
+      "min": 1,
+      "max": 20
+    },
+    "sistemTalimati": {
+      "type": "text",
+      "required": true,
+      "maxLength": 12000
+    },
+    "planSablonu": {
+      "type": "text",
+      "required": true,
+      "maxLength": 8000
+    },
+    "yaziSablonu": {
+      "type": "text",
+      "required": true,
+      "maxLength": 8000
+    },
+    "duzeltmeSablonu": {
+      "type": "text",
+      "required": true,
+      "maxLength": 4000
+    },
+    "oneriSablonu": {
+      "type": "text",
+      "required": true,
+      "maxLength": 6000
+    },
+    "yasakliIfadeler": {
+      "type": "text",
+      "maxLength": 6000
+    }
+  }
+}

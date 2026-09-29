@@ -9,6 +9,7 @@ import { BOLUMLER } from './bolumler';
 import YonetimMenusu from './YonetimMenusu';
 
 const YapayZeka = React.lazy(() => import('./YapayZeka'));
+const OtomatikBlog = React.lazy(() => import('./OtomatikBlog'));
 
 const Ara = styled.label`
   display: flex;
@@ -126,6 +127,12 @@ export default function Yonetim() {
     return (
       <React.Suspense fallback={null}>
         <YapayZeka />
+      </React.Suspense>
+    );
+  if (alt === 'otomatik-blog')
+    return (
+      <React.Suspense fallback={null}>
+        <OtomatikBlog />
       </React.Suspense>
     );
   return <Merkez />;

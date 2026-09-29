@@ -1,3 +1,5 @@
+const cronTasks = require('./cron-tasks');
+
 module.exports = ({ env }) => ({
   host: env('HOST', '127.0.0.1'),
   port: env.int('PORT', 3654),
@@ -6,6 +8,10 @@ module.exports = ({ env }) => ({
   logger: { updates: { enabled: false } },
   app: {
     keys: env.array('APP_KEYS'),
+  },
+  cron: {
+    enabled: env.bool('CRON_ENABLED', true),
+    tasks: cronTasks,
   },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),

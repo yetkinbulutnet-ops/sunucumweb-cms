@@ -46,6 +46,9 @@ export const BOLUMLER = [
       { ad: 'Blog yazıları', aciklama: 'Yeni yazı ekle, düzenle, yayınla', ikon: Pencil, yol: liste('blog-yazisi'), uid: 'api::blog-yazisi.blog-yazisi' },
       { ad: 'Kategoriler', aciklama: 'Blog kategorileri', ikon: Folder, yol: liste('blog-kategorisi'), uid: 'api::blog-kategorisi.blog-kategorisi' },
       { ad: 'Yazarlar', aciklama: 'Yazar adı ve bilgisi', ikon: User, yol: liste('blog-yazari'), uid: 'api::blog-yazari.blog-yazari' },
+      { ad: 'Otomatik blog', aciklama: 'Yapay zekâ ile düzenli yazı, durum ve geçmiş', ikon: Sparkle, yol: '/yonetim/otomatik-blog' },
+      { ad: 'Konu havuzu', aciklama: 'Otomatik yazılacak konular ve öneriler', ikon: Folder, yol: liste('blog-konu'), uid: 'api::blog-konu.blog-konu' },
+      { ad: 'Otomatik blog ayarları', aciklama: 'Aç/kapat, sıklık, otomatik yayın, talimatlar', ikon: Cog, yol: tekil('otomatik-blog') },
     ],
   },
   {

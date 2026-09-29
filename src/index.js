@@ -53,7 +53,7 @@ const KUPON = 'api::cark-kuponu.cark-kuponu';
 const CARK_AYAR = 'api::cark-ayari.cark-ayari';
 const ABONE = 'api::abone.abone';
 const BULTEN_AYAR = 'api::bulten-ayari.bulten-ayari';
-const SESSIZ = new Set(['api::cark-katilimi.cark-katilimi', KUPON, ABONE, 'api::iletisim-mesaji.iletisim-mesaji']);
+const SESSIZ = new Set(['api::cark-katilimi.cark-katilimi', KUPON, ABONE, 'api::iletisim-mesaji.iletisim-mesaji', 'api::blog-konu.blog-konu', 'api::otomatik-blog.otomatik-blog', 'api::otomatik-blog-kaydi.otomatik-blog-kaydi']);
 const SISTEM_KLASORU = 'system-uploads';
 let sistemKlasoru = null;
 
@@ -100,6 +100,7 @@ module.exports = {
     };
 
     await sistemKlasoruHazirla().catch((e) => strapi.log.warn(`medya klasoru: ${e.message}`));
+    await require('./yardimci/otoblog').ayarGetir().catch((e) => strapi.log.warn(`otoblog ayar: ${e.message}`));
     strapi.db.lifecycles.subscribe({
       models: ['plugin::upload.file'],
       beforeCreate(event) {

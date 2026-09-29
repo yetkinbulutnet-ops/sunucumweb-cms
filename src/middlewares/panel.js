@@ -2,6 +2,7 @@
 
 const s = require('../guvenlik/servis');
 const mesaj = require('../yardimci/mesaj');
+const otoblog = require('../yardimci/otoblog');
 
 const UMAMI = (process.env.UMAMI_URL || 'https://istatistik.yetkinweb.com').replace(/\/+$/, '');
 const SAAT_DILIMI = 'Europe/Istanbul';
@@ -144,7 +145,7 @@ const TIPLER = [
   'api::urun.urun', 'api::plan.plan', 'api::kampanya.kampanya', 'api::hazir-yazilim.hazir-yazilim', 'api::yazilim-kategorisi.yazilim-kategorisi',
   'api::blog-yazisi.blog-yazisi', 'api::blog-kategorisi.blog-kategorisi', 'api::blog-yazari.blog-yazari', 'api::duyuru.duyuru', 'api::anasayfa-slayti.anasayfa-slayti',
   'api::marka.marka', 'api::yasal-belge.yasal-belge', 'api::arac.arac', 'api::dns-kayit-tipi.dns-kayit-tipi', 'api::arayuz-metni.arayuz-metni',
-  'api::cark-odulu.cark-odulu', 'api::cark-kuponu.cark-kuponu', 'api::cark-katilimi.cark-katilimi', 'api::abone.abone', 'api::iletisim-mesaji.iletisim-mesaji',
+  'api::cark-odulu.cark-odulu', 'api::cark-kuponu.cark-kuponu', 'api::cark-katilimi.cark-katilimi', 'api::abone.abone', 'api::iletisim-mesaji.iletisim-mesaji', 'api::blog-konu.blog-konu',
 ];
 
 const ozet = async () => {
@@ -260,6 +261,20 @@ const panel = async (ctx) => {
         const r = await mesaj.durumDegistir(id, String(ctx.request.body?.durum || ''));
         return r ? (ctx.body = { data: r }) : hata(ctx, 400, 'Geçersiz durum.');
       }
+    }
+    if (y === '/otomatik-blog' && m === 'GET') return (ctx.body = { data: await otoblog.durum() });
+    if (y === '/otomatik-blog/uret' || y === '/otomatik-blog/oner') {
+      if (m !== 'POST') return hata(ctx, 405, 'Geçersiz istek.');
+      if (otoblog.mesgulMu()) return hata(ctx, 409, 'Şu an zaten bir işlem çalışıyor, bitince tekrar deneyin.');
+      const is = y.endsWith('/uret') ? otoblog.yaziUret({ tur: 'elle' }) : otoblog.konuOner({ tur: 'elle' });
+      is.catch((e) => strapi.log.error(`otoblog panel: ${e.message}`));
+      return (ctx.body = { data: { baslatildi: true } });
+    }
+    if (m === 'POST' && y === '/otomatik-blog/onayla') return (ctx.body = { data: { onaylanan: await otoblog.onaylaBekleyenler() } });
+    const km = y.match(/^\/otomatik-blog\/konu\/(\d+)$/);
+    if (m === 'POST' && km) {
+      const r = await otoblog.konuDurumu(Number(km[1]), String(ctx.request.body?.durum || ''));
+      return r ? (ctx.body = { data: { id: r.id, durum: r.durum } }) : hata(ctx, 400, 'Konu güncellenemedi.');
     }
     const tm = y.match(/^\/telefon\/(me|\d+)$/);
     if (m === 'GET' && tm) return (ctx.body = { data: { telefon: await telefonGetir(tm[1] === 'me' ? k.userId : Number(tm[1])) } });

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_konulari",
+  "info": {
+    "singularName": "blog-konu",
+    "pluralName": "blog-konulari",
+    "displayName": "Blog Konu Havuzu",
+    "description": "Otomatik blog yazılarının konu sırası"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "konu": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160
+    },
+    "anahtarKelime": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-kategorisi.blog-kategorisi"
+    },
+    "notlar": {
+      "type": "text",
+      "maxLength": 2000
+    },
+    "durum": {
+      "type": "enumeration",
+      "enum": ["sirada", "onay-bekliyor", "yaziliyor", "yazildi", "atlandi", "hata"],
+      "default": "sirada",
+      "required": true
+    },
+    "kaynak": {
+      "type": "enumeration",
+      "enum": ["ekip", "yapay-zeka"],
+      "default": "ekip"
+    },
+    "oncelik": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    "yazi": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-yazisi.blog-yazisi"
+    },
+    "sonuc": {
+      "type": "text",
+      "maxLength": 2000
+    }
+  }
+}

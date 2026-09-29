@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "otomatik_blog_kayitlari",
+  "info": {
+    "singularName": "otomatik-blog-kaydi",
+    "pluralName": "otomatik-blog-kayitlari",
+    "displayName": "Otomatik Blog Kaydı",
+    "description": "Otomatik yazı üretiminin çalışma geçmişi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "tur": {
+      "type": "enumeration",
+      "enum": ["zamanli", "elle", "konu-onerisi"],
+      "default": "zamanli"
+    },
+    "sonuc": {
+      "type": "enumeration",
+      "enum": ["taslak", "yayinlandi", "oneri", "reddedildi", "hata", "atlandi"],
+      "required": true
+    },
+    "ayrinti": {
+      "type": "text"
+    },
+    "yazi": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-yazisi.blog-yazisi"
+    },
+    "girdiToken": {
+      "type": "integer",
+      "default": 0
+    },
+    "ciktiToken": {
+      "type": "integer",
+      "default": 0
+    },
+    "sureSn": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
