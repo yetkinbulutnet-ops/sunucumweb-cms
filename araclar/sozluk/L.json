@@ -1,0 +1,272 @@
+[
+  {
+    "anahtar": "blog.ara_etiket",
+    "grup": "Blog",
+    "konum": "Liste: arama kutusunun ekran okuyucu etiketi",
+    "metin": "Blog yazılarında ara"
+  },
+  {
+    "anahtar": "blog.ara_yer",
+    "grup": "Blog",
+    "konum": "Liste: arama kutusu içindeki ipucu",
+    "metin": "Yazılarda ara: SSL, DNS, WordPress..."
+  },
+  {
+    "anahtar": "blog.filtre_kategori",
+    "grup": "Blog",
+    "konum": "Liste: kategori seçiminin etiketi",
+    "metin": "Kategori"
+  },
+  {
+    "anahtar": "blog.filtre_tum_kategoriler",
+    "grup": "Blog",
+    "konum": "Liste: kategori seçiminde ilk seçenek",
+    "metin": "Tüm kategoriler"
+  },
+  {
+    "anahtar": "blog.sirala_etiket",
+    "grup": "Blog",
+    "konum": "Liste: sıralama seçiminin etiketi",
+    "metin": "Sıralama"
+  },
+  {
+    "anahtar": "blog.sirala_yeni",
+    "grup": "Blog",
+    "konum": "Liste: sıralama seçeneği",
+    "metin": "En yeni"
+  },
+  {
+    "anahtar": "blog.sirala_eski",
+    "grup": "Blog",
+    "konum": "Liste: sıralama seçeneği",
+    "metin": "En eski"
+  },
+  {
+    "anahtar": "blog.sirala_az",
+    "grup": "Blog",
+    "konum": "Liste: sıralama seçeneği",
+    "metin": "Başlığa göre (A-Z)"
+  },
+  {
+    "anahtar": "blog.arama_sonuc_n",
+    "grup": "Blog",
+    "konum": "Liste: arama sonucu sayısı",
+    "metin": "{n} yazı bulundu"
+  },
+  {
+    "anahtar": "blog.arama_sonuc_yok",
+    "grup": "Blog",
+    "konum": "Liste: arama sonucu yoksa",
+    "metin": "Aramanıza uyan yazı bulunamadı. Farklı bir kelime deneyin."
+  },
+  {
+    "anahtar": "blog.arama_temizle",
+    "grup": "Blog",
+    "konum": "Liste: aramayı sıfırlama bağlantısı",
+    "metin": "Aramayı temizle"
+  },
+  {
+    "anahtar": "yasal.baslik",
+    "grup": "Yasal belgeler",
+    "konum": "Sayfa adı (kırıntı ve üst alan)",
+    "metin": "Yasal Belgeler"
+  },
+  {
+    "anahtar": "yasal.sirket",
+    "grup": "Yasal belgeler",
+    "konum": "Belge menüsü: şirket grubu başlığı",
+    "metin": "Şirket"
+  },
+  {
+    "anahtar": "yasal.sozlesmeler",
+    "grup": "Yasal belgeler",
+    "konum": "Belge grubu başlığı",
+    "metin": "Sözleşmeler"
+  },
+  {
+    "anahtar": "yasal.politikalar",
+    "grup": "Yasal belgeler",
+    "konum": "Belge grubu başlığı",
+    "metin": "Politikalar"
+  },
+  {
+    "anahtar": "yasal.goruntule",
+    "grup": "Yasal belgeler",
+    "konum": "Liste: belge kartındaki bağlantı",
+    "metin": "Belgeyi aç"
+  },
+  {
+    "anahtar": "yasal.pdf",
+    "grup": "Yasal belgeler",
+    "konum": "Liste: belge kartındaki PDF düğmesi",
+    "metin": "PDF"
+  },
+  {
+    "anahtar": "yasal.yazdir",
+    "grup": "Yasal belgeler",
+    "konum": "Belge: yazdır düğmesi",
+    "metin": "Yazdır"
+  },
+  {
+    "anahtar": "yasal.pdf_indir",
+    "grup": "Yasal belgeler",
+    "konum": "Belge: PDF düğmesi",
+    "metin": "PDF indir"
+  },
+  {
+    "anahtar": "yasal.surum",
+    "grup": "Yasal belgeler",
+    "konum": "Belge ve PDF: sürüm bilgisi",
+    "metin": "Sürüm {surum}"
+  },
+  {
+    "anahtar": "yasal.yururluk",
+    "grup": "Yasal belgeler",
+    "konum": "Belge ve PDF: yürürlük tarihi",
+    "metin": "Yürürlük tarihi: {tarih}"
+  },
+  {
+    "anahtar": "yasal.guncelleme",
+    "grup": "Yasal belgeler",
+    "konum": "Belge ve PDF: yürürlük tarihi girilmemişse",
+    "metin": "Son güncelleme: {tarih}"
+  },
+  {
+    "anahtar": "yasal.pdf_guncel",
+    "grup": "Yasal belgeler",
+    "konum": "PDF: sayfa altındaki güncel sürüm notu",
+    "metin": "Güncel sürüm: {url}"
+  },
+  {
+    "anahtar": "yasal.pdf_sayfa",
+    "grup": "Yasal belgeler",
+    "konum": "PDF: sayfa numarası",
+    "metin": "Sayfa {n} / {toplam}"
+  },
+  {
+    "anahtar": "yasal.not_on",
+    "grup": "Yasal belgeler",
+    "konum": "Liste: alt not, e-postadan önce",
+    "metin": "Belgelerle ilgili sorularınız için"
+  },
+  {
+    "anahtar": "yasal.not_son",
+    "grup": "Yasal belgeler",
+    "konum": "Liste: alt not, e-postadan sonra",
+    "metin": "adresine yazabilirsiniz."
+  },
+  {
+    "anahtar": "yasal.sss_baslik",
+    "grup": "Yasal belgeler",
+    "konum": "Liste: SSS başlığı",
+    "metin": "Belgeler hakkında sık sorulanlar"
+  },
+  {
+    "anahtar": "banka.baslik",
+    "grup": "Banka hesapları",
+    "konum": "Sayfa adı (panelde başlık boşsa)",
+    "metin": "Banka Hesaplarımız"
+  },
+  {
+    "anahtar": "banka.banka",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: satır etiketi",
+    "metin": "Banka"
+  },
+  {
+    "anahtar": "banka.hesap_sahibi",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: satır etiketi",
+    "metin": "Hesap sahibi"
+  },
+  {
+    "anahtar": "banka.iban",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: satır etiketi",
+    "metin": "IBAN"
+  },
+  {
+    "anahtar": "banka.kopyala",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: kopyalama düğmesi",
+    "metin": "IBAN'ı kopyala"
+  },
+  {
+    "anahtar": "banka.kopyalandi",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: kopyalandıktan sonra",
+    "metin": "Kopyalandı"
+  },
+  {
+    "anahtar": "banka.para_TL",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: para birimi rozeti",
+    "metin": "Türk lirası (TL)"
+  },
+  {
+    "anahtar": "banka.para_USD",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: para birimi rozeti",
+    "metin": "ABD doları (USD)"
+  },
+  {
+    "anahtar": "banka.para_EUR",
+    "grup": "Banka hesapları",
+    "konum": "Hesap kartı: para birimi rozeti",
+    "metin": "Euro (EUR)"
+  },
+  {
+    "anahtar": "banka.bos",
+    "grup": "Banka hesapları",
+    "konum": "Hiç hesap girilmemişse",
+    "metin": "Hesap bilgilerimiz kısa süre içinde burada yer alacak. Bu arada ödeme için bizimle iletişime geçebilirsiniz."
+  },
+  {
+    "anahtar": "banka.odeme_yontemleri",
+    "grup": "Banka hesapları",
+    "konum": "Yan kutu başlığı",
+    "metin": "Ödeme yöntemleri"
+  },
+  {
+    "anahtar": "banka.havale_baslik",
+    "grup": "Banka hesapları",
+    "konum": "Yan kutu başlığı (panelde boşsa)",
+    "metin": "Havale ve EFT yaparken"
+  },
+  {
+    "anahtar": "banka.ilgili_on",
+    "grup": "Banka hesapları",
+    "konum": "Havale kutusu alt notu, ilk kısım",
+    "metin": "Fatura, iade ve ödeme koşullarının ayrıntısı için"
+  },
+  {
+    "anahtar": "banka.ilgili_iade",
+    "grup": "Banka hesapları",
+    "konum": "Havale kutusu alt notu: bağlantı",
+    "metin": "İptal ve İade Koşulları"
+  },
+  {
+    "anahtar": "banka.ilgili_ve",
+    "grup": "Banka hesapları",
+    "konum": "Havale kutusu alt notu: bağlaç",
+    "metin": "ile"
+  },
+  {
+    "anahtar": "banka.ilgili_mesafeli",
+    "grup": "Banka hesapları",
+    "konum": "Havale kutusu alt notu: bağlantı",
+    "metin": "Mesafeli Satış Sözleşmesi"
+  },
+  {
+    "anahtar": "banka.ilgili_son",
+    "grup": "Banka hesapları",
+    "konum": "Havale kutusu alt notu, son kısım",
+    "metin": "sayfalarına bakabilirsiniz."
+  },
+  {
+    "anahtar": "banka.sss_baslik",
+    "grup": "Banka hesapları",
+    "konum": "SSS başlığı",
+    "metin": "Sık sorulan sorular"
+  }
+]

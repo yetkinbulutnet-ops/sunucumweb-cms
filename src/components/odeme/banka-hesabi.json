@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_odeme_banka_hesabi",
+  "info": {
+    "displayName": "Banka Hesabı",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "banka": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "hesapSahibi": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "iban": {
+      "type": "string",
+      "required": true,
+      "maxLength": 42,
+      "regex": "^TR[0-9 ]{24,40}$"
+    },
+    "paraBirimi": {
+      "type": "enumeration",
+      "enum": ["TL", "USD", "EUR"],
+      "default": "TL",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "aciklama": {
+      "type": "string",
+      "maxLength": 160
+    }
+  }
+}

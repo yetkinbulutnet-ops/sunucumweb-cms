@@ -33,6 +33,7 @@ const EN = /\b(the|and|your|you|with|this|that|from|have|has|are|is|no|not|add|c
     '/admin/settings/media-library', '/admin/settings/email', '/admin/settings/internationalization', '/admin/settings/releases',
     '/admin/settings/review-workflows', '/admin/settings/purchase-audit-logs', '/admin/settings/purchase-single-sign-on', '/admin/marketplace',
     '/admin/plugins/content-releases', '/admin/settings/users-permissions/roles', '/admin/settings/admin-tokens', '/admin/settings/list-plugins', '/admin/settings/roles/2', '/admin/settings/users/1',
+    ...(process.env.EK ? process.env.EK.split(',') : []),
   ];
   for (const y of yollar) {
     try {

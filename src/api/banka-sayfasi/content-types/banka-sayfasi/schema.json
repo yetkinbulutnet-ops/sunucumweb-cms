@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "banka_sayfasi",
+  "info": {
+    "singularName": "banka-sayfasi",
+    "pluralName": "banka-sayfalari",
+    "displayName": "Banka Hesapları",
+    "description": "Banka hesapları sayfası: hesaplar, ödeme yöntemleri, havale notları ve SSS"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "default": "Banka Hesapları",
+      "maxLength": 40
+    },
+    "ust": {
+      "type": "component",
+      "component": "ortak.sayfa-ust",
+      "repeatable": false
+    },
+    "hesaplar": {
+      "type": "component",
+      "component": "odeme.banka-hesabi",
+      "repeatable": true
+    },
+    "uyari": {
+      "type": "text",
+      "maxLength": 400
+    },
+    "odemeYontemleri": {
+      "type": "component",
+      "component": "ortak.baslik-aciklama",
+      "repeatable": true
+    },
+    "havaleBaslik": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "havaleNotlari": {
+      "type": "text",
+      "maxLength": 2000
+    },
+    "sss": {
+      "type": "component",
+      "component": "ortak.sss",
+      "repeatable": true
+    }
+  }
+}

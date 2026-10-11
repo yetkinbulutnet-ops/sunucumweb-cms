@@ -41,6 +41,11 @@
       "type": "component",
       "component": "ortak.sayfa-ust",
       "repeatable": false
+    },
+    "yasalSss": {
+      "type": "component",
+      "component": "ortak.sss",
+      "repeatable": true
     }
   }
 }

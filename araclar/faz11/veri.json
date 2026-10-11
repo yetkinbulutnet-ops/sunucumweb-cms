@@ -1,0 +1,136 @@
+{
+ "banka": {
+  "ust": {
+   "ustBaslik": "Ödeme",
+   "baslik": "Banka Hesaplarımız",
+   "aciklama": "Havale veya EFT ile ödeme yapabileceğiniz hesap bilgilerimiz ve kabul ettiğimiz ödeme yöntemleri.",
+   "seoBaslik": "Banka Hesapları ve IBAN Bilgileri",
+   "seoAciklama": "SunucumWEB banka hesap bilgileri: Enpara.com TL hesabımızın IBAN numarası, havale ve EFT ile ödeme yaparken dikkat edilecekler ve ödeme yöntemleri."
+  },
+  "hesaplar": [
+   {
+    "banka": "Enpara.com",
+    "hesapSahibi": "Mustafa Çakır",
+    "iban": "TR89 0015 7000 0000 0160 2143 86",
+    "paraBirimi": "TL",
+    "aciklama": ""
+   }
+  ],
+  "logo": "enpara-com.png",
+  "uyari": "SunucumWEB adına yalnızca bu sayfadaki hesaba ödeme alınır. Farklı bir hesap bildiren e-posta veya mesajlara itibar etmeyin; ödeme yapmadan önce info@sunucumweb.com adresinden bize ulaşın.",
+  "odemeYontemleri": [
+   {
+    "baslik": "Kredi ve banka kartı",
+    "aciklama": "Kartlı ödemeler Müşteri Panelindeki ödeme sayfasından, anlaşmalı ödeme kuruluşunun güvenli altyapısıyla alınır. Kart bilgileriniz bize ulaşmaz ve saklanmaz."
+   },
+   {
+    "baslik": "Havale ve EFT",
+    "aciklama": "Bu sayfadaki hesaba Türk lirası olarak gönderebilirsiniz. Hizmetiniz, ödeme hesabımıza geçip faturanızla eşleştirildikten sonra açılır."
+   }
+  ],
+  "havaleBaslik": "Havale ve EFT yaparken",
+  "havaleNotlari": "Açıklama alanına Müşteri Panelindeki fatura numaranızı yazın, ödemeniz daha kısa sürede eşleştirilir.\nGönderdiğiniz tutar, faturadaki KDV dahil toplam tutarla aynı olmalıdır.\nMesai dışında ve hafta sonu yapılan EFT'ler bir sonraki iş günü hesabımıza geçebilir. FAST ile gönderilen ödemeler genellikle birkaç dakika içinde ulaşır.\nÖdemeyi yaptıktan sonra dekontu Müşteri Panelinden destek talebiyle ya da info@sunucumweb.com adresine gönderebilirsiniz.",
+  "sss": [
+   {
+    "soru": "Havale ile ödediğim hizmet ne zaman açılır?",
+    "cevap": "Ödeme hesabımıza geçip faturanızla eşleştirildiğinde hizmetiniz açılır. Açıklamaya fatura numarasını yazarsanız eşleştirme hızlanır."
+   },
+   {
+    "soru": "Başka birinin hesabından ödeme yapabilir miyim?",
+    "cevap": "Evet. Bu durumda açıklamaya fatura numaranızı mutlaka yazın ya da ödemeden sonra dekontu bize iletin."
+   },
+   {
+    "soru": "Döviz ile ödeme yapabilir miyim?",
+    "cevap": "Hayır. Hesabımız Türk lirası hesabıdır, ödemeleri TL olarak göndermeniz gerekir."
+   },
+   {
+    "soru": "Eksik ya da fazla ödeme yaptım, ne olur?",
+    "cevap": "Eksik ödemede fark tamamlandığında hizmetiniz açılır. Fazla ödediğiniz tutarı, destek talebi oluşturmanız hâlinde iade ederiz."
+   },
+   {
+    "soru": "Benden başka bir hesaba ödeme yapmam istendi.",
+    "cevap": "SunucumWEB adına yalnızca bu sayfadaki hesaba ödeme alınır. Farklı bir hesap bildiren bir mesaj aldıysanız ödeme yapmadan önce info@sunucumweb.com adresinden bize ulaşın."
+   }
+  ]
+ },
+ "legalUst": {
+  "ustBaslik": "Kurumsal",
+  "baslik": "Yasal Belgeler",
+  "aciklama": "Hizmetlerimize ilişkin sözleşmeler, politikalar ve şirket bilgilerimiz. Her belgeyi görüntüleyebilir, PDF olarak indirebilir veya yazdırabilirsiniz.",
+  "seoBaslik": "Yasal Belgeler: Sözleşmeler ve Politikalar",
+  "seoAciklama": "SunucumWEB sözleşmeleri ve politikaları: genel hizmet sözleşmesi, mesafeli satış, iptal ve iade, KVKK, çerez politikası ve şirket bilgileri. PDF olarak indirilebilir."
+ },
+ "yasalSss": [
+  {
+   "soru": "Hangi belge benim için geçerli?",
+   "cevap": "Sipariş verdiğiniz hizmete göre Genel Hizmet Sözleşmesi, Mesafeli Satış Sözleşmesi ve hizmete özel koşullar birlikte uygulanır. Sipariş sırasında onayladığınız sürüm geçerlidir."
+  },
+  {
+   "soru": "Sözleşmeler değişirse ne olur?",
+   "cevap": "Değişiklikleri e-posta veya Müşteri Paneli üzerinden duyururuz. Aleyhinize olan bir değişiklik, ücretini ödediğiniz dönem içinde uygulanmaz."
+  },
+  {
+   "soru": "Belgelerin eski sürümlerine ulaşabilir miyim?",
+   "cevap": "Her belgenin başında sürüm numarası ve yürürlük tarihi yer alır. Siparişiniz sırasında geçerli olan sürümü info@sunucumweb.com adresinden isteyebilirsiniz."
+  },
+  {
+   "soru": "Belgeleri nasıl saklayabilirim?",
+   "cevap": "Her belgeyi PDF olarak indirebilir ya da yazdırabilirsiniz. PDF dosyaları belgenin güncel sürümüyle birlikte kendiliğinden güncellenir."
+  },
+  {
+   "soru": "Kişisel verilerimle ilgili başvuruyu nasıl yaparım?",
+   "cevap": "Başvuru yolları KVKK Aydınlatma Metninde yer alır. Kayıtlı e-posta adresinizden info@sunucumweb.com adresine yazabilir ya da metinde belirtilen yazılı yollardan başvurabilirsiniz."
+  }
+ ],
+ "eskiSlug": {
+  "kullanim-kosullari": "kullanim-kosullari",
+  "gizlilik-sozlesmesi": "gizlilik-ve-guvenlik",
+  "iade-politikasi": "iptal-ve-iade-kosullari"
+ },
+ "sira": [
+  "genel-hizmet-sozlesmesi",
+  "mesafeli-satis-sozlesmesi",
+  "on-bilgilendirme-formu",
+  "iptal-ve-iade-kosullari",
+  "hizmet-seviyesi-ve-destek-paketleri",
+  "alan-adi-tescil-sozlesmesi",
+  "kullanim-kosullari",
+  "gizlilik-ve-guvenlik",
+  "kvkk",
+  "cerez-politikasi",
+  "acik-riza-metni",
+  "alt-isleyenler"
+ ],
+ "surum": "1.0",
+ "yururluk": "2026-10-12",
+ "altMenu": {
+  "grup": "Kurumsal",
+  "eski": "/legal",
+  "yeni": {
+   "metin": "Yasal Belgeler",
+   "adres": "/yasal-belgeler"
+  },
+  "ek": {
+   "metin": "Banka Hesapları",
+   "adres": "/banka-hesaplari"
+  }
+ },
+ "ustMenu": {
+  "etiket": "Kurumsal",
+  "eski": "/legal",
+  "yeni": {
+   "baslik": "Yasal Belgeler",
+   "aciklama": "Sözleşmeler, politikalar ve şirket bilgilerimiz.",
+   "adres": "/yasal-belgeler",
+   "ikon": "doc"
+  },
+  "ek": {
+   "baslik": "Banka Hesapları",
+   "aciklama": "Havale ve EFT için IBAN bilgilerimiz.",
+   "adres": "/banka-hesaplari",
+   "ikon": "bank",
+   "rozetTonu": "yesil",
+   "vurgu": false
+  }
+ }
+}

@@ -5,7 +5,7 @@
     "singularName": "yasal-belge",
     "pluralName": "yasal-belgeler",
     "displayName": "Yasal Belge",
-    "description": "Sözleşmeler ve yasal metinler (/legal)"
+    "description": "Sözleşmeler ve yasal metinler (/yasal-belgeler)"
   },
   "options": {
     "draftAndPublish": true
@@ -30,6 +30,22 @@
     "sira": {
       "type": "integer",
       "default": 0
+    },
+    "grup": {
+      "type": "enumeration",
+      "enum": [
+        "sozlesme",
+        "politika"
+      ],
+      "default": "sozlesme",
+      "required": true
+    },
+    "surum": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "yururlukTarihi": {
+      "type": "date"
     },
     "ozet": {
       "type": "string",
