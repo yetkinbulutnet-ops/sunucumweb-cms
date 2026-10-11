@@ -15,8 +15,9 @@ const limitAsildi = (anahtar, adet, pencereMs) => {
   const simdi = Date.now();
   const liste = (limitler.get(anahtar) || []).filter((t) => t > simdi - pencereMs);
   liste.push(simdi);
+  limitler.delete(anahtar);
   limitler.set(anahtar, liste);
-  if (limitler.size > 10000) limitler.clear();
+  while (limitler.size > 10000) limitler.delete(limitler.keys().next().value);
   return liste.length > adet;
 };
 
@@ -190,9 +191,18 @@ const sifreSonrasi = async (ctx, next, tur) => {
 };
 
 const profilSifre = async (ctx, next) => {
-  const sifreVar = !!(ctx.request.body && ctx.request.body.password);
-  const k = sifreVar ? await s.tokenKullanici(ctx) : null;
+  const govde = ctx.request.body || {};
+  const sifreVar = !!govde.password;
+  const k = sifreVar || govde.email !== undefined ? await s.tokenKullanici(ctx) : null;
+  if (govde.email !== undefined) {
+    if (!k) return hata(ctx, 401, 'Oturum geçersiz.');
+    const mevcut = await strapi.db.query('admin::user').findOne({ where: { id: k.userId }, select: ['email'] });
+    if (!mevcut || String(govde.email).trim().toLowerCase() !== String(mevcut.email).toLowerCase()) {
+      return hata(ctx, 403, 'E-posta adresinizi değiştiremezsiniz. Bu işlemi yalnızca Süper Admin yapabilir.', { alan: 'email' });
+    }
+  }
   await next();
+  if (!sifreVar) return;
   if (!k || ctx.status !== 200) return;
   await s.digerleriniKapat(k.userId, k.deviceId, 'sifre-degisti');
   const user = await strapi.db.query('admin::user').findOne({ where: { id: k.userId } });
@@ -208,6 +218,23 @@ const profilSifre = async (ctx, next) => {
   }
 };
 
+const kullaniciGuncelle = async (ctx, next, hedefId) => {
+  const govde = ctx.request.body || {};
+  const once = await strapi.db.query('admin::user').findOne({ where: { id: hedefId }, select: ['email'] });
+  await next();
+  if (ctx.status >= 300 || !once) return;
+  const kritik =
+    !!govde.password ||
+    govde.isActive === false ||
+    govde.blocked === true ||
+    (govde.email !== undefined && String(govde.email).trim().toLowerCase() !== String(once.email).toLowerCase());
+  if (!kritik) return;
+  await strapi.sessionManager('admin').invalidateRefreshToken(String(hedefId));
+  await strapi.db.connection('swb_oturum').where({ user_id: hedefId }).whereNull('bitis').update({ bitis: new Date(), bitis_nedeni: 'yonetici-degisikligi' });
+  await strapi.db.connection('swb_cihaz').where({ user_id: hedefId }).del();
+  await strapi.db.connection('swb_dogrulama').where({ user_id: hedefId }).del();
+};
+
 const cikis = async (ctx, next) => {
   const k = await s.tokenKullanici(ctx).catch(() => null);
   await next();
@@ -217,7 +244,7 @@ const cikis = async (ctx, next) => {
 };
 
 const ozel = async (ctx) => {
-  const y = ctx.path.slice('/swb-guvenlik'.length);
+  const y = yolNormal(ctx.path).slice('/swb-guvenlik'.length);
   ctx.set('Cache-Control', 'no-store');
   if (ctx.method === 'GET' && y === '/durum') {
     ctx.body = { data: { siteAnahtari: process.env.RECAPTCHA_SITE_KEY || '', bildirim: await s.cihazBildirimi(ctx) } };
@@ -234,8 +261,16 @@ const ozel = async (ctx) => {
   return hata(ctx, 404, 'Bulunamadı.');
 };
 
+const yolNormal = (ham) => {
+  let y = String(ham || '');
+  try {
+    y = decodeURIComponent(y);
+  } catch {}
+  return y.toLowerCase().replace(/\/{2,}/g, '/').replace(/\/+$/, '') || '/';
+};
+
 module.exports = () => async (ctx, next) => {
-  const yol = ctx.path;
+  const yol = yolNormal(ctx.path);
   const m = ctx.method;
   if (yol.startsWith('/swb-guvenlik/')) return ozel(ctx);
   if (m === 'POST' && yol === '/admin/login') return girisIsle(ctx, next);
@@ -244,6 +279,8 @@ module.exports = () => async (ctx, next) => {
   if (m === 'POST' && yol === '/admin/register') return sifreSonrasi(ctx, next, 'kayit');
   if (m === 'POST' && yol === '/admin/logout') return cikis(ctx, next);
   if (m === 'PUT' && yol === '/admin/users/me') return profilSifre(ctx, next);
+  const kullaniciYolu = m === 'PUT' && yol.match(/^\/admin\/users\/(\d+)$/);
+  if (kullaniciYolu) return kullaniciGuncelle(ctx, next, Number(kullaniciYolu[1]));
   const auth = ctx.request.headers.authorization;
   if (auth && auth.startsWith('Bearer ') && !yol.startsWith('/api/')) {
     s.aktiflikIsle(auth.slice(7)).catch(() => {});

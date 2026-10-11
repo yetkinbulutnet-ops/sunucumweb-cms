@@ -210,9 +210,10 @@ const panel = async (ctx) => {
   ctx.set('Cache-Control', 'no-store');
   const k = await s.tokenKullanici(ctx);
   if (!k) return hata(ctx, 401, 'Oturum geçersiz.');
-  const kullanici = await strapi.db.query('admin::user').findOne({ where: { id: k.userId } });
+  const kullanici = await strapi.db.query('admin::user').findOne({ where: { id: k.userId }, populate: ['roles'] });
   if (!kullanici || !kullanici.isActive || kullanici.blocked) return hata(ctx, 403, 'Yetkisiz.');
   const y = ctx.path.slice('/swb-panel'.length);
+  const superAdmin = (kullanici.roles || []).some((r) => r.code === 'strapi-super-admin');
   const m = ctx.method;
   try {
     if (m === 'GET' && y === '/ozet') return (ctx.body = { data: await ozet() });
@@ -262,6 +263,7 @@ const panel = async (ctx) => {
         return r ? (ctx.body = { data: r }) : hata(ctx, 400, 'Geçersiz durum.');
       }
     }
+    if (y.startsWith('/otomatik-blog') && !superAdmin) return hata(ctx, 403, 'Bu işlem yalnızca Süper Admin içindir.');
     if (y === '/otomatik-blog' && m === 'GET') return (ctx.body = { data: await otoblog.durum() });
     if (y === '/otomatik-blog/uret' || y === '/otomatik-blog/oner') {
       if (m !== 'POST') return hata(ctx, 405, 'Geçersiz istek.');
@@ -280,6 +282,7 @@ const panel = async (ctx) => {
     if (m === 'GET' && tm) return (ctx.body = { data: { telefon: await telefonGetir(tm[1] === 'me' ? k.userId : Number(tm[1])) } });
     if (m === 'POST' && tm) {
       const id = tm[1] === 'me' ? k.userId : Number(tm[1]);
+      if (id !== k.userId && !superAdmin) return hata(ctx, 403, 'Yalnızca kendi telefon numaranızı değiştirebilirsiniz.');
       if (!(await strapi.db.query('admin::user').findOne({ where: { id }, select: ['id'] }))) return hata(ctx, 404, 'Kullanıcı bulunamadı.');
       await telefonYaz(id, ctx.request.body?.telefon);
       return (ctx.body = { data: { telefon: await telefonGetir(id) } });

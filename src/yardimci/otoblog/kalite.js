@@ -19,7 +19,17 @@ const temizle = (metin) =>
     .replace(/[ \t]+\n/g, '\n')
     .replace(/,\s*([.:;!?])(?=\s|$)/gm, '$1');
 
-const tekSatir = (s) => temizle(s).replace(/\s+/g, ' ').trim();
+const tekSatir = (s) => etiketSil(temizle(s)).replace(/[<>]/g, '').replace(/\s+/g, ' ').trim();
+
+const etiketSil = (satir) => {
+  let t = satir;
+  let once;
+  do {
+    once = t;
+    t = t.replace(/<\/?[a-z!][^<>]*>/gi, '');
+  } while (t !== once);
+  return t;
+};
 
 const yapiDuzelt = (md, baslik) => {
   let m = String(md || '').trim().replace(/^```(?:markdown|md)?\s*\n([\s\S]*?)\n```$/i, '$1');
@@ -34,12 +44,12 @@ const yapiDuzelt = (md, baslik) => {
       if (kodda) return s;
       if (/^#\s/.test(s)) return `#${s}`;
       if (/^#{4,}\s/.test(s)) return s.replace(/^#+/, '###');
-      return s.replace(/(\S) {2,}(?=\S)/g, '$1 ');
+      return etiketSil(s).replace(/(\S) {2,}(?=\S)/g, '$1 ');
     })
     .join('\n');
   const sss = m.search(/^##\s+(sık sorulan sorular|sıkça sorulan sorular|sss)\b.*$/im);
   if (sss > 0) m = m.slice(0, sss).trim();
-  return m.replace(/<\/?(?!br\b)[a-z][^>]*>/gi, '').replace(/\n{3,}/g, '\n\n').trim();
+  return m.replace(/\n{3,}/g, '\n\n').trim();
 };
 
 const yolNormal = (url) => {
@@ -67,7 +77,18 @@ const linkDuzelt = (md, izinli) => {
     kaldirilan.push(url);
     return metin;
   });
-  return { metin: cikti, kaldirilan, tutulan };
+  const temiz = cikti
+    .split('\n')
+    .filter((satir) => {
+      const tanim = /^\s{0,3}\[[^\]]+\]:\s*<?(\S+?)>?(?:\s+.*)?$/.exec(satir);
+      if (!tanim) return true;
+      const y = yolNormal(tanim[1]);
+      if (y && izinli.has(y)) return true;
+      kaldirilan.push(tanim[1]);
+      return false;
+    })
+    .join('\n');
+  return { metin: temiz, kaldirilan, tutulan };
 };
 
 const duzMetin = (md) =>

@@ -105,7 +105,7 @@ module.exports = {
     const { secilen, kod, kalanHak } = sonuc;
 
     if (b.pazarlama === true) {
-      aboneKaydet({ eposta, kaynak: 'cark', izinMetni: String(b.izinMetni || '').slice(0, 1000), ip, tarayici: b.tarayici, tekAdim: true }).catch((e) => strapi.log.error(`cark: abone kaydi yapilamadi (${e.message})`));
+      aboneKaydet({ eposta, kaynak: 'cark', izinMetni: String(b.izinMetni || '').slice(0, 1000), ip, tarayici: b.tarayici }).catch((e) => strapi.log.error(`cark: abone kaydi yapilamadi (${e.message})`));
     }
 
     if (kod) {

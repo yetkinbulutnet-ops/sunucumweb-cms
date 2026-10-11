@@ -7,7 +7,7 @@ const sablon = require('./sablon');
 
 const CIHAZ_CEREZ = 'swb_cihaz';
 const KOD_DAKIKA = 10;
-const MAKS_DENEME = 5;
+const MAKS_DENEME = 8;
 const MAKS_GONDERIM = 5;
 const YENIDEN_GONDER_SN = 60;
 
@@ -84,7 +84,7 @@ const tablolariKur = async () => {
 
 const ipAl = (ctx) => {
   const h = ctx.request.headers;
-  const ip = h['cf-connecting-ip'] || h['x-real-ip'] || ctx.request.ip || '';
+  const ip = h['x-real-ip'] || ctx.request.ip || '';
   return String(ip).replace(/^::ffff:/, '').slice(0, 64);
 };
 
@@ -217,7 +217,6 @@ const kodYenile = async (id, ctx) => {
   const simdi = new Date();
   await db()('swb_dogrulama').where({ id }).update({
     kod_hash: hmac(`kod:${id}:${kod}`),
-    deneme: 0,
     gonderim: d.gonderim + 1,
     son_gonderim: simdi,
     bitis: new Date(simdi.getTime() + KOD_DAKIKA * 60000),
@@ -229,21 +228,23 @@ const kodYenile = async (id, ctx) => {
 const kodDogrula = async (id, kod) => {
   const d = await db()('swb_dogrulama').where({ id }).first();
   if (!d || new Date(d.bitis) < new Date()) return { hata: 'Doğrulama süresi doldu. Lütfen tekrar giriş yapın.', bitti: true };
-  if (d.deneme >= MAKS_DENEME) {
+  const hak = await db()('swb_dogrulama').where({ id }).andWhere('deneme', '<', MAKS_DENEME).increment('deneme', 1);
+  if (!hak) {
     await db()('swb_dogrulama').where({ id }).del();
     return { hata: 'Çok fazla hatalı deneme. Lütfen tekrar giriş yapın.', bitti: true };
   }
-  if (!/^\d{6}$/.test(String(kod)) || !esit(d.kod_hash, hmac(`kod:${id}:${kod}`))) {
-    await db()('swb_dogrulama').where({ id }).update({ deneme: d.deneme + 1 });
-    const kalan = MAKS_DENEME - d.deneme - 1;
-    if (kalan <= 0) {
-      await db()('swb_dogrulama').where({ id }).del();
-      return { hata: 'Çok fazla hatalı deneme. Lütfen tekrar giriş yapın.', bitti: true };
-    }
-    return { hata: `Kod hatalı. ${kalan} deneme hakkınız kaldı.` };
+  if (/^\d{6}$/.test(String(kod)) && esit(d.kod_hash, hmac(`kod:${id}:${kod}`))) {
+    const silinen = await db()('swb_dogrulama').where({ id }).del();
+    if (!silinen) return { hata: 'Doğrulama süresi doldu. Lütfen tekrar giriş yapın.', bitti: true };
+    return { kayit: d };
   }
-  await db()('swb_dogrulama').where({ id }).del();
-  return { kayit: d };
+  const guncel = await db()('swb_dogrulama').where({ id }).first();
+  const kalan = MAKS_DENEME - (guncel ? guncel.deneme : MAKS_DENEME);
+  if (kalan <= 0) {
+    await db()('swb_dogrulama').where({ id }).del();
+    return { hata: 'Çok fazla hatalı deneme. Lütfen tekrar giriş yapın.', bitti: true };
+  }
+  return { hata: `Kod hatalı. ${kalan} deneme hakkınız kaldı.` };
 };
 
 const oturumBaslat = async ({ userId, deviceId, cihazHash, ctx, dogrulama, beniHatirla }) => {

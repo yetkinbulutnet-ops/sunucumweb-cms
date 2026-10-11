@@ -248,7 +248,10 @@ const yaziUret = async ({ tur = 'elle', konuId } = {}) => {
       mesaj: doldur(ayar.yaziSablonu, { ...ortak, plan: JSON.stringify({ ...plan, sss: undefined }, null, 1) }),
     });
     topla(y.kullanim);
-    const isle = (ham) => k.linkDuzelt(k.yapiDuzelt(k.temizle(ham), baslik), new Set(sayfalar.keys()));
+    const isle = (ham) => {
+      const l = k.linkDuzelt(k.temizle(ham), new Set(sayfalar.keys()));
+      return { ...l, metin: k.yapiDuzelt(l.metin, baslik) };
+    };
     let govde = isle(y.metin);
     let denetim = k.sorunlariBul(govde.metin, { kelimeMin, kelimeMax, yasakli });
     if (denetim.sorunlar.length) {

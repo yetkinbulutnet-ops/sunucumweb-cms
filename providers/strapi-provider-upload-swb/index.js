@@ -28,6 +28,38 @@ const uzantiTemizle = (ext) => {
   return /^\.[a-z0-9]{1,8}$/.test(e) ? e : '';
 };
 
+const MIME_UZANTI = {
+  'image/gif': ['.gif'],
+  'image/webp': ['.webp'],
+  'image/bmp': ['.bmp'],
+  'image/x-icon': ['.ico'],
+  'image/vnd.microsoft.icon': ['.ico'],
+  'video/mp4': ['.mp4', '.m4v'],
+  'video/webm': ['.webm'],
+  'video/quicktime': ['.mov'],
+  'video/ogg': ['.ogv'],
+  'audio/mpeg': ['.mp3'],
+  'audio/mp4': ['.m4a'],
+  'audio/ogg': ['.ogg', '.oga'],
+  'audio/wav': ['.wav'],
+  'audio/x-wav': ['.wav'],
+  'audio/webm': ['.weba'],
+  'application/pdf': ['.pdf'],
+  'application/msword': ['.doc'],
+  'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
+  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': ['.xlsx'],
+  'application/vnd.openxmlformats-officedocument.presentationml.presentation': ['.pptx'],
+  'text/plain': ['.txt'],
+  'text/csv': ['.csv'],
+};
+
+const uzantiBelirle = (ext, mime) => {
+  const izinli = MIME_UZANTI[mime];
+  if (!izinli) return '.bin';
+  const e = uzantiTemizle(ext);
+  return izinli.includes(e) ? e : izinli[0];
+};
+
 const akisiOku = async (akis) => {
   const parcalar = [];
   for await (const p of akis) parcalar.push(typeof p === 'string' ? Buffer.from(p) : p);
@@ -90,8 +122,8 @@ module.exports = {
       const eslesme = !kayit && FORMAT_ONEKI.exec(String(file.hash || ''));
 
       try {
-        let ext = uzantiTemizle(file.ext);
         const mime = String(file.mime || '').toLowerCase();
+        let ext = uzantiBelirle(file.ext, mime);
         const donustur = WEBP_YAP.has(mime);
         let icerik = null;
 
