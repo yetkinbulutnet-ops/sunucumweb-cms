@@ -1,0 +1,86 @@
+[
+  {
+    "anahtar": "cerez.baslik",
+    "grup": "Çerez bandı",
+    "konum": "Bant başlığı",
+    "metin": "Çerez tercihleriniz"
+  },
+  {
+    "anahtar": "cerez.metin",
+    "grup": "Çerez bandı",
+    "konum": "Bant açıklaması",
+    "metin": "Sitenin çalışması için gerekli çerezleri her zaman kullanırız. Ziyaret istatistikleri ve canlı destek penceresi için ise onayınızı istiyoruz; onay vermezseniz bu araçlar yüklenmez."
+  },
+  {
+    "anahtar": "cerez.politika_link",
+    "grup": "Çerez bandı",
+    "konum": "Bant açıklamasının sonundaki bağlantı",
+    "metin": "Çerez Politikası"
+  },
+  {
+    "anahtar": "cerez.zorunlu",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori adı",
+    "metin": "Zorunlu çerezler"
+  },
+  {
+    "anahtar": "cerez.zorunlu_aciklama",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori açıklaması",
+    "metin": "Güvenlik doğrulaması, sepet ve tema tercihi gibi sitenin çalışması için gereken kayıtlar. Kapatılamaz."
+  },
+  {
+    "anahtar": "cerez.analiz",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori adı",
+    "metin": "Analiz çerezleri"
+  },
+  {
+    "anahtar": "cerez.analiz_aciklama",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori açıklaması",
+    "metin": "Google Analytics ile hangi sayfaların ne kadar ziyaret edildiğini ölçeriz."
+  },
+  {
+    "anahtar": "cerez.destek",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori adı",
+    "metin": "Canlı destek"
+  },
+  {
+    "anahtar": "cerez.destek_aciklama",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler: kategori açıklaması",
+    "metin": "Sağ alttaki canlı destek penceresi (Tawk.to) ve sohbet oturumunuzu hatırlayan çerezleri."
+  },
+  {
+    "anahtar": "cerez.tercihler",
+    "grup": "Çerez bandı",
+    "konum": "Bant düğmesi",
+    "metin": "Tercihler"
+  },
+  {
+    "anahtar": "cerez.kaydet",
+    "grup": "Çerez bandı",
+    "konum": "Tercihler açıkken düğme",
+    "metin": "Seçimleri kaydet"
+  },
+  {
+    "anahtar": "cerez.reddet",
+    "grup": "Çerez bandı",
+    "konum": "Bant düğmesi",
+    "metin": "Reddet"
+  },
+  {
+    "anahtar": "cerez.kabul",
+    "grup": "Çerez bandı",
+    "konum": "Bant düğmesi",
+    "metin": "Tümünü kabul et"
+  },
+  {
+    "anahtar": "cerez.tercihler_link",
+    "grup": "Çerez bandı",
+    "konum": "Site alt bilgisi: tercihleri yeniden açan bağlantı",
+    "metin": "Çerez tercihleri"
+  }
+]

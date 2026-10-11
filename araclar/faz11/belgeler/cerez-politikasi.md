@@ -8,6 +8,7 @@ Sitenin ve Müşteri Panelinin çalışması, güvenliği ve talep ettiğiniz i�
 - Güvenlik geçidi doğrulaması (swb_gecis): Şüpheli veya otomatik trafiğe karşı yapılan doğrulamayı (Cloudflare Turnstile) geçtiğinizi gösterir; imzalıdır, yalnızca sunucu tarafından okunur (HttpOnly) ve IP adresinize bağlıdır. Süre: 7 gün.
 - Doğrulama sonrası yönlendirme (swb_devam): Güvenlik doğrulamasından sonra gitmek istediğiniz sayfaya dönmenizi sağlar. Süre: 10 dakika.
 - İstek sınırı (swb_rl): Kısa sürede aşırı sayıda istek gönderilmesini tespit eden sayaçtır; kimliğinizi içermez. Süre: 20 saniye.
+- Çerez tercihi (swb_cerez): Çerez bandında yaptığınız seçimi (analiz ve canlı destek için onay verip vermediğinizi) hatırlar; bu sayede bant her sayfada yeniden çıkmaz. Süre: 6 ay.
 - Ülke bilgisi (swb_ulke): Bağlantınızın geldiği ülke kodunu (ör. TR) tutar; çerezsiz istatistik aracının yalnızca Türkiye'den gelen ziyaretlerde yüklenmesi için kullanılır. Süre: 30 dakika.
 - Cloudflare güvenlik çerezleri (ör. __cf_bm, cf_clearance): Kötü amaçlı trafiği ve bot saldırılarını engeller; Cloudflare, Inc. (ABD) tarafından, gerektiğinde bırakılır. Süre: 30 dakika ile 1 yıl arası.
 - Cloudflare Turnstile (güvenlik geçidi, iletişim formu, bülten aboneliği ve kampanya çarkı): Form gönderimlerinin bir insan tarafından yapıldığını doğrular. Sağlayıcı: Cloudflare, Inc. (ABD).
@@ -20,12 +21,12 @@ Sitenin ve Müşteri Panelinin çalışması, güvenliği ve talep ettiğiniz i�
 - Duyuru bandı (swb_duyuru_kapali, yerel depolama): Kapattığınız duyurunun yeniden gösterilmemesini sağlar. Süre: siz silene kadar.
 - Kampanya çarkı (swb_cark_ ile başlayan kayıtlar; yerel depolama ve oturum depolaması): Çarkı kullandığınızı veya rozeti gizlediğinizi hatırlayarak çarkın tekrar gösterilmemesini sağlar. Süre: oturum boyunca veya siz silene kadar.
 ### 2.3. Analitik ve pazarlama çerezleri
-- Google Etiket Yöneticisi (Google Tag Manager): Sitemizdeki ölçüm araçlarını yöneten etiketleri yükler. Şu anda sitede bir çerez tercih aracı (onay bandı) bulunmadığından etiket yöneticisi sayfa açıldığında yüklenir ve IP adresiniz, tarayıcı ve cihaz bilgileriniz teknik olarak Google LLC'ye (ABD) ulaşır.
-- Google Analytics 4 (_ga, _ga_*): Ziyaret sayısı, sayfa görüntüleme ve hizmetlerin kullanımını ölçer. Şu anda sayfa açıldığında yüklenir ve çerez bırakır. Süre: en fazla 2 yıl. Sağlayıcı: Google LLC (ABD).
-- Reklam ve yeniden pazarlama araçları: Şu anda kullanılmamaktadır. Kullanıma başlanması hâlinde bu araçlar yalnızca çerez tercih aracında vereceğiniz izinle çalıştırılacak, sağlayıcı ve çerez adları bu sayfada ayrıca belirtilecektir.
-Analiz çerezlerini kullanmak istemiyorsanız 4. maddede anlatılan yöntemlerle engelleyebilir veya silebilirsiniz; bu durumda sitenin kullanımı etkilenmez.
+- Google Etiket Yöneticisi (Google Tag Manager): Sitemizdeki ölçüm araçlarını yöneten etiketleri yükler. Yalnızca çerez bandında analiz çerezlerine onay verdiğinizde yüklenir; yüklendiğinde IP adresiniz, tarayıcı ve cihaz bilgileriniz teknik olarak Google LLC'ye (ABD) ulaşır.
+- Google Analytics 4 (_ga, _ga_*): Ziyaret sayısı, sayfa görüntüleme ve hizmetlerin kullanımını ölçer. Yalnızca analiz çerezlerine onay verdiğinizde yüklenir ve çerez bırakır. Süre: en fazla 2 yıl. Sağlayıcı: Google LLC (ABD).
+- Reklam ve yeniden pazarlama araçları: Şu anda kullanılmamaktadır. Kullanıma başlanması hâlinde bu araçlar yalnızca çerez bandında vereceğiniz izinle çalıştırılacak, sağlayıcı ve çerez adları bu sayfada ayrıca belirtilecektir.
+Analiz çerezlerine onay vermezseniz bu araçlar hiç yüklenmez ve sitenin kullanımı etkilenmez.
 ### 2.4. Üçüncü taraf içerik ve hizmetler
-- Canlı destek (Tawk.to; twk_ ile başlayan çerezler, TawkConnectionTime ve yerel depolama): Sitedeki canlı destek penceresi sayfa açıldığında yüklenir; ziyaretinizi ve sohbet oturumunuzu tanımak için kendi çerezlerini bırakır ve IP adresiniz ile tarayıcı bilgileriniz tawk.to'ya (ABD) ulaşır. Süre: oturum boyunca ile 6 ay arası.
+- Canlı destek (Tawk.to; twk_ ile başlayan çerezler, TawkConnectionTime ve yerel depolama): Sitedeki canlı destek penceresi yalnızca çerez bandında canlı desteğe onay verdiğinizde yüklenir; ziyaretinizi ve sohbet oturumunuzu tanımak için kendi çerezlerini bırakır ve IP adresiniz ile tarayıcı bilgileriniz tawk.to'ya (ABD) ulaşır. Süre: oturum boyunca ile 6 ay arası.
 - Video oynatıcı (bunny.net): Hakkımızda sayfasındaki veri merkezi tanıtım videosu BunnyWay d.o.o. (Slovenya) oynatıcısıyla gösterilir; oynatıcı yüklendiğinde IP adresiniz ve tarayıcı bilgileriniz bu sağlayıcıya ulaşır.
 - Paylaşım bağlantıları: Blog yazılarındaki paylaşım düğmeleri (X, LinkedIn, Facebook, WhatsApp) yalnızca bağlantıdır; tıklamadıkça ilgili platforma veri gönderilmez ve çerez bırakılmaz.
 
@@ -34,8 +35,9 @@ Temel ziyaret istatistikleri için çerez kullanmayan ve kişiyi tanımlamayan U
 Bu araç çerez kullanmadığı için onay gerektirmez.
 
 ## 4. Onay ve Tercihlerinizi Yönetme
-Sitemizde şu anda bir çerez tercih aracı (onay bandı) bulunmamaktadır; bu nedenle 2.3 ve 2.4 maddelerindeki araçlar sayfa açıldığında yüklenir. Çerez tercih aracı devreye alındığında analiz ve pazarlama çerezleri varsayılan olarak kapalı olacak ve yalnızca vereceğiniz onayla çalıştırılacaktır; bu sayfa da o tarihte güncellenecektir.
-O zamana kadar ve sonrasında, çerezleri tarayıcı ayarlarınızdan engelleyebilir veya silebilirsiniz:
+Siteyi ilk ziyaretinizde bir çerez bandı gösterilir. Analiz çerezleri (2.3) ve canlı destek penceresi (2.4) varsayılan olarak kapalıdır ve yalnızca bu bantta vereceğiniz onayla yüklenir. Bantta "Tümünü kabul et", "Reddet" ya da "Tercihler" seçeneklerinden birini seçebilirsiniz; reddetmek kabul etmek kadar kolaydır ve sitenin kullanımını etkilemez.
+Seçiminizi dilediğiniz zaman sitenin alt bilgisindeki "Çerez tercihleri" bağlantısından değiştirebilirsiniz. Onayınızı geri aldığınızda ilgili çerezler tarayıcınızdan silinir ve araçlar bir daha yüklenmez.
+Bunun yanında çerezleri tarayıcı ayarlarınızdan da engelleyebilir veya silebilirsiniz:
 - Chrome: Ayarlar > Gizlilik ve güvenlik > Üçüncü taraf çerezleri / Site verileri
 - Safari: Ayarlar > Gizlilik > Web sitesi verilerini yönet
 - Firefox: Ayarlar > Gizlilik ve Güvenlik > Çerezler ve site verileri

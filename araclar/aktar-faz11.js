@@ -81,7 +81,7 @@ const sozlukYukle = async (app) => {
   const S = app.documents(SOZLUK);
   const mevcut = new Set((await app.db.query(SOZLUK).findMany({ select: ['anahtar'] })).map((x) => x.anahtar));
   let yeni = 0;
-  for (const e of JSON.parse(fs.readFileSync(path.join(__dirname, 'sozluk', 'L.json'), 'utf8'))) {
+  for (const e of ['L.json', 'M.json'].flatMap((f) => JSON.parse(fs.readFileSync(path.join(__dirname, 'sozluk', f), 'utf8')))) {
     if (mevcut.has(e.anahtar)) continue;
     await S.create({ data: e });
     yeni += 1;
