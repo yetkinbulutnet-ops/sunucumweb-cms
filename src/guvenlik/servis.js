@@ -27,19 +27,29 @@ const tabloVar = async (ad) => {
   return Number(satirlar[0].n) > 0;
 };
 
+// Birden fazla instance ayni anda basladiginda tablo zaten olusmus olabilir.
+const tabloYoksaKur = async (ad, tanimla) => {
+  if (await tabloVar(ad)) return;
+  try {
+    await db().schema.createTable(ad, tanimla);
+  } catch (hata) {
+    if (hata.code === 'ER_TABLE_EXISTS_ERROR' || hata.errno === 1050 ||
+        hata.originalError?.code === 'ER_TABLE_EXISTS_ERROR' ||
+        hata.originalError?.errno === 1050) return;
+    throw hata;
+  }
+};
+
 const tablolariKur = async () => {
-  const s = db().schema;
-  if (!(await tabloVar('swb_cihaz'))) {
+  await tabloYoksaKur('swb_cihaz', (t) => {
     await s.createTable('swb_cihaz', (t) => {
       t.integer('user_id').unsigned().primary();
       t.string('cihaz_hash', 64).notNullable();
       t.string('ozet', 255);
       t.datetime('kayit_tarihi');
       t.datetime('son_gorulme');
-    });
-  }
-  if (!(await tabloVar('swb_oturum'))) {
-    await s.createTable('swb_oturum', (t) => {
+  });
+  await tabloYoksaKur('swb_oturum', (t) => {
       t.increments('id');
       t.integer('user_id').unsigned().notNullable().index();
       t.string('device_id', 64).index();
@@ -56,17 +66,13 @@ const tablolariKur = async () => {
       t.datetime('bitis');
       t.string('bitis_nedeni', 40);
       t.boolean('bildirildi').defaultTo(false);
-    });
-  }
-  if (!(await tabloVar('swb_telefon'))) {
-    await s.createTable('swb_telefon', (t) => {
+  });
+  await tabloYoksaKur('swb_telefon', (t) => {
       t.integer('user_id').unsigned().primary();
       t.string('telefon', 32);
       t.datetime('guncelleme');
-    });
-  }
-  if (!(await tabloVar('swb_dogrulama'))) {
-    await s.createTable('swb_dogrulama', (t) => {
+  });
+  await tabloYoksaKur('swb_dogrulama', (t) => {
       t.string('id', 64).primary();
       t.integer('user_id').unsigned().notNullable().index();
       t.string('kod_hash', 64).notNullable();
@@ -78,8 +84,7 @@ const tablolariKur = async () => {
       t.integer('gonderim').defaultTo(1);
       t.datetime('son_gonderim');
       t.datetime('bitis');
-    });
-  }
+  });
 };
 
 const ipAl = (ctx) => {
