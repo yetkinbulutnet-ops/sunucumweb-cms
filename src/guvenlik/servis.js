@@ -42,48 +42,47 @@ const tabloYoksaKur = async (ad, tanimla) => {
 
 const tablolariKur = async () => {
   await tabloYoksaKur('swb_cihaz', (t) => {
-    await s.createTable('swb_cihaz', (t) => {
-      t.integer('user_id').unsigned().primary();
-      t.string('cihaz_hash', 64).notNullable();
-      t.string('ozet', 255);
-      t.datetime('kayit_tarihi');
-      t.datetime('son_gorulme');
+    t.integer('user_id').unsigned().primary();
+    t.string('cihaz_hash', 64).notNullable();
+    t.string('ozet', 255);
+    t.datetime('kayit_tarihi');
+    t.datetime('son_gorulme');
   });
   await tabloYoksaKur('swb_oturum', (t) => {
-      t.increments('id');
-      t.integer('user_id').unsigned().notNullable().index();
-      t.string('device_id', 64).index();
-      t.string('cihaz_hash', 64).index();
-      t.string('ip', 64);
-      t.string('tarayici', 120);
-      t.string('isletim', 120);
-      t.string('tur', 40);
-      t.string('konum', 160);
-      t.string('dogrulama', 20);
-      t.boolean('beni_hatirla').defaultTo(false);
-      t.datetime('giris');
-      t.datetime('son_aktif');
-      t.datetime('bitis');
-      t.string('bitis_nedeni', 40);
-      t.boolean('bildirildi').defaultTo(false);
+    t.increments('id');
+    t.integer('user_id').unsigned().notNullable().index();
+    t.string('device_id', 64).index();
+    t.string('cihaz_hash', 64).index();
+    t.string('ip', 64);
+    t.string('tarayici', 120);
+    t.string('isletim', 120);
+    t.string('tur', 40);
+    t.string('konum', 160);
+    t.string('dogrulama', 20);
+    t.boolean('beni_hatirla').defaultTo(false);
+    t.datetime('giris');
+    t.datetime('son_aktif');
+    t.datetime('bitis');
+    t.string('bitis_nedeni', 40);
+    t.boolean('bildirildi').defaultTo(false);
   });
   await tabloYoksaKur('swb_telefon', (t) => {
-      t.integer('user_id').unsigned().primary();
-      t.string('telefon', 32);
-      t.datetime('guncelleme');
+    t.integer('user_id').unsigned().primary();
+    t.string('telefon', 32);
+    t.datetime('guncelleme');
   });
   await tabloYoksaKur('swb_dogrulama', (t) => {
-      t.string('id', 64).primary();
-      t.integer('user_id').unsigned().notNullable().index();
-      t.string('kod_hash', 64).notNullable();
-      t.string('device_id', 64);
-      t.boolean('beni_hatirla').defaultTo(false);
-      t.string('ip', 64);
-      t.string('ua', 512);
-      t.integer('deneme').defaultTo(0);
-      t.integer('gonderim').defaultTo(1);
-      t.datetime('son_gonderim');
-      t.datetime('bitis');
+    t.string('id', 64).primary();
+    t.integer('user_id').unsigned().notNullable().index();
+    t.string('kod_hash', 64).notNullable();
+    t.string('device_id', 64);
+    t.boolean('beni_hatirla').defaultTo(false);
+    t.string('ip', 64);
+    t.string('ua', 512);
+    t.integer('deneme').defaultTo(0);
+    t.integer('gonderim').defaultTo(1);
+    t.datetime('son_gonderim');
+    t.datetime('bitis');
   });
 };
 
