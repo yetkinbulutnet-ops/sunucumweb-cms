@@ -15,4 +15,4 @@ COPY --from=builder /app /app
 RUN mkdir -p /app/.cache /app/.tmp /app/public/uploads && chown -R node:node /app
 USER node
 EXPOSE 3654
-CMD ["npm", "run", "start"]
+CMD ["/bin/sh", "scripts/bunny-start.sh"]
